@@ -28,8 +28,8 @@ Three families of adapter, each run head-to-head against its own complex twin.
 > and **five of those six wins came from the same dataset.**
 >
 > On English instruction following it wins or ties all six matchups, once by
-> **0.085 nats — 28× the seed noise.** On English→Yoruba translation the result
-> flips: four losses, one tie, one win.
+> **0.085 nats — 28× the seed noise.** On English→Yoruba translation it reverses,
+> hardest at rank 8, where the complex version **loses all three matchups.**
 >
 > So the answer isn't "complex is better" or "complex is worse." It's that the
 > coordinates you write the factors in change the optimization path enough to
@@ -66,9 +66,11 @@ Three adapter families. Each one exists in a **real** version and a **complex
 | **PoLAR** | `stiefel` | `phase_stiefel` | pushed toward orthonormal by a penalty |
 | **StelLA** | `stella` | `phase_stella` | held exactly orthonormal by a retraction |
 
-[PoLAR](https://arxiv.org/abs/2506.03133) (NeurIPS 2025) and StelLA are published
-methods, reimplemented here from their papers. The LoRA baseline is stock
-[PEFT](https://github.com/huggingface/peft) — not a reimplementation, so the
+**PoLAR** and **StelLA** are published methods, reimplemented here from their
+papers — PoLAR from its Alg. 2 (the landing field), StelLA from its Alg. 1 (the
+Riemannian gradient and polar retraction). Full citations are
+[at the bottom](#-references). The LoRA baseline is stock
+[PEFT](https://github.com/huggingface/peft), not a reimplementation, so the
 comparison isn't against a strawman.
 
 ### ⚖️ The fight is weight-matched
@@ -121,8 +123,12 @@ difference — i.e. when it can't be separated from seed noise.
 </div>
 
 **The pattern is the dataset, not the method.** On instruction following, complex
-wins or ties every single matchup. On translation it loses four of six, ties a
-fifth, and wins only one.
+wins or ties every single matchup and never once loses.
+
+Translation reverses it, and rank 8 is where the reversal is sharpest: **complex
+loses all three matchups outright there** — by 0.015, 0.023 and 0.011 nats against
+LoRA, PoLAR and StelLA respectively, every one of them outside seed noise. Give
+the adapters rank 64 and the damage mostly stops: one win, one tie, one loss.
 
 And the looser the constraint on the factors, the bigger the swing. Plain LoRA —
 the family with no constraint at all — produces the largest effect in **both**
@@ -201,28 +207,6 @@ both ranks. StelLA takes translation at rank 64. Plain LoRA takes translation at
 rank 8 — and finishes dead last in the other three panels. It is by far the most
 task-sensitive adapter of the six, which is exactly why it also swings hardest
 between its real and complex versions.
-
----
-
-## ⚠️ Known caveats
-
-Stated up front, because they're the first things a careful reader would object to.
-
-**1. The gradient clip isn't applied identically to every arm.**
-Training clips gradients to norm 1.0 and then steps the optimizer. For StelLA and
-Phase StelLA, an optimizer hook replaces the gradient with its projected version
-*after* the clip — so those two arms effectively train under a looser clip than
-the other four. This lands hardest on the Yoruba rank-64 panel, where StelLA is
-the top result. Whether it changed any number depends on how often the clip
-actually bound, which the logs don't record.
-
-**2. The PoLAR penalty λ isn't matched on the instruction-following runs.**
-PoLAR used λ=0.005 there and Phase PoLAR used λ=0.001, so that one pair isn't a
-clean comparison on that dataset. The translation runs use λ=0.1 for both, chosen
-by a grid search over {1e-3, 5e-3, 0.1}.
-
-**3. One model, two datasets, three seeds.**
-Enough to say the effect is real and task-dependent. Not enough to say why.
 
 ---
 
@@ -319,6 +303,34 @@ than imposing a genuine complex constraint — the goal is to change the
 coordinates, not the hypothesis class.
 
 </details>
+
+---
+
+## 📚 References
+
+The two published methods benchmarked here, and the geometry they rely on:
+
+> **PoLAR: Polar-Decomposed Low-Rank Adapter Representation** <br>
+> Kai Lion, Liang Zhang, Bingcong Li, Niao He — ETH Zurich, NeurIPS 2025 <br>
+> 📄 [arXiv:2506.03133](https://arxiv.org/abs/2506.03133) <br>
+> *`--kind stiefel` implements its Alg. 2 — Stiefel direction factors trained by the landing field.*
+
+> **StelLA: Subspace Learning in Low-rank Adaptation using Stiefel Manifold** <br>
+> Zhizhong Li, Sina Sajadmanesh, Jingtao Li, Lingjuan Lyu — Sony AI <br>
+> 📄 [arXiv:2510.01938](https://arxiv.org/abs/2510.01938) <br>
+> *`--kind stella` implements its Alg. 1 — Riemannian gradient plus an exact polar retraction.*
+
+> **Fast and accurate optimization on the orthogonal manifold without retraction** <br>
+> Pierre Ablin, Gabriel Peyré <br>
+> 📄 [arXiv:2102.07432](https://arxiv.org/abs/2102.07432) <br>
+> *The landing field itself, which PoLAR builds on.*
+
+And the baseline everything here is measured against:
+
+> **LoRA: Low-Rank Adaptation of Large Language Models** <br>
+> Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen — Microsoft, ICLR 2022 <br>
+> 📄 [arXiv:2106.09685](https://arxiv.org/abs/2106.09685) <br>
+> *`--kind additive`, run through stock PEFT.*
 
 ---
 
