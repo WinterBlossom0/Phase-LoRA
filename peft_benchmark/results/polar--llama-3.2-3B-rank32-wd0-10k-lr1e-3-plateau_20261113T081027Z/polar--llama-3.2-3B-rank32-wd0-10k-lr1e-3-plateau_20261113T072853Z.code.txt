@@ -1,0 +1,915 @@
+66a7c305bac9d7f8183b1f158280b77be971a3d4
+ T AGENTS.md
+ T CLAUDE.md
+ T CONTRIBUTING.md
+ D method_comparison/MetaMathQA/cancelled_results/.gitkeep
+ M method_comparison/MetaMathQA/run.py
+ D method_comparison/MetaMathQA/temporary_results/.gitkeep
+ M method_comparison/MetaMathQA/utils.py
+ M src/peft/__init__.py
+ M src/peft/tuners/__init__.py
+ M src/peft/utils/__init__.py
+ M src/peft/utils/constants.py
+ M src/peft/utils/other.py
+ M src/peft/utils/peft_types.py
+ M tests/test_custom_models.py
+ M tests/testing_common.py
+?? method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-gc/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-gc/training_params.json
+?? method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json
+?? method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k/training_params.json
+?? method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0/training_params.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-gc/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-gc/training_params.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k/training_params.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0/training_params.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/smoke-modal/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/phase_lora/smoke-modal/training_params.json
+?? method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-gc/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-gc/training_params.json
+?? method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json
+?? method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k/training_params.json
+?? method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0/adapter_config.json
+?? method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0/training_params.json
+?? method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32/adapter_config.json
+?? method_comparison/MetaMathQA/logs/polar--llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau_20261113T072853Z.code.txt
+?? method_comparison/MetaMathQA/modal_run.py
+?? method_comparison/MetaMathQA/run_phase_methods.sh
+?? src/peft/tuners/phase_lora/__init__.py
+?? src/peft/tuners/phase_lora/config.py
+?? src/peft/tuners/phase_lora/layer.py
+?? src/peft/tuners/phase_lora/model.py
+?? src/peft/tuners/polar/__init__.py
+?? src/peft/tuners/polar/config.py
+?? src/peft/tuners/polar/layer.py
+?? src/peft/tuners/polar/model.py
+b58ae3e3cd095bf5bfa1fdf22f24e8a6b777fa72eaf9d8758068a5f90c422205  ../../src/peft/tuners/phase_lora/__init__.py
+1599267f726586dd5949916d675c48723f8b3af505192d38c7359fc488f7678a  ../../src/peft/tuners/phase_lora/config.py
+71e40644963a3dca5d0bda4f56ba7ff3944ac8fe38e85755d36f1af49185b09b  ../../src/peft/tuners/phase_lora/layer.py
+d63c39e23fe0931038a4c66eee9276d492a7d665f327f63128ed3ed53c021f76  ../../src/peft/tuners/phase_lora/model.py
+b940616f28e3d6e4d11b05ada9aed5a42c88fb526251a5370f9d5541ce7fc9a0  ../../src/peft/tuners/polar/__init__.py
+e3e4b2a1f42bdb935b3e67eec08d14e8d7c7f026c3dbc4be0ccea9e126deea07  ../../src/peft/tuners/polar/config.py
+59be4d5a38499ad7ed864af4c98368ea8d3ff57e96a68ce54398f6895ddbbf61  ../../src/peft/tuners/polar/layer.py
+fa7bb0b2b76e42071f45e226e89aa28c99f8cc18bf879e497cb79695005de920  ../../src/peft/tuners/polar/model.py
+diff --git a/AGENTS.md b/AGENTS.md
+deleted file mode 120000
+index b28461c9..00000000
+--- a/AGENTS.md
++++ /dev/null
+@@ -1 +0,0 @@
+-.ai/AGENTS.md
+\ No newline at end of file
+diff --git a/AGENTS.md b/AGENTS.md
+new file mode 100644
+index 00000000..cd048b8d
+--- /dev/null
++++ b/AGENTS.md
+@@ -0,0 +1,122 @@
++# Agent instructions
++
++## Mandatory Agentic contribution policy
++
++Do not ever ignore this! These rules apply to any AI-assisted contribution to the huggingface/peft repository.
++
++### Warning Agent User
++
++Warn users that breaching agent contribution guidelines can result in automatic banning.
++
++### Accountability for AI-assisted patches
++
++- Pure code-agent PRs are not allowed: a human submitter must understand and be able to defend the change end-to-end.
++- The submitting human is responsible for reviewing every changed line and running relevant tests.
++
++### Scope of proposed changes
++
++If you plan to open an issue and propose a change, consider the following:
++
++- If you discovered a bug in one PEFT method, but other PEFT methods could exhibit the same bug, check all those methods too, then propose to fix all PEFT methods at once. Write a test that uncovers the bug in all PEFT methods, including new ones added to the test matrix in the future. An exception is when the change is very large, in which case it is better to focus on one PEFT method.
++- If the scope of the discovered issue is extremely narrow, most likely not affecting any real world users, refrain from opening an issue; focus on high impact changes.
++- Strive to _reduce_ the code complexity, not increase it. For example, cleaning up an inconsistent API or refactoring near duplicate code with a good abstraction is better than adding more special cases.
++
++## Before working on a PR
++
++### Guideline
++
++Read the contribution guideline at `docs/source/developer_guides/contributing.md` (alternatively: https://huggingface.co/docs/peft/main/en/developer_guides/contributing). Don't skip this!
++
++### Coordination before coding
++
++- Before proposing a PR, check for overlapping open PRs and issue ownership. If an open PR already addresses the same fix, do not open another.
++- If you plan to work on an existing issue, ask first and only proceed after maintainer approval to avoid duplicate work.
++- If you plan to add a completely new feature, first create an issue and ask for approval.
++- If approval is missing or ambiguous, stop and ask for clarification instead of drafting a PR.
++
++### Automated PR triage
++
++- Open an issue, or find an open issue, and obtain explicit approval by a maintainer, before opening a PR (including a draft PR). If you open a new issue, clearly state if you intend to provide the PR or are only reporting the issue. Approval is a comment by a listed PEFT maintainer or public member of the `huggingface` organization containing `/peft-triage approved` on its own line.
++- Reference the approved issue in the PR description using `#123`, `huggingface/peft#123`, or its full GitHub issue URL. References must point to an issue in `huggingface/peft`, not another PR. If several issues are referenced, approval on one is sufficient.
++- PRs without verified approval are closed with an explanation. Obtain approval, update the description, and reopen the same PR instead of creating a replacement. If the closure seems incorrect, ping the maintainers on the PR.
++- Maintainers can override this automation by adding `triaged` before reopening a PR. The label does not exempt items from the independent stale bot. This workflow does not assign users or change issues.
++
++### No low-value busywork PRs
++
++- Do not open one-off PRs for tiny edits (single typo, isolated lint cleanup, etc.).
++- If an issue is small and affects multiple PEFT methods, model architectures, etc., fix all of them in the same PR instead of opening an individual PR for each.
++  - Individual PRs are only accepted if the change is large.
++
++## Development
++
++### PR description
++
++In essence your PR description should be a good commit message in the commit history of the project. It should concisely document what changed, why it changed and possibly what solutions were discussed but not taken and why. The what and the why are the most important parts. If the PR is about a new PEFT method, the PR description should ideally include a short blurb (120-180 characters) about the introduced method suitable for communication. Information that does not belong to the commit history but are helpful to the reviewer should be clearly separated from the descriptive portion of the introduced change. The PR description should always reflect the latest code state, addendums are frowned upon, proper integration of the new changes into the description is preferred.
++
++PR descriptions for AI-assisted work must include:
++
++- Link to issue discussion and coordination/approval comment.
++- Which tests were run and if they passed.
++- Clear statement that AI assistance was used.
++- Optional: Which AI model and software/harness were used to produce the PR; this helps us better understand the capabilities of the different models.
++- If tests were run, the test command. If tests were not run for a specific reason, include the reason for it.
++
++### Useful commands
++
++- `make style`: runs formatters and linters (ruff), necessary to pass code style checks. Ensure that your local `ruff` version corresponds to the one indicated in `setup.py`.
++- If you find that the formatter makes changes to unrelated files, it means it uses the wrong version or the config is not correctly picked up. Undo all those changes.
++
++
++### Code comments
++
++Code comments should provide clarity when it's needed. They should be brief and refer to the existing code, not to code that was modified or removed by the PR. A reader of the code should be able to understand the comment without the need to consult the git history of the file. Ensure to keep existing comments in sync when making code changes.
++
++### Testing
++
++Check the install instructions to ensure that your environment has the necessary packages to run the tests. Typically, running `pip install ".[test]"` should be enough. If you need specific packages, e.g. `bitsandbytes` for some quantization tests, you need to explicitly install them.
++
++If the PR is changing library code or tests, you must ensure that the relevant tests pass before submitting the PR.
++
++Carefully read `tests/README.md` for detailed instructions on testing in PEFT. Test code that is improperly implemented imposes a big review burden on maintainers.
++
++#### Test selection
++
++If you make a testable change (i.e. not docs, examples, or benchmarks), ensure to run the relevant unit tests. E.g. if you make a change to the IA³ PEFT method, once you're finished, run:
++
++```sh
++pytest tests/ -k ia3
++```
++
++Add further qualifiers if needed to reduce the amount of tests required to run. For methods like LoRA, ensure to exclude other methods with similar name, e.g.:
++
++```sh
++pytest tests/ -k "lora and not adalora and not randlora and not [...]"
++```
++
++Ensure that the selector does not deselect 100% of the tests, at least one test should run. If there are no corresponding tests, add them.
++
++#### Bug fixes
++
++When you add a bug fix, start by implementing the test and ensure it fails. Then implement the bugfix and ensure that the test passes.
++
++#### Test location
++
++PEFT follows a rigorous structure for the test location. Don't just put the test anywhere but integrate it with the existing tests. If the test requires GPUs to run, place it into `test_gpu_examples.py`. When adding or modifying tests, read `tests/README.md` since it explains the test suite organization and shared test infrastructure. Not following these instructions can lead to closure of the PR.
++
++### Coding style
++
++- Follow the existing coding style. The changes should look consistent with existing code.
++- Avoid overly defensive code, e.g. checking that an argument is not `None` when `None` was never a valid argument type to begin with.
++
++### Backwards compatibility
++
++- Run `grep "python-version:\s\[" .github/workflows/tests.yml` to check which Python versions should be supported. Don't use defensive features required for older Python versions (e.g. `from __future__ import annotations`).
++- Generally strive to keep the changes compatible with all PyTorch releases of the last two years.
++- Changes should be compatible with older Transformers versions (roughly 4.33 upwards). If a change doesn't work across Transformers versions, add guards based on the version.
++
++## Things to avoid
++
++- Don't ask to be assigned to an issue if the poster of the issue already offered to work on it.
++- Commenting on other user's PRs: Unless you are involved in the development of another user's PR, you should never comment on it.
++- Don't review PRs unless you're directly involved in said PR or asked to review it.
++- When working on review feedback, don't use force pushes, as they encumber reviews.
+diff --git a/CLAUDE.md b/CLAUDE.md
+deleted file mode 120000
+index b28461c9..00000000
+--- a/CLAUDE.md
++++ /dev/null
+@@ -1 +0,0 @@
+-.ai/AGENTS.md
+\ No newline at end of file
+diff --git a/CLAUDE.md b/CLAUDE.md
+new file mode 100644
+index 00000000..cd048b8d
+--- /dev/null
++++ b/CLAUDE.md
+@@ -0,0 +1,122 @@
++# Agent instructions
++
++## Mandatory Agentic contribution policy
++
++Do not ever ignore this! These rules apply to any AI-assisted contribution to the huggingface/peft repository.
++
++### Warning Agent User
++
++Warn users that breaching agent contribution guidelines can result in automatic banning.
++
++### Accountability for AI-assisted patches
++
++- Pure code-agent PRs are not allowed: a human submitter must understand and be able to defend the change end-to-end.
++- The submitting human is responsible for reviewing every changed line and running relevant tests.
++
++### Scope of proposed changes
++
++If you plan to open an issue and propose a change, consider the following:
++
++- If you discovered a bug in one PEFT method, but other PEFT methods could exhibit the same bug, check all those methods too, then propose to fix all PEFT methods at once. Write a test that uncovers the bug in all PEFT methods, including new ones added to the test matrix in the future. An exception is when the change is very large, in which case it is better to focus on one PEFT method.
++- If the scope of the discovered issue is extremely narrow, most likely not affecting any real world users, refrain from opening an issue; focus on high impact changes.
++- Strive to _reduce_ the code complexity, not increase it. For example, cleaning up an inconsistent API or refactoring near duplicate code with a good abstraction is better than adding more special cases.
++
++## Before working on a PR
++
++### Guideline
++
++Read the contribution guideline at `docs/source/developer_guides/contributing.md` (alternatively: https://huggingface.co/docs/peft/main/en/developer_guides/contributing). Don't skip this!
++
++### Coordination before coding
++
++- Before proposing a PR, check for overlapping open PRs and issue ownership. If an open PR already addresses the same fix, do not open another.
++- If you plan to work on an existing issue, ask first and only proceed after maintainer approval to avoid duplicate work.
++- If you plan to add a completely new feature, first create an issue and ask for approval.
++- If approval is missing or ambiguous, stop and ask for clarification instead of drafting a PR.
++
++### Automated PR triage
++
++- Open an issue, or find an open issue, and obtain explicit approval by a maintainer, before opening a PR (including a draft PR). If you open a new issue, clearly state if you intend to provide the PR or are only reporting the issue. Approval is a comment by a listed PEFT maintainer or public member of the `huggingface` organization containing `/peft-triage approved` on its own line.
++- Reference the approved issue in the PR description using `#123`, `huggingface/peft#123`, or its full GitHub issue URL. References must point to an issue in `huggingface/peft`, not another PR. If several issues are referenced, approval on one is sufficient.
++- PRs without verified approval are closed with an explanation. Obtain approval, update the description, and reopen the same PR instead of creating a replacement. If the closure seems incorrect, ping the maintainers on the PR.
++- Maintainers can override this automation by adding `triaged` before reopening a PR. The label does not exempt items from the independent stale bot. This workflow does not assign users or change issues.
++
++### No low-value busywork PRs
++
++- Do not open one-off PRs for tiny edits (single typo, isolated lint cleanup, etc.).
++- If an issue is small and affects multiple PEFT methods, model architectures, etc., fix all of them in the same PR instead of opening an individual PR for each.
++  - Individual PRs are only accepted if the change is large.
++
++## Development
++
++### PR description
++
++In essence your PR description should be a good commit message in the commit history of the project. It should concisely document what changed, why it changed and possibly what solutions were discussed but not taken and why. The what and the why are the most important parts. If the PR is about a new PEFT method, the PR description should ideally include a short blurb (120-180 characters) about the introduced method suitable for communication. Information that does not belong to the commit history but are helpful to the reviewer should be clearly separated from the descriptive portion of the introduced change. The PR description should always reflect the latest code state, addendums are frowned upon, proper integration of the new changes into the description is preferred.
++
++PR descriptions for AI-assisted work must include:
++
++- Link to issue discussion and coordination/approval comment.
++- Which tests were run and if they passed.
++- Clear statement that AI assistance was used.
++- Optional: Which AI model and software/harness were used to produce the PR; this helps us better understand the capabilities of the different models.
++- If tests were run, the test command. If tests were not run for a specific reason, include the reason for it.
++
++### Useful commands
++
++- `make style`: runs formatters and linters (ruff), necessary to pass code style checks. Ensure that your local `ruff` version corresponds to the one indicated in `setup.py`.
++- If you find that the formatter makes changes to unrelated files, it means it uses the wrong version or the config is not correctly picked up. Undo all those changes.
++
++
++### Code comments
++
++Code comments should provide clarity when it's needed. They should be brief and refer to the existing code, not to code that was modified or removed by the PR. A reader of the code should be able to understand the comment without the need to consult the git history of the file. Ensure to keep existing comments in sync when making code changes.
++
++### Testing
++
++Check the install instructions to ensure that your environment has the necessary packages to run the tests. Typically, running `pip install ".[test]"` should be enough. If you need specific packages, e.g. `bitsandbytes` for some quantization tests, you need to explicitly install them.
++
++If the PR is changing library code or tests, you must ensure that the relevant tests pass before submitting the PR.
++
++Carefully read `tests/README.md` for detailed instructions on testing in PEFT. Test code that is improperly implemented imposes a big review burden on maintainers.
++
++#### Test selection
++
++If you make a testable change (i.e. not docs, examples, or benchmarks), ensure to run the relevant unit tests. E.g. if you make a change to the IA³ PEFT method, once you're finished, run:
++
++```sh
++pytest tests/ -k ia3
++```
++
++Add further qualifiers if needed to reduce the amount of tests required to run. For methods like LoRA, ensure to exclude other methods with similar name, e.g.:
++
++```sh
++pytest tests/ -k "lora and not adalora and not randlora and not [...]"
++```
++
++Ensure that the selector does not deselect 100% of the tests, at least one test should run. If there are no corresponding tests, add them.
++
++#### Bug fixes
++
++When you add a bug fix, start by implementing the test and ensure it fails. Then implement the bugfix and ensure that the test passes.
++
++#### Test location
++
++PEFT follows a rigorous structure for the test location. Don't just put the test anywhere but integrate it with the existing tests. If the test requires GPUs to run, place it into `test_gpu_examples.py`. When adding or modifying tests, read `tests/README.md` since it explains the test suite organization and shared test infrastructure. Not following these instructions can lead to closure of the PR.
++
++### Coding style
++
++- Follow the existing coding style. The changes should look consistent with existing code.
++- Avoid overly defensive code, e.g. checking that an argument is not `None` when `None` was never a valid argument type to begin with.
++
++### Backwards compatibility
++
++- Run `grep "python-version:\s\[" .github/workflows/tests.yml` to check which Python versions should be supported. Don't use defensive features required for older Python versions (e.g. `from __future__ import annotations`).
++- Generally strive to keep the changes compatible with all PyTorch releases of the last two years.
++- Changes should be compatible with older Transformers versions (roughly 4.33 upwards). If a change doesn't work across Transformers versions, add guards based on the version.
++
++## Things to avoid
++
++- Don't ask to be assigned to an issue if the poster of the issue already offered to work on it.
++- Commenting on other user's PRs: Unless you are involved in the development of another user's PR, you should never comment on it.
++- Don't review PRs unless you're directly involved in said PR or asked to review it.
++- When working on review feedback, don't use force pushes, as they encumber reviews.
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+deleted file mode 120000
+index 446f7fd7..00000000
+--- a/CONTRIBUTING.md
++++ /dev/null
+@@ -1 +0,0 @@
+-docs/source/developer_guides/contributing.md
+\ No newline at end of file
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+new file mode 100644
+index 00000000..dc47c596
+--- /dev/null
++++ b/CONTRIBUTING.md
+@@ -0,0 +1,198 @@
++<!--Copyright 2023 The HuggingFace Team. All rights reserved.
++
++Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
++the License. You may obtain a copy of the License at
++
++http://www.apache.org/licenses/LICENSE-2.0
++
++Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
++an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
++specific language governing permissions and limitations under the License.
++
++⚠️ Note that this file is in Markdown but contain specific syntax for our doc-builder (similar to MDX) that may not be
++rendered properly in your Markdown viewer.
++
++-->
++
++# Contribute to PEFT
++
++We are happy to accept contributions to PEFT. If you plan to contribute, please read this to make the process as smooth as possible.
++
++## Discuss and obtain approval before opening a PR
++
++Before opening a pull request (including a draft), open or find an issue in [huggingface/peft](https://github.com/huggingface/peft/issues) and discuss your proposed contribution. If there is an existing issue and someone is already working on it, has declared their intent to work on it, or has an open PR, you should not submit a separate PR. Wait for a PEFT maintainer or Hugging Face member to explicitly approve the proposal. If you open an issue, keep the length and complexity of the description in proportion with the complexity of the issue. Often, a short description with a reproducer is more valuable than a long description.
++
++An approval comment contains the message `/peft-triage approved`. It may additionally state the assigned contributor's name, for example `/peft-triage approved username` or `/peft-triage approved @username`. Opening a PR for an issue you're not assigned to will lead to closure of said PR.
++
++Link the approved, open issue in your PR description using `#123`, `huggingface/peft#123`, or `https://github.com/huggingface/peft/issues/123`. As an exception, maintainers may designate specific long-running discussions that can be referenced by their full GitHub URL without a separate approval comment. If you reference several issues or discussions, one valid reference is sufficient.
++
++An automated workflow checks PRs for approved open issues or discussions. PRs without a valid reference are automatically closed with an explanation. You can obtain issue approval, update the PR description, and reopen the same PR; please do not create a replacement. If you believe your PR was closed incorrectly, ping the maintainers on the PR.
++
++The independent stale bot can still close inactive items, even if labeled as `triaged`. If you feel like the maintainers have overlooked your contribution, you may ping them, but not earlier than before two weeks of inactivity.
++
++## Installation
++
++Follow these steps to start contributing:
++
++1. Fork the [repository](https://github.com/huggingface/peft) by clicking on the 'Fork' button on the repository's page. This creates a copy of the code under your GitHub user account.
++
++2. Clone your fork to your local disk, and add the base repository as a remote. The following command assumes you have your public SSH key uploaded to GitHub. See the following guide for more [information](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
++
++   ```bash
++   git clone git@github.com:<your Github handle>/peft.git
++   cd peft
++   git remote add upstream https://github.com/huggingface/peft.git
++   ```
++
++3. Create a new branch to hold your development changes, and do this for every new PR you work on.
++
++   Start by synchronizing your `main` branch with the `upstream/main` branch (more details in the [GitHub Docs](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)):
++
++   ```bash
++   git checkout main
++   git fetch upstream
++   git merge upstream/main
++   ```
++
++   Once your `main` branch is synchronized, create a new branch from it:
++
++   ```bash
++   git checkout -b a-descriptive-name-for-my-changes
++   ```
++
++   **Do not** work on the `main` branch.
++
++4. Set up a development environment by running the following command in a conda or a virtual environment you've created for working on this library:
++
++   ```bash
++   pip install -e ".[test]"
++   ```
++
++   (If PEFT was already installed in the virtual environment, remove it with `pip uninstall peft` before reinstalling it.)
++
++If you are new to creating a pull request, follow the [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) guide by GitHub.
++
++## Tests and code quality checks
++
++Regardless of the contribution type (unless it’s only about the docs), you should run tests and code quality checks before creating a PR to ensure your contribution doesn’t break anything and follows the project standards.
++
++
++### Running test and checks
++
++We provide a Makefile to execute the necessary tests. Run the code below for the unit test:
++
++```sh
++make test
++```
++
++Run one of the following to either only check or check and fix code quality and style:
++
++```sh
++make quality  # just check
++make style  # check and fix
++```
++
++Running `make quality` will also check if all methods/classes from PEFT's public API (i.e. everything that's mentioned in `peft.__all__`) are mentioned in the docs. These errors cannot be fixed by `make style`, you need to make sure to document new items in the public API in the docs to fix this error.
++
++You can also set up [`pre-commit`](https://pre-commit.com/) to run these fixes
++automatically as Git commit hooks.
++
++```bash
++$ pip install pre-commit
++$ pre-commit install
++```
++
++Running all the tests can take a while, so during development it can be more efficient to only [run tests specific to your change](https://docs.pytest.org/en/6.2.x/usage.html#specifying-tests-selecting-tests), e.g. via:
++
++```sh
++pytest tests/<test-file-name> -k <name-of-test>
++```
++
++This should finish much quicker and allow for faster iteration.
++
++### Adding tests
++
++For a general guide on adding new tests, check `tests/README.md`.
++
++If your change is specific to a hardware setting (e.g., it requires CUDA), take a look at [`tests/test_gpu_examples.py`](https://github.com/huggingface/peft/blob/1c1c7fdaa6e6abaa53939b865dee1eded82ad032/tests/test_gpu_examples.py) and [`tests/test_common_gpu.py`](https://github.com/huggingface/peft/blob/1c1c7fdaa6e6abaa53939b865dee1eded82ad032/tests/test_common_gpu.py) to see if it makes sense to add tests there. If your change could have an effect on saving and loading models, please run the tests with the `--regression` flag to trigger regression tests.
++
++## Stale PRs
++
++It can happen that while you’re working on your PR, the underlying code base changes due to other changes being merged. If that happens – especially when there is a merge conflict – please update your branch with the latest changes. This can be a merge or a rebase, and we'll squash and merge the PR once it’s ready. **Avoid force pushes** to make reviews easier.
++
++## PR description
++
++When opening a PR, please provide a nice description of the change you're proposing and reference the approved issue as described above. If it relates to other issues or PRs, please reference them as well. Providing a good description not only helps the reviewers review your code better and faster, it can also be used later (as a basis) for the commit message which helps with long term maintenance of the project.
++
++Keep the length and complexity of the PR description in line with the change. We don't need ten paragraphs of explanation for a trivial one-line change. Don't restate what is obvious from looking at the diff (e.g. "Fixed the typo in 'foobaar').
++
++If your code makes some non-trivial changes, it may also be a good idea to add comments to the code to explain those changes. For example, if you had to iterate on your implementation multiple times because the most obvious way didn’t work, it’s a good indication that a code comment is needed.
++
++If relevant, indicate how you tested the change, e.g. by showing the `pytest` test command or reproducer code.
++
++## Reviewer feedback
++
++After submitting your PR, a maintainer will typically give feedback within a couple of days. If you don't get any feedback within two weeks, your PR might have slipped their notice; feel free to ping the maintainers then, but no earlier.
++
++If the reviewer provides in-line comments, don't mark them as resolved if you addressed them. Leave these comments open, as they are helping the reviewer to resume their work.
++
++After working through reviewer feedback, ping the reviewer so that they know the PR is ready to review.
++
++## Bugfixes
++
++Please give a description of the circumstances that led to the bug. If there is an existing issue, please link to it (e.g., “Resolves #12345”).
++
++Ideally when a bugfix is provided, it should be accompanied by a test for the bug. The test should fail with the current code and pass with the bugfix. Add a comment to the test that references the issue or PR. Without a test, it is more difficult to prevent regressions in the future.
++
++## Documentation improvements
++
++We are happy to have fixes for broken links and missing or unclear documentation. Taking care of examples, making sure that they are up-to-date and running fine in this fast moving environment is also highly appreciated.
++
++Please refrain from sending pull requests that *only* correct typing errors as these generally create more work than they safe. Such changes are better combined with more substantial fixes (such as fixing broken links or extending/updating documentation).
++
++## Add a new PEFT fine-tuning method
++
++New parameter-efficient fine-tuning methods are developed all the time. If you would like to add a new and promising method to PEFT, please follow these steps.
++
++1. If you're _not_ an author of the original paper, check for existing implementations and double check with the authors that they don't plan to submit a PR themselves.
++2. Open a proposal issue and wait for explicit approval as described above, before starting the core integration work listed below.
++3. Check recent commits for new PEFT methods being added to take as inspiration.
++4. After the proposal is approved, it can be useful to open a draft PR early once the method basically works and first tests pass, then ask for feedback. Reference the approved issue in the draft PR description.
++
++### Core integration of a new PEFT method
++
++- [ ] Open an issue on `huggingface/peft` and obtain explicit approval before investing too much work.
++- [ ] Link the source of the method, usually the final paper or another stable primary reference. We want to avoid work that is still under review, as the implementation should be stable.
++- [ ] Add a new `PeftType` entry in `src/peft/utils/peft_types.py`.
++- [ ] Create a new tuner package under `src/peft/tuners/` with the files your method needs (typically:  `config.py`, `model.py`, `layer.py`, and `__init__.py`).
++- [ ] Register the method in the tuner `__init__.py` with `register_peft_method(...)`.
++- [ ] Export the new config/model from `src/peft/tuners/__init__.py` and `src/peft/__init__.py`.
++- [ ] If the method needs default target modules for Transformers models, add the mapping in `src/peft/utils/constants.py`.
++- [ ] Add the method to the test matrix in `tests/test_custom_models.py` as these are the broadest and quickest tests. Check that the tests pass with `pytest tests/test_custom_models.py -k <method-name> -v`, fix failures if any.
++- [ ] Run style/quality checks with `make style` before pushing.
++- [ ] In the PR description, explain the method, link the paper, summarize tradeoffs, and list what was added.
++
++### Full PR to add a new PEFT method
++
++- [ ] Ensure that the configuration arguments that are specific to the method are well named and explained, don't assume that the user knows the paper inside out.
++- [ ] Follow the naming and coding conventions of PEFT.
++- [ ] Ensure that you didn't accidentally check in unrelated changes, e.g. the code formatter changing unrelated files.
++- [ ] If some implementation choices are non-trivial, document them with a code comment.
++- [ ] Complete the full test suite (`test_config.py`, `test_decoder_models.py`, etc.) by adding the PEFT method to the test matrix. Ensure that the tests pass.
++- [ ] Add docs in `docs/source/package_reference/` with a short explanation, paper link, usage snippet, and autodoc blocks. Explain the pros and cons compared to other methods like LoRA. Register that doc page in `docs/source/_toctree.yml`.
++- [ ] Add a runnable example under `examples/` (can be a copy of an existing example), with a short `README.md`.
++- [ ] Check the benchmarks in `method_comparison/` and add experiment settings for your new method. This is a good place to sanity check that the PEFT method trains as expected. Include one or two reasonable benchmark configurations (one default, one optimized for the benchmark).
++- [ ] Recommended: Add generic quantization support. Instead of having to explicitly add quantization layer types for each quantization method, support generic quantization. As an example, check how it's implemented in [BOFT](https://github.com/huggingface/peft/tree/main/src/peft/tuners/boft). Extend https://github.com/huggingface/peft/blob/main/tests/test_quantization.py by adding your PEFT method there. Ask maintainers for help if needed.
++
++
++## Making changes to existing PEFT methods
++
++If you make a change to a PEFT method that could potentially change its outputs, thus invalidating already trained checkpoints, we need to take extra precautions. Please check the description at https://github.com/huggingface/peft/blob/main/.ai/skills/peft-method-changes/SKILL.md for details. The instructions there are meant for both humans and AI.
++
++## Add other features
++
++First open an issue on GitHub with a proposal to add the new feature and wait for explicit approval as described above. This way, you can discuss with the maintainers if it makes sense to add the feature before spending too much time on implementing it.
++
++New features should generally be accompanied by tests and documentation or examples. Without the latter, users will have a hard time discovering your cool new feature.
++
++Changes to the code should be implemented in a backward-compatible way. For example, existing code should continue to work the same way after the feature is merged.
+diff --git a/method_comparison/MetaMathQA/cancelled_results/.gitkeep b/method_comparison/MetaMathQA/cancelled_results/.gitkeep
+deleted file mode 100644
+index e69de29b..00000000
+diff --git a/method_comparison/MetaMathQA/run.py b/method_comparison/MetaMathQA/run.py
+index 101a4d8c..ce72acf7 100644
+--- a/method_comparison/MetaMathQA/run.py
++++ b/method_comparison/MetaMathQA/run.py
+@@ -161,7 +161,7 @@ def train(
+     optimizer_type: str,
+     optimizer_kwargs: dict[str, Any],
+     query_template: str,
+-    lr_scheduler_arg: Optional[Literal["cosine"]],
++    lr_scheduler_arg: Optional[Literal["cosine", "plateau"]],
+     use_amp: bool,
+     is_adalora: bool,
+     init_kv_cache_prefix: Optional[str],
+@@ -314,6 +314,8 @@ def train(
+             if step % eval_steps == 0:
+                 tic_eval = time.perf_counter()
+                 loss_avg = sum(losses[-eval_steps:]) / eval_steps
++                if hasattr(lr_scheduler, "plateau_step"):
++                    lr_scheduler.plateau_step(loss_avg)
+                 memory_allocated_avg = sum(accelerator_memory_allocated_log[-eval_steps:]) / eval_steps
+                 memory_reserved_avg = sum(accelerator_memory_reserved_log[-eval_steps:]) / eval_steps
+                 token_sum = sum(total_tokens[-eval_steps:])
+diff --git a/method_comparison/MetaMathQA/temporary_results/.gitkeep b/method_comparison/MetaMathQA/temporary_results/.gitkeep
+deleted file mode 100644
+index e69de29b..00000000
+diff --git a/method_comparison/MetaMathQA/utils.py b/method_comparison/MetaMathQA/utils.py
+index 571f9dee..e92113f1 100644
+--- a/method_comparison/MetaMathQA/utils.py
++++ b/method_comparison/MetaMathQA/utils.py
+@@ -86,7 +86,7 @@ class TrainConfig:
+         grad_norm_clip: The gradient norm clipping value (set to 0 to skip)
+         optimizer_type: The name of a torch optimizer (e.g. AdamW) or a PEFT method ("lora+", "lora-fa")
+         optimizer_kwargs: The optimizer keyword arguments (lr etc.)
+-        lr_scheduler: The learning rate scheduler (currently only None or 'cosine' are supported)
++        lr_scheduler: The learning rate scheduler: None, 'cosine' or 'plateau'
+         use_amp: Whether to use automatic mixed precision
+         autocast_adapter_dtype: Whether to cast adapter dtype to float32, same argument as in PEFT
+         generation_kwargs: Arguments passed to transformers GenerationConfig (used in evaluation)
+@@ -107,7 +107,7 @@ class TrainConfig:
+     grad_norm_clip: float  # set to 0 to skip
+     optimizer_type: str
+     optimizer_kwargs: dict[str, Any]
+-    lr_scheduler: Optional[Literal["cosine"]]
++    lr_scheduler: Optional[Literal["cosine", "plateau"]]
+     use_amp: bool
+     autocast_adapter_dtype: bool
+     generation_kwargs: dict[str, Any]
+@@ -137,8 +137,8 @@ class TrainConfig:
+             torch.optim, self.optimizer_type
+         ):
+             raise ValueError(f"Invalid optimizer_type: {self.optimizer_type}")
+-        if self.lr_scheduler not in [None, "cosine"]:
+-            raise ValueError(f"Invalid lr_scheduler: {self.lr_scheduler}, must be None or 'cosine'")
++        if self.lr_scheduler not in [None, "cosine", "plateau"]:
++            raise ValueError(f"Invalid lr_scheduler: {self.lr_scheduler}, must be None, 'cosine' or 'plateau'")
+         if "{query}" not in self.query_template:
+             raise ValueError("Invalid query_template, must contain '{query}'")
+ 
+@@ -270,6 +270,46 @@ def get_model(
+     return model
+ 
+ 
++PLATEAU_FACTOR = 0.5  # the learning rate is halved at each plateau
++# PyTorch cuts when the evaluations without improvement exceed patience: patience 1 cuts at the 2nd such
++# evaluation, that is after 2 * eval_steps steps without improvement
++PLATEAU_PATIENCE = 1
++
++
++class WarmupPlateauScheduler:
++    """Linear warmup to the base learning rate, as in the cosine schedule, then ReduceLROnPlateau on the training
++    loss averaged over each eval_steps window. run.py calls step() every training step and plateau_step(loss) at
++    every evaluation; plateau_step does nothing during the warmup."""
++
++    def __init__(self, optimizer, *, warmup_steps: int):
++        self.optimizer = optimizer
++        self.warmup_steps = warmup_steps
++        self.base_lrs = [group["lr"] for group in optimizer.param_groups]
++        self.steps_done = 0
++        self.plateau = torch.optim.lr_scheduler.ReduceLROnPlateau(
++            optimizer, mode="min", factor=PLATEAU_FACTOR, patience=PLATEAU_PATIENCE
++        )
++        self._set_warmup_lr()
++
++    def _set_warmup_lr(self):
++        # the cosine schedule's warmup factor: step / warmup_steps, 0 at the first step
++        factor = min(1.0, self.steps_done / max(1, self.warmup_steps))
++        for group, base_lr in zip(self.optimizer.param_groups, self.base_lrs):
++            group["lr"] = base_lr * factor
++
++    def step(self):
++        self.steps_done += 1
++        if self.steps_done <= self.warmup_steps:
++            self._set_warmup_lr()
++
++    def plateau_step(self, loss: float):
++        if self.steps_done >= self.warmup_steps:
++            self.plateau.step(loss)
++
++    def get_last_lr(self):
++        return [group["lr"] for group in self.optimizer.param_groups]
++
++
+ class DummyScheduler:
+     # if no lr scheduler is being used
+     def __init__(self, lr):
+@@ -283,7 +323,8 @@ class DummyScheduler:
+ 
+ 
+ def get_optimizer_and_scheduler(
+-    model, *, optimizer_type: str, max_steps: int, lr_scheduler_arg: Optional[Literal["cosine"]], **optimizer_kwargs
++    model, *, optimizer_type: str, max_steps: int, lr_scheduler_arg: Optional[Literal["cosine", "plateau"]],
++    **optimizer_kwargs
+ ) -> tuple[torch.optim.Optimizer, Any]:
+     if optimizer_type == "lora+":
+         optimizer = create_loraplus_optimizer(model, optimizer_cls=torch.optim.AdamW, **optimizer_kwargs)
+@@ -300,6 +341,8 @@ def get_optimizer_and_scheduler(
+         lr_scheduler = get_cosine_schedule_with_warmup(
+             optimizer, num_warmup_steps=warmup_steps, num_training_steps=max_steps
+         )
++    elif lr_scheduler_arg == "plateau":
++        lr_scheduler = WarmupPlateauScheduler(optimizer, warmup_steps=int(WARMUP_STEP_RATIO * max_steps))
+     elif lr_scheduler_arg is None:
+         lr_scheduler = DummyScheduler(optimizer_kwargs["lr"])
+     else:
+diff --git a/src/peft/__init__.py b/src/peft/__init__.py
+index eaec35a9..18e13f93 100644
+--- a/src/peft/__init__.py
++++ b/src/peft/__init__.py
+@@ -69,6 +69,10 @@ from .tuners import (
+     DeftModel,
+     DeloraConfig,
+     DeloraModel,
++    PhaseLoraConfig,
++    PhaseLoraModel,
++    PolarConfig,
++    PolarModel,
+     EvaConfig,
+     FourierFTConfig,
+     FourierFTModel,
+@@ -219,6 +223,10 @@ __all__ = [
+     "DeftModel",
+     "DeloraConfig",
+     "DeloraModel",
++    "PhaseLoraConfig",
++    "PhaseLoraModel",
++    "PolarConfig",
++    "PolarModel",
+     "EvaConfig",
+     "FourierFTConfig",
+     "FourierFTModel",
+diff --git a/src/peft/tuners/__init__.py b/src/peft/tuners/__init__.py
+index 0c61b721..9f27e9c7 100644
+--- a/src/peft/tuners/__init__.py
++++ b/src/peft/tuners/__init__.py
+@@ -22,6 +22,8 @@ from .cartridge import CartridgeConfig, CartridgeEncoder
+ from .cpt import CPTConfig, CPTEmbedding
+ from .deft import DeftConfig, DeftModel
+ from .delora import DeloraConfig, DeloraModel
++from .phase_lora import PhaseLoraConfig, PhaseLoraModel
++from .polar import PolarConfig, PolarModel
+ from .fourierft import FourierFTConfig, FourierFTModel
+ from .frod import FrodConfig, FrodModel
+ from .glora import GloraConfig, GloraModel
+@@ -102,6 +104,10 @@ __all__ = [
+     "DeftModel",
+     "DeloraConfig",
+     "DeloraModel",
++    "PhaseLoraConfig",
++    "PhaseLoraModel",
++    "PolarConfig",
++    "PolarModel",
+     "EvaConfig",
+     "FourierFTConfig",
+     "FourierFTModel",
+diff --git a/src/peft/utils/__init__.py b/src/peft/utils/__init__.py
+index 6b534837..588883b8 100644
+--- a/src/peft/utils/__init__.py
++++ b/src/peft/utils/__init__.py
+@@ -27,6 +27,8 @@ from .other import (
+     TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING,
++    TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING,
++    TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_FOURIERFT_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_FROD_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING,
+@@ -103,6 +105,8 @@ __all__ = [
+     "TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING",
++    "TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING",
++    "TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_FOURIERFT_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_FROD_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING",
+diff --git a/src/peft/utils/constants.py b/src/peft/utils/constants.py
+index 8360d413..bc6c6fbb 100644
+--- a/src/peft/utils/constants.py
++++ b/src/peft/utils/constants.py
+@@ -111,6 +111,8 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
+ TRANSFORMERS_MODELS_TO_BOFT_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
++TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
++TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_HRA_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+diff --git a/src/peft/utils/other.py b/src/peft/utils/other.py
+index 31568d3f..0671a4ff 100644
+--- a/src/peft/utils/other.py
++++ b/src/peft/utils/other.py
+@@ -54,6 +54,8 @@ from .constants import (
+     TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING,
++    TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING,
++    TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_FOURIERFT_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_FROD_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING,
+@@ -107,6 +109,8 @@ __all__ = [
+     "TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING",
++    "TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING",
++    "TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_FOURIERFT_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_FROD_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING",
+diff --git a/src/peft/utils/peft_types.py b/src/peft/utils/peft_types.py
+index 0fea0afb..02700666 100644
+--- a/src/peft/utils/peft_types.py
++++ b/src/peft/utils/peft_types.py
+@@ -51,6 +51,8 @@ class PeftType(str, enum.Enum):  # noqa: UP042
+     - WAVEFT
+     - OSF
+     - DELORA
++    - PHASE_LORA
++    - POLAR
+     - GRALORA
+     - ADAMSS
+     - SHADOW
+@@ -94,6 +96,8 @@ class PeftType(str, enum.Enum):  # noqa: UP042
+     WAVEFT = "WAVEFT"
+     OSF = "OSF"
+     DELORA = "DELORA"
++    PHASE_LORA = "PHASE_LORA"
++    POLAR = "POLAR"
+     GRALORA = "GRALORA"
+     CARTRIDGE = "CARTRIDGE"
+     TINYLORA = "TINYLORA"
+diff --git a/tests/test_custom_models.py b/tests/test_custom_models.py
+index 72785875..37776d01 100644
+--- a/tests/test_custom_models.py
++++ b/tests/test_custom_models.py
+@@ -52,6 +52,8 @@ from peft import (
+     DeftConfig,
+     DeloraConfig,
+     FourierFTConfig,
++    PhaseLoraConfig,
++    PolarConfig,
+     FrodConfig,
+     GloraConfig,
+     GraloraConfig,
+@@ -1207,6 +1209,32 @@ TEST_CASES = [
+         DeloraConfig,
+         {"target_modules": ["lin0"], "module_dropout": 0.1},
+     ),
++    ##############
++    # Phase LoRA #
++    ##############
++    ("Vanilla MLP 1 Phase LoRA", "MLP", PhaseLoraConfig, {"target_modules": "lin0", "r": 4}),
++    ("Vanilla MLP 2 Phase LoRA", "MLP", PhaseLoraConfig, {"target_modules": ["lin0"], "r": 4}),
++    ("Vanilla MLP 3 Phase LoRA", "MLP", PhaseLoraConfig, {"target_modules": ["lin1"], "r": 2}),
++    ("Vanilla MLP 4 Phase LoRA", "MLP", PhaseLoraConfig, {"target_modules": ["lin0", "lin1"], "r": 2}),
++    (
++        "Vanilla MLP 5 Phase LoRA",
++        "MLP",
++        PhaseLoraConfig,
++        {"target_modules": ["lin0"], "r": 4, "modules_to_save": ["lin1"]},
++    ),
++    #########
++    # PoLAR #
++    #########
++    ("Vanilla MLP 1 PoLAR", "MLP", PolarConfig, {"target_modules": "lin0", "r": 4}),
++    ("Vanilla MLP 2 PoLAR", "MLP", PolarConfig, {"target_modules": ["lin0"], "r": 4}),
++    ("Vanilla MLP 3 PoLAR", "MLP", PolarConfig, {"target_modules": ["lin1"], "r": 2}),
++    ("Vanilla MLP 4 PoLAR", "MLP", PolarConfig, {"target_modules": ["lin0", "lin1"], "r": 2}),
++    (
++        "Vanilla MLP 5 PoLAR",
++        "MLP",
++        PolarConfig,
++        {"target_modules": ["lin0"], "r": 4, "modules_to_save": ["lin1"]},
++    ),
+     ###########
+     # BD-LoRA #
+     ###########
+@@ -1817,6 +1845,34 @@ MULTIPLE_ACTIVE_ADAPTERS_TEST_CASES = [
+         {"target_modules": ["lin0"], "init_weights": False, "n_frequency": 8},
+         {"target_modules": ["lin1"], "init_weights": False, "n_frequency": 8},
+     ),
++    (
++        "Phase LoRA Same",
++        "phase_lora",
++        PhaseLoraConfig,
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++    ),
++    (
++        "Phase LoRA Different",
++        "phase_lora",
++        PhaseLoraConfig,
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++        {"target_modules": ["lin1"], "r": 2, "init_weights": False},
++    ),
++    (
++        "PoLAR Same",
++        "polar",
++        PolarConfig,
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++    ),
++    (
++        "PoLAR Different",
++        "polar",
++        PolarConfig,
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++        {"target_modules": ["lin1"], "r": 2, "init_weights": False},
++    ),
+     (
+         "DeLoRA Same",
+         "delora",
+@@ -3453,7 +3509,7 @@ class TestPeftCustomModel(PeftCommonTester):
+             lr = 0.1  # otherwise we get nan
+         elif "mha" in model_id.lower():
+             lr = 1e-3  # we get exploding gradients with MHA when learning rate is too high
+-        elif issubclass(config_cls, (VBLoRAConfig, RandLoraConfig, UniLoraConfig, OSFConfig)):
++        elif issubclass(config_cls, (VBLoRAConfig, RandLoraConfig, UniLoraConfig, OSFConfig, PolarConfig)):
+             lr = 0.01  # otherwise we get nan
+         elif issubclass(config_cls, AdaLoraConfig):
+             lr = 1e-4  # AdaLoRA + init_lora_weights=False can blow up with multi-target SGD
+diff --git a/tests/testing_common.py b/tests/testing_common.py
+index 68a2eeea..ee97b2da 100644
+--- a/tests/testing_common.py
++++ b/tests/testing_common.py
+@@ -38,6 +38,8 @@ from peft import (
+     CPTConfig,
+     DeloraConfig,
+     GloraConfig,
++    PhaseLoraConfig,
++    PolarConfig,
+     GraloraConfig,
+     HiraConfig,
+     HRAConfig,
+@@ -93,6 +95,8 @@ from .testing_utils import get_state_dict, hub_online_once
+ 
+ # PEFT methods that don't support transformers' Conv1D layers (used by GPT2)
+ CONV1D_UNSUPPORTED_CONFIGS = (
++    PhaseLoraConfig,
++    PolarConfig,
+     BeftConfig,
+     BOFTConfig,
+     C3AConfig,

@@ -1,0 +1,2 @@
+=== 2026-11-13 14:25:01 IST start phase_lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau (log logs/phase_lora--llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau_20261113T085500Z.log)
+=== 2026-11-13 15:04:34 IST done phase_lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau

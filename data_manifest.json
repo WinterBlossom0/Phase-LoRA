@@ -1,0 +1,74 @@
+{
+  "mafand_tsn/train": {
+    "source": "https://raw.githubusercontent.com/masakhane-io/lafand-mt/c1a423500753a28b2fae8f5d5e1634de768cd89b/data/json_files/en-tsn/train.json",
+    "revision": "c1a423500753a28b2fae8f5d5e1634de768cd89b",
+    "rows": 2100,
+    "sha256": "9ff0101812e72aa58643ebe6ac44f53db645ad8cb952e36da181078dd5d82f61"
+  },
+  "mafand_tsn/dev": {
+    "source": "https://raw.githubusercontent.com/masakhane-io/lafand-mt/c1a423500753a28b2fae8f5d5e1634de768cd89b/data/json_files/en-tsn/dev.json",
+    "revision": "c1a423500753a28b2fae8f5d5e1634de768cd89b",
+    "rows": 1342,
+    "sha256": "95de4d2886a7815b69bc67916c34762ff6807c710dc58a2ec4bec003143a8e5e"
+  },
+  "mafand_tsn/test": {
+    "source": "https://raw.githubusercontent.com/masakhane-io/lafand-mt/c1a423500753a28b2fae8f5d5e1634de768cd89b/data/json_files/en-tsn/test.json",
+    "revision": "c1a423500753a28b2fae8f5d5e1634de768cd89b",
+    "rows": 1500,
+    "sha256": "5639fb43a70cb5c9e3cbd66ee7a953497426a1a52cd7d693fbfbde5132e9cc47"
+  },
+  "mafand_lug/train": {
+    "source": "https://raw.githubusercontent.com/masakhane-io/lafand-mt/c1a423500753a28b2fae8f5d5e1634de768cd89b/data/json_files/en-lug/train.json",
+    "revision": "c1a423500753a28b2fae8f5d5e1634de768cd89b",
+    "rows": 4075,
+    "sha256": "bd4b9639d18357d385d375cf4facdc10a70e425b41f4fc31d8a728824426c5b3"
+  },
+  "mafand_lug/dev": {
+    "source": "https://raw.githubusercontent.com/masakhane-io/lafand-mt/c1a423500753a28b2fae8f5d5e1634de768cd89b/data/json_files/en-lug/dev.json",
+    "revision": "c1a423500753a28b2fae8f5d5e1634de768cd89b",
+    "rows": 1500,
+    "sha256": "0df12c24a558590c1c4974df0d6d90d4ea18972f058e978de34dfd671c4fb611"
+  },
+  "mafand_lug/test": {
+    "source": "https://raw.githubusercontent.com/masakhane-io/lafand-mt/c1a423500753a28b2fae8f5d5e1634de768cd89b/data/json_files/en-lug/test.json",
+    "revision": "c1a423500753a28b2fae8f5d5e1634de768cd89b",
+    "rows": 1500,
+    "sha256": "1887ba8cbd6db1d7fdb4aeeaff590cc59f25e228471f59ed2b03ed943359e609"
+  },
+  "svamp/train": {
+    "source": "ChilleD/SVAMP train",
+    "revision": "5e0bf1e5e7c0e9c4bc39180d224f41f3f801b7ef",
+    "rows": 600,
+    "sha256": "652ba5b89dc1bd60cada745e8adba3d760b9b9be11c5e21fff7519aa36bb5060"
+  },
+  "svamp/dev": {
+    "source": "ChilleD/SVAMP train, last 100 rows",
+    "revision": "5e0bf1e5e7c0e9c4bc39180d224f41f3f801b7ef",
+    "rows": 100,
+    "sha256": "93d4f3138204dd31da5a40ff11d320b327a96412548422eb7638c9619c63ef03"
+  },
+  "svamp/test": {
+    "source": "ChilleD/SVAMP test",
+    "revision": "5e0bf1e5e7c0e9c4bc39180d224f41f3f801b7ef",
+    "rows": 300,
+    "sha256": "dcb9078afeca52bfd13dbdf5361e96a95a0c50e991c1cfd55fb71d23a16d3f8f"
+  },
+  "arc/train": {
+    "source": "allenai/ai2_arc ARC-Challenge train",
+    "revision": "210d026faf9955653af8916fad021475a3f00453",
+    "rows": 1119,
+    "sha256": "681628d0f2ff88f0d12e5b547088e7453b85b8b852f53025fb0e96c503e59fa7"
+  },
+  "arc/dev": {
+    "source": "allenai/ai2_arc ARC-Challenge validation",
+    "revision": "210d026faf9955653af8916fad021475a3f00453",
+    "rows": 299,
+    "sha256": "e91e22bf541b70fb1940476e45dae46a986a72dff25e822c8b3205b4367c41ab"
+  },
+  "arc/test": {
+    "source": "allenai/ai2_arc ARC-Challenge test",
+    "revision": "210d026faf9955653af8916fad021475a3f00453",
+    "rows": 1172,
+    "sha256": "03227c30fd557ad1416c2cb955eeb6dc79eeb21e0679456a1ccd42eaccc0ff87"
+  }
+}

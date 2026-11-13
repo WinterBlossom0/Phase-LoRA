@@ -1,0 +1,1646 @@
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-gc/adapter_config.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-gc/adapter_config.json
+new file mode 100644
+index 00000000..8832c108
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-gc/adapter_config.json
+@@ -0,0 +1,30 @@
++{
++  "alpha_pattern": {},
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "bias": "none",
++  "corda_config": null,
++  "eva_config": null,
++  "exclude_modules": null,
++  "fan_in_fan_out": false,
++  "inference_mode": false,
++  "init_lora_weights": true,
++  "layer_replication": null,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "loftq_config": {},
++  "lora_alpha": 64,
++  "lora_bias": false,
++  "lora_dropout": 0.0,
++  "megatron_config": null,
++  "megatron_core": "megatron.core",
++  "modules_to_save": null,
++  "peft_type": "LORA",
++  "r": 32,
++  "rank_pattern": {},
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM",
++  "use_dora": false,
++  "use_rslora": false
++}
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-gc/training_params.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-gc/training_params.json
+new file mode 100644
+index 00000000..6fd45ad3
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-gc/training_params.json
+@@ -0,0 +1,3 @@
++{
++  "use_gc": true
++}
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json
+new file mode 100644
+index 00000000..8832c108
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json
+@@ -0,0 +1,30 @@
++{
++  "alpha_pattern": {},
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "bias": "none",
++  "corda_config": null,
++  "eva_config": null,
++  "exclude_modules": null,
++  "fan_in_fan_out": false,
++  "inference_mode": false,
++  "init_lora_weights": true,
++  "layer_replication": null,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "loftq_config": {},
++  "lora_alpha": 64,
++  "lora_bias": false,
++  "lora_dropout": 0.0,
++  "megatron_config": null,
++  "megatron_core": "megatron.core",
++  "modules_to_save": null,
++  "peft_type": "LORA",
++  "r": 32,
++  "rank_pattern": {},
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM",
++  "use_dora": false,
++  "use_rslora": false
++}
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json
+new file mode 100644
+index 00000000..851a4df7
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json
+@@ -0,0 +1,5 @@
++{
++  "optimizer_kwargs": {"lr": 1e-3, "weight_decay": 0.0},
++  "max_steps": 10000,
++  "lr_scheduler": "plateau"
++}
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/adapter_config.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/adapter_config.json
+new file mode 100644
+index 00000000..8832c108
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/adapter_config.json
+@@ -0,0 +1,30 @@
++{
++  "alpha_pattern": {},
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "bias": "none",
++  "corda_config": null,
++  "eva_config": null,
++  "exclude_modules": null,
++  "fan_in_fan_out": false,
++  "inference_mode": false,
++  "init_lora_weights": true,
++  "layer_replication": null,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "loftq_config": {},
++  "lora_alpha": 64,
++  "lora_bias": false,
++  "lora_dropout": 0.0,
++  "megatron_config": null,
++  "megatron_core": "megatron.core",
++  "modules_to_save": null,
++  "peft_type": "LORA",
++  "r": 32,
++  "rank_pattern": {},
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM",
++  "use_dora": false,
++  "use_rslora": false
++}
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/training_params.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/training_params.json
+new file mode 100644
+index 00000000..d82e1c63
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/training_params.json
+@@ -0,0 +1,5 @@
++{
++  "optimizer_kwargs": {"lr": 1e-3, "weight_decay": 0.1},
++  "max_steps": 10000,
++  "lr_scheduler": "plateau"
++}
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/adapter_config.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/adapter_config.json
+new file mode 100644
+index 00000000..8832c108
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/adapter_config.json
+@@ -0,0 +1,30 @@
++{
++  "alpha_pattern": {},
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "bias": "none",
++  "corda_config": null,
++  "eva_config": null,
++  "exclude_modules": null,
++  "fan_in_fan_out": false,
++  "inference_mode": false,
++  "init_lora_weights": true,
++  "layer_replication": null,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "loftq_config": {},
++  "lora_alpha": 64,
++  "lora_bias": false,
++  "lora_dropout": 0.0,
++  "megatron_config": null,
++  "megatron_core": "megatron.core",
++  "modules_to_save": null,
++  "peft_type": "LORA",
++  "r": 32,
++  "rank_pattern": {},
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM",
++  "use_dora": false,
++  "use_rslora": false
++}
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/training_params.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/training_params.json
+new file mode 100644
+index 00000000..606ea38e
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/training_params.json
+@@ -0,0 +1,5 @@
++{
++  "optimizer_kwargs": {"lr": 1e-3, "weight_decay": 0.5},
++  "max_steps": 10000,
++  "lr_scheduler": "plateau"
++}
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0/adapter_config.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0/adapter_config.json
+new file mode 100644
+index 00000000..8832c108
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0/adapter_config.json
+@@ -0,0 +1,30 @@
++{
++  "alpha_pattern": {},
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "bias": "none",
++  "corda_config": null,
++  "eva_config": null,
++  "exclude_modules": null,
++  "fan_in_fan_out": false,
++  "inference_mode": false,
++  "init_lora_weights": true,
++  "layer_replication": null,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "loftq_config": {},
++  "lora_alpha": 64,
++  "lora_bias": false,
++  "lora_dropout": 0.0,
++  "megatron_config": null,
++  "megatron_core": "megatron.core",
++  "modules_to_save": null,
++  "peft_type": "LORA",
++  "r": 32,
++  "rank_pattern": {},
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM",
++  "use_dora": false,
++  "use_rslora": false
++}
+diff --git a/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0/training_params.json b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0/training_params.json
+new file mode 100644
+index 00000000..c5bb5f38
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/lora/llama-3.2-3B-rank32-wd0/training_params.json
+@@ -0,0 +1,3 @@
++{
++  "optimizer_kwargs": {"lr": 1e-4, "weight_decay": 0.0}
++}
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-gc/adapter_config.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-gc/adapter_config.json
+new file mode 100644
+index 00000000..4be90f88
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-gc/adapter_config.json
+@@ -0,0 +1,16 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "PHASE_LORA",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-gc/training_params.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-gc/training_params.json
+new file mode 100644
+index 00000000..6fd45ad3
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-gc/training_params.json
+@@ -0,0 +1,3 @@
++{
++  "use_gc": true
++}
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json
+new file mode 100644
+index 00000000..4be90f88
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json
+@@ -0,0 +1,16 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "PHASE_LORA",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json
+new file mode 100644
+index 00000000..851a4df7
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json
+@@ -0,0 +1,5 @@
++{
++  "optimizer_kwargs": {"lr": 1e-3, "weight_decay": 0.0},
++  "max_steps": 10000,
++  "lr_scheduler": "plateau"
++}
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/adapter_config.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/adapter_config.json
+new file mode 100644
+index 00000000..4be90f88
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/adapter_config.json
+@@ -0,0 +1,16 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "PHASE_LORA",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/training_params.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/training_params.json
+new file mode 100644
+index 00000000..d82e1c63
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/training_params.json
+@@ -0,0 +1,5 @@
++{
++  "optimizer_kwargs": {"lr": 1e-3, "weight_decay": 0.1},
++  "max_steps": 10000,
++  "lr_scheduler": "plateau"
++}
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/adapter_config.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/adapter_config.json
+new file mode 100644
+index 00000000..4be90f88
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/adapter_config.json
+@@ -0,0 +1,16 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "PHASE_LORA",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/training_params.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/training_params.json
+new file mode 100644
+index 00000000..606ea38e
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/training_params.json
+@@ -0,0 +1,5 @@
++{
++  "optimizer_kwargs": {"lr": 1e-3, "weight_decay": 0.5},
++  "max_steps": 10000,
++  "lr_scheduler": "plateau"
++}
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0/adapter_config.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0/adapter_config.json
+new file mode 100644
+index 00000000..4be90f88
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0/adapter_config.json
+@@ -0,0 +1,16 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "PHASE_LORA",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0/training_params.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0/training_params.json
+new file mode 100644
+index 00000000..c5bb5f38
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32-wd0/training_params.json
+@@ -0,0 +1,3 @@
++{
++  "optimizer_kwargs": {"lr": 1e-4, "weight_decay": 0.0}
++}
+diff --git a/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32/adapter_config.json b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32/adapter_config.json
+new file mode 100644
+index 00000000..4be90f88
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/phase_lora/llama-3.2-3B-rank32/adapter_config.json
+@@ -0,0 +1,16 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "PHASE_LORA",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-gc/adapter_config.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-gc/adapter_config.json
+new file mode 100644
+index 00000000..bb6662a8
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-gc/adapter_config.json
+@@ -0,0 +1,17 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "landing_lambda": 0.005,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "POLAR",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-gc/training_params.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-gc/training_params.json
+new file mode 100644
+index 00000000..6fd45ad3
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-gc/training_params.json
+@@ -0,0 +1,3 @@
++{
++  "use_gc": true
++}
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json
+new file mode 100644
+index 00000000..bb6662a8
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/adapter_config.json
+@@ -0,0 +1,17 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "landing_lambda": 0.005,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "POLAR",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json
+new file mode 100644
+index 00000000..851a4df7
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau/training_params.json
+@@ -0,0 +1,5 @@
++{
++  "optimizer_kwargs": {"lr": 1e-3, "weight_decay": 0.0},
++  "max_steps": 10000,
++  "lr_scheduler": "plateau"
++}
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/adapter_config.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/adapter_config.json
+new file mode 100644
+index 00000000..bb6662a8
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/adapter_config.json
+@@ -0,0 +1,17 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "landing_lambda": 0.005,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "POLAR",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/training_params.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/training_params.json
+new file mode 100644
+index 00000000..d82e1c63
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.1-10k-lr1e-3-plateau/training_params.json
+@@ -0,0 +1,5 @@
++{
++  "optimizer_kwargs": {"lr": 1e-3, "weight_decay": 0.1},
++  "max_steps": 10000,
++  "lr_scheduler": "plateau"
++}
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/adapter_config.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/adapter_config.json
+new file mode 100644
+index 00000000..bb6662a8
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/adapter_config.json
+@@ -0,0 +1,17 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "landing_lambda": 0.005,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "POLAR",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/training_params.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/training_params.json
+new file mode 100644
+index 00000000..606ea38e
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0.5-10k-lr1e-3-plateau/training_params.json
+@@ -0,0 +1,5 @@
++{
++  "optimizer_kwargs": {"lr": 1e-3, "weight_decay": 0.5},
++  "max_steps": 10000,
++  "lr_scheduler": "plateau"
++}
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0/adapter_config.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0/adapter_config.json
+new file mode 100644
+index 00000000..bb6662a8
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0/adapter_config.json
+@@ -0,0 +1,17 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "landing_lambda": 0.005,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "POLAR",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0/training_params.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0/training_params.json
+new file mode 100644
+index 00000000..c5bb5f38
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32-wd0/training_params.json
+@@ -0,0 +1,3 @@
++{
++  "optimizer_kwargs": {"lr": 1e-4, "weight_decay": 0.0}
++}
+diff --git a/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32/adapter_config.json b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32/adapter_config.json
+new file mode 100644
+index 00000000..bb6662a8
+--- /dev/null
++++ b/method_comparison/MetaMathQA/experiments/polar/llama-3.2-3B-rank32/adapter_config.json
+@@ -0,0 +1,17 @@
++{
++  "auto_mapping": null,
++  "base_model_name_or_path": null,
++  "exclude_modules": null,
++  "inference_mode": false,
++  "landing_lambda": 0.005,
++  "layers_pattern": null,
++  "layers_to_transform": null,
++  "lora_alpha": 64,
++  "modules_to_save": null,
++  "peft_type": "POLAR",
++  "peft_version": "0.21.3.dev0@UNKNOWN",
++  "r": 32,
++  "revision": null,
++  "target_modules": null,
++  "task_type": "CAUSAL_LM"
++}
+\ No newline at end of file
+diff --git a/method_comparison/MetaMathQA/modal_run.py b/method_comparison/MetaMathQA/modal_run.py
+new file mode 100644
+index 00000000..4ceb717e
+--- /dev/null
++++ b/method_comparison/MetaMathQA/modal_run.py
+@@ -0,0 +1,107 @@
++"""Run MetaMathQA experiments on Modal, one NVIDIA L40S each (the GPU of PEFT's official results).
++
++  modal run modal_run.py::check                       # environment check on an L40S, about 2 min
++  modal run --detach modal_run.py::main               # the three experiments, in parallel
++  modal volume get peft-bench-results / ./modal_results
++
++Every experiment runs with the default training parameters of the benchmark, as the official results did.
++The model comes from the volume peft-bench-hf (uploaded from a local cache, revision 13afe51), so no Hugging Face
++token is needed. Each experiment writes its result JSON, log, code record and adapter to peft-bench-results.
++"""
++
++import os
++import subprocess
++import time
++from pathlib import Path
++
++import modal
++
++REPO = "/root/peft-bench"
++BENCH = f"{REPO}/method_comparison/MetaMathQA"
++EXPERIMENTS = ["lora/llama-3.2-3B-rank32", "phase_lora/llama-3.2-3B-rank32", "polar/llama-3.2-3B-rank32"]
++# the image is defined on the local machine; inside the container this file sits at /root, with no repo above it
++LOCAL_REPO = Path(__file__).resolve().parents[2] if modal.is_local() else Path(REPO)
++
++# The library versions of the official result files (torch 2.13.0+cu130, transformers 5.13.1, datasets 4.2.0)
++image = (
++    modal.Image.debian_slim(python_version="3.12")
++    .apt_install("git", "util-linux")
++    .pip_install("torch==2.13.0", index_url="https://download.pytorch.org/whl/cu130")
++    .pip_install("transformers==5.13.1", "datasets==4.2.0", "bitsandbytes", "numpy", "tqdm", "accelerate", "safetensors")
++    .env({"HF_HOME": "/hf", "HF_DATASETS_CACHE": "/root/hf_datasets", "PYTHONUNBUFFERED": "1"})
++    .add_local_dir(
++        LOCAL_REPO, REPO, copy=True,
++        ignore=[".venv", "**/__pycache__", "method_comparison/MetaMathQA/checkpoints",
++                "method_comparison/MetaMathQA/logs", "method_comparison/MetaMathQA/temporary_results",
++                "method_comparison/MetaMathQA/cancelled_results", "**/smoke-20steps"],
++    )
++    .run_commands(f"pip install -e {REPO}")
++)
++app = modal.App("peft-bench-phase-methods", image=image)
++hf_volume = modal.Volume.from_name("peft-bench-hf")
++results_volume = modal.Volume.from_name("peft-bench-results")
++
++
++@app.function(gpu="L40S", timeout=600, volumes={"/hf": hf_volume})
++def check():
++    """GPU, library versions, git branch, model files and the two new methods, before any paid run."""
++    import torch
++    import transformers
++    import datasets
++    import peft
++    from transformers import AutoConfig
++
++    print(subprocess.run(["nvidia-smi", "--query-gpu=name,memory.total,driver_version", "--format=csv"],
++                         capture_output=True, text=True).stdout)
++    print("torch", torch.__version__, "cuda", torch.cuda.is_available(), torch.cuda.get_device_name(0))
++    print("transformers", transformers.__version__, "datasets", datasets.__version__, "peft", peft.__version__)
++    print("branch", subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=REPO, capture_output=True,
++                                    text=True).stdout.strip())
++    print("model", AutoConfig.from_pretrained("meta-llama/Llama-3.2-3B").model_type,
++          sorted(p.name for p in Path("/hf/hub/models--meta-llama--Llama-3.2-3B/snapshots").glob("*/*")))
++    print("methods", peft.PhaseLoraConfig.__name__, peft.PolarConfig.__name__)
++    # sha256 of the weights must equal the Hub's blob names of revision 13afe51
++    expected = {"model-00001-of-00002.safetensors": "584d8d3e3f82f7964955174dfe5e3b1cf117a9d859f022cfdf7fcb884856e002",
++                "model-00002-of-00002.safetensors": "4719a04514ec2f060240711b7c33ab21187cac730ecaba3040b7a0fd95a9cefb"}
++    snapshot = Path("/hf/hub/models--meta-llama--Llama-3.2-3B/snapshots/13afe5124825b4f3751f836b40dafda64c1ed062")
++    for filename, digest in expected.items():
++        found = subprocess.run(["sha256sum", str(snapshot / filename)], capture_output=True, text=True).stdout.split()[0]
++        print(filename, "sha256 ok" if found == digest else f"SHA256 MISMATCH {found}")
++    x = torch.randn(1024, 1024, device="cuda", dtype=torch.bfloat16)
++    print("matmul ok", float((x @ x).float().abs().mean()))
++
++
++# max_inputs=1: a fresh container per experiment, so no files of one run reach the output folder of another
++@app.function(gpu="L40S", timeout=3 * 3600, cpu=8.0, memory=32768, max_inputs=1,
++              volumes={"/hf": hf_volume, "/results": results_volume})
++def run_experiment(experiment: str) -> str:
++    name = experiment.replace("/", "--")
++    # A private copy of the model cache: the run downloads the datasets into HF_HOME, and three containers writing
++    # to one shared volume at the same time could corrupt it (Modal volumes have no cross-container file locks)
++    Path("/root/hf").mkdir(exist_ok=True)
++    subprocess.run(["cp", "-r", "/hf/hub", "/root/hf/"], check=True)
++    process = subprocess.run(["bash", "run_phase_methods.sh", experiment], cwd=BENCH,
++                             env={**os.environ, "PYTHON": "python", "HF_HOME": "/root/hf"},
++                             capture_output=True, text=True)
++    # a new folder per attempt, so a rerun never mixes with or overwrites an earlier one
++    out = Path("/results") / f"{name}_{time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())}"
++    out.mkdir(parents=True, exist_ok=True)
++    (out / "runner_output.txt").write_text(process.stdout + process.stderr)
++    for folder in ("logs", "temporary_results", "cancelled_results", "checkpoints"):
++        source = Path(BENCH) / folder
++        if source.exists():
++            subprocess.run(["cp", "-r", str(source), str(out / folder)], check=True)
++    results_volume.commit()
++    return f"{experiment}: exit {process.returncode}\n{process.stdout[-2000:]}"
++
++
++@app.local_entrypoint()
++def main(experiments: str = ""):
++    """--experiments takes a comma-separated list of experiment folders; empty runs EXPERIMENTS."""
++    chosen = [name for name in experiments.split(",") if name] or EXPERIMENTS
++    here = Path(__file__).resolve().parent
++    missing = [name for name in chosen if not (here / "experiments" / name / "adapter_config.json").exists()]
++    if missing:
++        raise SystemExit(f"no experiment folder with adapter_config.json: {missing}")
++    for summary in run_experiment.map(chosen, return_exceptions=True):
++        print(summary)
+diff --git a/method_comparison/MetaMathQA/run.py b/method_comparison/MetaMathQA/run.py
+index 101a4d8c..ce72acf7 100644
+--- a/method_comparison/MetaMathQA/run.py
++++ b/method_comparison/MetaMathQA/run.py
+@@ -161,7 +161,7 @@ def train(
+     optimizer_type: str,
+     optimizer_kwargs: dict[str, Any],
+     query_template: str,
+-    lr_scheduler_arg: Optional[Literal["cosine"]],
++    lr_scheduler_arg: Optional[Literal["cosine", "plateau"]],
+     use_amp: bool,
+     is_adalora: bool,
+     init_kv_cache_prefix: Optional[str],
+@@ -314,6 +314,8 @@ def train(
+             if step % eval_steps == 0:
+                 tic_eval = time.perf_counter()
+                 loss_avg = sum(losses[-eval_steps:]) / eval_steps
++                if hasattr(lr_scheduler, "plateau_step"):
++                    lr_scheduler.plateau_step(loss_avg)
+                 memory_allocated_avg = sum(accelerator_memory_allocated_log[-eval_steps:]) / eval_steps
+                 memory_reserved_avg = sum(accelerator_memory_reserved_log[-eval_steps:]) / eval_steps
+                 token_sum = sum(total_tokens[-eval_steps:])
+diff --git a/method_comparison/MetaMathQA/run_phase_methods.sh b/method_comparison/MetaMathQA/run_phase_methods.sh
+new file mode 100644
+index 00000000..de9833e1
+--- /dev/null
++++ b/method_comparison/MetaMathQA/run_phase_methods.sh
+@@ -0,0 +1,55 @@
++#!/usr/bin/env bash
++# Local runs of the MetaMathQA benchmark on one 16 GB GPU: LoRA rank 32 (checks this setup against the official
++# result), Phase LoRA and PoLAR. Every run uses the default training parameters plus gradient checkpointing,
++# which keeps batch size 4 within 16 GB. Results go to temporary_results/ because the branch is not main.
++#   bash run_phase_methods.sh                                     # all three, in order
++#   bash run_phase_methods.sh phase_lora/llama-3.2-3B-rank32-gc   # a subset
++# One GPU process at a time: each run takes the shared lock. Stops at the first run that fails or that run.py
++# records as cancelled (run.py exits 0 for a cancelled run, so the script checks cancelled_results/).
++set -euo pipefail
++cd "$(dirname "$0")"
++HERE=$(pwd)
++PY="${PYTHON:-../../.venv/bin/python}"
++LOCK="${PHASE_LORA_GPU_LOCK:-$HOME/.gpu.lock}"
++MIN_FREE_RAM_KB=1572864        # 1.5 GB: below this WSL can crash, so the watchdog stops the run
++# run.py saves the trained adapter in a TemporaryDirectory; TMPDIR (set per run below) keeps it here instead of
++# /tmp, which a WSL restart deletes
++EXPERIMENTS=("$@")
++if [ "${#EXPERIMENTS[@]}" -eq 0 ]; then
++    EXPERIMENTS=(lora/llama-3.2-3B-rank32-gc phase_lora/llama-3.2-3B-rank32-gc polar/llama-3.2-3B-rank32-gc)
++fi
++# run.py writes its result JSON into temporary_results/ but does not create the folder
++mkdir -p logs checkpoints cancelled_results temporary_results
++
++for experiment in "${EXPERIMENTS[@]}"; do
++    stamp=$(date -u +%Y%m%dT%H%M%SZ)
++    log="logs/${experiment//\//--}_$stamp.log"
++    export TMPDIR="$HERE/checkpoints/${experiment//\//--}_$stamp"
++    mkdir -p "$TMPDIR"
++    # the result JSON records only the PEFT commit, and the new methods are uncommitted: keep their exact code
++    { git -C ../.. rev-parse HEAD; git -C ../.. status --short --untracked-files=all
++      find ../../src/peft/tuners/phase_lora ../../src/peft/tuners/polar -name "*.py" -print0 | sort -z | xargs -0 sha256sum
++      git -C ../.. diff; } > "${log%.log}.code.txt"
++    cancelled_before=$(find cancelled_results -type f | wc -l)
++    echo "=== $(TZ=Asia/Kolkata date '+%F %T IST') start $experiment (log $log)"
++    # 3 h limit per run: about twice the estimated 1.5 h per run on a 16 GB laptop GPU (not yet measured)
++    flock "$LOCK" timeout 10800 "$PY" run.py -v "experiments/$experiment" > "$log" 2>&1 &
++    run_pid=$!
++    while kill -0 "$run_pid" 2>/dev/null; do
++        available_kb=$(awk '/MemAvailable/ {print $2}' /proc/meminfo)
++        if [ "$available_kb" -lt "$MIN_FREE_RAM_KB" ]; then
++            echo "=== available RAM ${available_kb} kB below 1.5 GB: stopping $experiment" | tee -a "$log"
++            pkill -TERM -P "$run_pid" || true
++            kill -TERM "$run_pid" || true
++        fi
++        sleep 10
++    done
++    status=0
++    wait "$run_pid" || status=$?
++    cancelled_after=$(find cancelled_results -type f | wc -l)
++    if [ "$status" -ne 0 ] || [ "$cancelled_after" -ne "$cancelled_before" ]; then
++        echo "=== $(TZ=Asia/Kolkata date '+%F %T IST') FAILED $experiment (exit $status, see $log)"
++        exit 1
++    fi
++    echo "=== $(TZ=Asia/Kolkata date '+%F %T IST') done $experiment"
++done
+diff --git a/method_comparison/MetaMathQA/utils.py b/method_comparison/MetaMathQA/utils.py
+index 571f9dee..e92113f1 100644
+--- a/method_comparison/MetaMathQA/utils.py
++++ b/method_comparison/MetaMathQA/utils.py
+@@ -86,7 +86,7 @@ class TrainConfig:
+         grad_norm_clip: The gradient norm clipping value (set to 0 to skip)
+         optimizer_type: The name of a torch optimizer (e.g. AdamW) or a PEFT method ("lora+", "lora-fa")
+         optimizer_kwargs: The optimizer keyword arguments (lr etc.)
+-        lr_scheduler: The learning rate scheduler (currently only None or 'cosine' are supported)
++        lr_scheduler: The learning rate scheduler: None, 'cosine' or 'plateau'
+         use_amp: Whether to use automatic mixed precision
+         autocast_adapter_dtype: Whether to cast adapter dtype to float32, same argument as in PEFT
+         generation_kwargs: Arguments passed to transformers GenerationConfig (used in evaluation)
+@@ -107,7 +107,7 @@ class TrainConfig:
+     grad_norm_clip: float  # set to 0 to skip
+     optimizer_type: str
+     optimizer_kwargs: dict[str, Any]
+-    lr_scheduler: Optional[Literal["cosine"]]
++    lr_scheduler: Optional[Literal["cosine", "plateau"]]
+     use_amp: bool
+     autocast_adapter_dtype: bool
+     generation_kwargs: dict[str, Any]
+@@ -137,8 +137,8 @@ class TrainConfig:
+             torch.optim, self.optimizer_type
+         ):
+             raise ValueError(f"Invalid optimizer_type: {self.optimizer_type}")
+-        if self.lr_scheduler not in [None, "cosine"]:
+-            raise ValueError(f"Invalid lr_scheduler: {self.lr_scheduler}, must be None or 'cosine'")
++        if self.lr_scheduler not in [None, "cosine", "plateau"]:
++            raise ValueError(f"Invalid lr_scheduler: {self.lr_scheduler}, must be None, 'cosine' or 'plateau'")
+         if "{query}" not in self.query_template:
+             raise ValueError("Invalid query_template, must contain '{query}'")
+ 
+@@ -270,6 +270,46 @@ def get_model(
+     return model
+ 
+ 
++PLATEAU_FACTOR = 0.5  # the learning rate is halved at each plateau
++# PyTorch cuts when the evaluations without improvement exceed patience: patience 1 cuts at the 2nd such
++# evaluation, that is after 2 * eval_steps steps without improvement
++PLATEAU_PATIENCE = 1
++
++
++class WarmupPlateauScheduler:
++    """Linear warmup to the base learning rate, as in the cosine schedule, then ReduceLROnPlateau on the training
++    loss averaged over each eval_steps window. run.py calls step() every training step and plateau_step(loss) at
++    every evaluation; plateau_step does nothing during the warmup."""
++
++    def __init__(self, optimizer, *, warmup_steps: int):
++        self.optimizer = optimizer
++        self.warmup_steps = warmup_steps
++        self.base_lrs = [group["lr"] for group in optimizer.param_groups]
++        self.steps_done = 0
++        self.plateau = torch.optim.lr_scheduler.ReduceLROnPlateau(
++            optimizer, mode="min", factor=PLATEAU_FACTOR, patience=PLATEAU_PATIENCE
++        )
++        self._set_warmup_lr()
++
++    def _set_warmup_lr(self):
++        # the cosine schedule's warmup factor: step / warmup_steps, 0 at the first step
++        factor = min(1.0, self.steps_done / max(1, self.warmup_steps))
++        for group, base_lr in zip(self.optimizer.param_groups, self.base_lrs):
++            group["lr"] = base_lr * factor
++
++    def step(self):
++        self.steps_done += 1
++        if self.steps_done <= self.warmup_steps:
++            self._set_warmup_lr()
++
++    def plateau_step(self, loss: float):
++        if self.steps_done >= self.warmup_steps:
++            self.plateau.step(loss)
++
++    def get_last_lr(self):
++        return [group["lr"] for group in self.optimizer.param_groups]
++
++
+ class DummyScheduler:
+     # if no lr scheduler is being used
+     def __init__(self, lr):
+@@ -283,7 +323,8 @@ class DummyScheduler:
+ 
+ 
+ def get_optimizer_and_scheduler(
+-    model, *, optimizer_type: str, max_steps: int, lr_scheduler_arg: Optional[Literal["cosine"]], **optimizer_kwargs
++    model, *, optimizer_type: str, max_steps: int, lr_scheduler_arg: Optional[Literal["cosine", "plateau"]],
++    **optimizer_kwargs
+ ) -> tuple[torch.optim.Optimizer, Any]:
+     if optimizer_type == "lora+":
+         optimizer = create_loraplus_optimizer(model, optimizer_cls=torch.optim.AdamW, **optimizer_kwargs)
+@@ -300,6 +341,8 @@ def get_optimizer_and_scheduler(
+         lr_scheduler = get_cosine_schedule_with_warmup(
+             optimizer, num_warmup_steps=warmup_steps, num_training_steps=max_steps
+         )
++    elif lr_scheduler_arg == "plateau":
++        lr_scheduler = WarmupPlateauScheduler(optimizer, warmup_steps=int(WARMUP_STEP_RATIO * max_steps))
+     elif lr_scheduler_arg is None:
+         lr_scheduler = DummyScheduler(optimizer_kwargs["lr"])
+     else:
+diff --git a/src/peft/__init__.py b/src/peft/__init__.py
+index eaec35a9..18e13f93 100644
+--- a/src/peft/__init__.py
++++ b/src/peft/__init__.py
+@@ -69,6 +69,10 @@ from .tuners import (
+     DeftModel,
+     DeloraConfig,
+     DeloraModel,
++    PhaseLoraConfig,
++    PhaseLoraModel,
++    PolarConfig,
++    PolarModel,
+     EvaConfig,
+     FourierFTConfig,
+     FourierFTModel,
+@@ -219,6 +223,10 @@ __all__ = [
+     "DeftModel",
+     "DeloraConfig",
+     "DeloraModel",
++    "PhaseLoraConfig",
++    "PhaseLoraModel",
++    "PolarConfig",
++    "PolarModel",
+     "EvaConfig",
+     "FourierFTConfig",
+     "FourierFTModel",
+diff --git a/src/peft/tuners/__init__.py b/src/peft/tuners/__init__.py
+index 0c61b721..9f27e9c7 100644
+--- a/src/peft/tuners/__init__.py
++++ b/src/peft/tuners/__init__.py
+@@ -22,6 +22,8 @@ from .cartridge import CartridgeConfig, CartridgeEncoder
+ from .cpt import CPTConfig, CPTEmbedding
+ from .deft import DeftConfig, DeftModel
+ from .delora import DeloraConfig, DeloraModel
++from .phase_lora import PhaseLoraConfig, PhaseLoraModel
++from .polar import PolarConfig, PolarModel
+ from .fourierft import FourierFTConfig, FourierFTModel
+ from .frod import FrodConfig, FrodModel
+ from .glora import GloraConfig, GloraModel
+@@ -102,6 +104,10 @@ __all__ = [
+     "DeftModel",
+     "DeloraConfig",
+     "DeloraModel",
++    "PhaseLoraConfig",
++    "PhaseLoraModel",
++    "PolarConfig",
++    "PolarModel",
+     "EvaConfig",
+     "FourierFTConfig",
+     "FourierFTModel",
+diff --git a/src/peft/tuners/phase_lora/__init__.py b/src/peft/tuners/phase_lora/__init__.py
+new file mode 100644
+index 00000000..1fb714b8
+--- /dev/null
++++ b/src/peft/tuners/phase_lora/__init__.py
+@@ -0,0 +1,10 @@
++from peft.utils import register_peft_method
++
++from .config import PhaseLoraConfig
++from .layer import PhaseLoraLayer, PhaseLoraLinear
++from .model import PhaseLoraModel
++
++
++__all__ = ["PhaseLoraConfig", "PhaseLoraLayer", "PhaseLoraLinear", "PhaseLoraModel"]
++
++register_peft_method(name="phase_lora", model_cls=PhaseLoraModel, config_cls=PhaseLoraConfig)
+diff --git a/src/peft/tuners/phase_lora/config.py b/src/peft/tuners/phase_lora/config.py
+new file mode 100644
+index 00000000..46c7f50f
+--- /dev/null
++++ b/src/peft/tuners/phase_lora/config.py
+@@ -0,0 +1,44 @@
++from __future__ import annotations
++
++from dataclasses import dataclass, field
++from typing import Optional, Union
++
++from peft.config import PeftConfig
++from peft.utils import PeftType
++
++
++@dataclass
++class PhaseLoraConfig(PeftConfig):
++    """Phase LoRA: LoRA's factors stored in polar coordinates, dW = (alpha / r) Re(A B^H).
++
++    `r` is the real rank of the equivalent LoRA. The complex rank is r / 2, so the parameter count and the
++    scale alpha / r equal those of LoRA at rank r.
++    """
++
++    r: int = field(default=8, metadata={"help": "Real rank of the equivalent LoRA; must be even (complex rank r / 2)."})
++    lora_alpha: int = field(default=8, metadata={"help": "Scale numerator: dW is multiplied by lora_alpha / r."})
++    init_weights: bool = field(
++        default=True,
++        metadata={"help": "True: dW = 0 at init (the method's init). False: a random nonzero dW, used only by tests."},
++    )
++    target_modules: Optional[Union[list[str], str]] = field(
++        default=None, metadata={"help": "Module names or a regex of the modules to adapt."}
++    )
++    exclude_modules: Optional[Union[list[str], str]] = field(
++        default=None, metadata={"help": "Module names or a regex of the modules not to adapt."}
++    )
++    layers_to_transform: Optional[Union[list[int], int]] = field(default=None, metadata={"help": "Layer indices to adapt."})
++    layers_pattern: Optional[Union[list[str], str]] = field(default=None, metadata={"help": "Name of the layer list."})
++    modules_to_save: Optional[list[str]] = field(default=None, metadata={"help": "Extra modules to train and save."})
++
++    def __post_init__(self):
++        super().__post_init__()
++        self.peft_type = PeftType.PHASE_LORA
++        self.target_modules = set(self.target_modules) if isinstance(self.target_modules, list) else self.target_modules
++        self.exclude_modules = (
++            set(self.exclude_modules) if isinstance(self.exclude_modules, list) else self.exclude_modules
++        )
++        if self.layers_pattern and self.layers_to_transform is None:
++            raise ValueError("When `layers_pattern` is specified, `layers_to_transform` must also be specified.")
++        if self.r <= 0 or self.r % 2 != 0:
++            raise ValueError(f"`r` must be a positive even integer; got {self.r}.")
+diff --git a/src/peft/tuners/phase_lora/layer.py b/src/peft/tuners/phase_lora/layer.py
+new file mode 100644
+index 00000000..1b87a84a
+--- /dev/null
++++ b/src/peft/tuners/phase_lora/layer.py
+@@ -0,0 +1,117 @@
++from __future__ import annotations
++
++import math
++import warnings
++from typing import Any, Optional
++
++import torch
++from torch import nn
++
++from peft.tuners.tuners_utils import BaseTunerLayer, check_adapters_to_merge
++
++
++class PhaseLoraLayer(BaseTunerLayer):
++    adapter_layer_names = ("phase_lora_rho_a", "phase_lora_phi_a", "phase_lora_rho_b", "phase_lora_phi_b")
++    other_param_names = ("r", "scaling")
++
++    def __init__(self, base_layer: nn.Module, **kwargs) -> None:
++        self.base_layer = base_layer
++        self.r = {}
++        self.scaling = {}
++        self.phase_lora_rho_a = nn.ParameterDict({})
++        self.phase_lora_phi_a = nn.ParameterDict({})
++        self.phase_lora_rho_b = nn.ParameterDict({})
++        self.phase_lora_phi_b = nn.ParameterDict({})
++        self._disable_adapters = False
++        self.merged_adapters = []
++        self.kwargs = kwargs
++        base = self.get_base_layer()
++        if not isinstance(base, nn.Linear):
++            raise TypeError(f"Unsupported layer type {type(base)}")
++        self.in_features, self.out_features = base.in_features, base.out_features
++
++    def update_layer(
++        self, adapter_name: str, r: int, lora_alpha: float, init_weights: bool = True, inference_mode: bool = False
++    ) -> None:
++        complex_rank = r // 2
++        self.r[adapter_name] = r
++        self.scaling[adapter_name] = lora_alpha / r
++        # The input side takes LoRA's lora_A init: per-entry variance 1 / (3 in) in each real component, as
++        # kaiming_uniform(a = sqrt(5)) gives lora_A. The output side starts at modulus 0, so dW = 0 at init.
++        input_side = torch.randn(self.in_features, complex_rank, 2) / math.sqrt(3 * self.in_features)
++        self.phase_lora_rho_b[adapter_name] = nn.Parameter(input_side.norm(dim=-1))
++        self.phase_lora_phi_b[adapter_name] = nn.Parameter(torch.atan2(input_side[..., 1], input_side[..., 0]))
++        output_modulus = torch.zeros(self.out_features, complex_rank)
++        if not init_weights:
++            output_modulus = torch.randn(self.out_features, complex_rank, 2).norm(dim=-1) / math.sqrt(3 * self.out_features)
++        self.phase_lora_rho_a[adapter_name] = nn.Parameter(output_modulus)
++        self.phase_lora_phi_a[adapter_name] = nn.Parameter(torch.rand(self.out_features, complex_rank) * 2 * math.pi)
++        self._move_adapter_to_device_of_base_layer(adapter_name)
++        self.set_adapter(self.active_adapters, inference_mode=inference_mode)
++
++    def factors(self, adapter: str):
++        """The equivalent real factors (Ar, Ai, Br, Bi); Re(A B^H) = Ar Br^T + Ai Bi^T."""
++        rho_a, phi_a = self.phase_lora_rho_a[adapter], self.phase_lora_phi_a[adapter]
++        rho_b, phi_b = self.phase_lora_rho_b[adapter], self.phase_lora_phi_b[adapter]
++        return rho_a * phi_a.cos(), rho_a * phi_a.sin(), rho_b * phi_b.cos(), rho_b * phi_b.sin()
++
++    def get_delta_weight(self, adapter: str) -> torch.Tensor:
++        a_real, a_imag, b_real, b_imag = self.factors(adapter)
++        return self.scaling[adapter] * (a_real @ b_real.T + a_imag @ b_imag.T)
++
++
++class PhaseLoraLinear(nn.Module, PhaseLoraLayer):
++    def __init__(
++        self, base_layer, adapter_name: str, r: int, lora_alpha: float, init_weights: bool = True,
++        inference_mode: bool = False, **kwargs,
++    ):
++        super().__init__()
++        PhaseLoraLayer.__init__(self, base_layer, **kwargs)
++        self._active_adapter = adapter_name
++        self.update_layer(adapter_name, r, lora_alpha, init_weights=init_weights, inference_mode=inference_mode)
++
++    def merge(self, safe_merge: bool = False, adapter_names: Optional[list[str]] = None) -> None:
++        adapter_names = check_adapters_to_merge(self, adapter_names)
++        base = self.get_base_layer()
++        for adapter in adapter_names:
++            if adapter not in self.phase_lora_rho_a:
++                continue
++            delta = self.get_delta_weight(adapter).detach().to(base.weight.dtype)
++            merged = base.weight.data + delta
++            if safe_merge and not torch.isfinite(merged).all():
++                raise ValueError(f"NaNs detected in the merged weights of adapter {adapter}")
++            base.weight.data = merged
++            self.merged_adapters.append(adapter)
++
++    def unmerge(self) -> None:
++        if not self.merged:
++            warnings.warn("Already unmerged. Nothing to do.")
++            return
++        base = self.get_base_layer()
++        while self.merged_adapters:
++            adapter = self.merged_adapters.pop()
++            if adapter in self.phase_lora_rho_a:
++                base.weight.data -= self.get_delta_weight(adapter).detach().to(base.weight.dtype)
++
++    def forward(self, x: torch.Tensor, *args: Any, **kwargs: Any) -> torch.Tensor:
++        if self.disable_adapters:
++            if self.merged:
++                self.unmerge()
++            return self.base_layer(x, *args, **kwargs)
++        if self.merged:
++            return self.base_layer(x, *args, **kwargs)
++        result = self.base_layer(x, *args, **kwargs)
++        result_dtype = result.dtype
++        for adapter in self.active_adapters:
++            if adapter not in self.phase_lora_rho_a:
++                continue
++            a_real, a_imag, b_real, b_imag = self.factors(adapter)
++            # The adapter branch runs in the adapter dtype (fp32 under autocast_adapter_dtype), as LoRA's does.
++            # dW is never built: two low-rank products.
++            x_adapter = self._cast_input_dtype(x, a_real.dtype)
++            update = (x_adapter @ b_real) @ a_real.T + (x_adapter @ b_imag) @ a_imag.T
++            result = result + update * self.scaling[adapter]
++        return result.to(result_dtype)
++
++    def __repr__(self) -> str:
++        return "phase_lora." + super().__repr__()
+diff --git a/src/peft/tuners/phase_lora/model.py b/src/peft/tuners/phase_lora/model.py
+new file mode 100644
+index 00000000..85e813ad
+--- /dev/null
++++ b/src/peft/tuners/phase_lora/model.py
+@@ -0,0 +1,32 @@
++from __future__ import annotations
++
++import torch
++
++from peft.tuners.tuners_utils import BaseTuner, BaseTunerLayer
++from peft.utils import TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING
++
++from .layer import PhaseLoraLayer, PhaseLoraLinear
++
++
++class PhaseLoraModel(BaseTuner):
++    prefix: str = "phase_lora_"
++    tuner_layer_cls = PhaseLoraLayer
++    target_module_mapping = TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING
++
++    def _create_and_replace(self, config, adapter_name, target, target_name, parent, current_key, **optional_kwargs):
++        if isinstance(target, PhaseLoraLinear):
++            target.update_layer(
++                adapter_name, config.r, config.lora_alpha, init_weights=config.init_weights,
++                inference_mode=config.inference_mode,
++            )
++            return
++        base = target.get_base_layer() if isinstance(target, BaseTunerLayer) else target
++        if not isinstance(base, torch.nn.Linear):
++            raise TypeError(f"Target module {target} is not supported; only torch.nn.Linear is.")
++        new_module = PhaseLoraLinear(
++            target, adapter_name, config.r, config.lora_alpha, init_weights=config.init_weights,
++            inference_mode=config.inference_mode,
++        )
++        if adapter_name not in self.active_adapters:
++            new_module.requires_grad_(False)
++        self._replace_module(parent, target_name, new_module, target)
+diff --git a/src/peft/tuners/polar/__init__.py b/src/peft/tuners/polar/__init__.py
+new file mode 100644
+index 00000000..f4b0a609
+--- /dev/null
++++ b/src/peft/tuners/polar/__init__.py
+@@ -0,0 +1,10 @@
++from peft.utils import register_peft_method
++
++from .config import PolarConfig
++from .layer import PolarLayer, PolarLinear
++from .model import PolarModel
++
++
++__all__ = ["PolarConfig", "PolarLayer", "PolarLinear", "PolarModel"]
++
++register_peft_method(name="polar", model_cls=PolarModel, config_cls=PolarConfig)
+diff --git a/src/peft/tuners/polar/config.py b/src/peft/tuners/polar/config.py
+new file mode 100644
+index 00000000..5a2e3f0b
+--- /dev/null
++++ b/src/peft/tuners/polar/config.py
+@@ -0,0 +1,47 @@
++from __future__ import annotations
++
++from dataclasses import dataclass, field
++from typing import Optional, Union
++
++from peft.config import PeftConfig
++from peft.utils import PeftType
++
++
++@dataclass
++class PolarConfig(PeftConfig):
++    """PoLAR (Lion et al., NeurIPS 2025): dW = (alpha / r) X Theta Y^T with X, Y near the Stiefel manifold.
++
++    Before each optimizer step, the gradients of X and Y are replaced with the landing field of the official
++    code: (G X^T - X G^T) X + landing_lambda X (X^T X - I).
++    """
++
++    r: int = field(default=8, metadata={"help": "Rank of X, Y and Theta."})
++    lora_alpha: int = field(default=8, metadata={"help": "Scale numerator: dW is multiplied by lora_alpha / r."})
++    landing_lambda: float = field(default=5e-3, metadata={"help": "Weight of the term X (X^T X - I) in the landing field."})
++    init_weights: bool = field(
++        default=True,
++        metadata={"help": "True: dW = 0 at init (the method's init). False: a random nonzero dW, used only by tests."},
++    )
++    target_modules: Optional[Union[list[str], str]] = field(
++        default=None, metadata={"help": "Module names or a regex of the modules to adapt."}
++    )
++    exclude_modules: Optional[Union[list[str], str]] = field(
++        default=None, metadata={"help": "Module names or a regex of the modules not to adapt."}
++    )
++    layers_to_transform: Optional[Union[list[int], int]] = field(default=None, metadata={"help": "Layer indices to adapt."})
++    layers_pattern: Optional[Union[list[str], str]] = field(default=None, metadata={"help": "Name of the layer list."})
++    modules_to_save: Optional[list[str]] = field(default=None, metadata={"help": "Extra modules to train and save."})
++
++    def __post_init__(self):
++        super().__post_init__()
++        self.peft_type = PeftType.POLAR
++        self.target_modules = set(self.target_modules) if isinstance(self.target_modules, list) else self.target_modules
++        self.exclude_modules = (
++            set(self.exclude_modules) if isinstance(self.exclude_modules, list) else self.exclude_modules
++        )
++        if self.layers_pattern and self.layers_to_transform is None:
++            raise ValueError("When `layers_pattern` is specified, `layers_to_transform` must also be specified.")
++        if self.r <= 0:
++            raise ValueError(f"`r` must be a positive integer; got {self.r}.")
++        if self.landing_lambda < 0:
++            raise ValueError(f"`landing_lambda` must be non-negative; got {self.landing_lambda}.")
+diff --git a/src/peft/tuners/polar/layer.py b/src/peft/tuners/polar/layer.py
+new file mode 100644
+index 00000000..1e4d22e2
+--- /dev/null
++++ b/src/peft/tuners/polar/layer.py
+@@ -0,0 +1,135 @@
++from __future__ import annotations
++
++import warnings
++from typing import Any, Optional
++
++import torch
++from torch import nn
++
++from peft.tuners.tuners_utils import BaseTunerLayer, check_adapters_to_merge
++
++
++def landing_field(factor: torch.Tensor, grad: torch.Tensor, landing_lambda: float) -> torch.Tensor:
++    """PoLAR's landing field for a tall factor (rows > rank), as the official code computes it:
++    (G X^T - X G^T) X + lambda X (X^T X - I). Source: github.com/kcc-lion/polar, callbacks/landing_callback.py."""
++    product = grad @ factor.transpose(-1, -2)
++    skew = product - product.transpose(-1, -2)
++    distance = factor.transpose(-1, -2) @ factor
++    distance.diagonal().add_(-1.0)
++    return skew @ factor + landing_lambda * (factor @ distance)
++
++
++def stiefel_init(rows: int, rank: int) -> torch.Tensor:
++    """Uniform on St(rows, rank): QR of a Gaussian, with signs fixed so that R has a positive diagonal."""
++    q, upper = torch.linalg.qr(torch.randn(rows, rank))
++    # QR returns a column-major Q; a contiguous copy, since FSDP and flat views need contiguous parameters
++    return (q * torch.sign(torch.diagonal(upper)).unsqueeze(0)).contiguous()
++
++
++class PolarLayer(BaseTunerLayer):
++    adapter_layer_names = ("polar_X", "polar_Y", "polar_theta")
++    other_param_names = ("r", "scaling", "landing_lambda")
++
++    def __init__(self, base_layer: nn.Module, **kwargs) -> None:
++        self.base_layer = base_layer
++        self.r = {}
++        self.scaling = {}
++        self.landing_lambda = {}
++        self.polar_X = nn.ParameterDict({})
++        self.polar_Y = nn.ParameterDict({})
++        self.polar_theta = nn.ParameterDict({})
++        self._disable_adapters = False
++        self.merged_adapters = []
++        self.kwargs = kwargs
++        base = self.get_base_layer()
++        if not isinstance(base, nn.Linear):
++            raise TypeError(f"Unsupported layer type {type(base)}")
++        self.in_features, self.out_features = base.in_features, base.out_features
++
++    def update_layer(
++        self, adapter_name: str, r: int, lora_alpha: float, landing_lambda: float, init_weights: bool = True,
++        inference_mode: bool = False,
++    ) -> None:
++        if r > min(self.in_features, self.out_features):
++            # X and Y start on the Stiefel manifold, which needs rank <= rows
++            raise ValueError(f"`r` = {r} exceeds min(in_features, out_features) = {min(self.in_features, self.out_features)}")
++        self.r[adapter_name] = r
++        self.scaling[adapter_name] = lora_alpha / r
++        self.landing_lambda[adapter_name] = landing_lambda
++        self.polar_X[adapter_name] = nn.Parameter(stiefel_init(self.out_features, r))
++        self.polar_Y[adapter_name] = nn.Parameter(stiefel_init(self.in_features, r))
++        # Theta_0 = 0, so dW = 0 at init (PoLAR's init)
++        theta = torch.zeros(r, r) if init_weights else torch.randn(r, r) / r
++        self.polar_theta[adapter_name] = nn.Parameter(theta)
++        self._move_adapter_to_device_of_base_layer(adapter_name)
++        self.set_adapter(self.active_adapters, inference_mode=inference_mode)
++
++    def get_delta_weight(self, adapter: str) -> torch.Tensor:
++        return self.scaling[adapter] * (self.polar_X[adapter] @ self.polar_theta[adapter] @ self.polar_Y[adapter].T)
++
++    @torch.no_grad()
++    def apply_landing(self, trained: set) -> None:
++        """Replace the gradients of X and Y with the landing field. Runs after gradient clipping, before the
++        optimizer step, as the official code's on_pre_optimizer_step callback does."""
++        for adapter, landing_lambda in self.landing_lambda.items():
++            for factor in (self.polar_X[adapter], self.polar_Y[adapter]):
++                if factor.grad is not None and id(factor) in trained:
++                    factor.grad.copy_(landing_field(factor, factor.grad, landing_lambda))
++
++
++class PolarLinear(nn.Module, PolarLayer):
++    def __init__(
++        self, base_layer, adapter_name: str, r: int, lora_alpha: float, landing_lambda: float,
++        init_weights: bool = True, inference_mode: bool = False, **kwargs,
++    ):
++        super().__init__()
++        PolarLayer.__init__(self, base_layer, **kwargs)
++        self._active_adapter = adapter_name
++        self.update_layer(
++            adapter_name, r, lora_alpha, landing_lambda, init_weights=init_weights, inference_mode=inference_mode
++        )
++
++    def merge(self, safe_merge: bool = False, adapter_names: Optional[list[str]] = None) -> None:
++        adapter_names = check_adapters_to_merge(self, adapter_names)
++        base = self.get_base_layer()
++        for adapter in adapter_names:
++            if adapter not in self.polar_X:
++                continue
++            delta = self.get_delta_weight(adapter).detach().to(base.weight.dtype)
++            merged = base.weight.data + delta
++            if safe_merge and not torch.isfinite(merged).all():
++                raise ValueError(f"NaNs detected in the merged weights of adapter {adapter}")
++            base.weight.data = merged
++            self.merged_adapters.append(adapter)
++
++    def unmerge(self) -> None:
++        if not self.merged:
++            warnings.warn("Already unmerged. Nothing to do.")
++            return
++        base = self.get_base_layer()
++        while self.merged_adapters:
++            adapter = self.merged_adapters.pop()
++            if adapter in self.polar_X:
++                base.weight.data -= self.get_delta_weight(adapter).detach().to(base.weight.dtype)
++
++    def forward(self, x: torch.Tensor, *args: Any, **kwargs: Any) -> torch.Tensor:
++        if self.disable_adapters:
++            if self.merged:
++                self.unmerge()
++            return self.base_layer(x, *args, **kwargs)
++        if self.merged:
++            return self.base_layer(x, *args, **kwargs)
++        result = self.base_layer(x, *args, **kwargs)
++        result_dtype = result.dtype
++        for adapter in self.active_adapters:
++            if adapter not in self.polar_X:
++                continue
++            x_factor, y_factor = self.polar_X[adapter], self.polar_Y[adapter]
++            # The adapter branch runs in the adapter dtype (fp32 under autocast_adapter_dtype), as LoRA's does.
++            x_adapter = self._cast_input_dtype(x, x_factor.dtype)
++            update = ((x_adapter @ y_factor) @ self.polar_theta[adapter].T) @ x_factor.T
++            result = result + update * self.scaling[adapter]
++        return result.to(result_dtype)
++
++    def __repr__(self) -> str:
++        return "polar." + super().__repr__()
+diff --git a/src/peft/tuners/polar/model.py b/src/peft/tuners/polar/model.py
+new file mode 100644
+index 00000000..7dbcbd13
+--- /dev/null
++++ b/src/peft/tuners/polar/model.py
+@@ -0,0 +1,52 @@
++from __future__ import annotations
++
++import weakref
++
++import torch
++from torch.optim.optimizer import register_optimizer_step_pre_hook
++
++from peft.tuners.tuners_utils import BaseTuner, BaseTunerLayer
++from peft.utils import TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING
++
++from .layer import PolarLayer, PolarLinear
++
++
++class PolarModel(BaseTuner):
++    prefix: str = "polar_"
++    tuner_layer_cls = PolarLayer
++    target_module_mapping = TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING
++
++    def __init__(self, model, config, adapter_name, **kwargs) -> None:
++        super().__init__(model, config, adapter_name, **kwargs)
++        # A global optimizer pre-step hook: the training loop clips the Euclidean gradient first, then the hook
++        # swaps in the landing field, the order of the official code. A weak reference keeps the model collectable.
++        model_reference = weakref.ref(self)
++
++        def landing_hook(optimizer, args, kwargs):
++            polar_model = model_reference()
++            if polar_model is None:
++                return
++            trained = {id(param) for group in optimizer.param_groups for param in group["params"]}
++            for module in polar_model.model.modules():
++                if isinstance(module, PolarLayer):
++                    module.apply_landing(trained)
++
++        self.landing_hook_handle = register_optimizer_step_pre_hook(landing_hook)
++
++    def _create_and_replace(self, config, adapter_name, target, target_name, parent, current_key, **optional_kwargs):
++        if isinstance(target, PolarLinear):
++            target.update_layer(
++                adapter_name, config.r, config.lora_alpha, config.landing_lambda, init_weights=config.init_weights,
++                inference_mode=config.inference_mode,
++            )
++            return
++        base = target.get_base_layer() if isinstance(target, BaseTunerLayer) else target
++        if not isinstance(base, torch.nn.Linear):
++            raise TypeError(f"Target module {target} is not supported; only torch.nn.Linear is.")
++        new_module = PolarLinear(
++            target, adapter_name, config.r, config.lora_alpha, config.landing_lambda,
++            init_weights=config.init_weights, inference_mode=config.inference_mode,
++        )
++        if adapter_name not in self.active_adapters:
++            new_module.requires_grad_(False)
++        self._replace_module(parent, target_name, new_module, target)
+diff --git a/src/peft/utils/__init__.py b/src/peft/utils/__init__.py
+index 6b534837..588883b8 100644
+--- a/src/peft/utils/__init__.py
++++ b/src/peft/utils/__init__.py
+@@ -27,6 +27,8 @@ from .other import (
+     TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING,
++    TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING,
++    TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_FOURIERFT_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_FROD_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING,
+@@ -103,6 +105,8 @@ __all__ = [
+     "TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING",
++    "TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING",
++    "TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_FOURIERFT_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_FROD_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING",
+diff --git a/src/peft/utils/constants.py b/src/peft/utils/constants.py
+index 8360d413..bc6c6fbb 100644
+--- a/src/peft/utils/constants.py
++++ b/src/peft/utils/constants.py
+@@ -111,6 +111,8 @@ TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING = {
+ TRANSFORMERS_MODELS_TO_BOFT_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
++TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
++TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+ TRANSFORMERS_MODELS_TO_HRA_TARGET_MODULES_MAPPING = TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.copy()
+diff --git a/src/peft/utils/other.py b/src/peft/utils/other.py
+index 31568d3f..0671a4ff 100644
+--- a/src/peft/utils/other.py
++++ b/src/peft/utils/other.py
+@@ -54,6 +54,8 @@ from .constants import (
+     TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING,
++    TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING,
++    TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_FOURIERFT_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_FROD_TARGET_MODULES_MAPPING,
+     TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING,
+@@ -107,6 +109,8 @@ __all__ = [
+     "TRANSFORMERS_MODELS_TO_C3A_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_DEFT_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_DELORA_TARGET_MODULES_MAPPING",
++    "TRANSFORMERS_MODELS_TO_PHASE_LORA_TARGET_MODULES_MAPPING",
++    "TRANSFORMERS_MODELS_TO_POLAR_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_FOURIERFT_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_FROD_TARGET_MODULES_MAPPING",
+     "TRANSFORMERS_MODELS_TO_GLORA_TARGET_MODULES_MAPPING",
+diff --git a/src/peft/utils/peft_types.py b/src/peft/utils/peft_types.py
+index 0fea0afb..02700666 100644
+--- a/src/peft/utils/peft_types.py
++++ b/src/peft/utils/peft_types.py
+@@ -51,6 +51,8 @@ class PeftType(str, enum.Enum):  # noqa: UP042
+     - WAVEFT
+     - OSF
+     - DELORA
++    - PHASE_LORA
++    - POLAR
+     - GRALORA
+     - ADAMSS
+     - SHADOW
+@@ -94,6 +96,8 @@ class PeftType(str, enum.Enum):  # noqa: UP042
+     WAVEFT = "WAVEFT"
+     OSF = "OSF"
+     DELORA = "DELORA"
++    PHASE_LORA = "PHASE_LORA"
++    POLAR = "POLAR"
+     GRALORA = "GRALORA"
+     CARTRIDGE = "CARTRIDGE"
+     TINYLORA = "TINYLORA"
+diff --git a/tests/test_custom_models.py b/tests/test_custom_models.py
+index 72785875..37776d01 100644
+--- a/tests/test_custom_models.py
++++ b/tests/test_custom_models.py
+@@ -52,6 +52,8 @@ from peft import (
+     DeftConfig,
+     DeloraConfig,
+     FourierFTConfig,
++    PhaseLoraConfig,
++    PolarConfig,
+     FrodConfig,
+     GloraConfig,
+     GraloraConfig,
+@@ -1207,6 +1209,32 @@ TEST_CASES = [
+         DeloraConfig,
+         {"target_modules": ["lin0"], "module_dropout": 0.1},
+     ),
++    ##############
++    # Phase LoRA #
++    ##############
++    ("Vanilla MLP 1 Phase LoRA", "MLP", PhaseLoraConfig, {"target_modules": "lin0", "r": 4}),
++    ("Vanilla MLP 2 Phase LoRA", "MLP", PhaseLoraConfig, {"target_modules": ["lin0"], "r": 4}),
++    ("Vanilla MLP 3 Phase LoRA", "MLP", PhaseLoraConfig, {"target_modules": ["lin1"], "r": 2}),
++    ("Vanilla MLP 4 Phase LoRA", "MLP", PhaseLoraConfig, {"target_modules": ["lin0", "lin1"], "r": 2}),
++    (
++        "Vanilla MLP 5 Phase LoRA",
++        "MLP",
++        PhaseLoraConfig,
++        {"target_modules": ["lin0"], "r": 4, "modules_to_save": ["lin1"]},
++    ),
++    #########
++    # PoLAR #
++    #########
++    ("Vanilla MLP 1 PoLAR", "MLP", PolarConfig, {"target_modules": "lin0", "r": 4}),
++    ("Vanilla MLP 2 PoLAR", "MLP", PolarConfig, {"target_modules": ["lin0"], "r": 4}),
++    ("Vanilla MLP 3 PoLAR", "MLP", PolarConfig, {"target_modules": ["lin1"], "r": 2}),
++    ("Vanilla MLP 4 PoLAR", "MLP", PolarConfig, {"target_modules": ["lin0", "lin1"], "r": 2}),
++    (
++        "Vanilla MLP 5 PoLAR",
++        "MLP",
++        PolarConfig,
++        {"target_modules": ["lin0"], "r": 4, "modules_to_save": ["lin1"]},
++    ),
+     ###########
+     # BD-LoRA #
+     ###########
+@@ -1817,6 +1845,34 @@ MULTIPLE_ACTIVE_ADAPTERS_TEST_CASES = [
+         {"target_modules": ["lin0"], "init_weights": False, "n_frequency": 8},
+         {"target_modules": ["lin1"], "init_weights": False, "n_frequency": 8},
+     ),
++    (
++        "Phase LoRA Same",
++        "phase_lora",
++        PhaseLoraConfig,
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++    ),
++    (
++        "Phase LoRA Different",
++        "phase_lora",
++        PhaseLoraConfig,
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++        {"target_modules": ["lin1"], "r": 2, "init_weights": False},
++    ),
++    (
++        "PoLAR Same",
++        "polar",
++        PolarConfig,
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++    ),
++    (
++        "PoLAR Different",
++        "polar",
++        PolarConfig,
++        {"target_modules": ["lin0"], "r": 4, "init_weights": False},
++        {"target_modules": ["lin1"], "r": 2, "init_weights": False},
++    ),
+     (
+         "DeLoRA Same",
+         "delora",
+@@ -3453,7 +3509,7 @@ class TestPeftCustomModel(PeftCommonTester):
+             lr = 0.1  # otherwise we get nan
+         elif "mha" in model_id.lower():
+             lr = 1e-3  # we get exploding gradients with MHA when learning rate is too high
+-        elif issubclass(config_cls, (VBLoRAConfig, RandLoraConfig, UniLoraConfig, OSFConfig)):
++        elif issubclass(config_cls, (VBLoRAConfig, RandLoraConfig, UniLoraConfig, OSFConfig, PolarConfig)):
+             lr = 0.01  # otherwise we get nan
+         elif issubclass(config_cls, AdaLoraConfig):
+             lr = 1e-4  # AdaLoRA + init_lora_weights=False can blow up with multi-target SGD
+diff --git a/tests/testing_common.py b/tests/testing_common.py
+index 68a2eeea..ee97b2da 100644
+--- a/tests/testing_common.py
++++ b/tests/testing_common.py
+@@ -38,6 +38,8 @@ from peft import (
+     CPTConfig,
+     DeloraConfig,
+     GloraConfig,
++    PhaseLoraConfig,
++    PolarConfig,
+     GraloraConfig,
+     HiraConfig,
+     HRAConfig,
+@@ -93,6 +95,8 @@ from .testing_utils import get_state_dict, hub_online_once
+ 
+ # PEFT methods that don't support transformers' Conv1D layers (used by GPT2)
+ CONV1D_UNSUPPORTED_CONFIGS = (
++    PhaseLoraConfig,
++    PolarConfig,
+     BeftConfig,
+     BOFTConfig,
+     C3AConfig,

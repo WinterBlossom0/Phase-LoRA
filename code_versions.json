@@ -1,0 +1,44 @@
+{
+  "train": {
+    "b60ffef4cb34": {
+      "kinds": [
+        "additive",
+        "polar",
+        "stiefel"
+      ],
+      "reason": "Later code adds kinds, a runs-dir override, comments and the Luganda dataset, and removes kinds that the experiment does not use; additive, polar and stiefel run the same statements."
+    },
+    "663b8f6b1890": {
+      "kinds": [
+        "dora",
+        "phase_dora",
+        "stiefel",
+        "phase_stiefel"
+      ],
+      "reason": "Later code changes comments and docstrings (syntax trees equal without docstrings), removes the kinds and datasets that the experiment does not use, and adds the Luganda dataset. For the six kinds of the experiment, old and new code give bitwise-equal initial weights, losses and weights after three training steps, and equal tokenised data for the old datasets."
+    }
+  },
+  "score": {
+    "8c1a5da4421a": {
+      "datasets": [
+        "mafand_tsn",
+        "svamp",
+        "arc"
+      ],
+      "reason": "Greedy scoring of these datasets is unchanged after it; later scorer edits add a base-model mode, a repetition-blocked decoder and a test-loss mode."
+    },
+    "0ae7b35679c3": {
+      "datasets": [
+        "mafand_tsn",
+        "svamp",
+        "arc"
+      ],
+      "modes": [
+        "greedy",
+        "norepeat",
+        "loss"
+      ],
+      "reason": "Later scorers read the GPU lock path from PHASE_LORA_GPU_LOCK, keep the validity rule in score_valid, change comments, score every translation dataset with one function, and run on the training code above; for the old datasets they decode and score with the same statements."
+    }
+  }
+}

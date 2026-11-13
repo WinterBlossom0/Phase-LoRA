@@ -1,0 +1,9 @@
+models/
+# trained adapter weights (18 GB) stay out of git; every other run file is tracked
+runs/**/*.pt
+data/
+__pycache__/
+*.pyc
+.venv/
+paper/
+verify_runs/

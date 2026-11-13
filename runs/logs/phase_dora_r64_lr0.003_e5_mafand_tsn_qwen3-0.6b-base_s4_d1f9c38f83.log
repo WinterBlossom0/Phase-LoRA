@@ -1,0 +1,17 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9075.41it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+phase_dora: 9261.1K trainable, 2100 examples, 3072 tokens/batch, 9-78 rows/step, 330 steps over 5 epochs
+  step    0  ep 0.00  eval 5.5083  (before training)
+  step    33  ep 0.50  eval 3.6393  train 5.0282  22s
+  step    66  ep 1.00  eval 3.0335  train 4.2229  45s
+  step    99  ep 1.50  eval 2.7415  train 3.5444  68s
+  step   132  ep 2.00  eval 2.5384  train 3.0935  91s
+  step   165  ep 2.50  eval 2.4337  train 2.6673  114s
+  step   198  ep 3.00  eval 2.3170  train 2.4087  137s
+  step   231  ep 3.50  eval 2.3445  train 2.0961  160s
+  step   264  ep 4.00  eval 2.2613  train 1.9045  183s
+  step   297  ep 4.50  eval 2.3595  train 1.6692  206s
+  step   330  ep 5.00  eval 2.3514  train 1.5258  229s
+  best eval 2.2613   -> runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d1f9c38f83.json
+  weights -> runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d1f9c38f83.pt
+  peak VRAM 6.67 GB used, 8.50 GB reserved

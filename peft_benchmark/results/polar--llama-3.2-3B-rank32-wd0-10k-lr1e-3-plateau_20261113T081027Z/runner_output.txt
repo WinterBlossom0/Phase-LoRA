@@ -1,0 +1,2 @@
+=== 2026-11-13 12:58:54 IST start polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau (log logs/polar--llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau_20261113T072853Z.log)
+=== 2026-11-13 13:40:27 IST done polar/llama-3.2-3B-rank32-wd0-10k-lr1e-3-plateau

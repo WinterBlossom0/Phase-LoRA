@@ -1,0 +1,17 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 13123.60it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+additive: 9175.0K trainable, 1119 examples, 3072 tokens/batch, 1-83 rows/step, 130 steps over 5 epochs
+  step    0  ep 0.00  eval 2.7963  (before training)
+  step    13  ep 0.50  eval 0.4319  train 2.2331  7s
+  step    26  ep 1.00  eval 0.3753  train 1.8074  12s
+  step    39  ep 1.50  eval 0.6938  train 1.4232  17s
+  step    52  ep 2.00  eval 0.4065  train 1.1352  22s
+  step    65  ep 2.50  eval 0.6824  train 0.8880  27s
+  step    78  ep 3.00  eval 0.6967  train 0.6918  33s
+  step    91  ep 3.50  eval 0.6840  train 0.5339  41s
+  step   104  ep 4.00  eval 0.6966  train 0.4125  46s
+  step   117  ep 4.50  eval 0.7169  train 0.3181  51s
+  step   130  ep 5.00  eval 0.7142  train 0.2450  57s
+  best eval 0.3753   -> runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_5bca9bba42.json
+  weights -> runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_5bca9bba42.pt
+  peak VRAM 6.67 GB used, 8.52 GB reserved
