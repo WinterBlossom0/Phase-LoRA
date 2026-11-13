@@ -79,11 +79,12 @@ Every run's training record, per-item test scores and log are in `runs/`. The tr
 | **Learning rate** | chosen per adapter from {3e-4, 1e-3, 3e-3, 1e-2} by dev loss |
 | **Training** | 5 epochs, best-dev-loss checkpoint, 5 seeds |
 | **Translation decoding** | greedy, a 4-gram may appear at most twice per reply |
+| **PoLAR landing field** | ½(G Xᵀ − X Gᵀ) X + 4λ X(XᵀX − I), λ = 5·10⁻³, applied before gradient clipping (both PoLAR arms) |
 | **Ablation** | LoRA vs Phase LoRA at rank 8, 0.6B, 3 seeds |
 
 Data and model revisions are pinned and checked by checksum (`data_manifest.json`, `scripts/prepare_models.py`).
 
-**Paired tests**, phase minus real, in units of the seed-to-seed standard deviation (OLS with HC3 errors, Holm-corrected):
+**Tests**, phase minus real, in units of the seed-to-seed standard deviation. Each test is a regression of the run scores on a phase indicator with one effect per setup (OLS with HC3 errors, Holm-corrected); runs are not matched by seed:
 
 | Comparison | Effect | 95 % CI | p |
 |---|:---:|:---:|:---:|
@@ -124,7 +125,7 @@ Phase LoRA and PoLAR were also run on Hugging Face PEFT's own [MetaMathQA benchm
 
 PEFT's official LoRA result in the default setting is 47.8 accuracy and 0.050 forgetting.
 
-> **Read with care.** Each cell is a single run with one seed; one GSM8K score carries about ±1.4 points of noise. The settings after the first two rows were chosen while test results were visible, so they are a sweep, not a tuned comparison.
+> **Read with care.** Each cell is a single run with one seed; one GSM8K score carries about ±1.4 points of noise. The benchmark trains for a fixed number of steps and tests the final model; its 50-problem validation set is only logged, never used to choose a setting or a checkpoint. The settings after the first two rows were chosen while test results were visible, so they are a sweep, not a tuned comparison.
 
 **Plateau schedule:** a 10 % linear warmup, then the learning rate halves after two checks (250 steps each) without a lower training loss; the same for every method.
 
