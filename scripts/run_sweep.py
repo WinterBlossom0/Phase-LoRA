@@ -238,7 +238,7 @@ def main():
         for argv in main_runs(every, chosen):
             settings = vars(parse(argv))
             if settings["dataset"] in a.datasets and settings["seed"] in a.seeds:
-                print(RUNS_DIR / f"{run_tag(settings)}.json")
+                print(os.path.relpath(RUNS_DIR / f"{run_tag(settings)}.json"))
         return
     # kill and a closed terminal would end the process without unwinding; the flag makes
     # run_one leave through its finally, which stops the training run in progress

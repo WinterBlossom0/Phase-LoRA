@@ -767,9 +767,9 @@ index 00000000..de9833e1
 +HERE=$(pwd)
 +PY="${PYTHON:-../../.venv/bin/python}"
 +LOCK="${PHASE_LORA_GPU_LOCK:-$HOME/.gpu.lock}"
-+MIN_FREE_RAM_KB=1572864        # 1.5 GB: below this WSL can crash, so the watchdog stops the run
++MIN_FREE_RAM_KB=1572864        # 1.5 GB: the watchdog stops the run below this free RAM
 +# run.py saves the trained adapter in a TemporaryDirectory; TMPDIR (set per run below) keeps it here instead of
-+# /tmp, which a WSL restart deletes
++# /tmp, which a reboot can clear
 +EXPERIMENTS=("$@")
 +if [ "${#EXPERIMENTS[@]}" -eq 0 ]; then
 +    EXPERIMENTS=(lora/llama-3.2-3B-rank32-gc phase_lora/llama-3.2-3B-rank32-gc polar/llama-3.2-3B-rank32-gc)
@@ -787,8 +787,8 @@ index 00000000..de9833e1
 +      find ../../src/peft/tuners/phase_lora ../../src/peft/tuners/polar -name "*.py" -print0 | sort -z | xargs -0 sha256sum
 +      git -C ../.. diff; } > "${log%.log}.code.txt"
 +    cancelled_before=$(find cancelled_results -type f | wc -l)
-+    echo "=== $(TZ=Asia/Kolkata date '+%F %T IST') start $experiment (log $log)"
-+    # 3 h limit per run: about twice the estimated 1.5 h per run on a 16 GB laptop GPU (not yet measured)
++    echo "=== $(date '+%F %T %Z') start $experiment (log $log)"
++    # 3 h limit per run: about twice the expected 1.5 h per run
 +    flock "$LOCK" timeout 10800 "$PY" run.py -v "experiments/$experiment" > "$log" 2>&1 &
 +    run_pid=$!
 +    while kill -0 "$run_pid" 2>/dev/null; do
@@ -804,10 +804,10 @@ index 00000000..de9833e1
 +    wait "$run_pid" || status=$?
 +    cancelled_after=$(find cancelled_results -type f | wc -l)
 +    if [ "$status" -ne 0 ] || [ "$cancelled_after" -ne "$cancelled_before" ]; then
-+        echo "=== $(TZ=Asia/Kolkata date '+%F %T IST') FAILED $experiment (exit $status, see $log)"
++        echo "=== $(date '+%F %T %Z') FAILED $experiment (exit $status, see $log)"
 +        exit 1
 +    fi
-+    echo "=== $(TZ=Asia/Kolkata date '+%F %T IST') done $experiment"
++    echo "=== $(date '+%F %T %Z') done $experiment"
 +done
 diff --git a/method_comparison/MetaMathQA/utils.py b/method_comparison/MetaMathQA/utils.py
 index 571f9dee..e92113f1 100644

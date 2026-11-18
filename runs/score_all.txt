@@ -1,264 +1,264 @@
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_113854ccbb.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_74fc23294c.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_c7621a6203.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_f88cac31a9.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_b6eb027e79.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_f2fb60d2dc.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_5d808bb41e.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_cbee4f6e0f.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_252a79ca85.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_3754a8fb03.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_aaedeb3c54.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_88dc825a15.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_c5cb296d81.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_c17557c1f2.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_9b64e998cc.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_1691c54751.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s1_f1f9d2e657.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s1_68a1ffa983.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_fc7a2f4f80.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_bae0ca5f92.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_0b0c1197f6.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_dd13cb6bd5.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_853e8e50e5.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_6a59282de2.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_af17a12182.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_8cb6af108a.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_cc49a7e467.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_209d6ee25c.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_fc795c53f1.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_7d613108d3.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s1_f8dba507dc.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s1_01792dca30.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s1_37d974ddd9.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s1_1842e08b00.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s1_419728345e.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s1_714c81463d.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_aeaf1f9274.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_baccb06342.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_855fe4c92d.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s1_a27ff4a032.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s1_8571b4b481.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s1_a39e00d4c1.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_92ea95d7e4.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_a3d2292f24.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_3bac75d6f1.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_ad2e1fa411.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s1_2edbab5694.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s1_2ce9c09cf8.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_e7bbf16be7.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s1_0317ca780a.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_a3fd59415c.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.01_e5_mafand_lug_qwen3-0.6b-base_s1_bf52934bee.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s1_19a2bc2d8c.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s1_9327f584d9.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s1_f8073d83eb.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s1_6453a8779a.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_7f9a14d7e2.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_b0e0d8b1ef.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_bd4765ea93.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_a350c8aa8a.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_2b5f86ad25.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_8799381008.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_289cbd5271.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_1dfab3bba5.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_72ca03dc34.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_db6ddea7e7.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_16df48dd63.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_b6aa50b85d.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_054553d8f8.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_0f254c71ff.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_3b05f8c2e8.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_7d17199341.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s2_51408ed01b.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s2_81379c8e62.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_15e02d9be5.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_6754c1f0ed.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_97a96679cd.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_6bd0e2c1b3.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_2a3f25a1e4.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_fe8e2bb623.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_35d39b765c.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_b372c82d02.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_2b6a98af94.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_055081aec6.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s2_e0d548e08f.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s2_82c3f3fadb.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s2_5efa736134.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s2_fa6e97ac9e.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s2_6aee0eba9f.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s2_2cf9c2c3bd.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s2_8ca2584adf.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s2_5c8dcdb3f3.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_06b01495b8.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_4d94717697.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_f0a804306e.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s2_d371ae63ff.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s2_8e0ca8ec8a.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s2_24b8e3dafd.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_60fd0de439.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_0e9298fd79.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_78cc467da2.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_a022fdb2e1.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s2_791660a325.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s2_d3a6f6fc78.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_923bef678c.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s2_c084af5a6a.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_be45253fa8.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.01_e5_mafand_lug_qwen3-0.6b-base_s2_1c58dff916.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s2_4ac1bcd7fb.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s2_9e01a25278.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s2_7b8ccd7b4d.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s2_d3b2dcebc6.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_875a5f96d2.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_8cd23a0f77.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_72ebfb354a.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_2cd8cc8e46.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_40dc871167.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_17341641a2.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_6667a52fec.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_d5436c6d80.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_44e5598c62.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_4c988437af.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_32d4dec27f.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_bb980b7c11.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_57c561470b.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_de576623c1.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_f862c187c3.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_210388d405.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s3_b9d6b33e2a.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s3_5a07c33d95.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_5bca9bba42.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_afdd7d783e.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_f71d7381ce.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_eaeea9314f.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_c99107543b.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_3075020da4.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_a98b7f72fd.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_5a7ecd9884.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_3cafcd9f60.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_0b00bbafa9.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s3_6aff91888e.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s3_7f1d49100f.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s3_b3921a8d1c.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s3_c042121c21.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s3_931beae201.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s3_4910271622.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s3_50b00e1122.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s3_74ceb3e124.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_2f3b01a9f2.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_0e934467e7.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_f11fa792c5.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s3_eacaf2af40.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s3_b22b598864.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s3_452d8e4311.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_f7822bed1a.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_6726384f53.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_2d68fdb860.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_20fad33445.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s3_381470a76b.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s3_8d704afaca.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_92461fefac.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s3_e94aba9804.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_d8fa5b18a8.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.01_e5_mafand_lug_qwen3-0.6b-base_s3_13e654197d.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s3_d203e8da08.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s3_517731f1a6.json
-/home/vihaa/Phase LoRA/runs/additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s3_0f1d2487db.json
-/home/vihaa/Phase LoRA/runs/polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s3_3b408696d2.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_ea401cacb5.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d9195a30b9.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_ba82c71a22.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d1f9c38f83.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_f221db481b.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_4844193a78.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s4_7465daf39e.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s4_3213d8bc7f.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s4_70afda2855.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s4_0d36840e97.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_e13a2e4a19.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_76a1c759a2.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_e5696b616c.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_9f66c17715.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_4c26967424.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_f3a8381139.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s4_7e3c5b4223.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s4_7f668058aa.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_ce54641d15.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_63c497c6ba.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_c26b7d490c.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_10dff1f58d.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_eb70758210.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_302b857bad.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_7820686ca4.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_0e3a34bb99.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_055e247787.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_6e79324393.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s4_59d3f97b55.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s4_07ec63043b.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s4_c95727e1a9.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s4_bbd3bd440d.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s4_7bbac6333e.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s4_8bd12e872b.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s4_85e9cbf323.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s4_0496dda740.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_972fba7a11.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_9ffcf59b03.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_7689b1ef0b.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s4_20cc480bf2.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s4_795a9061e4.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s4_bb39ed0abf.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_9fcb4955e1.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_dfb35e70d0.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_ebbb21fd3b.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_18ce295385.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s4_a2bb581fd3.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s4_657869d94a.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_e709c312d9.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_e84bf658e3.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_501e8e7d29.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_52f0e9a305.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_17f8ae0343.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_338ebad9dc.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s5_d9ffd7f876.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s5_59417bc4c7.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s5_511cc72ffe.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s5_16545e2cad.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_d1923ffa2d.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_67b45b9791.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_74ede995bb.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_4ee656b336.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_e23eb4d859.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_20c7a4ea6c.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s5_3cd4dcaeee.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s5_fe4c3e023d.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_834175badf.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_e0694bb5ff.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_e47ac90659.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_2353026cdc.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_79474cacda.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_178f2f034b.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_7aa5b57871.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_a99206684c.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_952827b4fd.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_73faa6cceb.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s5_51585ad382.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s5_2bb4ed7f18.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s5_18fa445377.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s5_2820b71584.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s5_76921a19c1.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s5_2c323511e6.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s5_23f38e94e6.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s5_142d15933b.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_b2ce5c3fee.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_828d8c8e9f.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_41cce01d23.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s5_f307567d23.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s5_3bed3f953d.json
-/home/vihaa/Phase LoRA/runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_543a818947.json
-/home/vihaa/Phase LoRA/runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_bfd7b36d36.json
-/home/vihaa/Phase LoRA/runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_c49337217a.json
-/home/vihaa/Phase LoRA/runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_f22b035ec0.json
-/home/vihaa/Phase LoRA/runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s5_42b2d01e1b.json
-/home/vihaa/Phase LoRA/runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s5_76d67fd7d1.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_113854ccbb.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_74fc23294c.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_c7621a6203.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_f88cac31a9.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_b6eb027e79.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_f2fb60d2dc.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_5d808bb41e.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_cbee4f6e0f.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_252a79ca85.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_3754a8fb03.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_aaedeb3c54.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_88dc825a15.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_c5cb296d81.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_c17557c1f2.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_9b64e998cc.json
+runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_1691c54751.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s1_f1f9d2e657.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s1_68a1ffa983.json
+runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_fc7a2f4f80.json
+runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_bae0ca5f92.json
+runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_0b0c1197f6.json
+runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_dd13cb6bd5.json
+runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_853e8e50e5.json
+runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_6a59282de2.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_af17a12182.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_8cb6af108a.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_cc49a7e467.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_209d6ee25c.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_fc795c53f1.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_7d613108d3.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s1_f8dba507dc.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s1_01792dca30.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s1_37d974ddd9.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s1_1842e08b00.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s1_419728345e.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s1_714c81463d.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_aeaf1f9274.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_baccb06342.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_855fe4c92d.json
+runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s1_a27ff4a032.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s1_8571b4b481.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s1_a39e00d4c1.json
+runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_92ea95d7e4.json
+runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_a3d2292f24.json
+runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_3bac75d6f1.json
+runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_ad2e1fa411.json
+runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s1_2edbab5694.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s1_2ce9c09cf8.json
+runs/additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_e7bbf16be7.json
+runs/polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s1_0317ca780a.json
+runs/additive_r8_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s1_a3fd59415c.json
+runs/polar_r8_lr0.01_e5_mafand_lug_qwen3-0.6b-base_s1_bf52934bee.json
+runs/additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s1_19a2bc2d8c.json
+runs/polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s1_9327f584d9.json
+runs/additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s1_f8073d83eb.json
+runs/polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s1_6453a8779a.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_7f9a14d7e2.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_b0e0d8b1ef.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_bd4765ea93.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_a350c8aa8a.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_2b5f86ad25.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_8799381008.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_289cbd5271.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_1dfab3bba5.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_72ca03dc34.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_db6ddea7e7.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_16df48dd63.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_b6aa50b85d.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_054553d8f8.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_0f254c71ff.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_3b05f8c2e8.json
+runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_7d17199341.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s2_51408ed01b.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s2_81379c8e62.json
+runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_15e02d9be5.json
+runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_6754c1f0ed.json
+runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_97a96679cd.json
+runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_6bd0e2c1b3.json
+runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_2a3f25a1e4.json
+runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_fe8e2bb623.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_35d39b765c.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_b372c82d02.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_2b6a98af94.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_055081aec6.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s2_e0d548e08f.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s2_82c3f3fadb.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s2_5efa736134.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s2_fa6e97ac9e.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s2_6aee0eba9f.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s2_2cf9c2c3bd.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s2_8ca2584adf.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s2_5c8dcdb3f3.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_06b01495b8.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_4d94717697.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_f0a804306e.json
+runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s2_d371ae63ff.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s2_8e0ca8ec8a.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s2_24b8e3dafd.json
+runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_60fd0de439.json
+runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_0e9298fd79.json
+runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_78cc467da2.json
+runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_a022fdb2e1.json
+runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s2_791660a325.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s2_d3a6f6fc78.json
+runs/additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_923bef678c.json
+runs/polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s2_c084af5a6a.json
+runs/additive_r8_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s2_be45253fa8.json
+runs/polar_r8_lr0.01_e5_mafand_lug_qwen3-0.6b-base_s2_1c58dff916.json
+runs/additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s2_4ac1bcd7fb.json
+runs/polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s2_9e01a25278.json
+runs/additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s2_7b8ccd7b4d.json
+runs/polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s2_d3b2dcebc6.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_875a5f96d2.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_8cd23a0f77.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_72ebfb354a.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_2cd8cc8e46.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_40dc871167.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_17341641a2.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_6667a52fec.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_d5436c6d80.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_44e5598c62.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_4c988437af.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_32d4dec27f.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_bb980b7c11.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_57c561470b.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_de576623c1.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_f862c187c3.json
+runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_210388d405.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s3_b9d6b33e2a.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s3_5a07c33d95.json
+runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_5bca9bba42.json
+runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_afdd7d783e.json
+runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_f71d7381ce.json
+runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_eaeea9314f.json
+runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_c99107543b.json
+runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_3075020da4.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_a98b7f72fd.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_5a7ecd9884.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_3cafcd9f60.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_0b00bbafa9.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s3_6aff91888e.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s3_7f1d49100f.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s3_b3921a8d1c.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s3_c042121c21.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s3_931beae201.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s3_4910271622.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s3_50b00e1122.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s3_74ceb3e124.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_2f3b01a9f2.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_0e934467e7.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_f11fa792c5.json
+runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s3_eacaf2af40.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s3_b22b598864.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s3_452d8e4311.json
+runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_f7822bed1a.json
+runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_6726384f53.json
+runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_2d68fdb860.json
+runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_20fad33445.json
+runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s3_381470a76b.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s3_8d704afaca.json
+runs/additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_92461fefac.json
+runs/polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s3_e94aba9804.json
+runs/additive_r8_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s3_d8fa5b18a8.json
+runs/polar_r8_lr0.01_e5_mafand_lug_qwen3-0.6b-base_s3_13e654197d.json
+runs/additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s3_d203e8da08.json
+runs/polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s3_517731f1a6.json
+runs/additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s3_0f1d2487db.json
+runs/polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s3_3b408696d2.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_ea401cacb5.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d9195a30b9.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_ba82c71a22.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d1f9c38f83.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_f221db481b.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_4844193a78.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s4_7465daf39e.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s4_3213d8bc7f.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s4_70afda2855.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s4_0d36840e97.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_e13a2e4a19.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_76a1c759a2.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_e5696b616c.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_9f66c17715.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_4c26967424.json
+runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_f3a8381139.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s4_7e3c5b4223.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s4_7f668058aa.json
+runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_ce54641d15.json
+runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_63c497c6ba.json
+runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_c26b7d490c.json
+runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_10dff1f58d.json
+runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_eb70758210.json
+runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_302b857bad.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_7820686ca4.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_0e3a34bb99.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_055e247787.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_6e79324393.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s4_59d3f97b55.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s4_07ec63043b.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s4_c95727e1a9.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s4_bbd3bd440d.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s4_7bbac6333e.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s4_8bd12e872b.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s4_85e9cbf323.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s4_0496dda740.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_972fba7a11.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_9ffcf59b03.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_7689b1ef0b.json
+runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s4_20cc480bf2.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s4_795a9061e4.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s4_bb39ed0abf.json
+runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_9fcb4955e1.json
+runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_dfb35e70d0.json
+runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_ebbb21fd3b.json
+runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_18ce295385.json
+runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s4_a2bb581fd3.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s4_657869d94a.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_e709c312d9.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_e84bf658e3.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_501e8e7d29.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_52f0e9a305.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_17f8ae0343.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_338ebad9dc.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s5_d9ffd7f876.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s5_59417bc4c7.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s5_511cc72ffe.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-0.6b-base_s5_16545e2cad.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_d1923ffa2d.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_67b45b9791.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_74ede995bb.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_4ee656b336.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_e23eb4d859.json
+runs/phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_20c7a4ea6c.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s5_3cd4dcaeee.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s5_fe4c3e023d.json
+runs/additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_834175badf.json
+runs/polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_e0694bb5ff.json
+runs/dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_e47ac90659.json
+runs/phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_2353026cdc.json
+runs/stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_79474cacda.json
+runs/phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_178f2f034b.json
+runs/additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_7aa5b57871.json
+runs/polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_a99206684c.json
+runs/dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_952827b4fd.json
+runs/phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_73faa6cceb.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s5_51585ad382.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s5_2bb4ed7f18.json
+runs/additive_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s5_18fa445377.json
+runs/polar_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s5_2820b71584.json
+runs/dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s5_76921a19c1.json
+runs/phase_dora_r64_lr0.003_e5_mafand_lug_qwen3-1.7b-base_s5_2c323511e6.json
+runs/stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s5_23f38e94e6.json
+runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s5_142d15933b.json
+runs/additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_b2ce5c3fee.json
+runs/polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_828d8c8e9f.json
+runs/dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_41cce01d23.json
+runs/phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s5_f307567d23.json
+runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s5_3bed3f953d.json
+runs/additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_543a818947.json
+runs/polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_bfd7b36d36.json
+runs/dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_c49337217a.json
+runs/phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_f22b035ec0.json
+runs/stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s5_42b2d01e1b.json
+runs/phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s5_76d67fd7d1.json

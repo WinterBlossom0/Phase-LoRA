@@ -195,692 +195,1286 @@ main: finished, 0 failed
 === 2026-11-05 08:55:15 UTC lists of the main runs to score
 198 main runs; 146 greedy scores
 === 2026-11-05 08:55:36 UTC repetition-blocked En-Tsn scores and test loss of every main run
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10525.49it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10525.49it/s]
   chrF++  29.87     64s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_113854ccbb
   loss   2.39      7s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_113854ccbb
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8940.74it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8940.74it/s]
   chrF++  33.23    129s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_74fc23294c
   loss   2.28      7s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_74fc23294c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9996.96it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9996.96it/s]
   chrF++  31.53     74s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_c7621a6203
   loss   2.35      7s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_c7621a6203
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9925.60it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9925.60it/s]
   chrF++  32.93     55s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_f88cac31a9
   loss   2.27      7s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_f88cac31a9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8600.80it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8600.80it/s]
   chrF++  29.58    100s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_7e2b53c42e
   loss   2.44      7s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_7e2b53c42e
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10970.03it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10970.03it/s]
   chrF++  29.54     72s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_856ebfa8b5
   loss   2.52      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_856ebfa8b5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8811.68it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8811.68it/s]
   loss   0.08      1s  additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_c5cb296d81
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7235.30it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7235.30it/s]
   loss   0.08      1s  polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_c17557c1f2
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8208.45it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8208.45it/s]
   loss   0.09      1s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_9b64e998cc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8357.01it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8357.01it/s]
   loss   0.08      1s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_1691c54751
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8279.37it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8279.37it/s]
   loss   0.09      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s1_f1f9d2e657
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9119.27it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9119.27it/s]
   loss   0.08      1s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s1_f6e6cbcb67
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11328.06it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11328.06it/s]
   loss   0.40      4s  additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_fc7a2f4f80
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9957.91it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9957.91it/s]
   loss   0.41      4s  polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_bae0ca5f92
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8701.41it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8701.41it/s]
   loss   0.40      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_0b0c1197f6
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9059.73it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9059.73it/s]
   loss   0.41      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_dd13cb6bd5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8185.76it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8185.76it/s]
   loss   0.41      4s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s1_dba7e8afd4
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9089.31it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9089.31it/s]
   loss   0.40      4s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s1_e844a8890f
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6948.55it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6948.55it/s]
   chrF++  33.26     73s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_af17a12182
   loss   2.22     13s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_af17a12182
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8217.47it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8217.47it/s]
   chrF++  33.76     89s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_8cb6af108a
   loss   2.21     14s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_8cb6af108a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9208.52it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9208.52it/s]
   chrF++  31.88     96s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_cc49a7e467
   loss   2.24     14s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_cc49a7e467
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10148.41it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10148.41it/s]
   chrF++  33.60     97s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_209d6ee25c
   loss   2.22     14s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_209d6ee25c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7856.31it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7856.31it/s]
   chrF++  28.92    125s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_234f8faccc
   loss   2.43     13s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_234f8faccc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9104.45it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9104.45it/s]
   chrF++  28.36    132s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_d4e9828a0e
   loss   2.46     13s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_d4e9828a0e
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9686.18it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9686.18it/s]
   loss   0.08      2s  additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_aeaf1f9274
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9027.84it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9027.84it/s]
   loss   0.07      2s  polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_baccb06342
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9282.41it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9282.41it/s]
   loss   0.07      2s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_855fe4c92d
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8495.49it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8495.49it/s]
   loss   0.09      2s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s1_a27ff4a032
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10821.58it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10821.58it/s]
   loss   0.07      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s1_8571b4b481
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10051.05it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10051.05it/s]
   loss   0.07      2s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s1_30542921d9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8768.19it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8768.19it/s]
   loss   0.34      7s  additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_92ea95d7e4
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9806.28it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9806.28it/s]
   loss   0.27      7s  polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_a3d2292f24
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9852.50it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9852.50it/s]
   loss   0.30      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_3bac75d6f1
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7845.50it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7845.50it/s]
   loss   0.27      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_ad2e1fa411
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10865.35it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10865.35it/s]
   loss   0.24      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s1_78e7cc1566
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9932.96it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9932.96it/s]
   loss   0.27      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s1_2a2d3f83be
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8475.77it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8475.77it/s]
   chrF++  28.06     74s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_e7bbf16be7
   loss   2.53      7s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_e7bbf16be7
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9456.04it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9456.04it/s]
   chrF++  29.10     89s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s1_0317ca780a
   loss   2.47      7s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s1_0317ca780a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9284.60it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9284.60it/s]
   loss   0.09      1s  additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s1_19a2bc2d8c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9489.72it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9489.72it/s]
   loss   0.08      1s  polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s1_9327f584d9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8019.50it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8019.50it/s]
   loss   0.39      4s  additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s1_f8073d83eb
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8516.41it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8516.41it/s]
   loss   0.40      4s  polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s1_6453a8779a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7967.71it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7967.71it/s]
   chrF++  30.17     63s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_7f9a14d7e2
   loss   2.37      7s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_7f9a14d7e2
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9887.94it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9887.94it/s]
   chrF++  33.53     75s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_b0e0d8b1ef
   loss   2.26      7s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_b0e0d8b1ef
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8600.91it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8600.91it/s]
   chrF++  29.73     78s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_bd4765ea93
   loss   2.39      7s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_bd4765ea93
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10390.15it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10390.15it/s]
   chrF++  34.11     56s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_a350c8aa8a
   loss   2.26      7s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_a350c8aa8a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9026.27it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9026.27it/s]
   chrF++  29.69    108s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s2_2ce4bbb976
   loss   2.45      7s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s2_2ce4bbb976
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8269.47it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8269.47it/s]
   chrF++  28.85     76s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s2_35c6db8632
   loss   2.51      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s2_35c6db8632
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8517.52it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8517.52it/s]
   loss   0.10      1s  additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_054553d8f8
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9670.91it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9670.91it/s]
   loss   0.08      1s  polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_0f254c71ff
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8267.37it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8267.37it/s]
   loss   0.09      1s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_3b05f8c2e8
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9514.51it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9514.51it/s]
   loss   0.09      1s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_7d17199341
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8604.73it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8604.73it/s]
   loss   0.09      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s2_51408ed01b
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8519.31it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8519.31it/s]
   loss   0.08      1s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s2_6b22e768ff
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9227.74it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9227.74it/s]
   loss   0.39      4s  additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_15e02d9be5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9215.70it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9215.70it/s]
   loss   0.39      4s  polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_6754c1f0ed
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7975.28it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7975.28it/s]
   loss   0.39      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_97a96679cd
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10372.58it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10372.58it/s]
   loss   0.40      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_6bd0e2c1b3
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9769.73it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9769.73it/s]
   loss   0.40      4s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s2_8b8e06c6d4
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8892.19it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8892.19it/s]
   loss   0.40      4s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s2_ce2e136547
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8303.80it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8303.80it/s]
   chrF++  32.72    115s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_35d39b765c
   loss   2.21     13s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_35d39b765c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7695.79it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7695.79it/s]
   chrF++  33.80     98s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_b372c82d02
   loss   2.19     14s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_b372c82d02
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9510.48it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9510.48it/s]
   chrF++  32.80    152s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_2b6a98af94
   loss   2.22     14s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_2b6a98af94
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8098.32it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8098.32it/s]
   chrF++  33.40    105s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_055081aec6
   loss   2.19     14s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s2_055081aec6
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6402.26it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6402.26it/s]
   chrF++  28.23    171s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s2_5600b4a40f
   loss   2.42     13s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s2_5600b4a40f
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8047.95it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8047.95it/s]
   chrF++  28.32    144s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s2_04faa964aa
   loss   2.47     13s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s2_04faa964aa
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8991.94it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8991.94it/s]
   loss   0.07      2s  additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_06b01495b8
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9046.18it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9046.18it/s]
   loss   0.07      2s  polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_4d94717697
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8686.35it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8686.35it/s]
   loss   0.08      2s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_f0a804306e
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8447.30it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8447.30it/s]
   loss   0.08      2s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s2_d371ae63ff
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8954.84it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8954.84it/s]
   loss   0.07      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s2_8e0ca8ec8a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8860.38it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8860.38it/s]
   loss   0.07      2s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s2_24eef334f0
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9444.09it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9444.09it/s]
   loss   0.31      7s  additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_60fd0de439
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8715.88it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8715.88it/s]
   loss   0.24      7s  polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_0e9298fd79
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9808.94it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9808.94it/s]
   loss   0.33      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_78cc467da2
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8729.74it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8729.74it/s]
   loss   0.24      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_a022fdb2e1
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8760.62it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8760.62it/s]
   loss   0.24      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s2_7febc24984
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8624.87it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8624.87it/s]
   loss   0.29      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s2_a6b2ebba0d
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7537.98it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7537.98it/s]
   chrF++  28.52    125s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_923bef678c
   loss   2.52      7s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_923bef678c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9183.22it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9183.22it/s]
   chrF++  29.43    160s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s2_c084af5a6a
   loss   2.46      7s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s2_c084af5a6a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8997.79it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8997.79it/s]
   loss   0.09      1s  additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s2_4ac1bcd7fb
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10232.91it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10232.91it/s]
   loss   0.10      1s  polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s2_9e01a25278
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8544.00it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8544.00it/s]
   loss   0.40      4s  additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s2_7b8ccd7b4d
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9991.66it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9991.66it/s]
   loss   0.43      4s  polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s2_d3b2dcebc6
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9710.41it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9710.41it/s]
   chrF++  31.76     90s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_875a5f96d2
   loss   2.33      7s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_875a5f96d2
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9831.71it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9831.71it/s]
   chrF++  33.85     65s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_8cd23a0f77
   loss   2.25      7s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_8cd23a0f77
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8336.97it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8336.97it/s]
   chrF++  30.76    131s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_72ebfb354a
   loss   2.34      7s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_72ebfb354a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8886.97it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8886.97it/s]
   chrF++  33.86     62s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_2cd8cc8e46
   loss   2.25      7s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_2cd8cc8e46
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7519.76it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7519.76it/s]
   chrF++  29.38     91s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s3_6929270f00
   loss   2.45      7s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s3_6929270f00
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9589.53it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9589.53it/s]
   chrF++  28.49    137s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s3_c8985381d3
   loss   2.53      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s3_c8985381d3
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7661.05it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7661.05it/s]
   loss   0.10      1s  additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_57c561470b
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7524.11it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7524.11it/s]
   loss   0.09      1s  polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_de576623c1
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9028.90it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9028.90it/s]
   loss   0.09      1s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_f862c187c3
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8485.06it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8485.06it/s]
   loss   0.09      1s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_210388d405
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7989.30it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7989.30it/s]
   loss   0.09      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s3_b9d6b33e2a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9662.14it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9662.14it/s]
   loss   0.09      1s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s3_6420597366
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8637.71it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8637.71it/s]
   loss   0.41      4s  additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_5bca9bba42
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8780.86it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8780.86it/s]
   loss   0.45      4s  polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_afdd7d783e
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9753.76it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9753.76it/s]
   loss   0.40      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_f71d7381ce
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8385.47it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8385.47it/s]
   loss   0.46      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_eaeea9314f
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9798.30it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9798.30it/s]
   loss   0.43      4s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s3_544733ebc0
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9588.54it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9588.54it/s]
   loss   0.41      4s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s3_c44a34a146
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8174.13it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8174.13it/s]
   chrF++  31.30     83s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_a98b7f72fd
   loss   2.29     13s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_a98b7f72fd
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6716.50it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6716.50it/s]
   chrF++  33.56     90s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_5a7ecd9884
   loss   2.19     14s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_5a7ecd9884
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9143.06it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9143.06it/s]
   chrF++  32.88    117s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_3cafcd9f60
   loss   2.23     14s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_3cafcd9f60
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8916.34it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8916.34it/s]
   chrF++  34.24    124s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_0b00bbafa9
   loss   2.18     14s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s3_0b00bbafa9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7011.88it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7011.88it/s]
   chrF++  28.41    127s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s3_65ab6c1754
   loss   2.42     13s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s3_65ab6c1754
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8506.60it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8506.60it/s]
   chrF++  28.76    108s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s3_4d8126fb04
   loss   2.46     13s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s3_4d8126fb04
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7533.00it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7533.00it/s]
   loss   0.07      2s  additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_2f3b01a9f2
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9118.63it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9118.63it/s]
   loss   0.07      2s  polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_0e934467e7
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10513.83it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10513.83it/s]
   loss   0.08      2s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_f11fa792c5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9710.63it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9710.63it/s]
   loss   0.10      2s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s3_eacaf2af40
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8975.92it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8975.92it/s]
   loss   0.07      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s3_b22b598864
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10502.53it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10502.53it/s]
   loss   0.07      2s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s3_a0580f9eba
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 12555.25it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 12555.25it/s]
   loss   0.26      7s  additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_f7822bed1a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10974.11it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10974.11it/s]
   loss   0.25      7s  polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_6726384f53
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9229.90it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9229.90it/s]
   loss   0.26      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_2d68fdb860
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9942.53it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9942.53it/s]
   loss   0.26      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_20fad33445
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9904.21it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9904.21it/s]
   loss   0.26      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s3_9b6fb92760
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9037.69it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9037.69it/s]
   loss   0.26      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s3_5b64d98522
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9374.64it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9374.64it/s]
   chrF++  29.02    119s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_92461fefac
   loss   2.52      7s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_92461fefac
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8257.61it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8257.61it/s]
   chrF++  29.38    114s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s3_e94aba9804
   loss   2.46      7s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s3_e94aba9804
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9187.77it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9187.77it/s]
   loss   0.09      1s  additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s3_d203e8da08
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9349.36it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9349.36it/s]
   loss   0.09      1s  polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s3_517731f1a6
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9396.05it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9396.05it/s]
   loss   0.42      4s  additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s3_0f1d2487db
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9778.92it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9778.92it/s]
   loss   0.44      4s  polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s3_3b408696d2
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9998.80it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9998.80it/s]
   chrF++  29.92     76s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_ea401cacb5
   loss   2.38      7s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_ea401cacb5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9897.80it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9897.80it/s]
   chrF++  33.19    107s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d9195a30b9
   loss   2.26      7s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d9195a30b9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9164.19it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9164.19it/s]
   chrF++  30.50     84s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_ba82c71a22
   loss   2.36      7s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_ba82c71a22
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9556.89it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9556.89it/s]
   chrF++  32.90     54s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d1f9c38f83
   loss   2.25      7s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s4_d1f9c38f83
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8355.19it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8355.19it/s]
   chrF++  28.90     90s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s4_69aa8fd595
   loss   2.45      7s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s4_69aa8fd595
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10138.04it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10138.04it/s]
   chrF++  28.48    113s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s4_e5d41a8526
   loss   2.52      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s4_e5d41a8526
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9970.05it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9970.05it/s]
   loss   0.09      1s  additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_e5696b616c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9667.67it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9667.67it/s]
   loss   0.08      1s  polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_9f66c17715
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9977.32it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9977.32it/s]
   loss   0.09      1s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_4c26967424
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8476.49it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8476.49it/s]
   loss   0.08      1s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_f3a8381139
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9395.91it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9395.91it/s]
   loss   0.09      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s4_7e3c5b4223
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9861.54it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9861.54it/s]
   loss   0.09      1s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s4_4f12b2cacc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9632.08it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9632.08it/s]
   loss   0.42      4s  additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_ce54641d15
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9341.97it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9341.97it/s]
   loss   0.41      4s  polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_63c497c6ba
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11035.11it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11035.11it/s]
   loss   0.42      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_c26b7d490c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9837.22it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9837.22it/s]
   loss   0.40      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_10dff1f58d
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9305.73it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9305.73it/s]
   loss   0.43      4s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s4_9e924fb4dc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10510.00it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10510.00it/s]
   loss   0.42      4s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s4_9c31dcce61
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8619.79it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8619.79it/s]
   chrF++  31.84     89s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_7820686ca4
   loss   2.23     13s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_7820686ca4
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8781.15it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8781.15it/s]
   chrF++  34.13     96s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_0e3a34bb99
   loss   2.18     14s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_0e3a34bb99
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6880.31it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6880.31it/s]
   chrF++  33.21     87s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_055e247787
   loss   2.17     14s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_055e247787
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7905.70it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7905.70it/s]
   chrF++  32.92     82s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_6e79324393
   loss   2.19     14s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s4_6e79324393
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10670.34it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10670.34it/s]
   chrF++  28.74    158s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s4_73644c8538
   loss   2.42     13s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s4_73644c8538
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9469.68it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9469.68it/s]
   chrF++  28.57    151s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s4_a12d020460
   loss   2.45     13s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s4_a12d020460
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7136.93it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7136.93it/s]
   loss   0.07      2s  additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_972fba7a11
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8161.61it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8161.61it/s]
   loss   0.08      2s  polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_9ffcf59b03
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7631.29it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7631.29it/s]
   loss   0.07      2s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_7689b1ef0b
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9242.63it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9242.63it/s]
   loss   0.08      2s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s4_20cc480bf2
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9442.65it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9442.65it/s]
   loss   0.07      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s4_795a9061e4
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8729.39it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8729.39it/s]
   loss   0.07      2s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s4_2dae6b2267
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8062.32it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8062.32it/s]
   loss   0.32      7s  additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_9fcb4955e1
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10394.97it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10394.97it/s]
   loss   0.25      7s  polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_dfb35e70d0
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7750.42it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7750.42it/s]
   loss   0.31      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_ebbb21fd3b
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9452.81it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9452.81it/s]
   loss   0.25      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_18ce295385
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8270.37it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8270.37it/s]
   loss   0.26      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s4_1ea0360081
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9322.81it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9322.81it/s]
   loss   0.26      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s4_e88ef09b7c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8045.76it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8045.76it/s]
   chrF++  28.93     61s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_e709c312d9
   loss   2.41      7s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_e709c312d9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8911.39it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8911.39it/s]
   chrF++  33.58     94s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_e84bf658e3
   loss   2.26      7s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_e84bf658e3
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10092.40it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10092.40it/s]
   chrF++  30.67     83s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_501e8e7d29
   loss   2.37      7s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_501e8e7d29
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8885.81it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8885.81it/s]
   chrF++  34.09     54s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_52f0e9a305
   loss   2.25      7s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s5_52f0e9a305
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8579.57it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8579.57it/s]
   chrF++  29.34    129s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s5_92aa320007
   loss   2.45      7s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s5_92aa320007
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7837.32it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7837.32it/s]
   chrF++  28.14    143s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s5_b37bddad12
   loss   2.52      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s5_b37bddad12
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10470.39it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10470.39it/s]
   loss   0.09      1s  additive_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_74ede995bb
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6589.67it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 6589.67it/s]
   loss   0.09      1s  polar_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_4ee656b336
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8116.12it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8116.12it/s]
   loss   0.10      1s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_e23eb4d859
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8797.37it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8797.37it/s]
   loss   0.08      1s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_20c7a4ea6c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8780.09it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8780.09it/s]
   loss   0.09      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s5_3cd4dcaeee
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9849.29it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9849.29it/s]
   loss   0.09      1s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s5_7e24319e6f
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9885.08it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9885.08it/s]
   loss   0.41      4s  additive_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_834175badf
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9206.83it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9206.83it/s]
   loss   0.41      4s  polar_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_e0694bb5ff
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9671.20it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9671.20it/s]
   loss   0.41      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_e47ac90659
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8307.94it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8307.94it/s]
   loss   0.41      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_2353026cdc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8319.95it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8319.95it/s]
   loss   0.40      4s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s5_f95cc4c1c9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9290.04it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9290.04it/s]
   loss   0.41      4s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s5_797a62f527
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9273.41it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9273.41it/s]
   chrF++  33.67     60s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_7aa5b57871
   loss   2.22     14s  additive_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_7aa5b57871
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 5776.23it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 5776.23it/s]
   chrF++  33.66     90s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_a99206684c
   loss   2.22     14s  polar_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_a99206684c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7725.79it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7725.79it/s]
   chrF++  32.44     90s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_952827b4fd
   loss   2.22     14s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_952827b4fd
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8614.30it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8614.30it/s]
   chrF++  33.76    111s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_73faa6cceb
   loss   2.21     14s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s5_73faa6cceb
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9051.28it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9051.28it/s]
   chrF++  28.42    212s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s5_46982099bc
   loss   2.43     13s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s5_46982099bc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9309.86it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9309.86it/s]
   chrF++  29.26    131s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s5_2f5962b715
   loss   2.45     13s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s5_2f5962b715
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9309.40it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9309.40it/s]
   loss   0.07      2s  additive_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_b2ce5c3fee
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8173.67it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8173.67it/s]
   loss   0.08      2s  polar_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_828d8c8e9f
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8034.82it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8034.82it/s]
   loss   0.08      2s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_41cce01d23
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8149.03it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8149.03it/s]
   loss   0.07      2s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s5_f307567d23
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9989.12it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9989.12it/s]
   loss   0.08      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9511.45it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9511.45it/s]
   loss   0.07      2s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_fc81621921
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8654.73it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8654.73it/s]
   loss   0.26      7s  additive_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_543a818947
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9820.28it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9820.28it/s]
   loss   0.25      7s  polar_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_bfd7b36d36
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10026.17it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10026.17it/s]
   loss   0.25      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_c49337217a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10539.39it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10539.39it/s]
   loss   0.25      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_f22b035ec0
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9336.74it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9336.74it/s]
   loss   0.25      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s5_752d28f0b5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9741.84it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9741.84it/s]
   loss   0.27      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s5_47c5eff4da
 === 2026-11-05 11:09:14 UTC greedy scores: SVAMP and ARC every seed, En-Tsn seed 1 (runaway share)
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9916.60it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9916.60it/s]
   accuracy  70.00      6s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_9b64e998cc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 13148.82it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 13148.82it/s]
   accuracy  72.00      5s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s1_1691c54751
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8168.33it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8168.33it/s]
   accuracy  70.33      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s1_f1f9d2e657
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9308.53it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9308.53it/s]
   accuracy  72.67      5s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s1_f6e6cbcb67
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10113.36it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10113.36it/s]
   accuracy  67.83      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_0b0c1197f6
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 13514.97it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 13514.97it/s]
   accuracy  67.58      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s1_dd13cb6bd5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10330.31it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10330.31it/s]
   accuracy  67.83      3s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s1_dba7e8afd4
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11165.51it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11165.51it/s]
   accuracy  67.32      3s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s1_e844a8890f
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8925.28it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8925.28it/s]
   accuracy  78.00      6s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s1_855fe4c92d
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10456.84it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10456.84it/s]
   accuracy  76.00      6s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s1_a27ff4a032
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8603.81it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8603.81it/s]
   accuracy  78.67      6s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s1_8571b4b481
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10147.54it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10147.54it/s]
   accuracy  78.33      6s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s1_30542921d9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8533.85it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8533.85it/s]
   accuracy  78.16      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_3bac75d6f1
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11429.93it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11429.93it/s]
   accuracy  80.12      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s1_ad2e1fa411
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9381.54it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9381.54it/s]
   accuracy  82.25      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s1_78e7cc1566
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 12272.84it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 12272.84it/s]
   accuracy  80.29      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s1_2a2d3f83be
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10171.51it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10171.51it/s]
   accuracy  68.00      5s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_3b05f8c2e8
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9273.01it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9273.01it/s]
   accuracy  74.00      5s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s2_7d17199341
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9808.35it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9808.35it/s]
   accuracy  68.33      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s2_51408ed01b
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9872.92it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9872.92it/s]
   accuracy  68.67      5s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s2_6b22e768ff
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9181.86it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9181.86it/s]
   accuracy  68.86      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_97a96679cd
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9603.20it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9603.20it/s]
   accuracy  68.34      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s2_6bd0e2c1b3
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9720.43it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9720.43it/s]
   accuracy  67.41      3s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s2_8b8e06c6d4
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9023.26it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9023.26it/s]
   accuracy  67.83      4s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s2_ce2e136547
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8079.75it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8079.75it/s]
   accuracy  78.00      6s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s2_f0a804306e
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9321.41it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9321.41it/s]
   accuracy  77.67      6s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s2_d371ae63ff
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10899.41it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10899.41it/s]
   accuracy  77.00      6s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s2_8e0ca8ec8a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9463.13it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9463.13it/s]
   accuracy  76.67      6s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s2_24eef334f0
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11161.48it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11161.48it/s]
   accuracy  77.39      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_78cc467da2
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7333.65it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7333.65it/s]
   accuracy  81.74      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s2_a022fdb2e1
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11738.57it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11738.57it/s]
   accuracy  82.51      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s2_7febc24984
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8376.23it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8376.23it/s]
   accuracy  77.56      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s2_a6b2ebba0d
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9614.34it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9614.34it/s]
   accuracy  73.67      5s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_f862c187c3
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8258.76it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8258.76it/s]
   accuracy  71.33      5s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s3_210388d405
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11716.99it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11716.99it/s]
   accuracy  73.00      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s3_b9d6b33e2a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9795.20it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9795.20it/s]
   accuracy  71.00      5s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s3_6420597366
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9459.14it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9459.14it/s]
   accuracy  68.77      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_f71d7381ce
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8432.46it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8432.46it/s]
   accuracy  69.11      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s3_eaeea9314f
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8820.11it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8820.11it/s]
   accuracy  66.81      4s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s3_544733ebc0
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8111.81it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8111.81it/s]
   accuracy  67.41      3s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s3_c44a34a146
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8643.05it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8643.05it/s]
   accuracy  76.00      6s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s3_f11fa792c5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7692.46it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7692.46it/s]
   accuracy  71.67      6s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s3_eacaf2af40
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8564.60it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8564.60it/s]
   accuracy  77.33      6s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s3_b22b598864
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8488.44it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8488.44it/s]
   accuracy  77.00      6s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s3_a0580f9eba
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10964.21it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10964.21it/s]
   accuracy  80.63      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_2d68fdb860
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8264.64it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8264.64it/s]
   accuracy  80.63      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s3_20fad33445
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8296.81it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8296.81it/s]
   accuracy  81.40      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s3_9b6fb92760
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8364.27it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8364.27it/s]
   accuracy  81.23      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s3_5b64d98522
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10749.11it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10749.11it/s]
   accuracy  73.33      5s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_4c26967424
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8849.41it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8849.41it/s]
   accuracy  72.00      5s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s4_f3a8381139
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7277.62it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7277.62it/s]
   accuracy  73.67      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s4_7e3c5b4223
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9150.26it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9150.26it/s]
   accuracy  74.33      5s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s4_4f12b2cacc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8970.04it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8970.04it/s]
   accuracy  67.15      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_c26b7d490c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9873.90it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9873.90it/s]
   accuracy  69.97      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s4_10dff1f58d
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9626.02it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9626.02it/s]
   accuracy  67.06      3s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s4_9e924fb4dc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8910.96it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8910.96it/s]
   accuracy  66.64      4s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s4_9c31dcce61
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11406.26it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11406.26it/s]
   accuracy  79.33      6s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s4_7689b1ef0b
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8506.88it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8506.88it/s]
   accuracy  78.33      6s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s4_20cc480bf2
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9358.04it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9358.04it/s]
   accuracy  78.00      6s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s4_795a9061e4
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10058.67it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10058.67it/s]
   accuracy  79.00      6s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s4_2dae6b2267
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10473.26it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10473.26it/s]
   accuracy  78.24      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_ebbb21fd3b
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9822.21it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9822.21it/s]
   accuracy  82.25      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s4_18ce295385
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10267.49it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10267.49it/s]
   accuracy  80.46      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s4_1ea0360081
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7485.99it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7485.99it/s]
   accuracy  81.14      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s4_e88ef09b7c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9241.58it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9241.58it/s]
   accuracy  71.00      5s  dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_e23eb4d859
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 13143.77it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 13143.77it/s]
   accuracy  71.33      5s  phase_dora_r64_lr0.001_e5_svamp_qwen3-0.6b-base_s5_20c7a4ea6c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10663.25it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10663.25it/s]
   accuracy  72.33      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s5_3cd4dcaeee
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9299.81it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9299.81it/s]
   accuracy  71.67      5s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s5_7e24319e6f
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10454.06it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10454.06it/s]
   accuracy  66.89      4s  dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_e47ac90659
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11073.55it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11073.55it/s]
   accuracy  69.37      4s  phase_dora_r64_lr0.0003_e5_arc_qwen3-0.6b-base_s5_2353026cdc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9786.20it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9786.20it/s]
   accuracy  68.60      3s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s5_f95cc4c1c9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8725.47it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8725.47it/s]
   accuracy  66.38      4s  phase_stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-0.6b-base_s5_797a62f527
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11082.23it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11082.23it/s]
   accuracy  79.00      6s  dora_r64_lr0.001_e5_svamp_qwen3-1.7b-base_s5_41cce01d23
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10669.46it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10669.46it/s]
   accuracy  75.33      6s  phase_dora_r64_lr0.003_e5_svamp_qwen3-1.7b-base_s5_f307567d23
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10117.29it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10117.29it/s]
   accuracy  78.00      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9145.69it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9145.69it/s]
   accuracy  79.00      6s  phase_stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_fc81621921
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9257.37it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9257.37it/s]
   accuracy  81.14      7s  dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_c49337217a
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7892.98it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7892.98it/s]
   accuracy  81.74      7s  phase_dora_r64_lr0.001_e5_arc_qwen3-1.7b-base_s5_f22b035ec0
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8567.25it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8567.25it/s]
   accuracy  81.83      7s  stiefel_r64_lr0.001_e5_lam0.005_arc_qwen3-1.7b-base_s5_752d28f0b5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8272.53it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8272.53it/s]
   accuracy  80.63      7s  phase_stiefel_r64_lr0.003_e5_lam0.005_arc_qwen3-1.7b-base_s5_47c5eff4da
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8515.13it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8515.13it/s]
   chrF++  26.48    135s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_c7621a6203
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9039.32it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9039.32it/s]
   chrF++  30.64     89s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_f88cac31a9
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8076.74it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8076.74it/s]
   chrF++  23.96    158s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_856ebfa8b5
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11430.53it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11430.53it/s]
   chrF++  25.53    170s  dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_cc49a7e467
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10784.96it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10784.96it/s]
   chrF++  29.57    124s  phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-1.7b-base_s1_209d6ee25c
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8650.70it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8650.70it/s]
   chrF++  21.57    218s  stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_234f8faccc
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11087.53it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11087.53it/s]
   chrF++  21.20    230s  phase_stiefel_r64_lr0.003_e5_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_d4e9828a0e
 === 2026-11-05 11:36:46 UTC step timing of every main arm, one session, 1.7B
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8942.40it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8942.40it/s]
 [transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
   additive      r64  mafand_tsn repeat 0: 0.772 s/step x 66 =   51.0 s/epoch, dev eval  11.2 s, peak 9.0 GB used / 10.8 GB reserved
   additive      r64  svamp  repeat 0: 0.725 s/step x 14 =   10.1 s/epoch, dev eval   0.6 s, peak 9.0 GB used / 10.8 GB reserved
   additive      r64  arc    repeat 0: 0.745 s/step x 26 =   19.4 s/epoch, dev eval   1.9 s, peak 9.0 GB used / 10.8 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9228.26it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9228.26it/s]
   polar         r64  mafand_tsn repeat 0: 0.820 s/step x 66 =   54.1 s/epoch, dev eval  11.7 s, peak 9.0 GB used / 10.1 GB reserved
   polar         r64  svamp  repeat 0: 0.766 s/step x 14 =   10.7 s/epoch, dev eval   0.7 s, peak 9.0 GB used / 10.1 GB reserved
   polar         r64  arc    repeat 0: 0.788 s/step x 26 =   20.5 s/epoch, dev eval   2.0 s, peak 9.0 GB used / 10.1 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9599.79it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9599.79it/s]
   dora          r64  mafand_tsn repeat 0: 0.847 s/step x 66 =   55.9 s/epoch, dev eval  12.3 s, peak 9.0 GB used / 10.1 GB reserved
   dora          r64  svamp  repeat 0: 0.794 s/step x 14 =   11.1 s/epoch, dev eval   0.7 s, peak 9.0 GB used / 10.1 GB reserved
   dora          r64  arc    repeat 0: 0.819 s/step x 26 =   21.3 s/epoch, dev eval   2.1 s, peak 9.0 GB used / 10.1 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9473.40it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9473.40it/s]
   phase_dora    r64  mafand_tsn repeat 0: 0.879 s/step x 66 =   58.0 s/epoch, dev eval  12.6 s, peak 9.0 GB used / 10.1 GB reserved
   phase_dora    r64  svamp  repeat 0: 0.827 s/step x 14 =   11.6 s/epoch, dev eval   0.7 s, peak 9.0 GB used / 10.1 GB reserved
   phase_dora    r64  arc    repeat 0: 0.849 s/step x 26 =   22.1 s/epoch, dev eval   2.2 s, peak 9.0 GB used / 10.1 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7497.47it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7497.47it/s]
   stiefel       r64  mafand_tsn repeat 0: 0.819 s/step x 66 =   54.0 s/epoch, dev eval  11.4 s, peak 9.0 GB used / 10.1 GB reserved
   stiefel       r64  svamp  repeat 0: 0.763 s/step x 14 =   10.7 s/epoch, dev eval   0.6 s, peak 9.0 GB used / 10.1 GB reserved
   stiefel       r64  arc    repeat 0: 0.790 s/step x 26 =   20.5 s/epoch, dev eval   2.0 s, peak 9.0 GB used / 10.1 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8258.29it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8258.29it/s]
   phase_stiefel r64  mafand_tsn repeat 0: 0.835 s/step x 66 =   55.1 s/epoch, dev eval  11.4 s, peak 9.1 GB used / 10.2 GB reserved
   phase_stiefel r64  svamp  repeat 0: 0.781 s/step x 14 =   10.9 s/epoch, dev eval   0.7 s, peak 9.1 GB used / 10.2 GB reserved
   phase_stiefel r64  arc    repeat 0: 0.808 s/step x 26 =   21.0 s/epoch, dev eval   2.0 s, peak 9.1 GB used / 10.2 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9502.21it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9502.21it/s]
   phase_stiefel r64  mafand_tsn repeat 1: 0.837 s/step x 66 =   55.2 s/epoch, dev eval  11.4 s, peak 9.1 GB used / 10.2 GB reserved
   phase_stiefel r64  svamp  repeat 1: 0.782 s/step x 14 =   11.0 s/epoch, dev eval   0.7 s, peak 9.1 GB used / 10.2 GB reserved
   phase_stiefel r64  arc    repeat 1: 0.807 s/step x 26 =   21.0 s/epoch, dev eval   1.9 s, peak 9.1 GB used / 10.2 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9544.90it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9544.90it/s]
   stiefel       r64  mafand_tsn repeat 1: 0.817 s/step x 66 =   53.9 s/epoch, dev eval  11.4 s, peak 9.0 GB used / 10.1 GB reserved
   stiefel       r64  svamp  repeat 1: 0.759 s/step x 14 =   10.6 s/epoch, dev eval   0.7 s, peak 9.0 GB used / 10.1 GB reserved
   stiefel       r64  arc    repeat 1: 0.788 s/step x 26 =   20.5 s/epoch, dev eval   1.9 s, peak 9.0 GB used / 10.1 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8646.15it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8646.15it/s]
   phase_dora    r64  mafand_tsn repeat 1: 0.877 s/step x 66 =   57.9 s/epoch, dev eval  12.6 s, peak 9.0 GB used / 10.1 GB reserved
   phase_dora    r64  svamp  repeat 1: 0.827 s/step x 14 =   11.6 s/epoch, dev eval   0.7 s, peak 9.0 GB used / 10.1 GB reserved
   phase_dora    r64  arc    repeat 1: 0.850 s/step x 26 =   22.1 s/epoch, dev eval   2.2 s, peak 9.0 GB used / 10.1 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9000.90it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9000.90it/s]
   dora          r64  mafand_tsn repeat 1: 0.851 s/step x 66 =   56.1 s/epoch, dev eval  12.4 s, peak 9.0 GB used / 10.1 GB reserved
   dora          r64  svamp  repeat 1: 0.794 s/step x 14 =   11.1 s/epoch, dev eval   0.7 s, peak 9.0 GB used / 10.1 GB reserved
   dora          r64  arc    repeat 1: 0.820 s/step x 26 =   21.3 s/epoch, dev eval   2.1 s, peak 9.0 GB used / 10.1 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10759.25it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10759.25it/s]
   polar         r64  mafand_tsn repeat 1: 0.823 s/step x 66 =   54.3 s/epoch, dev eval  11.8 s, peak 9.0 GB used / 10.1 GB reserved
   polar         r64  svamp  repeat 1: 0.765 s/step x 14 =   10.7 s/epoch, dev eval   0.7 s, peak 9.0 GB used / 10.1 GB reserved
   polar         r64  arc    repeat 1: 0.791 s/step x 26 =   20.6 s/epoch, dev eval   2.0 s, peak 9.0 GB used / 10.1 GB reserved
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8546.81it/s]
+
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8546.81it/s]
   additive      r64  mafand_tsn repeat 1: 0.780 s/step x 66 =   51.4 s/epoch, dev eval  11.3 s, peak 9.0 GB used / 10.1 GB reserved
   additive      r64  svamp  repeat 1: 0.721 s/step x 14 =   10.1 s/epoch, dev eval   0.6 s, peak 9.0 GB used / 10.1 GB reserved
   additive      r64  arc    repeat 1: 0.747 s/step x 26 =   19.4 s/epoch, dev eval   2.0 s, peak 9.0 GB used / 10.1 GB reserved
--> /home/vihaa/Phase LoRA/runs/timing_paper_qwen3-1.7b-base_tok3072_mafand_tsn-svamp-arc.json
+-> runs/timing_paper_qwen3-1.7b-base_tok3072_mafand_tsn-svamp-arc.json
 === 2026-11-05 12:02:24 UTC done
