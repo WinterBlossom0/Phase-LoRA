@@ -1,0 +1,9 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9223.09it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+stiefel: 13074.4K trainable, 600 examples, 3072 tokens/batch, 3-60 rows/step, 14 steps over 1 epochs
+  step    0  ep 0.00  eval 1.7036  (before training)
+  step     7  ep 0.50  eval 0.1347  train 1.6393  5s
+  step    14  ep 1.00  eval 0.0911  train 1.4412  10s
+  best eval 0.0911   -> runs/stiefel_r64_lr0.003_e1_lam0.001_svamp_qwen3-1.7b-base_s1_21b470cfce.json
+  weights -> runs/stiefel_r64_lr0.003_e1_lam0.001_svamp_qwen3-1.7b-base_s1_21b470cfce.pt
+  peak VRAM 8.98 GB used, 10.84 GB reserved

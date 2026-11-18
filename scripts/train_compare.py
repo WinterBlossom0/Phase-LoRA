@@ -27,7 +27,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from phase_lora import MODEL_DIR, RUNS_DIR
 from phase_lora.run_config import TRAIN_CODE, code_version, parse, run_tag
-from phase_lora.train_utils import EVAL_SPLIT, attach, build_data, collate, make_optimizer, token_batches
+from phase_lora.train_utils import (EVAL_SPLIT, attach, build_data, collate, landing_modules, make_optimizer,
+                                   token_batches)
 
 
 @torch.no_grad()
@@ -97,7 +98,7 @@ def main():
     model(input_ids=ids, attention_mask=att, labels=lab).loss.backward()
     for q in params:
         q.grad = None
-    opt = make_optimizer(params, a.lr, a.clip)
+    opt = make_optimizer(params, a.lr, a.clip, landing=landing_modules(model))
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, steps)
     print(f"{a.kind}: {sum(q.numel() for q in params)/1e3:.1f}K trainable, "
           f"{len(tr)} examples, {a.max_tokens} tokens/batch, "

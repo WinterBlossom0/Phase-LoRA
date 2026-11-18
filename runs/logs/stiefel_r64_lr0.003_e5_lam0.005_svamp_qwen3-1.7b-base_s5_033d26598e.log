@@ -1,17 +1,17 @@
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7990.23it/s]
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10641.17it/s]
 [transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
 stiefel: 13074.4K trainable, 600 examples, 3072 tokens/batch, 3-60 rows/step, 70 steps over 5 epochs
   step    0  ep 0.00  eval 1.7036  (before training)
-  step     7  ep 0.50  eval 0.1657  train 1.5831  5s
-  step    14  ep 1.00  eval 0.0898  train 1.3919  12s
-  step    21  ep 1.50  eval 0.0974  train 1.2192  18s
-  step    28  ep 2.00  eval 0.0834  train 1.0685  23s
-  step    35  ep 2.50  eval 0.0726  train 0.9395  29s
-  step    42  ep 3.00  eval 0.0692  train 0.8218  35s
-  step    49  ep 3.50  eval 0.0564  train 0.7184  42s
-  step    56  ep 4.00  eval 0.0509  train 0.6291  47s
-  step    63  ep 4.50  eval 0.0493  train 0.5497  53s
-  step    70  ep 5.00  eval 0.0505  train 0.4804  59s
-  best eval 0.0493   -> runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e.json
+  step     7  ep 0.50  eval 0.1931  train 1.5890  6s
+  step    14  ep 1.00  eval 0.0903  train 1.3962  12s
+  step    21  ep 1.50  eval 0.0990  train 1.2234  19s
+  step    28  ep 2.00  eval 0.0806  train 1.0736  24s
+  step    35  ep 2.50  eval 0.0804  train 0.9413  30s
+  step    42  ep 3.00  eval 0.0740  train 0.8247  37s
+  step    49  ep 3.50  eval 0.0730  train 0.7216  43s
+  step    56  ep 4.00  eval 0.0676  train 0.6309  49s
+  step    63  ep 4.50  eval 0.0657  train 0.5503  55s
+  step    70  ep 5.00  eval 0.0656  train 0.4814  61s
+  best eval 0.0657   -> runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e.json
   weights -> runs/stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e.pt
   peak VRAM 8.98 GB used, 10.84 GB reserved

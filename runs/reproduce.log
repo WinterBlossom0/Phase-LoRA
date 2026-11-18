@@ -1621,3 +1621,661 @@ main: finished, 0 failed
 === 2026-11-08 15:54:07 UTC analysis (CPU): paper/generated/
 wrote ['fig_effects.pdf', 'numbers.json', 'tab_ablation.tex', 'tab_loss_tests.tex', 'tab_mafand_lug.tex', 'tab_mafand_tsn.tex', 'tab_main.tex', 'tab_tests.tex']
 === 2026-11-08 15:54:58 UTC done
+=== 2026-11-18 06:33:03 UTC data (pinned; checked against data_manifest.json) and base models (pinned; weights checked by sha256)
+qwen3-0.6b-base: present, weights match
+qwen3-1.7b-base: present, weights match
+=== 2026-11-18 06:33:06 UTC base models: greedy, repetition-blocked translation, test loss
+=== 2026-11-18 06:33:09 UTC grid, selection, main runs
+evals every {'qwen3-0.6b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'qwen3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}} steps
+grid: 416 runs, 160 already done, 256 to run
+  grid [1/256] ok     45s  stiefel_r64_lr0.0003_e1_lam0.001_mafand_tsn_qwen3-0.6b-base_s1_0f33450bda
+  grid [2/256] ok     46s  stiefel_r64_lr0.0003_e1_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_3780583093
+=== 2026-11-18 06:50:43 UTC data (pinned; checked against data_manifest.json) and base models (pinned; weights checked by sha256)
+qwen3-0.6b-base: present, weights match
+qwen3-1.7b-base: present, weights match
+=== 2026-11-18 06:50:49 UTC base models: greedy, repetition-blocked translation, test loss
+=== 2026-11-18 06:50:51 UTC grid, selection, main runs
+evals every {'qwen3-0.6b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'qwen3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}} steps
+grid: 416 runs, 160 already done, 256 to run
+  grid [1/256] ok     45s  stiefel_r64_lr0.0003_e1_lam0.001_mafand_tsn_qwen3-0.6b-base_s1_0f33450bda
+  grid [2/256] ok     46s  stiefel_r64_lr0.0003_e1_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_3780583093
+  grid [3/256] ok     49s  stiefel_r64_lr0.0003_e1_lam0.1_mafand_tsn_qwen3-0.6b-base_s1_26c72c2e97
+  grid [4/256] ok     47s  stiefel_r64_lr0.0003_e1_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_ed9cc562e3
+  grid [5/256] ok     52s  stiefel_r64_lr0.001_e1_lam0.001_mafand_tsn_qwen3-0.6b-base_s1_b7875db942
+  grid [6/256] ok     49s  stiefel_r64_lr0.001_e1_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_1a4ae4628d
+  grid [7/256] ok     50s  stiefel_r64_lr0.001_e1_lam0.1_mafand_tsn_qwen3-0.6b-base_s1_1b894b214f
+  grid [8/256] ok     52s  stiefel_r64_lr0.001_e1_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_eefaf640bb
+  grid [9/256] ok     49s  stiefel_r64_lr0.003_e1_lam0.001_mafand_tsn_qwen3-0.6b-base_s1_6d5812e893
+  grid [10/256] ok     53s  stiefel_r64_lr0.003_e1_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_729209039f
+  grid [11/256] ok     50s  stiefel_r64_lr0.003_e1_lam0.1_mafand_tsn_qwen3-0.6b-base_s1_6e263c4e5e
+  grid [12/256] ok     53s  stiefel_r64_lr0.003_e1_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_77510abe94
+  grid [13/256] ok     49s  stiefel_r64_lr0.01_e1_lam0.001_mafand_tsn_qwen3-0.6b-base_s1_d7c6922184
+  grid [14/256] ok     53s  stiefel_r64_lr0.01_e1_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_a739b0c5c7
+  grid [15/256] ok     50s  stiefel_r64_lr0.01_e1_lam0.1_mafand_tsn_qwen3-0.6b-base_s1_211b2b2eda
+  grid [16/256] ok     50s  stiefel_r64_lr0.01_e1_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_355ccd0fb8
+  grid [17/256] ok     56s  phase_stiefel_r64_lr0.0003_e1_lam0.001_mafand_tsn_qwen3-0.6b-base_s1_505a837e30
+  grid [18/256] ok     57s  phase_stiefel_r64_lr0.0003_e1_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_63e7366674
+  grid [19/256] ok     53s  phase_stiefel_r64_lr0.0003_e1_lam0.1_mafand_tsn_qwen3-0.6b-base_s1_5827bea353
+  grid [20/256] ok     56s  phase_stiefel_r64_lr0.0003_e1_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_dd03c73c78
+  grid [21/256] ok     53s  phase_stiefel_r64_lr0.001_e1_lam0.001_mafand_tsn_qwen3-0.6b-base_s1_8fba2e8a45
+  grid [22/256] ok     56s  phase_stiefel_r64_lr0.001_e1_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_6b9355bda9
+  grid [23/256] ok     53s  phase_stiefel_r64_lr0.001_e1_lam0.1_mafand_tsn_qwen3-0.6b-base_s1_4488d37174
+  grid [24/256] ok     56s  phase_stiefel_r64_lr0.001_e1_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_3d8bd4e27a
+  grid [25/256] ok     56s  phase_stiefel_r64_lr0.003_e1_lam0.001_mafand_tsn_qwen3-0.6b-base_s1_375d2940d5
+  grid [26/256] ok     53s  phase_stiefel_r64_lr0.003_e1_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_6703b845bf
+  grid [27/256] ok     56s  phase_stiefel_r64_lr0.003_e1_lam0.1_mafand_tsn_qwen3-0.6b-base_s1_2b99233633
+  grid [28/256] ok     53s  phase_stiefel_r64_lr0.003_e1_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_56fe465202
+  grid [29/256] ok     56s  phase_stiefel_r64_lr0.01_e1_lam0.001_mafand_tsn_qwen3-0.6b-base_s1_adc5741efd
+  grid [30/256] ok     53s  phase_stiefel_r64_lr0.01_e1_lam0.005_mafand_tsn_qwen3-0.6b-base_s1_5300b9b487
+  grid [31/256] ok     56s  phase_stiefel_r64_lr0.01_e1_lam0.1_mafand_tsn_qwen3-0.6b-base_s1_d256932b45
+  grid [32/256] ok     53s  phase_stiefel_r64_lr0.01_e1_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_971f59506e
+  grid [33/256] ok     71s  stiefel_r64_lr0.0003_e1_lam0.001_mafand_lug_qwen3-0.6b-base_s1_fb35559346
+  grid [34/256] ok     71s  stiefel_r64_lr0.0003_e1_lam0.005_mafand_lug_qwen3-0.6b-base_s1_9330158255
+  grid [35/256] ok     75s  stiefel_r64_lr0.0003_e1_lam0.1_mafand_lug_qwen3-0.6b-base_s1_2785fc5102
+  grid [36/256] ok     72s  stiefel_r64_lr0.0003_e1_lam0.5_mafand_lug_qwen3-0.6b-base_s1_89730e7de1
+  grid [37/256] ok     72s  stiefel_r64_lr0.001_e1_lam0.001_mafand_lug_qwen3-0.6b-base_s1_0bf465f402
+  grid [38/256] ok     72s  stiefel_r64_lr0.001_e1_lam0.005_mafand_lug_qwen3-0.6b-base_s1_e4f125d6da
+  grid [39/256] ok     73s  stiefel_r64_lr0.001_e1_lam0.1_mafand_lug_qwen3-0.6b-base_s1_cb300dbac3
+  grid [40/256] ok     72s  stiefel_r64_lr0.001_e1_lam0.5_mafand_lug_qwen3-0.6b-base_s1_1fc28f0a59
+  grid [41/256] ok     72s  stiefel_r64_lr0.003_e1_lam0.001_mafand_lug_qwen3-0.6b-base_s1_1cfd89bc7c
+  grid [42/256] ok     71s  stiefel_r64_lr0.003_e1_lam0.005_mafand_lug_qwen3-0.6b-base_s1_9c73267bc4
+  grid [43/256] ok     71s  stiefel_r64_lr0.003_e1_lam0.1_mafand_lug_qwen3-0.6b-base_s1_f73cf7365a
+  grid [44/256] ok     71s  stiefel_r64_lr0.003_e1_lam0.5_mafand_lug_qwen3-0.6b-base_s1_78abc25cdb
+  grid [45/256] ok     71s  stiefel_r64_lr0.01_e1_lam0.001_mafand_lug_qwen3-0.6b-base_s1_16fdc77013
+  grid [46/256] ok     72s  stiefel_r64_lr0.01_e1_lam0.005_mafand_lug_qwen3-0.6b-base_s1_6f271d21b9
+  grid [47/256] ok     72s  stiefel_r64_lr0.01_e1_lam0.1_mafand_lug_qwen3-0.6b-base_s1_2e5c765c17
+  grid [48/256] ok     72s  stiefel_r64_lr0.01_e1_lam0.5_mafand_lug_qwen3-0.6b-base_s1_679cc19479
+  grid [49/256] ok     76s  phase_stiefel_r64_lr0.0003_e1_lam0.001_mafand_lug_qwen3-0.6b-base_s1_5f3a88d711
+  grid [50/256] ok     76s  phase_stiefel_r64_lr0.0003_e1_lam0.005_mafand_lug_qwen3-0.6b-base_s1_bf7c468e75
+  grid [51/256] ok     79s  phase_stiefel_r64_lr0.0003_e1_lam0.1_mafand_lug_qwen3-0.6b-base_s1_d42b2f94cf
+  grid [52/256] ok     76s  phase_stiefel_r64_lr0.0003_e1_lam0.5_mafand_lug_qwen3-0.6b-base_s1_65fd4d922f
+  grid [53/256] ok     76s  phase_stiefel_r64_lr0.001_e1_lam0.001_mafand_lug_qwen3-0.6b-base_s1_d3c1e36ea9
+  grid [54/256] ok     77s  phase_stiefel_r64_lr0.001_e1_lam0.005_mafand_lug_qwen3-0.6b-base_s1_e034589d10
+  grid [55/256] ok     76s  phase_stiefel_r64_lr0.001_e1_lam0.1_mafand_lug_qwen3-0.6b-base_s1_20e2eebc6f
+  grid [56/256] ok     79s  phase_stiefel_r64_lr0.001_e1_lam0.5_mafand_lug_qwen3-0.6b-base_s1_93e38573b5
+  grid [57/256] ok     76s  phase_stiefel_r64_lr0.003_e1_lam0.001_mafand_lug_qwen3-0.6b-base_s1_d214367f47
+  grid [58/256] ok     76s  phase_stiefel_r64_lr0.003_e1_lam0.005_mafand_lug_qwen3-0.6b-base_s1_af7ed95af8
+  grid [59/256] ok     76s  phase_stiefel_r64_lr0.003_e1_lam0.1_mafand_lug_qwen3-0.6b-base_s1_13e9040486
+  grid [60/256] ok     77s  phase_stiefel_r64_lr0.003_e1_lam0.5_mafand_lug_qwen3-0.6b-base_s1_8c283ae525
+  grid [61/256] ok     82s  phase_stiefel_r64_lr0.01_e1_lam0.001_mafand_lug_qwen3-0.6b-base_s1_cda6c187a8
+  grid [62/256] ok     79s  phase_stiefel_r64_lr0.01_e1_lam0.005_mafand_lug_qwen3-0.6b-base_s1_69db4ffb29
+  grid [63/256] ok     77s  phase_stiefel_r64_lr0.01_e1_lam0.1_mafand_lug_qwen3-0.6b-base_s1_153372e9a6
+  grid [64/256] ok     77s  phase_stiefel_r64_lr0.01_e1_lam0.5_mafand_lug_qwen3-0.6b-base_s1_da26cd4422
+  grid [65/256] ok     14s  stiefel_r64_lr0.0003_e1_lam0.001_svamp_qwen3-0.6b-base_s1_80bdb51eb4
+  grid [66/256] ok     11s  stiefel_r64_lr0.0003_e1_lam0.005_svamp_qwen3-0.6b-base_s1_91cf78feb3
+  grid [67/256] ok     11s  stiefel_r64_lr0.0003_e1_lam0.1_svamp_qwen3-0.6b-base_s1_cd36538375
+  grid [68/256] ok     14s  stiefel_r64_lr0.0003_e1_lam0.5_svamp_qwen3-0.6b-base_s1_976d0881aa
+  grid [69/256] ok     11s  stiefel_r64_lr0.001_e1_lam0.001_svamp_qwen3-0.6b-base_s1_ce83c5996e
+  grid [70/256] ok     11s  stiefel_r64_lr0.001_e1_lam0.005_svamp_qwen3-0.6b-base_s1_681046f19c
+  grid [71/256] ok     14s  stiefel_r64_lr0.001_e1_lam0.1_svamp_qwen3-0.6b-base_s1_3b76ec25d3
+  grid [72/256] ok     11s  stiefel_r64_lr0.001_e1_lam0.5_svamp_qwen3-0.6b-base_s1_d124147c87
+  grid [73/256] ok     11s  stiefel_r64_lr0.003_e1_lam0.001_svamp_qwen3-0.6b-base_s1_7f50ca7469
+  grid [74/256] ok     14s  stiefel_r64_lr0.003_e1_lam0.005_svamp_qwen3-0.6b-base_s1_2915e77221
+  grid [75/256] ok     11s  stiefel_r64_lr0.003_e1_lam0.1_svamp_qwen3-0.6b-base_s1_b844a68503
+  grid [76/256] ok     11s  stiefel_r64_lr0.003_e1_lam0.5_svamp_qwen3-0.6b-base_s1_353a16b512
+  grid [77/256] ok     14s  stiefel_r64_lr0.01_e1_lam0.001_svamp_qwen3-0.6b-base_s1_0956ce16af
+  grid [78/256] ok     11s  stiefel_r64_lr0.01_e1_lam0.005_svamp_qwen3-0.6b-base_s1_95fa6319f8
+  grid [79/256] ok     11s  stiefel_r64_lr0.01_e1_lam0.1_svamp_qwen3-0.6b-base_s1_04ad1e0ee0
+  grid [80/256] ok     14s  stiefel_r64_lr0.01_e1_lam0.5_svamp_qwen3-0.6b-base_s1_578d030283
+  grid [81/256] ok     12s  phase_stiefel_r64_lr0.0003_e1_lam0.001_svamp_qwen3-0.6b-base_s1_aa5ad75328
+  grid [82/256] ok     14s  phase_stiefel_r64_lr0.0003_e1_lam0.005_svamp_qwen3-0.6b-base_s1_0170969082
+  grid [83/256] ok     12s  phase_stiefel_r64_lr0.0003_e1_lam0.1_svamp_qwen3-0.6b-base_s1_cdec994fb0
+  grid [84/256] ok     12s  phase_stiefel_r64_lr0.0003_e1_lam0.5_svamp_qwen3-0.6b-base_s1_b48d504ec5
+  grid [85/256] ok     14s  phase_stiefel_r64_lr0.001_e1_lam0.001_svamp_qwen3-0.6b-base_s1_62f22607c8
+  grid [86/256] ok     12s  phase_stiefel_r64_lr0.001_e1_lam0.005_svamp_qwen3-0.6b-base_s1_7c596a08d4
+  grid [87/256] ok     12s  phase_stiefel_r64_lr0.001_e1_lam0.1_svamp_qwen3-0.6b-base_s1_c32fb1cab2
+  grid [88/256] ok     14s  phase_stiefel_r64_lr0.001_e1_lam0.5_svamp_qwen3-0.6b-base_s1_fe463b0888
+  grid [89/256] ok     12s  phase_stiefel_r64_lr0.003_e1_lam0.001_svamp_qwen3-0.6b-base_s1_16219da33f
+  grid [90/256] ok     12s  phase_stiefel_r64_lr0.003_e1_lam0.005_svamp_qwen3-0.6b-base_s1_b6fd109d6a
+  grid [91/256] ok     14s  phase_stiefel_r64_lr0.003_e1_lam0.1_svamp_qwen3-0.6b-base_s1_a1cf103bb8
+  grid [92/256] ok     12s  phase_stiefel_r64_lr0.003_e1_lam0.5_svamp_qwen3-0.6b-base_s1_6421b73f89
+  grid [93/256] ok     11s  phase_stiefel_r64_lr0.01_e1_lam0.001_svamp_qwen3-0.6b-base_s1_eafb3f2537
+  grid [94/256] ok     15s  phase_stiefel_r64_lr0.01_e1_lam0.005_svamp_qwen3-0.6b-base_s1_734713b259
+  grid [95/256] ok     12s  phase_stiefel_r64_lr0.01_e1_lam0.1_svamp_qwen3-0.6b-base_s1_3db00d9b67
+  grid [96/256] ok     15s  phase_stiefel_r64_lr0.01_e1_lam0.5_svamp_qwen3-0.6b-base_s1_f794d71ae2
+  grid [97/256] ok     18s  stiefel_r64_lr0.0003_e1_lam0.001_arc_qwen3-0.6b-base_s1_6844a3c5f1
+  grid [98/256] ok     20s  stiefel_r64_lr0.0003_e1_lam0.005_arc_qwen3-0.6b-base_s1_f4bd73600c
+  grid [99/256] ok     17s  stiefel_r64_lr0.0003_e1_lam0.1_arc_qwen3-0.6b-base_s1_27becce195
+  grid [100/256] ok     20s  stiefel_r64_lr0.0003_e1_lam0.5_arc_qwen3-0.6b-base_s1_fa1bae8fa8
+  grid [101/256] ok     17s  stiefel_r64_lr0.001_e1_lam0.001_arc_qwen3-0.6b-base_s1_1c4c88b242
+  grid [102/256] ok     20s  stiefel_r64_lr0.001_e1_lam0.005_arc_qwen3-0.6b-base_s1_734be8c67b
+  grid [103/256] ok     17s  stiefel_r64_lr0.001_e1_lam0.1_arc_qwen3-0.6b-base_s1_29415901e9
+  grid [104/256] ok     20s  stiefel_r64_lr0.001_e1_lam0.5_arc_qwen3-0.6b-base_s1_129ec936ba
+  grid [105/256] ok     17s  stiefel_r64_lr0.003_e1_lam0.001_arc_qwen3-0.6b-base_s1_06779e86a5
+  grid [106/256] ok     20s  stiefel_r64_lr0.003_e1_lam0.005_arc_qwen3-0.6b-base_s1_64096d5f09
+  grid [107/256] ok     17s  stiefel_r64_lr0.003_e1_lam0.1_arc_qwen3-0.6b-base_s1_3f70572258
+  grid [108/256] ok     20s  stiefel_r64_lr0.003_e1_lam0.5_arc_qwen3-0.6b-base_s1_9781dd980c
+  grid [109/256] ok     20s  stiefel_r64_lr0.01_e1_lam0.001_arc_qwen3-0.6b-base_s1_9b62821a4f
+  grid [110/256] ok     17s  stiefel_r64_lr0.01_e1_lam0.005_arc_qwen3-0.6b-base_s1_202aa42f85
+  grid [111/256] ok     20s  stiefel_r64_lr0.01_e1_lam0.1_arc_qwen3-0.6b-base_s1_47d2b17874
+  grid [112/256] ok     17s  stiefel_r64_lr0.01_e1_lam0.5_arc_qwen3-0.6b-base_s1_3f57f8921f
+  grid [113/256] ok     22s  phase_stiefel_r64_lr0.0003_e1_lam0.001_arc_qwen3-0.6b-base_s1_d9b02112a5
+  grid [114/256] ok     18s  phase_stiefel_r64_lr0.0003_e1_lam0.005_arc_qwen3-0.6b-base_s1_dfb769011b
+  grid [115/256] ok     21s  phase_stiefel_r64_lr0.0003_e1_lam0.1_arc_qwen3-0.6b-base_s1_ee60305542
+  grid [116/256] ok     19s  phase_stiefel_r64_lr0.0003_e1_lam0.5_arc_qwen3-0.6b-base_s1_25d4c4f17d
+  grid [117/256] ok     22s  phase_stiefel_r64_lr0.001_e1_lam0.001_arc_qwen3-0.6b-base_s1_0190c23690
+  grid [118/256] ok     21s  phase_stiefel_r64_lr0.001_e1_lam0.005_arc_qwen3-0.6b-base_s1_8a12c126b9
+  grid [119/256] ok     18s  phase_stiefel_r64_lr0.001_e1_lam0.1_arc_qwen3-0.6b-base_s1_a4c2c78fdf
+  grid [120/256] ok     21s  phase_stiefel_r64_lr0.001_e1_lam0.5_arc_qwen3-0.6b-base_s1_e5ba5507a4
+  grid [121/256] ok     18s  phase_stiefel_r64_lr0.003_e1_lam0.001_arc_qwen3-0.6b-base_s1_aaaedf906b
+  grid [122/256] ok     22s  phase_stiefel_r64_lr0.003_e1_lam0.005_arc_qwen3-0.6b-base_s1_e46c53f909
+  grid [123/256] ok     19s  phase_stiefel_r64_lr0.003_e1_lam0.1_arc_qwen3-0.6b-base_s1_e74c4849b3
+  grid [124/256] ok     21s  phase_stiefel_r64_lr0.003_e1_lam0.5_arc_qwen3-0.6b-base_s1_dfce7930b7
+  grid [125/256] ok     21s  phase_stiefel_r64_lr0.01_e1_lam0.001_arc_qwen3-0.6b-base_s1_1b9f0f80cd
+  grid [126/256] ok     19s  phase_stiefel_r64_lr0.01_e1_lam0.005_arc_qwen3-0.6b-base_s1_bfa18a6fd2
+  grid [127/256] ok     21s  phase_stiefel_r64_lr0.01_e1_lam0.1_arc_qwen3-0.6b-base_s1_f5eefe942b
+  grid [128/256] ok     18s  phase_stiefel_r64_lr0.01_e1_lam0.5_arc_qwen3-0.6b-base_s1_aa860fae59
+  grid [129/256] ok     95s  stiefel_r64_lr0.0003_e1_lam0.001_mafand_tsn_qwen3-1.7b-base_s1_1648a39a60
+  grid [130/256] ok     96s  stiefel_r64_lr0.0003_e1_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_1fc29a8cd8
+  grid [131/256] ok     93s  stiefel_r64_lr0.0003_e1_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_ba9eab2385
+  grid [132/256] ok     96s  stiefel_r64_lr0.0003_e1_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_ca13870986
+  grid [133/256] ok     96s  stiefel_r64_lr0.001_e1_lam0.001_mafand_tsn_qwen3-1.7b-base_s1_88909b1c39
+  grid [134/256] ok     96s  stiefel_r64_lr0.001_e1_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_172abecb1e
+  grid [135/256] ok     93s  stiefel_r64_lr0.001_e1_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_b8b89f67f3
+  grid [136/256] ok     96s  stiefel_r64_lr0.001_e1_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_b097f27d39
+  grid [137/256] ok     96s  stiefel_r64_lr0.003_e1_lam0.001_mafand_tsn_qwen3-1.7b-base_s1_6a6bd4cbc7
+  grid [138/256] ok     92s  stiefel_r64_lr0.003_e1_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_31fdae5aa0
+  grid [139/256] ok     96s  stiefel_r64_lr0.003_e1_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_835fc8ef76
+  grid [140/256] ok     96s  stiefel_r64_lr0.003_e1_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_09c03235a3
+  grid [141/256] ok     93s  stiefel_r64_lr0.01_e1_lam0.001_mafand_tsn_qwen3-1.7b-base_s1_7f8fdb8bc2
+  grid [142/256] ok     96s  stiefel_r64_lr0.01_e1_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_769238ad01
+  grid [143/256] ok     96s  stiefel_r64_lr0.01_e1_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_a4ca955500
+  grid [144/256] ok     96s  stiefel_r64_lr0.01_e1_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_83689847e8
+  grid [145/256] ok     96s  phase_stiefel_r64_lr0.0003_e1_lam0.001_mafand_tsn_qwen3-1.7b-base_s1_00e7f15644
+  grid [146/256] ok     99s  phase_stiefel_r64_lr0.0003_e1_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_84418ceea8
+  grid [147/256] ok     99s  phase_stiefel_r64_lr0.0003_e1_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_a4c20a19e7
+  grid [148/256] ok     99s  phase_stiefel_r64_lr0.0003_e1_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_9613fc9f8a
+  grid [149/256] ok     99s  phase_stiefel_r64_lr0.001_e1_lam0.001_mafand_tsn_qwen3-1.7b-base_s1_dfc78346b1
+  grid [150/256] ok     97s  phase_stiefel_r64_lr0.001_e1_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_a080f8d893
+  grid [151/256] ok    100s  phase_stiefel_r64_lr0.001_e1_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_e61cbe27e1
+  grid [152/256] ok    100s  phase_stiefel_r64_lr0.001_e1_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_edc77991c5
+  grid [153/256] ok    100s  phase_stiefel_r64_lr0.003_e1_lam0.001_mafand_tsn_qwen3-1.7b-base_s1_813bba2617
+  grid [154/256] ok    100s  phase_stiefel_r64_lr0.003_e1_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_8483a497d3
+  grid [155/256] ok     97s  phase_stiefel_r64_lr0.003_e1_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_241128231e
+  grid [156/256] ok    100s  phase_stiefel_r64_lr0.003_e1_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_5651987f8b
+  grid [157/256] ok    100s  phase_stiefel_r64_lr0.01_e1_lam0.001_mafand_tsn_qwen3-1.7b-base_s1_5016e85c2c
+  grid [158/256] ok    100s  phase_stiefel_r64_lr0.01_e1_lam0.005_mafand_tsn_qwen3-1.7b-base_s1_413edf4358
+  grid [159/256] ok    100s  phase_stiefel_r64_lr0.01_e1_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_5eae8af3c9
+  grid [160/256] ok     98s  phase_stiefel_r64_lr0.01_e1_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_9cc841e340
+  grid [161/256] ok    134s  stiefel_r64_lr0.0003_e1_lam0.001_mafand_lug_qwen3-1.7b-base_s1_6a2509145a
+  grid [162/256] ok    133s  stiefel_r64_lr0.0003_e1_lam0.005_mafand_lug_qwen3-1.7b-base_s1_2bbafc5b85
+  grid [163/256] ok    134s  stiefel_r64_lr0.0003_e1_lam0.1_mafand_lug_qwen3-1.7b-base_s1_bca8cc6e8e
+  grid [164/256] ok    135s  stiefel_r64_lr0.0003_e1_lam0.5_mafand_lug_qwen3-1.7b-base_s1_7bee85d792
+  grid [165/256] ok    135s  stiefel_r64_lr0.001_e1_lam0.001_mafand_lug_qwen3-1.7b-base_s1_33cc6b2e6f
+  grid [166/256] ok    135s  stiefel_r64_lr0.001_e1_lam0.005_mafand_lug_qwen3-1.7b-base_s1_8f2a07e99e
+  grid [167/256] ok    132s  stiefel_r64_lr0.001_e1_lam0.1_mafand_lug_qwen3-1.7b-base_s1_dbbfd62d75
+  grid [168/256] ok    135s  stiefel_r64_lr0.001_e1_lam0.5_mafand_lug_qwen3-1.7b-base_s1_a1405bb59d
+  grid [169/256] ok    135s  stiefel_r64_lr0.003_e1_lam0.001_mafand_lug_qwen3-1.7b-base_s1_20540d1026
+  grid [170/256] ok    135s  stiefel_r64_lr0.003_e1_lam0.005_mafand_lug_qwen3-1.7b-base_s1_d6f216bed3
+  grid [171/256] ok    135s  stiefel_r64_lr0.003_e1_lam0.1_mafand_lug_qwen3-1.7b-base_s1_e55e85e65e
+  grid [172/256] ok    131s  stiefel_r64_lr0.003_e1_lam0.5_mafand_lug_qwen3-1.7b-base_s1_283dde1f80
+  grid [173/256] ok    132s  stiefel_r64_lr0.01_e1_lam0.001_mafand_lug_qwen3-1.7b-base_s1_c82e484082
+  grid [174/256] ok    131s  stiefel_r64_lr0.01_e1_lam0.005_mafand_lug_qwen3-1.7b-base_s1_d52f20aca9
+  grid [175/256] ok    126s  stiefel_r64_lr0.01_e1_lam0.1_mafand_lug_qwen3-1.7b-base_s1_69e048edc2
+  grid [176/256] ok    129s  stiefel_r64_lr0.01_e1_lam0.5_mafand_lug_qwen3-1.7b-base_s1_3814973764
+  grid [177/256] ok    134s  phase_stiefel_r64_lr0.0003_e1_lam0.001_mafand_lug_qwen3-1.7b-base_s1_94b489452e
+  grid [178/256] ok    133s  phase_stiefel_r64_lr0.0003_e1_lam0.005_mafand_lug_qwen3-1.7b-base_s1_d2afdef821
+  grid [179/256] ok    130s  phase_stiefel_r64_lr0.0003_e1_lam0.1_mafand_lug_qwen3-1.7b-base_s1_828ab334b0
+  grid [180/256] ok    133s  phase_stiefel_r64_lr0.0003_e1_lam0.5_mafand_lug_qwen3-1.7b-base_s1_ec915adfa8
+  grid [181/256] ok    133s  phase_stiefel_r64_lr0.001_e1_lam0.001_mafand_lug_qwen3-1.7b-base_s1_ff706a0fe8
+  grid [182/256] ok    132s  phase_stiefel_r64_lr0.001_e1_lam0.005_mafand_lug_qwen3-1.7b-base_s1_3058afe445
+  grid [183/256] ok    130s  phase_stiefel_r64_lr0.001_e1_lam0.1_mafand_lug_qwen3-1.7b-base_s1_9113002157
+  grid [184/256] ok    132s  phase_stiefel_r64_lr0.001_e1_lam0.5_mafand_lug_qwen3-1.7b-base_s1_3abfa5d35b
+  grid [185/256] ok    132s  phase_stiefel_r64_lr0.003_e1_lam0.001_mafand_lug_qwen3-1.7b-base_s1_6414fbc82f
+  grid [186/256] ok    132s  phase_stiefel_r64_lr0.003_e1_lam0.005_mafand_lug_qwen3-1.7b-base_s1_bc45104028
+  grid [187/256] ok    129s  phase_stiefel_r64_lr0.003_e1_lam0.1_mafand_lug_qwen3-1.7b-base_s1_2b1d7455af
+  grid [188/256] ok    131s  phase_stiefel_r64_lr0.003_e1_lam0.5_mafand_lug_qwen3-1.7b-base_s1_c5cc9bfdc2
+  grid [189/256] ok    132s  phase_stiefel_r64_lr0.01_e1_lam0.001_mafand_lug_qwen3-1.7b-base_s1_67e3d5e332
+  grid [190/256] ok    131s  phase_stiefel_r64_lr0.01_e1_lam0.005_mafand_lug_qwen3-1.7b-base_s1_7dc88d439e
+  grid [191/256] ok    128s  phase_stiefel_r64_lr0.01_e1_lam0.1_mafand_lug_qwen3-1.7b-base_s1_ce760d7e1c
+  grid [192/256] ok    131s  phase_stiefel_r64_lr0.01_e1_lam0.5_mafand_lug_qwen3-1.7b-base_s1_c8bfac66ab
+  grid [193/256] ok     16s  stiefel_r64_lr0.0003_e1_lam0.001_svamp_qwen3-1.7b-base_s1_3d2b6c2534
+  grid [194/256] ok     19s  stiefel_r64_lr0.0003_e1_lam0.005_svamp_qwen3-1.7b-base_s1_2addc17610
+  grid [195/256] ok     16s  stiefel_r64_lr0.0003_e1_lam0.1_svamp_qwen3-1.7b-base_s1_0de194b6a5
+  grid [196/256] ok     19s  stiefel_r64_lr0.0003_e1_lam0.5_svamp_qwen3-1.7b-base_s1_3d8bbe55cb
+  grid [197/256] ok     16s  stiefel_r64_lr0.001_e1_lam0.001_svamp_qwen3-1.7b-base_s1_2bb5236471
+  grid [198/256] ok     19s  stiefel_r64_lr0.001_e1_lam0.005_svamp_qwen3-1.7b-base_s1_5705714bcd
+  grid [199/256] ok     16s  stiefel_r64_lr0.001_e1_lam0.1_svamp_qwen3-1.7b-base_s1_d97c9550bb
+  grid [200/256] ok     19s  stiefel_r64_lr0.001_e1_lam0.5_svamp_qwen3-1.7b-base_s1_d67a33c783
+  grid [201/256] ok     16s  stiefel_r64_lr0.003_e1_lam0.001_svamp_qwen3-1.7b-base_s1_21b470cfce
+  grid [202/256] ok     19s  stiefel_r64_lr0.003_e1_lam0.005_svamp_qwen3-1.7b-base_s1_1fc4c59b46
+  grid [203/256] ok     16s  stiefel_r64_lr0.003_e1_lam0.1_svamp_qwen3-1.7b-base_s1_3b5286f9d0
+  grid [204/256] ok     19s  stiefel_r64_lr0.003_e1_lam0.5_svamp_qwen3-1.7b-base_s1_84f356f2a5
+  grid [205/256] ok     16s  stiefel_r64_lr0.01_e1_lam0.001_svamp_qwen3-1.7b-base_s1_9455e98c53
+  grid [206/256] ok     19s  stiefel_r64_lr0.01_e1_lam0.005_svamp_qwen3-1.7b-base_s1_32db1dda98
+  grid [207/256] ok     16s  stiefel_r64_lr0.01_e1_lam0.1_svamp_qwen3-1.7b-base_s1_835025a4a9
+  grid [208/256] ok     19s  stiefel_r64_lr0.01_e1_lam0.5_svamp_qwen3-1.7b-base_s1_f0de1824cc
+  grid [209/256] ok     17s  phase_stiefel_r64_lr0.0003_e1_lam0.001_svamp_qwen3-1.7b-base_s1_623b3e56fc
+  grid [210/256] ok     20s  phase_stiefel_r64_lr0.0003_e1_lam0.005_svamp_qwen3-1.7b-base_s1_3b2422bc72
+  grid [211/256] ok     17s  phase_stiefel_r64_lr0.0003_e1_lam0.1_svamp_qwen3-1.7b-base_s1_37b220f84b
+  grid [212/256] ok     20s  phase_stiefel_r64_lr0.0003_e1_lam0.5_svamp_qwen3-1.7b-base_s1_35dbea55e8
+  grid [213/256] ok     17s  phase_stiefel_r64_lr0.001_e1_lam0.001_svamp_qwen3-1.7b-base_s1_a993864a69
+  grid [214/256] ok     20s  phase_stiefel_r64_lr0.001_e1_lam0.005_svamp_qwen3-1.7b-base_s1_769f0ca98c
+  grid [215/256] ok     20s  phase_stiefel_r64_lr0.001_e1_lam0.1_svamp_qwen3-1.7b-base_s1_d21975ff38
+  grid [216/256] ok     17s  phase_stiefel_r64_lr0.001_e1_lam0.5_svamp_qwen3-1.7b-base_s1_dccd8f9958
+  grid [217/256] ok     20s  phase_stiefel_r64_lr0.003_e1_lam0.001_svamp_qwen3-1.7b-base_s1_51a93030df
+  grid [218/256] ok     17s  phase_stiefel_r64_lr0.003_e1_lam0.005_svamp_qwen3-1.7b-base_s1_833364cbaa
+  grid [219/256] ok     20s  phase_stiefel_r64_lr0.003_e1_lam0.1_svamp_qwen3-1.7b-base_s1_685627d447
+  grid [220/256] ok     17s  phase_stiefel_r64_lr0.003_e1_lam0.5_svamp_qwen3-1.7b-base_s1_f07347dd4f
+  grid [221/256] ok     20s  phase_stiefel_r64_lr0.01_e1_lam0.001_svamp_qwen3-1.7b-base_s1_44af2dcaf2
+  grid [222/256] ok     17s  phase_stiefel_r64_lr0.01_e1_lam0.005_svamp_qwen3-1.7b-base_s1_4be27ec3d1
+  grid [223/256] ok     20s  phase_stiefel_r64_lr0.01_e1_lam0.1_svamp_qwen3-1.7b-base_s1_2510cc2d9c
+  grid [224/256] ok     17s  phase_stiefel_r64_lr0.01_e1_lam0.5_svamp_qwen3-1.7b-base_s1_52b907dc9c
+  grid [225/256] ok     30s  stiefel_r64_lr0.0003_e1_lam0.001_arc_qwen3-1.7b-base_s1_07f5d2d783
+  grid [226/256] ok     30s  stiefel_r64_lr0.0003_e1_lam0.005_arc_qwen3-1.7b-base_s1_1f3abc3a77
+  grid [227/256] ok     30s  stiefel_r64_lr0.0003_e1_lam0.1_arc_qwen3-1.7b-base_s1_c7280ef07e
+  grid [228/256] ok     30s  stiefel_r64_lr0.0003_e1_lam0.5_arc_qwen3-1.7b-base_s1_d65ed21e6f
+  grid [229/256] ok     27s  stiefel_r64_lr0.001_e1_lam0.001_arc_qwen3-1.7b-base_s1_d2f7c81321
+  grid [230/256] ok     30s  stiefel_r64_lr0.001_e1_lam0.005_arc_qwen3-1.7b-base_s1_57f7850b22
+  grid [231/256] ok     30s  stiefel_r64_lr0.001_e1_lam0.1_arc_qwen3-1.7b-base_s1_9734043a19
+  grid [232/256] ok     30s  stiefel_r64_lr0.001_e1_lam0.5_arc_qwen3-1.7b-base_s1_315fe45d11
+  grid [233/256] ok     30s  stiefel_r64_lr0.003_e1_lam0.001_arc_qwen3-1.7b-base_s1_002bdc9cbd
+  grid [234/256] ok     30s  stiefel_r64_lr0.003_e1_lam0.005_arc_qwen3-1.7b-base_s1_38e9f1b29a
+  grid [235/256] ok     30s  stiefel_r64_lr0.003_e1_lam0.1_arc_qwen3-1.7b-base_s1_4157598c23
+  grid [236/256] ok     27s  stiefel_r64_lr0.003_e1_lam0.5_arc_qwen3-1.7b-base_s1_8703a0dc0a
+  grid [237/256] ok     30s  stiefel_r64_lr0.01_e1_lam0.001_arc_qwen3-1.7b-base_s1_71760739a4
+  grid [238/256] ok     30s  stiefel_r64_lr0.01_e1_lam0.005_arc_qwen3-1.7b-base_s1_578b30cffb
+  grid [239/256] ok     30s  stiefel_r64_lr0.01_e1_lam0.1_arc_qwen3-1.7b-base_s1_e683d2917f
+  grid [240/256] ok     30s  stiefel_r64_lr0.01_e1_lam0.5_arc_qwen3-1.7b-base_s1_9851fac823
+  grid [241/256] ok     32s  phase_stiefel_r64_lr0.0003_e1_lam0.001_arc_qwen3-1.7b-base_s1_cbe70cebb1
+  grid [242/256] ok     32s  phase_stiefel_r64_lr0.0003_e1_lam0.005_arc_qwen3-1.7b-base_s1_2be24c157c
+  grid [243/256] ok     32s  phase_stiefel_r64_lr0.0003_e1_lam0.1_arc_qwen3-1.7b-base_s1_12d5b9d49c
+  grid [244/256] ok     30s  phase_stiefel_r64_lr0.0003_e1_lam0.5_arc_qwen3-1.7b-base_s1_c975332e97
+  grid [245/256] ok     32s  phase_stiefel_r64_lr0.001_e1_lam0.001_arc_qwen3-1.7b-base_s1_98427d3c32
+  grid [246/256] ok     32s  phase_stiefel_r64_lr0.001_e1_lam0.005_arc_qwen3-1.7b-base_s1_7710161769
+  grid [247/256] ok     32s  phase_stiefel_r64_lr0.001_e1_lam0.1_arc_qwen3-1.7b-base_s1_5e5d75b608
+  grid [248/256] ok     32s  phase_stiefel_r64_lr0.001_e1_lam0.5_arc_qwen3-1.7b-base_s1_d2e66d7169
+  grid [249/256] ok     32s  phase_stiefel_r64_lr0.003_e1_lam0.001_arc_qwen3-1.7b-base_s1_f9cc350593
+  grid [250/256] ok     32s  phase_stiefel_r64_lr0.003_e1_lam0.005_arc_qwen3-1.7b-base_s1_fa51fc6318
+  grid [251/256] ok     33s  phase_stiefel_r64_lr0.003_e1_lam0.1_arc_qwen3-1.7b-base_s1_1618e26423
+  grid [252/256] ok     32s  phase_stiefel_r64_lr0.003_e1_lam0.5_arc_qwen3-1.7b-base_s1_f59dfd86b9
+  grid [253/256] ok     32s  phase_stiefel_r64_lr0.01_e1_lam0.001_arc_qwen3-1.7b-base_s1_621d7e3288
+  grid [254/256] ok     32s  phase_stiefel_r64_lr0.01_e1_lam0.005_arc_qwen3-1.7b-base_s1_23a53f4d0b
+  grid [255/256] ok     29s  phase_stiefel_r64_lr0.01_e1_lam0.1_arc_qwen3-1.7b-base_s1_7437dbecd6
+  grid [256/256] ok     32s  phase_stiefel_r64_lr0.01_e1_lam0.5_arc_qwen3-1.7b-base_s1_c014191fe4
+grid: finished, 0 failed
+main: 264 runs, 184 already done, 80 to run
+  main [1/80] ok    199s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_b6eb027e79
+  main [2/80] ok    214s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_f2fb60d2dc
+  main [3/80] ok    295s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_aaedeb3c54
+  main [4/80] ok    322s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_88dc825a15
+  main [5/80] ok     36s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s1_f1f9d2e657
+  main [6/80] ok     38s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s1_68a1ffa983
+  main [7/80] ok     66s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_853e8e50e5
+  main [8/80] ok     71s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_6a59282de2
+  main [9/80] ok    372s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_fc795c53f1
+  main [10/80] ok    395s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_7d613108d3
+  main [11/80] ok    556s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s1_419728345e
+  main [12/80] ok    611s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s1_714c81463d
+  main [13/80] ok     67s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s1_8571b4b481
+  main [14/80] ok     70s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s1_a39e00d4c1
+  main [15/80] ok    130s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s1_2edbab5694
+  main [16/80] ok    136s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s1_2ce9c09cf8
+  main [17/80] ok    215s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_2b5f86ad25
+  main [18/80] ok    228s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_8799381008
+  main [19/80] ok    317s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_16df48dd63
+  main [20/80] ok    340s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_b6aa50b85d
+  main [21/80] ok     38s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s2_51408ed01b
+  main [22/80] ok     41s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s2_81379c8e62
+  main [23/80] ok     71s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_2a3f25a1e4
+  main [24/80] ok     76s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_fe8e2bb623
+  main [25/80] ok    404s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s2_e0d548e08f
+  main [26/80] ok    420s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s2_82c3f3fadb
+  main [27/80] ok    593s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s2_8ca2584adf
+  main [28/80] ok    621s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s2_5c8dcdb3f3
+  main [29/80] ok     67s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s2_8e0ca8ec8a
+  main [30/80] ok     71s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s2_24b8e3dafd
+  main [31/80] ok    130s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s2_791660a325
+  main [32/80] ok    136s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s2_d3a6f6fc78
+  main [33/80] ok    215s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_40dc871167
+  main [34/80] ok    228s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_17341641a2
+  main [35/80] ok    315s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_32d4dec27f
+  main [36/80] ok    336s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_bb980b7c11
+  main [37/80] ok     38s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s3_b9d6b33e2a
+  main [38/80] ok     41s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s3_5a07c33d95
+  main [39/80] ok     71s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_c99107543b
+  main [40/80] ok     76s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_3075020da4
+  main [41/80] ok    405s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s3_6aff91888e
+  main [42/80] ok    421s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s3_7f1d49100f
+  main [43/80] ok    594s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s3_50b00e1122
+  main [44/80] ok    622s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s3_74ceb3e124
+  main [45/80] ok     67s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s3_b22b598864
+  main [46/80] ok     71s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s3_452d8e4311
+  main [47/80] ok    130s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s3_381470a76b
+  main [48/80] ok    137s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s3_8d704afaca
+  main [49/80] ok    215s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_f221db481b
+  main [50/80] ok    237s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_4844193a78
+  main [51/80] ok    319s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_e13a2e4a19
+  main [52/80] ok    343s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_76a1c759a2
+  main [53/80] ok     38s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s4_7e3c5b4223
+  main [54/80] ok     42s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s4_7f668058aa
+  main [55/80] ok     71s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_eb70758210
+  main [56/80] ok     76s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_302b857bad
+  main [57/80] ok    405s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s4_59d3f97b55
+  main [58/80] ok    420s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s4_07ec63043b
+  main [59/80] ok    593s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s4_85e9cbf323
+  main [60/80] ok    622s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s4_0496dda740
+  main [61/80] ok     68s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s4_795a9061e4
+  main [62/80] ok     72s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s4_bb39ed0abf
+  main [63/80] ok    133s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s4_a2bb581fd3
+  main [64/80] ok    140s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s4_657869d94a
+  main [65/80] ok    221s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_17f8ae0343
+  main [66/80] ok    234s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_338ebad9dc
+  main [67/80] ok    324s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_d1923ffa2d
+  main [68/80] ok    345s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_67b45b9791
+  main [69/80] ok     39s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s5_3cd4dcaeee
+  main [70/80] ok     42s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s5_fe4c3e023d
+  main [71/80] ok     73s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_79474cacda
+  main [72/80] ok     78s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_178f2f034b
+  main [73/80] ok    413s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s5_51585ad382
+  main [74/80] ok    428s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s5_2bb4ed7f18
+  main [75/80] ok    604s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s5_23f38e94e6
+  main [76/80] ok    634s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s5_142d15933b
+  main [77/80] ok     68s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e
+  main [78/80] ok     71s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s5_3bed3f953d
+  main [79/80] ok    131s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s5_42b2d01e1b
+  main [80/80] ok    137s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s5_76d67fd7d1
+main: finished, 0 failed
+=== 2026-11-18 15:56:15 UTC lists of the main runs to score
+264 main runs; 160 greedy scores
+=== 2026-11-18 15:56:31 UTC repetition-blocked translation scores and test loss of every main run
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11448.95it/s]
+  chrF++  32.50     88s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_b6eb027e79
+  loss   2.23      7s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_b6eb027e79
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10203.60it/s]
+  chrF++  32.73     90s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_f2fb60d2dc
+  loss   2.27      7s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_f2fb60d2dc
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9836.10it/s]
+  chrF++  30.90     32s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_aaedeb3c54
+  loss   2.38      6s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_aaedeb3c54
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10267.82it/s]
+  chrF++  31.19     34s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_88dc825a15
+  loss   2.39      6s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_88dc825a15
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9365.93it/s]
+  loss   0.09      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s1_f1f9d2e657
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9692.90it/s]
+  loss   0.09      1s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s1_68a1ffa983
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11675.12it/s]
+  loss   0.40      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_853e8e50e5
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8544.17it/s]
+  loss   0.40      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_6a59282de2
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7955.86it/s]
+  chrF++  32.43     79s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_fc795c53f1
+  loss   2.21     13s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_fc795c53f1
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9107.51it/s]
+  chrF++  31.93    101s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_7d613108d3
+  loss   2.22     13s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_7d613108d3
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7898.06it/s]
+  chrF++  31.15     46s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s1_419728345e
+  loss   2.27     10s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s1_419728345e
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9240.52it/s]
+  chrF++  31.32     60s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s1_714c81463d
+  loss   2.30     10s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s1_714c81463d
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8664.76it/s]
+  loss   0.07      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s1_8571b4b481
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7879.30it/s]
+  loss   0.07      2s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s1_a39e00d4c1
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8860.14it/s]
+  loss   0.26      7s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s1_2edbab5694
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11499.68it/s]
+  loss   0.26      7s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s1_2ce9c09cf8
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10898.04it/s]
+  chrF++  32.86     88s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_2b5f86ad25
+  loss   2.25      7s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_2b5f86ad25
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9994.04it/s]
+  chrF++  32.14     89s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_8799381008
+  loss   2.27      7s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s2_8799381008
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9231.54it/s]
+  chrF++  30.82     35s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_16df48dd63
+  loss   2.38      5s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_16df48dd63
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10249.04it/s]
+  chrF++  31.22     36s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_b6aa50b85d
+  loss   2.40      5s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s2_b6aa50b85d
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8923.56it/s]
+  loss   0.11      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s2_51408ed01b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10885.63it/s]
+  loss   0.09      1s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s2_81379c8e62
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9835.80it/s]
+  loss   0.40      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_2a3f25a1e4
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9773.63it/s]
+  loss   0.41      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_fe8e2bb623
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10220.44it/s]
+  chrF++  32.36     89s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s2_e0d548e08f
+  loss   2.21     13s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s2_e0d548e08f
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8338.42it/s]
+  chrF++  32.43    104s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s2_82c3f3fadb
+  loss   2.23     13s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s2_82c3f3fadb
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9911.08it/s]
+  chrF++  31.38     37s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s2_8ca2584adf
+  loss   2.27     10s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s2_8ca2584adf
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10123.75it/s]
+  chrF++  31.33     45s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s2_5c8dcdb3f3
+  loss   2.32     10s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s2_5c8dcdb3f3
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8493.16it/s]
+  loss   0.07      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s2_8e0ca8ec8a
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8477.93it/s]
+  loss   0.08      2s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s2_24b8e3dafd
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9804.51it/s]
+  loss   0.29      7s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s2_791660a325
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8745.77it/s]
+  loss   0.26      7s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s2_d3a6f6fc78
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9099.04it/s]
+  chrF++  32.14     79s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_40dc871167
+  loss   2.25      7s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_40dc871167
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9126.95it/s]
+  chrF++  32.39    144s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_17341641a2
+  loss   2.27      7s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s3_17341641a2
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10276.26it/s]
+  chrF++  31.14     39s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_32d4dec27f
+  loss   2.36      5s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_32d4dec27f
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9784.58it/s]
+  chrF++  31.06     31s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_bb980b7c11
+  loss   2.40      5s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s3_bb980b7c11
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9604.54it/s]
+  loss   0.09      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s3_b9d6b33e2a
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11574.51it/s]
+  loss   0.09      1s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s3_5a07c33d95
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11157.46it/s]
+  loss   0.42      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_c99107543b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10924.87it/s]
+  loss   0.43      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_3075020da4
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9813.01it/s]
+  chrF++  31.91    117s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s3_6aff91888e
+  loss   2.20     13s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s3_6aff91888e
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9050.84it/s]
+  chrF++  31.96    113s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s3_7f1d49100f
+  loss   2.22     13s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s3_7f1d49100f
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7444.16it/s]
+  chrF++  31.38     57s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s3_50b00e1122
+  loss   2.26     11s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s3_50b00e1122
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9872.40it/s]
+  chrF++  31.50     49s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s3_74ceb3e124
+  loss   2.30     11s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s3_74ceb3e124
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9115.69it/s]
+  loss   0.09      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s3_b22b598864
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10528.38it/s]
+  loss   0.07      2s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s3_452d8e4311
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9449.38it/s]
+  loss   0.26      7s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s3_381470a76b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 13032.71it/s]
+  loss   0.26      7s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s3_8d704afaca
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8377.47it/s]
+  chrF++  32.75     76s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_f221db481b
+  loss   2.25      7s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_f221db481b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9286.26it/s]
+  chrF++  32.96     60s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_4844193a78
+  loss   2.27      7s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s4_4844193a78
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11332.80it/s]
+  chrF++  30.78     34s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_e13a2e4a19
+  loss   2.37      6s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_e13a2e4a19
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9360.94it/s]
+  chrF++  30.89     43s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_76a1c759a2
+  loss   2.39      6s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s4_76a1c759a2
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9628.65it/s]
+  loss   0.09      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s4_7e3c5b4223
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9164.39it/s]
+  loss   0.09      1s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s4_7f668058aa
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9916.75it/s]
+  loss   0.44      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_eb70758210
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8848.26it/s]
+  loss   0.44      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_302b857bad
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8937.98it/s]
+  chrF++  32.48    116s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s4_59d3f97b55
+  loss   2.22     14s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s4_59d3f97b55
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9604.69it/s]
+  chrF++  32.54    117s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s4_07ec63043b
+  loss   2.23     13s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s4_07ec63043b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10673.23it/s]
+  chrF++  31.30     73s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s4_85e9cbf323
+  loss   2.28     11s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s4_85e9cbf323
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10335.31it/s]
+  chrF++  30.95     69s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s4_0496dda740
+  loss   2.31     11s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s4_0496dda740
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9278.90it/s]
+  loss   0.07      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s4_795a9061e4
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7457.35it/s]
+  loss   0.08      2s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s4_bb39ed0abf
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8044.16it/s]
+  loss   0.28      7s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s4_a2bb581fd3
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8360.61it/s]
+  loss   0.28      7s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s4_657869d94a
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9364.24it/s]
+  chrF++  31.79    108s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_17f8ae0343
+  loss   2.27      7s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_17f8ae0343
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8756.43it/s]
+  chrF++  32.35     76s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_338ebad9dc
+  loss   2.28      7s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s5_338ebad9dc
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8895.60it/s]
+  chrF++  30.56     32s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_d1923ffa2d
+  loss   2.39      6s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_d1923ffa2d
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8583.08it/s]
+  chrF++  31.43     48s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_67b45b9791
+  loss   2.38      6s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s5_67b45b9791
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8169.10it/s]
+  loss   0.11      1s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s5_3cd4dcaeee
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10583.74it/s]
+  loss   0.10      1s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s5_fe4c3e023d
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11122.91it/s]
+  loss   0.41      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_79474cacda
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9679.26it/s]
+  loss   0.42      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_178f2f034b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10313.75it/s]
+  chrF++  31.79    132s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s5_51585ad382
+  loss   2.22     14s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s5_51585ad382
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9944.96it/s]
+  chrF++  31.54    130s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s5_2bb4ed7f18
+  loss   2.24     14s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s5_2bb4ed7f18
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9525.04it/s]
+  chrF++  31.33     45s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s5_23f38e94e6
+  loss   2.27     11s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s5_23f38e94e6
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9996.42it/s]
+  chrF++  31.47     52s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s5_142d15933b
+  loss   2.31     11s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s5_142d15933b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9404.95it/s]
+  loss   0.08      2s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9733.39it/s]
+  loss   0.08      2s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s5_3bed3f953d
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8125.65it/s]
+  loss   0.26      8s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s5_42b2d01e1b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9691.16it/s]
+  loss   0.26      8s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s5_76d67fd7d1
+=== 2026-11-18 16:54:33 UTC greedy scores: SVAMP and ARC every seed, translation seed 1 (runaway share)
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11767.15it/s]
+  accuracy  70.33      7s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s1_f1f9d2e657
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11232.64it/s]
+  accuracy  70.33      5s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s1_68a1ffa983
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8404.06it/s]
+  accuracy  67.32      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_853e8e50e5
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10143.10it/s]
+  accuracy  67.32      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s1_6a59282de2
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9516.46it/s]
+  accuracy  78.00      6s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s1_8571b4b481
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9878.62it/s]
+  accuracy  77.67      5s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s1_a39e00d4c1
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10719.87it/s]
+  accuracy  81.40      8s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s1_2edbab5694
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8192.93it/s]
+  accuracy  81.14      8s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s1_2ce9c09cf8
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7546.08it/s]
+  accuracy  65.33      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s2_51408ed01b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9385.40it/s]
+  accuracy  69.33      5s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s2_81379c8e62
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9517.44it/s]
+  accuracy  69.03      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_2a3f25a1e4
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8989.64it/s]
+  accuracy  67.75      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s2_fe8e2bb623
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9866.18it/s]
+  accuracy  78.33      6s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s2_8e0ca8ec8a
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8154.50it/s]
+  accuracy  76.67      6s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s2_24b8e3dafd
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9794.02it/s]
+  accuracy  78.58      7s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s2_791660a325
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9756.61it/s]
+  accuracy  80.38      7s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s2_d3a6f6fc78
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9106.62it/s]
+  accuracy  69.67      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s3_b9d6b33e2a
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9308.46it/s]
+  accuracy  69.67      5s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s3_5a07c33d95
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9263.90it/s]
+  accuracy  66.64      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_c99107543b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11030.34it/s]
+  accuracy  68.09      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s3_3075020da4
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9373.62it/s]
+  accuracy  75.67      6s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s3_b22b598864
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7723.67it/s]
+  accuracy  77.33      6s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s3_452d8e4311
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9878.10it/s]
+  accuracy  81.57      7s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s3_381470a76b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7839.77it/s]
+  accuracy  81.91      7s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s3_8d704afaca
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9122.15it/s]
+  accuracy  68.67      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s4_7e3c5b4223
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7472.27it/s]
+  accuracy  72.67      5s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s4_7f668058aa
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11355.86it/s]
+  accuracy  67.75      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_eb70758210
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10927.44it/s]
+  accuracy  67.83      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s4_302b857bad
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9031.41it/s]
+  accuracy  79.33      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s4_795a9061e4
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9918.49it/s]
+  accuracy  77.67      6s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s4_bb39ed0abf
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8282.38it/s]
+  accuracy  79.10      7s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s4_a2bb581fd3
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8440.01it/s]
+  accuracy  80.20      7s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s4_657869d94a
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9995.73it/s]
+  accuracy  70.33      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-0.6b-base_s5_3cd4dcaeee
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8106.75it/s]
+  accuracy  68.67      5s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-0.6b-base_s5_fe4c3e023d
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10577.89it/s]
+  accuracy  66.30      4s  stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_79474cacda
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9790.18it/s]
+  accuracy  67.66      4s  phase_stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_178f2f034b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8075.84it/s]
+  accuracy  78.00      5s  stiefel_r64_lr0.003_e5_lam0.005_svamp_qwen3-1.7b-base_s5_033d26598e
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8489.44it/s]
+  accuracy  75.67      5s  phase_stiefel_r64_lr0.003_e5_lam0.001_svamp_qwen3-1.7b-base_s5_3bed3f953d
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10152.21it/s]
+  accuracy  81.74      7s  stiefel_r64_lr0.003_e5_lam0.5_arc_qwen3-1.7b-base_s5_42b2d01e1b
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10070.83it/s]
+  accuracy  80.55      7s  phase_stiefel_r64_lr0.003_e5_lam0.1_arc_qwen3-1.7b-base_s5_76d67fd7d1
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7719.50it/s]
+  chrF++  26.26    148s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_b6eb027e79
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8475.44it/s]
+  chrF++  28.40    119s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-0.6b-base_s1_f2fb60d2dc
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9822.06it/s]
+  chrF++  24.67    119s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_aaedeb3c54
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10113.36it/s]
+  chrF++  26.30    103s  phase_stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-0.6b-base_s1_88dc825a15
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8633.81it/s]
+  chrF++  27.09    143s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_qwen3-1.7b-base_s1_fc795c53f1
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9924.32it/s]
+  chrF++  26.57    153s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_qwen3-1.7b-base_s1_7d613108d3
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9689.00it/s]
+  chrF++  27.92     86s  stiefel_r64_lr0.01_e5_lam0.5_mafand_lug_qwen3-1.7b-base_s1_419728345e
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8487.39it/s]
+  chrF++  27.56     96s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_qwen3-1.7b-base_s1_714c81463d
+=== 2026-11-18 17:15:07 UTC analysis (CPU): paper/generated/
+wrote ['fig_effects.pdf', 'numbers.json', 'tab_ablation.tex', 'tab_loss_tests.tex', 'tab_mafand_lug.tex', 'tab_mafand_tsn.tex', 'tab_main.tex', 'tab_tests.tex']
+=== 2026-11-18 17:15:54 UTC done

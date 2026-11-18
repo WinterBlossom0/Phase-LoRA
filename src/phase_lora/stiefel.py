@@ -6,15 +6,16 @@ PoLAR replaces LoRA's `dW = BA` with
 
 and trains X, Y with the landing field of Ablin & Peyre instead of a retraction (the paper's reason: a
 retraction needs an SVD or a matrix inverse). The iterates are near the manifold, not on it; Ablin & Peyre
-prove that they converge to it. From Alg. 2 of the paper:
+prove that they converge to it. The field, as the official code computes it (github.com/kcc-lion/polar,
+callbacks/landing_callback.py, landing_step):
 
-    psi(X) := Skew(grad_X L . X^T),      Skew(M) = (M - M^T)/2
-    N(X)   := ||X^T X - I_r||_F^2   =>   grad N = 4 X (X^T X - I)
-    Gamma(X) <- psi(X) X + lambda grad N(X)
-    X <- X - eta rho(Gamma(X))           rho = Adam
+    Gamma(X) = (G X^T - X G^T) X + lambda X (X^T X - I),   G = grad_X L
+    X <- X - eta rho(Gamma(X))                             rho = Adam
 
-`Landing` implements this as an autograd node with an identity forward: the field replaces the Euclidean
-gradient, and Adam steps on the field, as in the paper.
+The order is the official one, for both arms: the Euclidean gradients of all trained parameters are clipped,
+then `apply_landing` replaces the gradient of X and Y by the field of the clipped gradient, just before the
+optimizer step (`train_utils.make_optimizer`). Theta keeps its clipped Euclidean gradient. Phase PoLAR forms the
+same field on its stacked X = [rho cos phi | rho sin phi] and passes it back to rho and phi by the chain rule.
 
 `PhaseStiefel` is PoLAR at rank 2r with its two direction factors in polar coordinates:
 X = [Xr|Xi] with Xr = rho cos(phi), Xi = rho sin(phi), the same for Y,
@@ -33,23 +34,26 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class Landing(torch.autograd.Function):
-    """Identity forward; replaces the gradient with PoLAR's landing field."""
+def landing_field(X, G, lam):
+    """PoLAR's landing field of the gradient G at X (official code, landing_step): (G X^T - X G^T) X + lam X (X^T X - I)."""
+    M = G @ X.transpose(-1, -2)
+    I = torch.eye(X.shape[1], device=X.device, dtype=X.dtype)
+    return (M - M.transpose(-1, -2)) @ X + lam * (X @ (X.transpose(-1, -2) @ X - I))
+
+
+class _Record(torch.autograd.Function):
+    """Identity; its backward stores the incoming gradient. An autograd node runs in every backward pass,
+    gradient checkpointing included; a tensor hook on a factor built outside the checkpointed layers does not."""
 
     @staticmethod
-    def forward(ctx, X, lam):
-        ctx.save_for_backward(X)
-        ctx.lam = lam
-        return X
+    def forward(ctx, S, store, name):
+        ctx.store, ctx.name = store, name
+        return S.view_as(S)
 
     @staticmethod
     def backward(ctx, G):
-        (X,) = ctx.saved_tensors
-        M = G @ X.transpose(-1, -2)                       # m x m
-        psi = 0.5 * (M - M.transpose(-1, -2))             # Skew
-        I = torch.eye(X.shape[1], device=X.device, dtype=X.dtype)
-        gradN = 4.0 * X @ (X.transpose(-1, -2) @ X - I)   # d/dX ||X^T X - I||_F^2
-        return psi @ X + ctx.lam * gradN, None
+        ctx.store[ctx.name] = G
+        return G, None, None
 
 
 def _stiefel_init(m, r, gen=None):
@@ -76,7 +80,14 @@ class PolarStiefel(nn.Module):
         return self.base.bias
 
     def directions(self):
-        return Landing.apply(self.X, self.lam), Landing.apply(self.Y, self.lam)
+        return self.X, self.Y
+
+    @torch.no_grad()
+    def apply_landing(self, clip_coef):
+        """Gradients of X and Y -> landing field. They are already clipped, so clip_coef is not needed here."""
+        for factor in (self.X, self.Y):
+            if factor.grad is not None:
+                factor.grad.copy_(landing_field(factor, factor.grad, self.lam))
 
     def delta_weight(self):
         X, Y = self.directions()
@@ -110,21 +121,42 @@ class PhaseStiefel(nn.Module):
         self.theta = nn.Parameter(torch.zeros(2 * r, 2 * r))   # PoLAR's Theta_0 = 0 at rank 2r
         self.scale, self.lam = alpha / (2 * r), lam
         self._S_x = self._S_y = None   # filled by batch_charts
+        self._grad = {}                # Euclidean gradient of the stacked X and Y from the last backward pass
 
     @property
     def bias(self):
         return self.base.bias
 
-    def _stack(self, name):
-        S = getattr(self, f"_S_{name}")
-        if S is not None:                 # batched across the whole model
-            return S
+    def _chart(self, name):
         rho, phi = getattr(self, f"rho_{name}"), getattr(self, f"phi_{name}")
         return torch.cat([rho * phi.cos(), rho * phi.sin()], dim=1)   # d x 2r
 
+    def capture(self, name, S):
+        """S, passed through a node that records its Euclidean gradient in the backward pass."""
+        return _Record.apply(S, self._grad, name) if S.requires_grad else S
+
+    def _stack(self, name):
+        S = getattr(self, f"_S_{name}")
+        if S is not None:                 # batched across the whole model; batch_charts set the capture
+            return S
+        return self.capture(name, self._chart(name))
+
     def directions(self):
-        return (Landing.apply(self._stack("x"), self.lam),
-                Landing.apply(self._stack("y"), self.lam))
+        return self._stack("x"), self._stack("y")
+
+    def apply_landing(self, clip_coef):
+        """rho, phi gradients -> chain rule of the landing field of the clipped stacked gradient.
+        clip_coef is the factor by which the clipping scaled every gradient, so clip_coef * G is the clipped G."""
+        for name in ("x", "y"):
+            G = self._grad.pop(name, None)
+            if G is None:
+                continue
+            rho, phi = getattr(self, f"rho_{name}"), getattr(self, f"phi_{name}")
+            with torch.enable_grad():
+                S = self._chart(name)
+                field = landing_field(S.detach(), clip_coef * G, self.lam)
+                grad_rho, grad_phi = torch.autograd.grad(S, (rho, phi), grad_outputs=field)
+            rho.grad, phi.grad = grad_rho, grad_phi
 
     def delta_weight(self):
         X, Y = self.directions()
@@ -153,7 +185,7 @@ def batch_charts(model) -> None:
         phi = torch.stack([getattr(m, f"phi_{nm}") for m, nm in items])
         S = torch.cat([rho * phi.cos(), rho * phi.sin()], dim=-1)
         for i, (m, nm) in enumerate(items):
-            setattr(m, f"_S_{nm}", S[i])
+            setattr(m, f"_S_{nm}", m.capture(nm, S[i]))
 
 
 def install_batched_charts(model):
@@ -196,15 +228,13 @@ def demo():
         assert got == n_params(m, n, r, cls is PhaseStiefel), (cls.__name__, got)
 
     # Landing field: the penalty term is zero on the manifold and present off it.
-    X = _stiefel_init(m, 8).requires_grad_(True)
     lam = 0.1
-    Landing.apply(X, lam).pow(2).sum().backward()
-    on = X.grad.clone()
-    X2 = (_stiefel_init(m, 8) * 1.5).requires_grad_(True)   # scaled off the manifold
-    Landing.apply(X2, lam).pow(2).sum().backward()
-    pen = lam * 4.0 * X2 @ (X2.T @ X2 - torch.eye(8))
-    assert (X2.grad - pen).abs().max() < (X2.grad.abs().max()), "penalty term missing"
-    assert on.abs().max() < X2.grad.abs().max(), "on-manifold grad should be smaller"
+    X = _stiefel_init(m, 8)
+    G = torch.randn(m, 8)
+    assert torch.allclose(landing_field(X, torch.zeros_like(G), lam), torch.zeros(m, 8), atol=1e-5), "penalty on St"
+    X2 = _stiefel_init(m, 8) * 1.5                                  # scaled off the manifold
+    pen = lam * X2 @ (X2.T @ X2 - torch.eye(8))
+    assert torch.allclose(landing_field(X2, torch.zeros_like(G), lam), pen, atol=1e-5), "penalty term missing"
 
     # The Skew part is skew-symmetric.
     G = torch.randn(m, 8)

@@ -49,7 +49,7 @@ BLOCKS = [{"models": MODELS, "kinds": KINDS, "ranks": [64], "seeds": SEEDS},    
 EPOCHS = 5
 # 1e-2 because PoLAR's paper tunes it at 4e-3 with a 4x larger update scale (alpha 32, r 8)
 LR_GRID = [3e-4, 1e-3, 3e-3, 1e-2]
-LAM_GRID = [5e-3]       # PoLAR landing penalty: PoLAR's own LLM setting (Lion et al. 2025, App. G.1, Table 10)
+LAM_GRID = [1e-3, 5e-3, 0.1, 0.5]   # PoLAR landing penalty, in the units of the official PoLAR code
 GRID_EPOCHS, GRID_SEED = 1, 1
 EVALS_PER_EPOCH = 2
 FIXED = {"max-tokens": 3072, "clip": 1.0, "patience": 0, "grad-ckpt": "on",

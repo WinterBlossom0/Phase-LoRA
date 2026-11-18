@@ -1,6 +1,7 @@
 """Data prep and adapter attachment, shared by the training and benchmark scripts."""
 
 import json
+import math
 from functools import partial
 
 import torch
@@ -130,16 +131,27 @@ def collate(batch, pad):
     return ids, lab, att
 
 
-def make_optimizer(params, lr, clip):
-    """Adam with gradient-norm clipping before each step, the same for every arm.
+def landing_modules(model):
+    """The PoLAR and Phase PoLAR modules, whose X and Y gradients become the landing field before each step."""
+    return [module for module in model.modules() if isinstance(module, (PolarStiefel, PhaseStiefel))]
+
+
+def make_optimizer(params, lr, clip, landing=()):
+    """Adam with gradient-norm clipping before each step, the same for every arm; then, for PoLAR and Phase
+    PoLAR, the landing field of the clipped gradients, the order of the official PoLAR code.
 
     No weight decay, a choice of the owner: decay would also pull the phase angles toward 0, which the real
     arms do not get. At zero decay AdamW and Adam make the same update.
     """
     opt = torch.optim.Adam(params, lr=lr, weight_decay=0.0)
 
-    def clip_hook(*_):
-        torch.nn.utils.clip_grad_norm_(params, clip)   # must return None, not the norm
+    def clip_hook(*_):                                 # must return None
+        total = torch.nn.utils.clip_grad_norm_(params, clip)
+        total = float(total)
+        # the factor clip_grad_norm_ applied; NaN for a non-finite norm, as torch then scales every gradient by NaN
+        clip_coef = min(1.0, clip / (total + 1e-6)) if math.isfinite(total) else math.nan
+        for module in landing:
+            module.apply_landing(clip_coef)
 
     opt.register_step_pre_hook(clip_hook)
     return opt

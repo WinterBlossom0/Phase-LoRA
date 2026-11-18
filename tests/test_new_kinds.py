@@ -223,3 +223,38 @@ def test_grouped_decode_attention_gives_the_same_padded_generation():
     assert torch.equal(plain.sequences, grouped.sequences)
     for step_plain, step_grouped in zip(plain.scores, grouped.scores):
         assert torch.allclose(step_plain, step_grouped, atol=1e-5)
+
+
+@pytest.mark.parametrize("kind", ["stiefel", "phase_stiefel"])
+def test_landing_step_on_the_batched_and_checkpointed_path(kind):
+    """Training path (batched charts, gradient checkpointing) and plain path give the same gradients after the
+    clip-then-landing hook, and the hook changes every X/Y gradient (the field is applied on each module)."""
+    from phase_lora.train_utils import landing_modules
+    ids = torch.randint(0, 128, (2, 12))
+    plain, fast = build(kind, checkpointing=False), build(kind, checkpointing=True)
+    plain._forward_pre_hooks.clear()                 # plain: each module builds its own factors
+    with torch.no_grad():                            # off the start point, so Theta != 0 and X is off St
+        for p_plain, p_fast in zip(trainable(plain).values(), trainable(fast).values()):
+            noise = 0.05 * torch.randn_like(p_plain)
+            p_plain.add_(noise)
+            p_fast.add_(noise)
+    grads = {}
+    for label, model in (("plain", plain), ("fast", fast)):
+        assert len(landing_modules(model)) == 2 * CONFIG.num_hidden_layers     # q_proj and v_proj per layer
+        model(input_ids=ids, labels=ids).loss.backward()
+        params = list(trainable(model).values())
+        euclid = {name: p.grad.clone() for name, p in trainable(model).items()}
+        norm = float(torch.sqrt(sum((g.float() ** 2).sum() for g in euclid.values())))
+        coef = min(1.0, 1e-3 / (norm + 1e-6))
+        make_optimizer(params, 0.0, 1e-3, landing=landing_modules(model)).step()   # lr 0: weights stay
+        grads[label] = {name: p.grad.clone() for name, p in trainable(model).items()}
+        for name, g in grads[label].items():
+            clipped_only = coef * euclid[name]
+            change = (g - clipped_only).abs().max() / clipped_only.abs().max()
+            if "theta" in name:
+                assert change < 1e-4, f"{label} {name}: Theta must keep its clipped gradient"
+            else:
+                assert change > 1e-2, f"{label} {name}: landing not applied"
+    for name, g in grads["plain"].items():
+        scale = g.abs().max().item() + 1e-12
+        assert (g - grads["fast"][name]).abs().max().item() / scale < 1e-3, name
