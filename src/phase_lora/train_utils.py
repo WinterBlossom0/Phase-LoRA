@@ -1,7 +1,6 @@
 """Data prep and adapter attachment, shared by the training and benchmark scripts."""
 
 import json
-import math
 from functools import partial
 
 import torch
@@ -147,9 +146,8 @@ def make_optimizer(params, lr, clip, landing=()):
 
     def clip_hook(*_):                                 # must return None
         total = torch.nn.utils.clip_grad_norm_(params, clip)
-        total = float(total)
-        # the factor clip_grad_norm_ applied; NaN for a non-finite norm, as torch then scales every gradient by NaN
-        clip_coef = min(1.0, clip / (total + 1e-6)) if math.isfinite(total) else math.nan
+        # the factor that clip_grad_norm_ applied, by its own formula: 0 for an infinite norm, NaN for a NaN norm
+        clip_coef = torch.clamp(clip / (total + 1e-6), max=1.0).item()
         for module in landing:
             module.apply_landing(clip_coef)
 

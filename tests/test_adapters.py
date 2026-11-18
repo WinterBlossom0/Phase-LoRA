@@ -72,3 +72,29 @@ def test_landing_follows_the_official_order_for_both_arms():
                 # relative error: the correct code is ~1e-7; landing before clipping gives ~2e-3
                 error = (p.grad - expected[name]).abs().max() / expected[name].abs().max()
                 assert error < 1e-5, (cls.__name__, clip, name, float(error))
+
+
+def test_clip_coefficient_is_the_factor_clip_grad_norm_applied():
+    """The landing modules get the factor that clip_grad_norm_ applied: min(1, clip / norm), 0 for an infinite
+    norm and NaN for a NaN norm, so that clip_coef * G equals the clipped gradient in every case."""
+    import math
+
+    import torch
+    from phase_lora.train_utils import make_optimizer
+
+    class Recorder:
+        def apply_landing(self, clip_coef):
+            self.clip_coef = clip_coef
+
+    cases = [([3.0, 4.0], 1.0, 1.0 / (5.0 + 1e-6)), ([0.3, 0.4], 1.0, 1.0), ([1.0, math.inf], 1.0, 0.0)]
+    for grad, clip, expected in cases:
+        param = torch.nn.Parameter(torch.zeros(2))
+        param.grad = torch.tensor(grad)
+        recorder = Recorder()
+        make_optimizer([param], lr=1e-3, clip=clip, landing=[recorder]).step()
+        assert math.isclose(recorder.clip_coef, expected, rel_tol=1e-6), (grad, recorder.clip_coef)
+    param = torch.nn.Parameter(torch.zeros(2))
+    param.grad = torch.tensor([1.0, math.nan])
+    recorder = Recorder()
+    make_optimizer([param], lr=1e-3, clip=1.0, landing=[recorder]).step()
+    assert math.isnan(recorder.clip_coef)

@@ -14,12 +14,13 @@ Qwen3-0.6B-Base and Qwen3-1.7B-Base, rank 64, mean over 5 seeds. Translation: ch
 | DoRA | 9.26M / 12.93M | 30.6 | 32.6 | 30.5 | 31.1 | 71.2 | **78.1** | 67.9 | 79.1 |
 | **Phase DoRA** | 9.26M / 12.93M | **33.6** | **33.6** | **31.1** | **31.8** | **72.1** | 75.8 | **68.9** | **81.3** |
 | PoLAR | 9.40M / 13.07M | 32.4 | **32.2** | 30.8 | 31.3 | 68.9 | **77.9** | 67.4 | 80.5 |
-| **Phase PoLAR** | 9.40M / 13.07M | **32.5** | 32.1 | **31.2** | 31.3 | **70.1** | 77.0 | **67.7** | **80.8** |
+| **Phase PoLAR** | 9.40M / 13.07M | **32.5** | 32.1 | **31.2** | **31.3** | **70.1** | 77.0 | **67.7** | **80.8** |
 
 ### Where the phase versions fall behind
 
 - **SVAMP on 1.7B:** Phase LoRA 76.2 vs 76.5, Phase DoRA 75.8 vs 78.1.
-- **The PoLAR pair:** Phase PoLAR is below PoLAR on Setswana 1.7B (32.1 vs 32.2) and SVAMP 1.7B (77.0 vs 77.9), level on Luganda 1.7B, and its family-level test is not significant (p = 0.25).
+- **The PoLAR pair:** Phase PoLAR is below PoLAR on Setswana 1.7B (32.1 vs 32.2) and SVAMP 1.7B (77.0 vs 77.9), and its family-level test is not significant (p = 0.25).
+- **Test loss of the PoLAR pair:** Phase PoLAR has a higher test loss than PoLAR (−1.09 seed SD, Holm p = 0.001), significant on both translation tasks. Phase LoRA and Phase DoRA have a lower test loss than their twins (+1.77 and +1.84).
 - **Rank 8:** Phase LoRA is level with LoRA (Luganda −0.1) or below it (ARC −2.1); none of the rank-8 differences is significant.
 - **PEFT benchmark at its default settings:** Phase LoRA scores 45.3 vs LoRA's 46.2 (see below).
 
@@ -51,7 +52,9 @@ model = attach(model, kind="polar", r=64, alpha=64)   # Phase LoRA on q_proj and
 |---|---|
 | `additive` · `polar` | LoRA · Phase LoRA |
 | `dora` · `phase_dora` | DoRA · Phase DoRA |
-| `stiefel` · `phase_stiefel` | PoLAR · Phase PoLAR (also pass `lam=5e-3`) |
+| `stiefel` · `phase_stiefel` | PoLAR · Phase PoLAR (also pass `lam`, the landing weight; the runs chose it per task from {1e-3, 5e-3, 0.1, 0.5}) |
+
+PoLAR's landing step runs inside the optimizer, so train PoLAR and Phase PoLAR with `make_optimizer(params, lr, clip, landing=landing_modules(model))` from `phase_lora.train_utils`. Another optimizer trains them without the landing step.
 
 ## Reproduce
 
@@ -59,7 +62,7 @@ model = attach(model, kind="polar", r=64, alpha=64)   # Phase LoRA on q_proj and
 uv sync --extra dev                  # exact library versions from uv.lock
 python -m pytest                     # CPU tests, under a minute
 bash scripts/verify_baseline.sh      # retrains one stored LoRA run and compares, ~2 min on one GPU
-bash scripts/reproduce.sh            # the full experiment, ~25 GPU-hours on one 16 GB GPU
+bash scripts/reproduce.sh            # the full experiment, ~28 GPU-hours on one 16 GB GPU
 ```
 
 `verify_baseline.sh` downloads the pinned data and model, retrains the stored LoRA run on SVAMP (0.6B, seed 1), scores it and prints the stored and the new accuracy side by side (both 70.33, 300/300 answers identical on an RTX 5080). `reproduce.sh` runs everything else: grid, main runs, scoring and analysis, and resumes after a crash.
@@ -79,6 +82,8 @@ Every run's training record, per-item test scores and log are in `runs/`. The tr
 | **Translation decoding** | greedy, a 4-gram may appear at most twice per reply |
 | **PoLAR landing step** | as in the official PoLAR code: clip the gradients, then replace the gradient G of each factor X by (G Xᵀ − X Gᵀ) X + λ X(XᵀX − I); λ chosen with the learning rate from {1e-3, 5e-3, 0.1, 0.5} by dev loss (both PoLAR arms) |
 | **Ablation** | LoRA vs Phase LoRA at rank 8, 0.6B, 3 seeds |
+
+On both translation tasks, PoLAR and Phase PoLAR chose the largest learning rate of the grid (1e-2), and all 40 of these runs reached their lowest dev loss at the last check of epoch 5: they were still improving when training stopped.
 
 Data and model revisions are pinned and checked by checksum (`data_manifest.json`, `scripts/prepare_models.py`).
 

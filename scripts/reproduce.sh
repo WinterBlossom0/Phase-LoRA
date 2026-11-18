@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# The paper's whole experiment, end to end, on one 16 GB GPU (RTX 5080 Laptop GPU): about 24.8 GPU-hours, measured
-# (training 19.5 h, test scoring 4.5 h, base models 0.8 h). Then the analysis on the CPU (under 1 min).
+# The paper's whole experiment, end to end, on one 16 GB GPU (RTX 5080 Laptop GPU): about 27.5 GPU-hours, measured
+# (training 22.5 h, test scoring 4.2 h, base models 0.8 h). Then the analysis on the CPU (under 1 min).
 # Environment: `uv sync --extra dev` builds .venv from uv.lock with the exact versions of the runs; run this script
 # with that environment active, or set PYTHON. Network is needed only for the data and the two base models.
 # Every step skips the work whose result file exists, so a rerun after a crash resumes.

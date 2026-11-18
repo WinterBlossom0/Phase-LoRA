@@ -236,10 +236,10 @@ def demo():
     pen = lam * X2 @ (X2.T @ X2 - torch.eye(8))
     assert torch.allclose(landing_field(X2, torch.zeros_like(G), lam), pen, atol=1e-5), "penalty term missing"
 
-    # The Skew part is skew-symmetric.
-    G = torch.randn(m, 8)
-    M = G @ X.detach().T
-    assert torch.allclose(0.5 * (M - M.T), -(0.5 * (M - M.T)).T, atol=1e-6)
+    # On the manifold the field is (G X^T - X G^T) X, so X^T field = X^T G - G^T X is skew-symmetric.
+    projected = X.T @ landing_field(X, G, lam)
+    assert torch.allclose(projected, -projected.T, atol=1e-5), "skew term"
+    assert torch.allclose(projected, X.T @ G - G.T @ X, atol=1e-5), "skew term"
 
     # Phase PoLAR has PoLAR's class at rank 2r: a Theta with 2r distinct singular values gives a dW with
     # exactly those; a complex middle block gives each singular value twice.
