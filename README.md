@@ -2,6 +2,8 @@
 
 **Low-rank adapters in polar coordinates: every weight of the adapter becomes a magnitude and an angle. Same parameters, same expressiveness, better fine-tuning.**
 
+**Paper:** [Phase LoRA: Low-Rank Adapters in Polar Coordinates](https://doi.org/10.5281/zenodo.24393045) (preprint, Zenodo, DOI [10.5281/zenodo.24393045](https://doi.org/10.5281/zenodo.24393045))
+
 ## Highlights
 
 - **Better in 20 of 24 head-to-head comparisons** against LoRA, DoRA and PoLAR, with exactly the same number of parameters.
@@ -162,6 +164,19 @@ scripts/              data and model preparation, training, sweep, scoring, anal
 tests/                CPU tests
 runs/                 every run's training record, test scores and log
 peft_benchmark/       PEFT patch and MetaMathQA results
+```
+
+## Citation
+
+```bibtex
+@misc{ovalekar2026phaselora,
+  title     = {Phase {LoRA}: Low-Rank Adapters in Polar Coordinates},
+  author    = {Ovalekar, Vihaan},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24393045},
+  url       = {https://doi.org/10.5281/zenodo.24393045}
+}
 ```
 
 ## License
