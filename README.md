@@ -6,7 +6,7 @@
 
 - **Better in 20 of 24 head-to-head comparisons** against LoRA, DoRA and PoLAR, with exactly the same number of parameters.
 - **Up to +3.35 chrF++** in translation and **+2.2 points** on ARC-Challenge; the gains for LoRA and DoRA are statistically significant (p < 10⁻⁴).
-- **Forgets 1.5–3.5× less than LoRA:** after fine-tuning, the model stays much closer to the original on ordinary Wikipedia text, in all 8 settings.
+- **Forgets 1.5–3.5× less than LoRA:** after fine-tuning at rank 64, the model stays much closer to the original on ordinary Wikipedia text, in all 8 settings.
 - **Steadier:** Phase LoRA varies less between random seeds than LoRA in all 8 settings.
 - **Drop-in:** no extra parameters and no change to what the adapter can express. It also matched LoRA's best accuracy on Hugging Face PEFT's own benchmark and forgot less there too.
 
@@ -152,7 +152,7 @@ The patch adds `PhaseLoraConfig` and `PolarConfig` as regular PEFT methods (with
 
 Data and model revisions are pinned and checked by checksum (`data_manifest.json`, `scripts/prepare_models.py`).
 
-**Scope.** The gains are clearest for LoRA and DoRA; the PoLAR pair is close (Phase PoLAR ahead in 6 of 8 settings, not significant). At rank 8 (0.6B, three seeds) Phase LoRA is not better than LoRA. On the PEFT benchmark's default settings LoRA scores slightly higher (46.2 vs 45.3).
+**Scope.** The gains are clearest for LoRA and DoRA; the PoLAR pair is close (Phase PoLAR ahead in 6 of 8 settings, not significant). At rank 8 (0.6B, three seeds) Phase LoRA is not better than LoRA and, with higher chosen learning rates, forgets more on three of four tasks. On the PEFT benchmark's default settings LoRA scores slightly higher (46.2 vs 45.3).
 
 ## Repository layout
 
