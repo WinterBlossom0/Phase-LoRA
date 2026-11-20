@@ -4,13 +4,11 @@
 
 ## Highlights
 
-- **Beats the original in 20 of 24 head-to-head settings** across LoRA, DoRA and PoLAR, two models and four tasks.
-- **Up to +3.35 chrF++** on English→Setswana translation and **+2.2 points** on ARC-Challenge.
-- **Significant for LoRA and DoRA:** Phase LoRA +1.51 and Phase DoRA +1.35 seed-to-seed standard deviations (p = 4 × 10⁻⁶ and 4 × 10⁻⁵); all pairs together +1.04 (p = 8 × 10⁻¹⁰).
-- **Lower test loss** than LoRA and DoRA, and **steadier across seeds**: Phase LoRA varies less between seeds than LoRA in all 8 settings (on Setswana 0.3 and 0.2 chrF++, against 1.0 and 1.0).
-- **Forgets far less:** after fine-tuning, Phase LoRA's loss on general Wikipedia text rises 1.5–3.5× less than LoRA's, in all 8 settings; Phase DoRA forgets less than DoRA in 7 of 8.
-- **On Hugging Face PEFT's MetaMathQA benchmark**, Phase LoRA reached the **highest GSM8K accuracy of our runs (51.7, against LoRA's best 51.6)** and **forgot less than LoRA in every setting**.
-- **Free to adopt:** no extra parameters, no change to what the adapter can express; a drop-in replacement for LoRA, DoRA and PoLAR.
+- **Better in 20 of 24 head-to-head comparisons** against LoRA, DoRA and PoLAR, with exactly the same number of parameters.
+- **Up to +3.35 chrF++** in translation and **+2.2 points** on ARC-Challenge; the gains for LoRA and DoRA are statistically significant (p < 10⁻⁴).
+- **Forgets 1.5–3.5× less than LoRA:** after fine-tuning, the model stays much closer to the original on ordinary Wikipedia text, in all 8 settings.
+- **Steadier:** Phase LoRA varies less between random seeds than LoRA in all 8 settings.
+- **Drop-in:** no extra parameters and no change to what the adapter can express. It also matched LoRA's best accuracy on Hugging Face PEFT's own benchmark and forgot less there too.
 
 ## How it works
 
@@ -36,18 +34,18 @@ Qwen3-0.6B-Base and Qwen3-1.7B-Base, rank 64, mean of 5 seeds. Translation (En�
 | PoLAR | 9.40M / 13.07M | 32.4 | **32.2** | 30.8 | 31.3 | 68.9 | **77.9** | 67.4 | 80.5 |
 | **Phase PoLAR** | 9.40M / 13.07M | **32.5** | 32.1 | **31.2** | **31.3** | **70.1** | 77.0 | **67.7** | **80.8** |
 
-| Phase version vs original | Effect (seed SDs) | 95 % CI | p (Holm) |
+| Phase version vs original | Effect | 95 % CI | p |
 |---|:---:|:---:|:---:|
 | Phase LoRA vs LoRA | **+1.51** | [+0.94, +2.08] | 4 × 10⁻⁶ |
 | Phase DoRA vs DoRA | **+1.35** | [+0.76, +1.94] | 4 × 10⁻⁵ |
 | Phase PoLAR vs PoLAR | +0.28 | [−0.20, +0.75] | 0.25 |
 | All three pairs | **+1.04** | [+0.73, +1.36] | 8 × 10⁻¹⁰ |
 
-An effect is how far the phase version is ahead, measured in seed-to-seed standard deviations. On test loss, Phase LoRA and Phase DoRA are ahead by +1.77 and +1.84.
+The effect is how far the phase version is ahead, in units of the normal run-to-run variation: 1 means ahead by about as much as one run typically differs from its method's average. Phase LoRA and Phase DoRA also reach a lower test loss (+1.77 and +1.84 in the same units).
 
 ### Forgetting
 
-How much each fine-tuned model loses of its general language ability: the rise of its loss on the WikiText-103 test set (all 298,862 scored tokens) over the base model's loss, in nats per token, mean of 5 seeds. **Lower is better; bold marks the lowest of each column (before rounding).**
+How much each fine-tuned model loses of its general language ability: how much worse it predicts ordinary Wikipedia text (the WikiText-103 test set) than the untouched base model, as the rise in loss per token, mean of 5 seeds. **Lower is better; bold marks the lowest of each column (before rounding).**
 
 | Model | Adapter | Setswana | Luganda | SVAMP | ARC |
 |---|---|:---:|:---:|:---:|:---:|
@@ -82,7 +80,7 @@ model = attach(model, kind="polar", r=64, alpha=64)   # Phase LoRA on q_proj and
 |---|---|
 | `additive` · `polar` | LoRA · Phase LoRA |
 | `dora` · `phase_dora` | DoRA · Phase DoRA |
-| `stiefel` · `phase_stiefel` | PoLAR · Phase PoLAR (also pass `lam`, the landing weight; our runs pick it from {1e-3, 5e-3, 0.1, 0.5}) |
+| `stiefel` · `phase_stiefel` | PoLAR · Phase PoLAR (also pass `lam`, the landing weight; the runs here pick it from {1e-3, 5e-3, 0.1, 0.5}) |
 
 PoLAR's landing step runs inside the optimizer: train PoLAR and Phase PoLAR with `make_optimizer(params, lr, clip, landing=landing_modules(model))` from `phase_lora.train_utils`, where `params` is a list of the trainable parameters.
 
@@ -102,7 +100,7 @@ bash scripts/reproduce.sh            # the full experiment, ~29 GPU-hours on one
 
 ## PEFT benchmark
 
-We also ran Phase LoRA and PoLAR on Hugging Face PEFT's own [MetaMathQA benchmark](https://github.com/huggingface/peft/tree/main/method_comparison/MetaMathQA): Llama-3.2-3B trained on MetaMathQA and tested on all 1319 GSM8K problems, on an NVIDIA L40S, the GPU of PEFT's official results. **Phase LoRA reached the highest accuracy of our runs, 51.7, and forgot less than LoRA in all five settings.**
+I also ran Phase LoRA and PoLAR on Hugging Face PEFT's own [MetaMathQA benchmark](https://github.com/huggingface/peft/tree/main/method_comparison/MetaMathQA): Llama-3.2-3B trained on MetaMathQA and tested on all 1319 GSM8K problems, on an NVIDIA L40S, the GPU of PEFT's official results. **Phase LoRA matched LoRA's best accuracy (51.7 vs 51.6) and forgot less than LoRA in all five settings.**
 
 **Test accuracy** (higher is better):
 
@@ -124,7 +122,7 @@ We also ran Phase LoRA and PoLAR on Hugging Face PEFT's own [MetaMathQA benchmar
 | lr 1e-3, plateau, 10k, weight decay 0.1 | 0.335 | 0.176 | **0.066** |
 | lr 1e-3, plateau, 10k, weight decay 0.5 | 0.113 | 0.073 | **0.040** |
 
-PEFT's official LoRA result at the defaults is 47.8 accuracy and 0.050 forgetting. Each cell is one run with one seed. **Plateau schedule:** a 10 % linear warmup, then the learning rate halves after two 250-step checks without a lower training loss; the same for every method.
+PEFT's official LoRA result at the defaults is 47.8 accuracy and 0.050 forgetting. Each cell is one run with one seed. The first two rows use the benchmark's own settings. **Plateau schedule:** a scheduler I added to the benchmark: a 10 % linear warmup, then the learning rate halves after two 250-step checks without a lower training loss; the same for every method. The settings after the first two rows were chosen while test results were visible.
 
 ```bash
 git clone https://github.com/huggingface/peft && cd peft
@@ -154,7 +152,7 @@ The patch adds `PhaseLoraConfig` and `PolarConfig` as regular PEFT methods (with
 
 Data and model revisions are pinned and checked by checksum (`data_manifest.json`, `scripts/prepare_models.py`).
 
-**Scope.** The gains are clearest for LoRA and DoRA; the PoLAR pair is close (Phase PoLAR ahead in 6 of 8 settings, not significant). At rank 8 the gain over LoRA is smaller than at rank 64. On the PEFT benchmark's default settings LoRA scores slightly higher (46.2 vs 45.3).
+**Scope.** The gains are clearest for LoRA and DoRA; the PoLAR pair is close (Phase PoLAR ahead in 6 of 8 settings, not significant). At rank 8 (0.6B, three seeds) Phase LoRA is not better than LoRA. On the PEFT benchmark's default settings LoRA scores slightly higher (46.2 vs 45.3).
 
 ## Repository layout
 
