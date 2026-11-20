@@ -1,0 +1,40 @@
+{
+ "tag": "stiefel_r64_lr0.001_e5_lam0.5_arc_qwen3-0.6b-base_s5_79474cacda",
+ "args": {
+  "kind": "stiefel",
+  "model": "qwen3-0.6b-base",
+  "rank": 64,
+  "alpha": 64.0,
+  "lr": 0.001,
+  "train": 1000000,
+  "eval": 1000000,
+  "epochs": 5,
+  "eval_every": 13,
+  "max_tokens": 3072,
+  "grad_ckpt": "on",
+  "seed": 5,
+  "dataset": "arc",
+  "clip": 1.0,
+  "patience": 0,
+  "lam": 0.5
+ },
+ "metric": "WikiText-103 test mean NLL (nats/token)",
+ "nll": 2.5829412751080034,
+ "perplexity": 13.236011505126953,
+ "base_nll": 2.539198341627208,
+ "forgetting": 0.043742933480795276,
+ "scored_tokens": 298862,
+ "text_tokens": 299078,
+ "window": 2048,
+ "wikitext": {
+  "repository": "Salesforce/wikitext",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "file": "wikitext-103-raw-v1/test-00000-of-00001.parquet",
+  "sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83"
+ },
+ "code_version": "a9521cd857f5",
+ "gpu": "NVIDIA H100 80GB HBM3",
+ "torch": "2.13.0+cu130",
+ "transformers": "5.14.1",
+ "python": "3.13.3"
+}

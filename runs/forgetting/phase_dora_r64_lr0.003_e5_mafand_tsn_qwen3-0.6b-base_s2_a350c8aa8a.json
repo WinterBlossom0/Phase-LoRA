@@ -1,0 +1,40 @@
+{
+ "tag": "phase_dora_r64_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_a350c8aa8a",
+ "args": {
+  "kind": "phase_dora",
+  "model": "qwen3-0.6b-base",
+  "rank": 64,
+  "alpha": 64.0,
+  "lr": 0.003,
+  "train": 1000000,
+  "eval": 1000000,
+  "epochs": 5,
+  "eval_every": 33,
+  "max_tokens": 3072,
+  "grad_ckpt": "on",
+  "seed": 2,
+  "dataset": "mafand_tsn",
+  "clip": 1.0,
+  "patience": 0,
+  "lam": null
+ },
+ "metric": "WikiText-103 test mean NLL (nats/token)",
+ "nll": 4.164081782127914,
+ "perplexity": 64.33357238769531,
+ "base_nll": 2.539198341627208,
+ "forgetting": 1.6248834405007058,
+ "scored_tokens": 298862,
+ "text_tokens": 299078,
+ "window": 2048,
+ "wikitext": {
+  "repository": "Salesforce/wikitext",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "file": "wikitext-103-raw-v1/test-00000-of-00001.parquet",
+  "sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83"
+ },
+ "code_version": "a9521cd857f5",
+ "gpu": "NVIDIA H100 80GB HBM3",
+ "torch": "2.13.0+cu130",
+ "transformers": "5.14.1",
+ "python": "3.13.3"
+}

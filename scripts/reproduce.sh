@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# The paper's whole experiment, end to end, on one 16 GB GPU (RTX 5080 Laptop GPU): about 27.5 GPU-hours, measured
-# (training 22.5 h, test scoring 4.2 h, base models 0.8 h). Then the analysis on the CPU (under 1 min).
+# The paper's whole experiment, end to end, on one 16 GB GPU (RTX 5080 Laptop GPU): about 28.5 GPU-hours, measured
+# (training 22.5 h, test scoring 4.2 h, base models 0.8 h, forgetting about 1 h at 13 s per run). Then the analysis on the CPU (under 1 min).
 # Environment: `uv sync --extra dev` builds .venv from uv.lock with the exact versions of the runs; run this script
 # with that environment active, or set PYTHON. Network is needed only for the data and the two base models.
 # Every step skips the work whose result file exists, so a rerun after a crash resumes.
@@ -43,6 +43,9 @@ step "repetition-blocked translation scores and test loss of every main run"
 
 step "greedy scores: SVAMP and ARC every seed, translation seed 1 (runaway share)"
 "$PY" scripts/score_test.py --modes greedy --runs "${GREEDY[@]}" 2>&1 | tee -a "$LOG"
+
+step "forgetting: WikiText-103 test loss of every main run and both base models"
+flock "$PHASE_LORA_GPU_LOCK" "$PY" scripts/forgetting.py 2>&1 | tee -a "$LOG"
 
 step "analysis (CPU): paper/generated/"
 CUDA_VISIBLE_DEVICES="" "$PY" scripts/paper_analysis.py 2>&1 | tee -a "$LOG"

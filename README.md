@@ -8,6 +8,7 @@
 - **Up to +3.35 chrF++** on English→Setswana translation and **+2.2 points** on ARC-Challenge.
 - **Significant for LoRA and DoRA:** Phase LoRA +1.51 and Phase DoRA +1.35 seed-to-seed standard deviations (p = 4 × 10⁻⁶ and 4 × 10⁻⁵); all pairs together +1.04 (p = 8 × 10⁻¹⁰).
 - **Lower test loss** than LoRA and DoRA, and **steadier across seeds**: Phase LoRA varies less between seeds than LoRA in all 8 settings (on Setswana 0.3 and 0.2 chrF++, against 1.0 and 1.0).
+- **Forgets far less:** after fine-tuning, Phase LoRA's loss on general Wikipedia text rises 1.5–3.5× less than LoRA's, in all 8 settings; Phase DoRA forgets less than DoRA in 7 of 8.
 - **On Hugging Face PEFT's MetaMathQA benchmark**, Phase LoRA reached the **highest GSM8K accuracy of our runs (51.7, against LoRA's best 51.6)** and **forgot less than LoRA in every setting**.
 - **Free to adopt:** no extra parameters, no change to what the adapter can express; a drop-in replacement for LoRA, DoRA and PoLAR.
 
@@ -44,6 +45,27 @@ Qwen3-0.6B-Base and Qwen3-1.7B-Base, rank 64, mean of 5 seeds. Translation (En�
 
 An effect is how far the phase version is ahead, measured in seed-to-seed standard deviations. On test loss, Phase LoRA and Phase DoRA are ahead by +1.77 and +1.84.
 
+### Forgetting
+
+How much each fine-tuned model loses of its general language ability: the rise of its loss on the WikiText-103 test set (all 298,862 scored tokens) over the base model's loss, in nats per token, mean of 5 seeds. **Lower is better; bold marks the lowest of each column (before rounding).**
+
+| Model | Adapter | Setswana | Luganda | SVAMP | ARC |
+|---|---|:---:|:---:|:---:|:---:|
+| 0.6B | LoRA | +3.57 | +4.20 | +0.40 | +0.045 |
+| | Phase LoRA | +1.68 | +1.97 | **+0.19** | **+0.031** |
+| | DoRA | +3.52 | +3.75 | +0.43 | +0.048 |
+| | Phase DoRA | **+1.66** | +1.97 | +0.20 | +0.034 |
+| | PoLAR | +1.69 | +1.61 | +0.19 | +0.059 |
+| | Phase PoLAR | +1.74 | **+1.50** | +0.30 | +0.071 |
+| 1.7B | LoRA | +1.79 | +2.50 | +0.24 | +0.074 |
+| | Phase LoRA | **+0.61** | +0.80 | **+0.07** | **+0.021** |
+| | DoRA | +1.79 | +2.43 | +0.24 | +0.074 |
+| | Phase DoRA | +0.62 | +0.74 | +0.33 | +0.021 |
+| | PoLAR | +0.81 | **+0.72** | +0.13 | +0.039 |
+| | Phase PoLAR | +0.77 | +0.74 | +0.19 | +0.045 |
+
+Phase LoRA forgets the least overall: lowest in 5 of the 8 columns, average place 1.9 of 6. LoRA and DoRA forget about 2.4× as much on average. The base models score 2.539 (0.6B) and 2.240 (1.7B).
+
 ---
 
 ## Use it
@@ -71,10 +93,10 @@ uv sync --extra dev                  # exact library versions from uv.lock
 source .venv/bin/activate
 python -m pytest                     # CPU tests, under a minute
 bash scripts/verify_baseline.sh      # retrains one stored LoRA run and compares, ~2 min on one GPU
-bash scripts/reproduce.sh            # the full experiment, ~28 GPU-hours on one 16 GB GPU
+bash scripts/reproduce.sh            # the full experiment, ~29 GPU-hours on one 16 GB GPU
 ```
 
-`verify_baseline.sh` downloads the pinned data and both base models on its first run, retrains the stored LoRA run on SVAMP (0.6B, seed 1) and prints the stored and the new accuracy side by side: both 70.33, with 300/300 identical answers on an RTX 5080 Laptop GPU. `reproduce.sh` runs everything else (grid, main runs, scoring, analysis) and resumes after a crash. Every run's training record, per-item test scores and log are in `runs/`; the trained weights are not in git.
+`verify_baseline.sh` downloads the pinned data and both base models on its first run, retrains the stored LoRA run on SVAMP (0.6B, seed 1) and prints the stored and the new accuracy side by side: both 70.33, with 300/300 identical answers on an RTX 5080 Laptop GPU. `reproduce.sh` runs everything else (grid, main runs, scoring, forgetting, analysis) and resumes after a crash. The forgetting numbers above were measured on one NVIDIA H100 with `scripts/modal_forgetting.py`; `scripts/forgetting.py` measures them on any GPU, about 1 hour on a 16 GB laptop GPU. Every run's training record, per-item test scores and log are in `runs/`; the trained weights are not in git.
 
 ---
 
@@ -127,6 +149,7 @@ The patch adds `PhaseLoraConfig` and `PolarConfig` as regular PEFT methods (with
 | **Training** | Adam, cosine decay, 5 epochs, best-dev-loss checkpoint, 5 seeds |
 | **Translation decoding** | greedy; a 4-gram may appear at most twice per reply |
 | **PoLAR landing step** | as in the official PoLAR code: clip the gradients, then replace the gradient G of each factor X by (G Xᵀ − X Gᵀ) X + λ X(XᵀX − I); λ chosen with the learning rate |
+| **Forgetting** | WikiText-103 test split (pinned revision, checksum), rows joined with blank lines, non-overlapping 2,048-token windows; mean next-token loss after fine-tuning minus the base model's |
 | **Statistics** | per setup, scores standardized by the seed-to-seed SD; OLS with one effect per setup, HC3 errors, Holm correction across the pairs |
 
 Data and model revisions are pinned and checked by checksum (`data_manifest.json`, `scripts/prepare_models.py`).

@@ -38,7 +38,7 @@ from phase_lora.run_config import LAM_KINDS, TRAIN_CODE, code_version, parse, ru
 from phase_lora.train_utils import build_data, token_batches
 
 # The protocol. Each value is a decision of the owner.
-# The whole design runs end to end in about 28 GPU-hours on one 16 GB laptop GPU (see scripts/reproduce.sh).
+# The whole design runs end to end in about 29 GPU-hours on one 16 GB laptop GPU (see scripts/reproduce.sh).
 MODELS = ["qwen3-0.6b-base", "qwen3-1.7b-base"]
 DATASETS = ["mafand_tsn", "mafand_lug", "svamp", "arc"]
 FAMILIES = {"LoRA": ("additive", "polar"), "DoRA": ("dora", "phase_dora"), "PoLAR": ("stiefel", "phase_stiefel")}
