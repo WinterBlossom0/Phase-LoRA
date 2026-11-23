@@ -22,35 +22,35 @@ Phase LoRA writes each entry of the low-rank factors as a complex number in pola
 \Delta W = \frac{\alpha}{r}\,\mathrm{Re}\!\left(A B^{H}\right), \qquad A = \rho_A e^{i\varphi_A},\quad B = \rho_B e^{i\varphi_B}
 ```
 
-At complex rank r/2 this reaches exactly the updates that LoRA reaches at rank r, with exactly as many parameters. What changes is how the optimizer moves through them: it adjusts a magnitude and an angle for every entry instead of a raw value. The same idea gives **Phase DoRA** and **Phase PoLAR**.
+At complex rank r/2 this reaches exactly the updates that LoRA reaches at rank r, with exactly as many parameters. What changes is how the optimizer moves through them: it adjusts a magnitude and an angle for every entry instead of a raw value. The same idea gives Phase DoRA and Phase PoLAR.
 
 ## Results
 
-Rank 64, mean of 5 seeds. Translation (En→Tsn = English→Setswana, En→Lug = English→Luganda) is scored in chrF++; SVAMP and ARC-Challenge in accuracy (%). **Bold** marks the better adapter of each pair.
+Rank 64, mean of 5 seeds. Translation (En→Tsn = English→Setswana, En→Lug = English→Luganda) is scored in chrF++; SVAMP and ARC-Challenge in accuracy (%). **Bold** marks the best of the six adapters in each column.
 
 | Model | Adapter | Params | En→Tsn | En→Lug | SVAMP | ARC |
 |---|---|:---:|:---:|:---:|:---:|:---:|
 | Qwen3-0.6B | *Base model* | – | *8.8* | *9.5* | *0.3* | *62.6* |
 | | LoRA | 9.18M | 30.1 | 29.9 | 69.5 | 68.0 |
-| | **Phase LoRA** | 9.18M | **33.5** | **31.2** | **71.9** | **68.7** |
+| | **Phase LoRA** | 9.18M | 33.5 | **31.2** | 71.9 | 68.7 |
 | | DoRA | 9.26M | 30.6 | 30.5 | 71.2 | 67.9 |
-| | **Phase DoRA** | 9.26M | **33.6** | **31.1** | **72.1** | **68.9** |
+| | Phase DoRA | 9.26M | **33.6** | 31.1 | **72.1** | **68.9** |
 | | PoLAR | 9.40M | 32.4 | 30.8 | 68.9 | 67.4 |
-| | **Phase PoLAR** | 9.40M | **32.5** | **31.2** | **70.1** | **67.7** |
+| | Phase PoLAR | 9.40M | 32.5 | 31.2 | 70.1 | 67.7 |
 | Qwen3-1.7B | *Base model* | – | *11.2* | *12.6* | *1.0* | *80.1* |
-| | LoRA | 12.85M | 32.6 | 31.5 | **76.5** | 79.3 |
-| | **Phase LoRA** | 12.85M | **33.8** | **31.7** | 76.2 | **81.5** |
+| | LoRA | 12.85M | 32.6 | 31.5 | 76.5 | 79.3 |
+| | **Phase LoRA** | 12.85M | **33.8** | 31.7 | 76.2 | **81.5** |
 | | DoRA | 12.93M | 32.6 | 31.1 | **78.1** | 79.1 |
-| | **Phase DoRA** | 12.93M | **33.6** | **31.8** | 75.8 | **81.3** |
-| | PoLAR | 13.07M | **32.2** | 31.3 | **77.9** | 80.5 |
-| | **Phase PoLAR** | 13.07M | 32.1 | **31.3** | 77.0 | **80.8** |
+| | Phase DoRA | 12.93M | 33.6 | **31.8** | 75.8 | 81.3 |
+| | PoLAR | 13.07M | 32.2 | 31.3 | 77.9 | 80.5 |
+| | Phase PoLAR | 13.07M | 32.1 | 31.3 | 77.0 | 80.8 |
 | LFM3-1.7B | *Base model* | – | *10.2* | *14.5* | *6.3* | *69.9* |
-| | LoRA | 4.69M | **33.6** | **31.6** | 73.9 | 77.5 |
-| | **Phase LoRA** | 4.69M | 33.0 | 29.9 | **79.4** | **79.0** |
-| | DoRA | 4.71M | **33.7** | **31.4** | 73.7 | 77.4 |
-| | **Phase DoRA** | 4.71M | 33.1 | 29.7 | **79.9** | **79.0** |
-| | PoLAR | 4.78M | **32.0** | **30.6** | **79.5** | 78.2 |
-| | **Phase PoLAR** | 4.78M | 31.3 | 30.3 | 75.9 | **78.4** |
+| | LoRA | 4.69M | 33.6 | **31.6** | 73.9 | 77.5 |
+| | **Phase LoRA** | 4.69M | 33.0 | 29.9 | 79.4 | 79.0 |
+| | DoRA | 4.71M | **33.7** | 31.4 | 73.7 | 77.4 |
+| | Phase DoRA | 4.71M | 33.1 | 29.7 | **79.9** | **79.0** |
+| | PoLAR | 4.78M | 32.0 | 30.6 | 79.5 | 78.2 |
+| | Phase PoLAR | 4.78M | 31.3 | 30.3 | 75.9 | 78.4 |
 
 | Phase LoRA vs | Effect | 95 % CI | p (Holm) |
 |---|:---:|:---:|:---:|
@@ -68,26 +68,26 @@ How much each fine-tuned model loses of its general language ability: how much w
 
 | Model | Adapter | Setswana | Luganda | SVAMP | ARC |
 |---|---|:---:|:---:|:---:|:---:|
-| 0.6B | LoRA | +3.57 | +4.20 | +0.40 | +0.045 |
+| Qwen3-0.6B | LoRA | +3.57 | +4.20 | +0.40 | +0.045 |
 | | Phase LoRA | +1.68 | +1.97 | **+0.19** | **+0.031** |
 | | DoRA | +3.52 | +3.75 | +0.43 | +0.048 |
 | | Phase DoRA | **+1.66** | +1.97 | +0.20 | +0.034 |
 | | PoLAR | +1.69 | +1.61 | +0.19 | +0.059 |
 | | Phase PoLAR | +1.74 | **+1.50** | +0.30 | +0.071 |
-| 1.7B | LoRA | +1.79 | +2.50 | +0.24 | +0.074 |
+| Qwen3-1.7B | LoRA | +1.79 | +2.50 | +0.24 | +0.074 |
 | | Phase LoRA | **+0.61** | +0.80 | **+0.07** | **+0.021** |
 | | DoRA | +1.79 | +2.43 | +0.24 | +0.074 |
 | | Phase DoRA | +0.62 | +0.74 | +0.33 | +0.021 |
 | | PoLAR | +0.81 | **+0.72** | +0.13 | +0.039 |
 | | Phase PoLAR | +0.77 | +0.74 | +0.19 | +0.045 |
-| LFM3 | LoRA | +0.87 | +1.38 | +0.90 | +0.069 |
+| LFM3-1.7B | LoRA | +0.87 | +1.38 | +0.90 | +0.069 |
 | | Phase LoRA | **+0.39** | +3.89 | +0.24 | **+0.027** |
 | | DoRA | +0.88 | +1.49 | +0.84 | +0.068 |
 | | Phase DoRA | +0.41 | +3.90 | +0.24 | +0.027 |
 | | PoLAR | +0.44 | **+0.43** | **+0.18** | +0.051 |
 | | Phase PoLAR | +0.45 | +0.44 | +0.66 | +0.082 |
 
-Phase LoRA forgets less than LoRA in 11 of the 12 columns and the least of all six in 7 of them (average place 2.0 of 6). The exception is LFM3 on Luganda, where it chose a higher learning rate. The base models score 2.539 (0.6B), 2.240 (1.7B) and 2.359 (LFM3).
+Phase LoRA forgets less than LoRA in 11 of the 12 columns and the least of all six in 7 of them (average place 2.0 of 6). The exception is LFM3-1.7B on Luganda, where it chose a higher learning rate. The base models score 2.539 (Qwen3-0.6B), 2.240 (Qwen3-1.7B) and 2.359 (LFM3-1.7B).
 
 ---
 
@@ -119,9 +119,9 @@ bash scripts/verify_baseline.sh      # retrains one stored LoRA run and compares
 bash scripts/reproduce.sh            # the full experiment, ~43 GPU-hours on one 16 GB GPU
 ```
 
-LFM3 needs a newer transformers than the Qwen3 runs: build `.venv-lfm3` from `requirements-lfm3.txt` (commands at its top); the scripts pick it for the LFM3 runs.
+LFM3-1.7B needs a newer transformers than the Qwen3 runs: build `.venv-lfm3` from `requirements-lfm3.txt` (commands at its top); the scripts pick it for the LFM3-1.7B runs.
 
-`verify_baseline.sh` downloads the pinned data and both base models on its first run, retrains the stored LoRA run on SVAMP (0.6B, seed 1) and prints the stored and the new accuracy side by side: both 70.33, with 300/300 identical answers on an RTX 5080 Laptop GPU. `reproduce.sh` runs everything else (grid, main runs, scoring, forgetting, analysis) and resumes after a crash. The forgetting numbers above were measured on one NVIDIA H100 with `scripts/modal_forgetting.py`; `scripts/forgetting.py` measures them on any GPU, about 1.5 hours on a 16 GB laptop GPU. Every run's training record, per-item test scores and log are in `runs/`; the trained weights are not in git.
+`verify_baseline.sh` downloads the pinned data and the Qwen3 base models on its first run, retrains the stored LoRA run on SVAMP (Qwen3-0.6B, seed 1) and prints the stored and the new accuracy side by side: both 70.33, with 300/300 identical answers on an RTX 5080 Laptop GPU. `reproduce.sh` runs everything else (grid, main runs, scoring, forgetting, analysis) and resumes after a crash. The forgetting numbers above were measured on one NVIDIA H100 with `scripts/modal_forgetting.py`; `scripts/forgetting.py` measures them on any GPU, about 1.5 hours on a 16 GB laptop GPU. Every run's training record, per-item test scores and log are in `runs/`; the trained weights are not in git.
 
 ---
 
@@ -170,7 +170,7 @@ The patch adds `PhaseLoraConfig` and `PolarConfig` as regular PEFT methods (with
 |---|---|
 | **Models** | Qwen3-0.6B-Base, Qwen3-1.7B-Base, LFM3-1.7B-Base |
 | **Tasks** | English→Setswana and English→Luganda (MAFAND-MT), SVAMP, ARC-Challenge |
-| **Adapters** | rank 64 on `q_proj` and `v_proj` (LFM3: its 11 attention layers); both adapters of a pair have the same parameter count |
+| **Adapters** | rank 64 on `q_proj` and `v_proj` (LFM3-1.7B: its 11 attention layers); both adapters of a pair have the same parameter count |
 | **Learning rate** | chosen per adapter, task and model from {3e-4, 1e-3, 3e-3, 1e-2} by the dev loss of a one-epoch run; LoRA and Phase LoRA picked the same rate in 11 of 12 settings |
 | **Training** | Adam, cosine decay, 5 epochs, best-dev-loss checkpoint, 5 seeds |
 | **Translation decoding** | greedy; a 4-gram may appear at most twice per reply |
