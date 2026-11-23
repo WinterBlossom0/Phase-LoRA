@@ -1,0 +1,25 @@
+{
+ "tag": "base_lfm3-1.7b-base",
+ "args": {
+  "model": "lfm3-1.7b-base"
+ },
+ "metric": "WikiText-103 test mean NLL (nats/token)",
+ "nll": 2.3592254012517366,
+ "perplexity": 10.582752227783203,
+ "base_nll": null,
+ "forgetting": null,
+ "scored_tokens": 294768,
+ "text_tokens": 295824,
+ "window": 2048,
+ "wikitext": {
+  "repository": "Salesforce/wikitext",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "file": "wikitext-103-raw-v1/test-00000-of-00001.parquet",
+  "sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83"
+ },
+ "code_version": "ecd11620d433",
+ "gpu": "NVIDIA H100 80GB HBM3",
+ "torch": "2.13.0+cu130",
+ "transformers": "5.18.0",
+ "python": "3.13.3"
+}

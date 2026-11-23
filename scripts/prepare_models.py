@@ -1,6 +1,7 @@
-"""Download the two Qwen3 base models into models/, pinned to the revisions every run used, and check their weights.
+"""Download the base models into models/, pinned to the revisions every run used, and check their weights.
 
-  python scripts/prepare_models.py
+  python scripts/prepare_models.py                     # every model
+  python scripts/prepare_models.py lfm3-1.7b-base      # chosen models
 
 A model whose weights already match their sha256 is not downloaded again.
 """
@@ -21,6 +22,8 @@ MODELS = {
                         "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba"),
     "qwen3-1.7b-base": ("Qwen/Qwen3-1.7B-Base", "ea980cb0a6c2ae4b936e82123acc929f1cec04c1",
                         "6df85b39330e5a425ee36253d0f894e4387e4f0a15b9c53cb467d668e6b3a841"),
+    "lfm3-1.7b-base": ("LiquidAI/LFM3-1.7B-Base", "7bca5038823c0d0f14efe06439109354a10e014c",
+                       "61a3f541d65b03a2180d08964bf0d55e349463a2706032814d455ae046bc8b59"),
 }
 
 
@@ -33,7 +36,12 @@ def sha256(path):
 
 
 def main():
-    for name, (repository, revision, expected) in MODELS.items():
+    names = sys.argv[1:] or list(MODELS)
+    unknown = sorted(set(names) - set(MODELS))
+    if unknown:
+        sys.exit(f"unknown models {unknown}; known: {sorted(MODELS)}")
+    for name in names:
+        repository, revision, expected = MODELS[name]
         weights = MODEL_DIR / name / "model.safetensors"
         if weights.exists() and sha256(weights) == expected:
             print(f"{name}: present, weights match")

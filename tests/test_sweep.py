@@ -141,9 +141,9 @@ def test_list_phase_prints_every_main_run_once_and_filters(runs_dir, monkeypatch
 
     everything = listed()
     expected = sum(len(list(sweep.block_arms(block))) * len(block["seeds"]) for block in sweep.BLOCKS)
-    assert len(everything) == len(set(everything)) == expected == 264
+    assert len(everything) == len(set(everything)) == expected == 360
     seed1_translation = listed("--datasets", "mafand_tsn", "--seeds", "1")
-    assert len(seed1_translation) == 2 * 6 + 2, "main: 2 models x 6 kinds; ablation: 2 kinds"
+    assert len(seed1_translation) == 3 * 6, "3 models x 6 kinds"
     assert all("_mafand_tsn_" in path and "-base_s1_" in path for path in seed1_translation)
     assert set(seed1_translation) <= set(everything)
 

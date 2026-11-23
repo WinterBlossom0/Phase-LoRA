@@ -33,6 +33,17 @@
         "phase_stiefel"
       ],
       "reason": "Later code changes a comment, a self-check in stiefel.py, and the clip coefficient that make_optimizer passes to the landing modules: it now uses the formula of clip_grad_norm_ (0, not NaN, for an infinite gradient norm). For a finite norm every kind runs the same arithmetic. No run of this version had an infinite norm: in Phase PoLAR it made every gradient NaN, and no run diverged; PoLAR and the other kinds do not use the coefficient."
+    },
+    "9dba266312e9": {
+      "kinds": [
+        "additive",
+        "polar",
+        "dora",
+        "phase_dora",
+        "stiefel",
+        "phase_stiefel"
+      ],
+      "reason": "Later code changes only the usage example in the docstring of train_compare.py. Every kind runs the same statements."
     }
   },
   "score": {
@@ -84,6 +95,20 @@
         "loss"
       ],
       "reason": "Later code changes only the training-time clip coefficient, a comment and a self-check; scoring runs the same statements."
+    },
+    "aaa609f48410": {
+      "datasets": [
+        "mafand_tsn",
+        "mafand_lug",
+        "svamp",
+        "arc"
+      ],
+      "modes": [
+        "greedy",
+        "norepeat",
+        "loss"
+      ],
+      "reason": "Later code changes only the usage example in the docstring of train_compare.py; scoring runs the same statements."
     }
   }
 }

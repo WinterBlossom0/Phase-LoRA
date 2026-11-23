@@ -1,0 +1,17 @@
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights:  41%|████▏     | 118/286 [00:00<00:00, 1103.99it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 2084.19it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+polar: 4685.8K trainable, 4075 examples, 3072 tokens/batch, 1-85 rows/step, 580 steps over 5 epochs
+  step    0  ep 0.00  eval 4.9729  (before training)
+  step    58  ep 0.50  eval 3.4026  train 4.1984  50s
+  step   116  ep 1.00  eval 3.0329  train 3.4267  97s
+  step   174  ep 1.50  eval 2.8652  train 2.8908  144s
+  step   232  ep 2.00  eval 2.7373  train 2.6506  194s
+  step   290  ep 2.50  eval 2.6172  train 2.3532  243s
+  step   348  ep 3.00  eval 2.5184  train 2.2109  293s
+  step   406  ep 3.50  eval 2.5236  train 1.9174  341s
+  step   464  ep 4.00  eval 2.4890  train 1.8177  392s
+  step   522  ep 4.50  eval 2.5548  train 1.5813  442s
+  step   580  ep 5.00  eval 2.5512  train 1.4853  493s
+  best eval 2.4890   -> runs/polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s4_3e4901698d.json
+  weights -> runs/polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s4_3e4901698d.pt
+  peak VRAM 8.04 GB used, 9.56 GB reserved

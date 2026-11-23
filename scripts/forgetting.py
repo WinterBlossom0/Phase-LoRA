@@ -73,7 +73,7 @@ def mean_nll(model, windows, batch_size, limit=None):
     for start in range(0, len(windows), batch_size):
         ids = windows[start:start + batch_size].cuda()
         logits = model(input_ids=ids).logits
-        # one window at a time in float32: a whole batch of float32 logits would not fit (vocabulary 151,936)
+        # one window at a time in float32: a whole batch of float32 logits would not fit (vocabulary up to 151,936)
         for row in range(ids.shape[0]):
             total += F.cross_entropy(logits[row, :-1].float(), ids[row, 1:], reduction="sum").item()
             count += ids.shape[1] - 1
@@ -88,7 +88,9 @@ def write_atomic(path, data):
 
 
 def fresh_base(model_name):
-    model = AutoModelForCausalLM.from_pretrained(MODEL_DIR / model_name, dtype=torch.bfloat16).cuda()
+    # LFM3 ships its model code with its weights; Qwen3's class is built in, so the flag changes nothing
+    model = AutoModelForCausalLM.from_pretrained(MODEL_DIR / model_name, dtype=torch.bfloat16,
+                                                 trust_remote_code=True).cuda()
     model.requires_grad_(False)
     return model
 
@@ -136,7 +138,7 @@ def measure(paths, batch_size):
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     groups = group_runs(paths)
     for model_name in sorted({key[0] for key in groups}):
-        tok = AutoTokenizer.from_pretrained(MODEL_DIR / model_name)
+        tok = AutoTokenizer.from_pretrained(MODEL_DIR / model_name, trust_remote_code=True)
         windows, n_text_tokens = wikitext_windows(tok)
         base_path = OUT_DIR / f"base_{model_name}.json"
         if base_path.exists():
@@ -178,7 +180,7 @@ def check(paths, batch_size, limit):
         if len(results) < 2:
             continue
         first, second = results[0], results[1]
-        tok = AutoTokenizer.from_pretrained(MODEL_DIR / model_name)
+        tok = AutoTokenizer.from_pretrained(MODEL_DIR / model_name, trust_remote_code=True)
         windows, _ = wikitext_windows(tok)
         model = attach(fresh_base(model_name), kind, rank, first["args"]["alpha"], lam=first["args"]["lam"])
         swap_in(model, first)

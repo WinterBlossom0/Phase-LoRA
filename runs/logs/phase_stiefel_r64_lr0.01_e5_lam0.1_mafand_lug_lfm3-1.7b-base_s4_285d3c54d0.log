@@ -1,0 +1,17 @@
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10764.76it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+phase_stiefel: 4775.9K trainable, 4075 examples, 3072 tokens/batch, 1-85 rows/step, 580 steps over 5 epochs
+  step    0  ep 0.00  eval 4.9729  (before training)
+  step    58  ep 0.50  eval 3.6120  train 4.2482  51s
+  step   116  ep 1.00  eval 3.2888  train 3.6680  105s
+  step   174  ep 1.50  eval 3.1832  train 3.2823  155s
+  step   232  ep 2.00  eval 3.0134  train 3.0898  210s
+  step   290  ep 2.50  eval 2.8591  train 2.8666  261s
+  step   348  ep 3.00  eval 2.7280  train 2.6843  315s
+  step   406  ep 3.50  eval 2.6296  train 2.4384  366s
+  step   464  ep 4.00  eval 2.5058  train 2.3092  420s
+  step   522  ep 4.50  eval 2.4578  train 2.0755  471s
+  step   580  ep 5.00  eval 2.4427  train 1.9699  525s
+  best eval 2.4427   -> runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s4_285d3c54d0.json
+  weights -> runs/phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s4_285d3c54d0.pt
+  peak VRAM 8.09 GB used, 9.65 GB reserved

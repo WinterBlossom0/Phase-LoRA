@@ -3,13 +3,15 @@
 **Low-rank adapters in polar coordinates: every weight of the adapter becomes a magnitude and an angle. Same parameters, same expressiveness, better fine-tuning.**
 
 **Paper:** [Phase LoRA: Low-Rank Adapters in Polar Coordinates](https://doi.org/10.5281/zenodo.24393045) (preprint, Zenodo, DOI [10.5281/zenodo.24393045](https://doi.org/10.5281/zenodo.24393045))
+**Adapters:** all 360 trained adapters on Hugging Face: [WinterBlossom/phase-lora](https://huggingface.co/WinterBlossom/phase-lora)
 
 ## Highlights
 
-- **Better in 20 of 24 head-to-head comparisons** against LoRA, DoRA and PoLAR, with exactly the same number of parameters.
-- **Up to +3.35 chrF++** in translation and **+2.2 points** on ARC-Challenge; the gains for LoRA and DoRA are statistically significant (p < 10⁻⁴).
-- **Forgets 1.5–3.5× less than LoRA:** after fine-tuning at rank 64, the model stays much closer to the original on ordinary Wikipedia text, in all 8 settings.
-- **Steadier:** Phase LoRA varies less between random seeds than LoRA in all 8 settings.
+- **The best of six adapters** across three models from two families (Qwen3-0.6B, Qwen3-1.7B, LFM3-1.7B) and four tasks: significantly ahead of LoRA, DoRA, PoLAR and Phase PoLAR, with exactly LoRA's number of parameters.
+- **The phase version beats the original in 25 of 36 head-to-head comparisons** with LoRA, DoRA and PoLAR.
+- **Up to +3.35 chrF++** in translation (Qwen3-0.6B) and **+5.5 points** on SVAMP math (LFM3-1.7B).
+- **Forgets 1.5–3.7× less than LoRA** in 11 of 12 settings: the model stays much closer to the original on ordinary Wikipedia text.
+- **Steadier:** Phase LoRA varies less between random seeds than LoRA in 10 of 12 settings.
 - **Drop-in:** no extra parameters and no change to what the adapter can express. It also matched LoRA's best accuracy on Hugging Face PEFT's own benchmark and forgot less there too.
 
 ## How it works
@@ -36,18 +38,31 @@ Qwen3-0.6B-Base and Qwen3-1.7B-Base, rank 64, mean of 5 seeds. Translation (En�
 | PoLAR | 9.40M / 13.07M | 32.4 | **32.2** | 30.8 | 31.3 | 68.9 | **77.9** | 67.4 | 80.5 |
 | **Phase PoLAR** | 9.40M / 13.07M | **32.5** | 32.1 | **31.2** | **31.3** | **70.1** | 77.0 | **67.7** | **80.8** |
 
-| Phase version vs original | Effect | 95 % CI | p |
-|---|:---:|:---:|:---:|
-| Phase LoRA vs LoRA | **+1.51** | [+0.94, +2.08] | 4 × 10⁻⁶ |
-| Phase DoRA vs DoRA | **+1.35** | [+0.76, +1.94] | 4 × 10⁻⁵ |
-| Phase PoLAR vs PoLAR | +0.28 | [−0.20, +0.75] | 0.25 |
-| All three pairs | **+1.04** | [+0.73, +1.36] | 8 × 10⁻¹⁰ |
+LFM3-1.7B-Base, a hybrid convolution–attention model (adapters on its 11 attention layers, 4.7–4.8M parameters):
 
-The effect is how far the phase version is ahead, in units of the normal run-to-run variation: 1 means ahead by about as much as one run typically differs from its method's average. Phase LoRA and Phase DoRA also reach a lower test loss (+1.77 and +1.84 in the same units).
+| Adapter | En→Tsn | En→Lug | SVAMP | ARC |
+|---|:---:|:---:|:---:|:---:|
+| *Base model* | *10.2* | *14.5* | *6.3* | *69.9* |
+| LoRA | **33.6** | **31.6** | 73.9 | 77.5 |
+| **Phase LoRA** | 33.0 | 29.9 | **79.4** | **79.0** |
+| DoRA | **33.7** | **31.4** | 73.7 | 77.4 |
+| **Phase DoRA** | 33.1 | 29.7 | **79.9** | **79.0** |
+| PoLAR | **32.0** | **30.6** | **79.5** | 78.2 |
+| **Phase PoLAR** | 31.3 | 30.3 | 75.9 | **78.4** |
+
+| Phase LoRA vs | Effect | 95 % CI | p (Holm) |
+|---|:---:|:---:|:---:|
+| LoRA | **+0.78** | [+0.20, +1.37] | 0.019 |
+| DoRA | **+0.91** | [+0.29, +1.53] | 0.014 |
+| PoLAR | **+1.14** | [+0.61, +1.67] | 2 × 10⁻⁴ |
+| Phase PoLAR | **+1.42** | [+0.92, +1.92] | 7 × 10⁻⁷ |
+| Phase DoRA | +0.04 | [−0.33, +0.41] | 0.83 |
+
+Over all three models and four tasks. The effect is how far Phase LoRA is ahead, in units of the normal run-to-run variation: 1 means ahead by about as much as one run typically differs from its method's average. Phase DoRA, the other phase adapter, is level with it.
 
 ### Forgetting
 
-How much each fine-tuned model loses of its general language ability: how much worse it predicts ordinary Wikipedia text (the WikiText-103 test set) than the untouched base model, as the rise in loss per token, mean of 5 seeds. **Lower is better; bold marks the lowest of each column (before rounding).**
+How much each fine-tuned model loses of its general language ability: how much worse it predicts ordinary Wikipedia text (the WikiText-103 test set) than the untouched base model, as the rise in loss per token, mean of 5 seeds. **Lower is better; bold marks the lowest of each model's column (before rounding).**
 
 | Model | Adapter | Setswana | Luganda | SVAMP | ARC |
 |---|---|:---:|:---:|:---:|:---:|
@@ -63,8 +78,14 @@ How much each fine-tuned model loses of its general language ability: how much w
 | | Phase DoRA | +0.62 | +0.74 | +0.33 | +0.021 |
 | | PoLAR | +0.81 | **+0.72** | +0.13 | +0.039 |
 | | Phase PoLAR | +0.77 | +0.74 | +0.19 | +0.045 |
+| LFM3 | LoRA | +0.87 | +1.38 | +0.90 | +0.069 |
+| | Phase LoRA | **+0.39** | +3.89 | +0.24 | **+0.027** |
+| | DoRA | +0.88 | +1.49 | +0.84 | +0.068 |
+| | Phase DoRA | +0.41 | +3.90 | +0.24 | +0.027 |
+| | PoLAR | +0.44 | **+0.43** | **+0.18** | +0.051 |
+| | Phase PoLAR | +0.45 | +0.44 | +0.66 | +0.082 |
 
-Phase LoRA forgets the least overall: lowest in 5 of the 8 columns, average place 1.9 of 6. LoRA and DoRA forget about 2.4× as much on average. The base models score 2.539 (0.6B) and 2.240 (1.7B).
+Phase LoRA forgets less than LoRA in 11 of the 12 columns and the least of all six in 7 of them (average place 2.0 of 6). The exception is LFM3 on Luganda, where it chose a higher learning rate. The base models score 2.539 (0.6B), 2.240 (1.7B) and 2.359 (LFM3).
 
 ---
 
@@ -93,10 +114,12 @@ uv sync --extra dev                  # exact library versions from uv.lock
 source .venv/bin/activate
 python -m pytest                     # CPU tests, under a minute
 bash scripts/verify_baseline.sh      # retrains one stored LoRA run and compares, ~2 min on one GPU
-bash scripts/reproduce.sh            # the full experiment, ~29 GPU-hours on one 16 GB GPU
+bash scripts/reproduce.sh            # the full experiment, ~43 GPU-hours on one 16 GB GPU
 ```
 
-`verify_baseline.sh` downloads the pinned data and both base models on its first run, retrains the stored LoRA run on SVAMP (0.6B, seed 1) and prints the stored and the new accuracy side by side: both 70.33, with 300/300 identical answers on an RTX 5080 Laptop GPU. `reproduce.sh` runs everything else (grid, main runs, scoring, forgetting, analysis) and resumes after a crash. The forgetting numbers above were measured on one NVIDIA H100 with `scripts/modal_forgetting.py`; `scripts/forgetting.py` measures them on any GPU, about 1 hour on a 16 GB laptop GPU. Every run's training record, per-item test scores and log are in `runs/`; the trained weights are not in git.
+LFM3 needs a newer transformers than the Qwen3 runs: build `.venv-lfm3` from `requirements-lfm3.txt` (commands at its top); the scripts pick it for the LFM3 runs.
+
+`verify_baseline.sh` downloads the pinned data and both base models on its first run, retrains the stored LoRA run on SVAMP (0.6B, seed 1) and prints the stored and the new accuracy side by side: both 70.33, with 300/300 identical answers on an RTX 5080 Laptop GPU. `reproduce.sh` runs everything else (grid, main runs, scoring, forgetting, analysis) and resumes after a crash. The forgetting numbers above were measured on one NVIDIA H100 with `scripts/modal_forgetting.py`; `scripts/forgetting.py` measures them on any GPU, about 1.5 hours on a 16 GB laptop GPU. Every run's training record, per-item test scores and log are in `runs/`; the trained weights are not in git.
 
 ---
 
@@ -143,18 +166,19 @@ The patch adds `PhaseLoraConfig` and `PolarConfig` as regular PEFT methods (with
 
 | | |
 |---|---|
+| **Models** | Qwen3-0.6B-Base, Qwen3-1.7B-Base, LFM3-1.7B-Base |
 | **Tasks** | English→Setswana and English→Luganda (MAFAND-MT), SVAMP, ARC-Challenge |
-| **Adapters** | rank 64 on `q_proj` and `v_proj`; both adapters of a pair have the same parameter count |
-| **Learning rate** | chosen per adapter, task and model from {3e-4, 1e-3, 3e-3, 1e-2} by the dev loss of a one-epoch run; LoRA and Phase LoRA picked the same rate in all 8 settings |
+| **Adapters** | rank 64 on `q_proj` and `v_proj` (LFM3: its 11 attention layers); both adapters of a pair have the same parameter count |
+| **Learning rate** | chosen per adapter, task and model from {3e-4, 1e-3, 3e-3, 1e-2} by the dev loss of a one-epoch run; LoRA and Phase LoRA picked the same rate in 11 of 12 settings |
 | **Training** | Adam, cosine decay, 5 epochs, best-dev-loss checkpoint, 5 seeds |
 | **Translation decoding** | greedy; a 4-gram may appear at most twice per reply |
 | **PoLAR landing step** | as in the official PoLAR code: clip the gradients, then replace the gradient G of each factor X by (G Xᵀ − X Gᵀ) X + λ X(XᵀX − I); λ chosen with the learning rate |
 | **Forgetting** | WikiText-103 test split (pinned revision, checksum), rows joined with blank lines, non-overlapping 2,048-token windows; mean next-token loss after fine-tuning minus the base model's |
-| **Statistics** | per setup, scores standardized by the seed-to-seed SD; OLS with one effect per setup, HC3 errors, Holm correction across the pairs |
+| **Statistics** | per setup, scores standardized by the seed-to-seed SD; OLS with one effect per setup, HC3 errors, Holm correction; the Phase LoRA-vs-every-method comparison was added after the results |
 
 Data and model revisions are pinned and checked by checksum (`data_manifest.json`, `scripts/prepare_models.py`).
 
-**Scope.** The gains are clearest for LoRA and DoRA; the PoLAR pair is close (Phase PoLAR ahead in 6 of 8 settings, not significant). At rank 8 (0.6B, three seeds) Phase LoRA is not better than LoRA and, with higher chosen learning rates, forgets more on three of four tasks. On the PEFT benchmark's default settings LoRA scores slightly higher (46.2 vs 45.3).
+**Scope.** On LFM3 the phase versions trail on translation (by 0.6–1.7 chrF++). The PoLAR pair is close. On the PEFT benchmark's default settings LoRA scores slightly higher (46.2 vs 45.3).
 
 ## Repository layout
 

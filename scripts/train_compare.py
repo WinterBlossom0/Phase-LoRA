@@ -1,7 +1,7 @@
 """One training run: one method, rank, seed, dataset and model, same budget for every arm.
 
-  python3 scripts/train_compare.py --kind polar --model qwen3-0.6b-base --rank 8 \
-      --alpha 8 --lr 1e-3 --train 1000000 --eval 1000000 --epochs 5 \
+  python3 scripts/train_compare.py --kind polar --model qwen3-0.6b-base --rank 64 \
+      --alpha 64 --lr 1e-3 --train 1000000 --eval 1000000 --epochs 5 \
       --eval-every 35 --max-tokens 3072 --grad-ckpt on --seed 1 --dataset mafand_tsn \
       --clip 1.0 --patience 0
 
@@ -70,7 +70,8 @@ def main():
     model_dir = MODEL_DIR / a.model
     if not model_dir.is_dir():
         sys.exit(f"no such model: {model_dir}")
-    tok = AutoTokenizer.from_pretrained(model_dir)
+    # LFM3 ships its model code with its weights (read before use); Qwen3's class is built in, so the flag changes nothing
+    tok = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
     pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
     tr = build_data(tok, "train", a.train, a.dataset)
     ev = build_data(tok, EVAL_SPLIT[a.dataset], a.eval, a.dataset)
@@ -81,7 +82,7 @@ def main():
     steps = sum(len(epoch) for epoch in plan)
     rows_per_step = [len(batch) for epoch in plan for batch in epoch]
 
-    model = AutoModelForCausalLM.from_pretrained(model_dir, dtype=torch.bfloat16).cuda()
+    model = AutoModelForCausalLM.from_pretrained(model_dir, dtype=torch.bfloat16, trust_remote_code=True).cuda()
     model.requires_grad_(False)
     model = attach(model, a.kind, a.rank, a.alpha, lam=a.lam)
     if a.grad_ckpt == "on":

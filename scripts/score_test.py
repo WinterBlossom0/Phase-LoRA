@@ -6,7 +6,7 @@
   python scripts/score_test.py --base --modes ...      # the untrained base models, every dataset
 
 mafand_tsn, mafand_lug: corpus chrF++ (sacrebleu, word order 2) of greedy translations, by
-            deterministic continuous batching (see generate). Mode norepeat
+            deterministic continuous batching (see generate); LFM3 by padded batches (see has_conv_layers). Mode norepeat
             instead blocks the third use of any 4-token sequence in a reply
             (see NgramThirdUseBlock) and writes to runs/test_norepeat/.
 svamp:      the number after the last '=' of the greedy reply equals the answer.
@@ -89,8 +89,8 @@ def load_run(result, device="cuda"):
     args = result["args"]
     torch.manual_seed(args["seed"])          # same init as training, used if no weights were saved
     model_dir = MODEL_DIR / args["model"]
-    tok = AutoTokenizer.from_pretrained(model_dir)
-    model = AutoModelForCausalLM.from_pretrained(model_dir, dtype=torch.bfloat16).to(device)
+    tok = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(model_dir, dtype=torch.bfloat16, trust_remote_code=True).to(device)
     model.requires_grad_(False)
     model = attach(model, args["kind"], args["rank"], args["alpha"], lam=args["lam"])
     if result["weights"] is not None:
@@ -106,8 +106,8 @@ def load_run(result, device="cuda"):
 def load_base(model_name, device="cuda"):
     """The untrained base model, for the reference rows."""
     model_dir = MODEL_DIR / model_name
-    tok = AutoTokenizer.from_pretrained(model_dir)
-    model = AutoModelForCausalLM.from_pretrained(model_dir, dtype=torch.bfloat16).to(device)
+    tok = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(model_dir, dtype=torch.bfloat16, trust_remote_code=True).to(device)
     model.requires_grad_(False)
     model.eval()
     return tok, model
@@ -140,6 +140,30 @@ def kv_blocks_needed(prompt_lengths, max_new_tokens):
     return CB_REQUESTS * math.ceil((max(prompt_lengths) + max_new_tokens) / CB_BLOCK_SIZE)
 
 
+def has_conv_layers(model):
+    """LFM3 mixes convolution and attention layers. transformers' continuous batching rejects convolution layers
+    ("Invalid layer type: conv", 5.18.0), and grouped_decode_attention assumes a full-length KV cache, which
+    LFM3's 256-token sliding-window layers do not keep."""
+    inner = model.get_base_model() if hasattr(model, "get_base_model") else model
+    return "conv" in (getattr(inner.config, "layer_types", None) or [])
+
+
+@torch.no_grad()
+def generate_padded(tok, model, prompts, max_new_tokens):
+    """Greedy replies by left-padded batches, with the stop rules and cleanup of generate(). For models that
+    continuous batching cannot run; greedy decoding picks the same tokens up to bf16 rounding."""
+    end = tok.convert_tokens_to_ids(END_OF_TEXT)
+    stops = [end] + newline_token_ids(tok)
+    replies = [None] * len(prompts)
+    for indices, ids, mask in prompt_batches(tok, prompts, NOREPEAT_BATCH):
+        out = model.generate(input_ids=ids, attention_mask=mask, do_sample=False, max_new_tokens=max_new_tokens,
+                             eos_token_id=stops, pad_token_id=end)
+        for row, index in enumerate(indices):
+            text = tok.decode(out[row, ids.shape[1]:], skip_special_tokens=True)
+            replies[index] = text.split("\n")[0].strip()
+    return replies
+
+
 @torch.no_grad()
 def generate(tok, model, prompts, max_new_tokens):
     """Greedy replies, ended by <|endoftext|> or the first newline. No reference reply in
@@ -151,6 +175,8 @@ def generate(tok, model, prompts, max_new_tokens):
     It is deterministic only with every request queued before start(), fixed cache sizes,
     and no async batching or CUDA graphs: the auto-sized default gave 126/300 identical
     outputs on a repeat; this setting gave 1500/1500 on repeats and in a new process."""
+    if has_conv_layers(model):
+        return generate_padded(tok, model, prompts, max_new_tokens)
     end = tok.convert_tokens_to_ids(END_OF_TEXT)
     ids = [tok(prompt, add_special_tokens=False)["input_ids"] for prompt in prompts]
     needed = kv_blocks_needed([len(row) for row in ids], max_new_tokens)
@@ -246,7 +272,8 @@ def generate_norepeat(tok, model, prompts, max_new_tokens):
     replies = [None] * len(prompts)
     inner = model.get_base_model() if hasattr(model, "get_base_model") else model   # PEFT wraps additive and dora
     previous = inner.config._attn_implementation
-    inner.set_attn_implementation(GROUPED_DECODE)
+    if not has_conv_layers(model):
+        inner.set_attn_implementation(GROUPED_DECODE)
     try:
         for indices, ids, mask in prompt_batches(tok, prompts, NOREPEAT_BATCH):
             out = model.generate(input_ids=ids, attention_mask=mask, do_sample=False, max_new_tokens=max_new_tokens,
@@ -420,6 +447,7 @@ def main():
     p.add_argument("--modes", nargs="+", choices=list(MODE_DIRS), default=["greedy"],
                    help="greedy and loss score every dataset, norepeat translation only; one model load serves all")
     p.add_argument("--base", action="store_true", help="score the untrained base models on every dataset")
+    p.add_argument("--models", nargs="+", help="--base: only these models; default: every model of the design")
     a = p.parse_args()
     import run_sweep
     max_tokens = run_sweep.FIXED["max-tokens"]     # the dev loss's batch budget in every run
@@ -430,7 +458,7 @@ def main():
     if a.base:
         with open(GPU_LOCK, "w") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX)      # the same lock flock(1) takes for training
-            for model_name in run_sweep.MODELS:
+            for model_name in a.models or run_sweep.MODELS:
                 for dataset in run_sweep.DATASETS:
                     tag = f"base_{model_name}_{dataset}"
                     record = {"tag": tag, "args": {"kind": "base", "model": model_name, "dataset": dataset},

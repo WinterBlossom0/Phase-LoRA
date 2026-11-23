@@ -42,18 +42,20 @@ from phase_lora.train_utils import TRANSLATION
 
 OUT = ROOT / "paper" / "generated"
 MODELS, DATASETS, FAMILIES = run_sweep.MODELS, run_sweep.DATASETS, run_sweep.FAMILIES
-MAIN, ABLATION = run_sweep.BLOCKS
-MAIN_RANK, ABLATION_RANK = MAIN["ranks"][0], ABLATION["ranks"][0]
-MODEL_NAMES = {"qwen3-0.6b-base": "0.6B", "qwen3-1.7b-base": "1.7B"}
+(MAIN,) = run_sweep.BLOCKS
+MAIN_RANK = MAIN["ranks"][0]
+MODEL_NAMES = {"qwen3-0.6b-base": "0.6B", "qwen3-1.7b-base": "1.7B", "lfm3-1.7b-base": "LFM3"}
 TASK_NAMES = {"mafand_tsn": "En$\\to$Tsn", "mafand_lug": "En$\\to$Lug", "svamp": "SVAMP", "arc": "ARC-C"}
 PLAIN_TASK_NAMES = {"mafand_tsn": "En→Tsn", "mafand_lug": "En→Lug", "svamp": "SVAMP", "arc": "ARC-C"}
 NAMES = {"additive": "LoRA", "polar": "Phase LoRA", "dora": "DoRA", "phase_dora": "Phase DoRA",
          "stiefel": "PoLAR", "phase_stiefel": "Phase PoLAR"}
 ALPHA = 0.05
 BOOTSTRAP_DRAWS = 2000
-# Qwen3 0.6B and 1.7B: 28 layers, q_proj (in, out) and v_proj (in, out); from models/*/config.json
-PROJECTIONS = {"qwen3-0.6b-base": [(1024, 2048), (1024, 1024)], "qwen3-1.7b-base": [(2048, 2048), (2048, 1024)]}
-LAYERS = 28
+# Adapted layers and (in, out) of q_proj and v_proj, from models/*/config.json. Qwen3: every one of 28 layers.
+# LFM3: only its 11 attention layers have q_proj and v_proj; its 13 convolution layers get no adapter.
+ADAPTED = {"qwen3-0.6b-base": (28, [(1024, 2048), (1024, 1024)]),
+           "qwen3-1.7b-base": (28, [(2048, 2048), (2048, 1024)]),
+           "lfm3-1.7b-base": (11, [(2048, 2048), (2048, 512)])}
 # A greedy reply counts as runaway when it fills the generation cap: no end token, no newline.
 # Re-tokenising the decoded text can merge a few tokens, hence 90 % of the cap.
 RUNAWAY_SHARE = 0.9
@@ -95,42 +97,41 @@ def load():
     """(block, dataset, model, rank, kind) -> seed -> run record, for exactly the runs of the design."""
     selected = json.loads((RUNS / "selected_hparams.json").read_text())
     every = {model: run_sweep.eval_every(model) for model in MODELS}
-    toks = {model: AutoTokenizer.from_pretrained(ROOT / "models" / model) for model in MODELS}
+    toks = {model: AutoTokenizer.from_pretrained(ROOT / "models" / model, trust_remote_code=True) for model in MODELS}
     caps = {(model, dataset): score_test.generation_cap(tok, dataset) for model, tok in toks.items() for dataset in TRANSLATION}
     runs = defaultdict(dict)
-    for block_name, block in (("main", MAIN), ("ablation", ABLATION)):
-        for seed in block["seeds"]:
-            for model, dataset, rank, kind in run_sweep.block_arms(block):
-                pick = selected[f"{model}|{dataset}|{kind}|{rank}"]["selected"]
-                argv = run_sweep.argv_for(model, dataset, kind, rank, pick["lr"], pick["lam"], seed, run_sweep.EPOCHS,
-                                          every[model][dataset])
-                tag = run_tag(vars(parse(argv)))
-                path = RUNS / f"{tag}.json"
-                if not path.exists():
-                    sys.exit(f"missing main run {path.name}")
-                run = json.loads(path.read_text())
-                if not train_version_ok(run["code_version"], kind):
-                    sys.exit(f"{path.name}: trained by code {run['code_version']}, not valid for {kind}")
-                version = run["code_version"]
-                record = {"steps": [step for step, _ in run["hist"]], "losses": [loss for _, loss in run["hist"]],
-                          "diverged_at": run["diverged_at"], "lr": pick["lr"],
-                          "test_loss": read_score(tag, version, dataset, "loss")["score"]}
-                if dataset in TRANSLATION:
-                    blocked = read_score(tag, version, dataset, "norepeat")
-                    record.update(test=blocked["score"], items=item_values(blocked, dataset),
-                                  hyps=[item["hyp"] for item in blocked["items"]],
-                                  refs=[item["ref"] for item in blocked["items"]],
-                                  runaway_blocked=runaway_percent(blocked["items"], toks[model], caps[(model, dataset)]),
-                                  length_ratio=(sum(len(item["hyp"]) for item in blocked["items"])
-                                                / sum(len(item["ref"]) for item in blocked["items"])))
-                    if seed == 1:
-                        greedy = read_score(tag, version, dataset, "greedy")
-                        record.update(greedy=greedy["score"],
-                                      runaway=runaway_percent(greedy["items"], toks[model], caps[(model, dataset)]))
-                else:
+    for seed in MAIN["seeds"]:
+        for model, dataset, rank, kind in run_sweep.block_arms(MAIN):
+            pick = selected[f"{model}|{dataset}|{kind}|{rank}"]["selected"]
+            argv = run_sweep.argv_for(model, dataset, kind, rank, pick["lr"], pick["lam"], seed, run_sweep.EPOCHS,
+                                      every[model][dataset])
+            tag = run_tag(vars(parse(argv)))
+            path = RUNS / f"{tag}.json"
+            if not path.exists():
+                sys.exit(f"missing main run {path.name}")
+            run = json.loads(path.read_text())
+            if not train_version_ok(run["code_version"], kind):
+                sys.exit(f"{path.name}: trained by code {run['code_version']}, not valid for {kind}")
+            version = run["code_version"]
+            record = {"steps": [step for step, _ in run["hist"]], "losses": [loss for _, loss in run["hist"]],
+                      "diverged_at": run["diverged_at"], "lr": pick["lr"],
+                      "test_loss": read_score(tag, version, dataset, "loss")["score"]}
+            if dataset in TRANSLATION:
+                blocked = read_score(tag, version, dataset, "norepeat")
+                record.update(test=blocked["score"], items=item_values(blocked, dataset),
+                              hyps=[item["hyp"] for item in blocked["items"]],
+                              refs=[item["ref"] for item in blocked["items"]],
+                              runaway_blocked=runaway_percent(blocked["items"], toks[model], caps[(model, dataset)]),
+                              length_ratio=(sum(len(item["hyp"]) for item in blocked["items"])
+                                            / sum(len(item["ref"]) for item in blocked["items"])))
+                if seed == 1:
                     greedy = read_score(tag, version, dataset, "greedy")
-                    record.update(test=greedy["score"], items=item_values(greedy, dataset))
-                runs[(block_name, dataset, model, rank, kind)][seed] = record
+                    record.update(greedy=greedy["score"],
+                                  runaway=runaway_percent(greedy["items"], toks[model], caps[(model, dataset)]))
+            else:
+                greedy = read_score(tag, version, dataset, "greedy")
+                record.update(test=greedy["score"], items=item_values(greedy, dataset))
+            runs[("main", dataset, model, rank, kind)][seed] = record
     return runs, toks, caps
 
 
@@ -308,22 +309,6 @@ def sensitivity(runs):
     return rows
 
 
-def ablation(runs):
-    """Rank-ablation differences (phase minus real) with Welch 95 % intervals, next to the main rank."""
-    real, phase = FAMILIES["LoRA"]
-    model = ABLATION["models"][0]
-    rows = []
-    for dataset in DATASETS:
-        for rank, block in ((ABLATION_RANK, "ablation"), (MAIN_RANK, "main")):
-            r = [x["test"] for x in runs[(block, dataset, model, rank, real)].values()]
-            q = [x["test"] for x in runs[(block, dataset, model, rank, phase)].values()]
-            interval = stats.ttest_ind(q, r, equal_var=False).confidence_interval(1 - ALPHA)
-            rows.append({"dataset": dataset, "rank": rank, "seeds": len(r), "real": statistics.mean(r),
-                         "phase": statistics.mean(q), "delta": statistics.mean(q) - statistics.mean(r),
-                         "ci": [float(interval.low), float(interval.high)]})
-    return rows
-
-
 def best_epoch(record):
     """Epoch (0-5) of the dev check with the lowest loss; 0 means no check beat the untrained adapter."""
     best = min(range(len(record["losses"])), key=lambda index: record["losses"][index])
@@ -332,12 +317,13 @@ def best_epoch(record):
 
 def trainable(kind, model, rank):
     """Trainable parameters over all adapted projections; phase kinds use complex rank rank/2."""
+    layers, projections = ADAPTED[model]
     total = 0
-    for in_features, out_features in PROJECTIONS[model]:
+    for in_features, out_features in projections:
         total += rank * (in_features + out_features)        # equal for every kind by construction
         total += {"additive": 0, "polar": 0, "stiefel": rank ** 2, "phase_stiefel": rank ** 2,
                   "dora": out_features, "phase_dora": out_features}[kind]
-    return LAYERS * total
+    return layers * total
 
 
 # ---------------------------------------------------------------- post-hoc analyses
@@ -394,19 +380,48 @@ def heterogeneity(runs):
 
 
 def model_interaction(runs, field, sign):
-    """Per family x task: the phase effect at 0.6B and its change at 1.7B (y ~ phase * model, HC3, t reference)."""
+    """Per family x task: the phase effect on MODELS[0] and its change on each other model
+    (y ~ phase * model with model as a factor, HC3, t reference)."""
+    others = MODELS[1:]
     out = []
     for family in FAMILIES:
         for dataset in DATASETS:
             y, columns = [], []
             for model in MODELS:
-                larger = float(model == MODELS[1])
+                is_model = [float(model == other) for other in others]
                 for score, flag in setup_rows(runs, family, dataset, model, field, sign):
                     y.append(score)
-                    columns.append([1.0, flag, larger, flag * larger])
+                    columns.append([1.0, flag] + is_model + [flag * value for value in is_model])
             fit = sm.OLS(np.array(y), np.array(columns)).fit(cov_type="HC3", use_t=True)
-            out.append({"family": family, "dataset": dataset, "effect_small": float(fit.params[1]),
-                        "interaction": float(fit.params[3]), "interaction_p": float(fit.pvalues[3])})
+            first_interaction = 2 + len(others)
+            out.append({"family": family, "dataset": dataset, "effect_first_model": float(fit.params[1]),
+                        "interaction": {other: float(fit.params[first_interaction + i]) for i, other in enumerate(others)},
+                        "interaction_p": {other: float(fit.pvalues[first_interaction + i]) for i, other in enumerate(others)}})
+    return out
+
+
+def method_vs_all(runs, target, field, sign):
+    """The target method against each other method: per setup both arms are standardised as in standardised(), then
+    OLS z ~ C(setup) + target flag with HC3 errors; Holm over the comparisons. Post hoc."""
+    out = []
+    for other in run_sweep.KINDS:
+        if other == target:
+            continue
+        rows = []
+        for dataset in DATASETS:
+            for model in MODELS:
+                pair = [(sign * record[field], flag)
+                        for kind, flag in ((other, 0), (target, 1))
+                        for record in runs[("main", dataset, model, MAIN_RANK, kind)].values()]
+                rows += [(z, flag, f"{dataset}|{model}") for z, flag in standardised(pair)]
+        effect, low, high, p = ols_phase([r[0] for r in rows], [r[1] for r in rows], [r[2] for r in rows])
+        ahead = sum(statistics.mean(r["test"] for r in runs[("main", d, m, MAIN_RANK, target)].values())
+                    > statistics.mean(r["test"] for r in runs[("main", d, m, MAIN_RANK, other)].values())
+                    for d in DATASETS for m in MODELS) if field == "test" else None
+        out.append({"other": other, "effect_sd": effect, "ci": [low, high], "p": p, "ahead_in": ahead})
+    adjusted = multipletests([row["p"] for row in out], alpha=ALPHA, method="holm")[1]
+    for row, p_holm in zip(out, adjusted):
+        row["p_holm"] = float(p_holm)
     return out
 
 
@@ -473,7 +488,9 @@ def post_hoc(runs, tests):
             "model_interaction_test_loss": model_interaction(runs, "test_loss", -1),
             "bonferroni_all": bonferroni_all(tests),
             "translation": {dataset: translation_checks(runs, dataset) for dataset in TRANSLATION},
-            "grid_edge_lr": grid_edges()}
+            "grid_edge_lr": grid_edges(),
+            "phase_lora_vs_all": {"test": method_vs_all(runs, "polar", "test", 1),
+                                  "test_loss": method_vs_all(runs, "polar", "test_loss", -1)}}
 
 
 # ---------------------------------------------------------------- tables and figures
@@ -487,7 +504,7 @@ def fmt_p(p):
     return f"{p:.3f}" if p >= 1e-3 else f"{p:.0e}"
 
 
-def write_tables(runs, base, tests, loss_tests, ablation_rows):
+def write_tables(runs, base, tests, loss_tests):
     columns = [(dataset, model) for dataset in DATASETS for model in MODELS]
     header = " & ".join(f"{TASK_NAMES[d]} {MODEL_NAMES[m]}" for d, m in columns)
 
@@ -530,9 +547,9 @@ def write_tables(runs, base, tests, loss_tests, ablation_rows):
     # translation decoding, one table per dataset: greedy (seed 1) chrF++ and runaway share; blocked chrF++ and
     # runaway share (5 seeds)
     for dataset in TRANSLATION:
-        lines = ["\\begin{tabular}{lcccccccc}", "\\toprule",
-                 " & \\multicolumn{4}{c}{0.6B} & \\multicolumn{4}{c}{1.7B} \\\\",
-                 "Method & greedy & runaway \\% & blocked & runaway \\% & greedy & runaway \\% & blocked & runaway \\% \\\\",
+        lines = ["\\begin{tabular}{l" + "cccc" * len(MODELS) + "}", "\\toprule",
+                 "".join(f" & \\multicolumn{{4}}{{c}}{{{MODEL_NAMES[m]}}}" for m in MODELS) + " \\\\",
+                 "Method" + " & greedy & runaway \\% & blocked & runaway \\%" * len(MODELS) + " \\\\",
                  "\\midrule",
                  "Base model & " + " & ".join(f"{base[(f'greedy|{dataset}', m)]:.1f} & {base[(f'runaway|{dataset}', m)]:.1f} & "
                                              f"{base[(dataset, m)]:.1f} & --" for m in MODELS) + " \\\\"]
@@ -546,15 +563,6 @@ def write_tables(runs, base, tests, loss_tests, ablation_rows):
             lines.append(f"{NAMES[kind]} & " + " & ".join(cells) + " \\\\")
         lines += ["\\bottomrule", "\\end{tabular}"]
         (OUT / f"tab_{dataset}.tex").write_text("\n".join(lines) + "\n")
-
-    # rank ablation (LoRA family, 0.6B)
-    lines = ["\\begin{tabular}{lcccccc}", "\\toprule", "Task & rank & seeds & LoRA & Phase LoRA & $\\Delta$ & 95\\% CI \\\\",
-             "\\midrule"]
-    for row in ablation_rows:
-        lines.append(f"{TASK_NAMES[row['dataset']]} & {row['rank']} & {row['seeds']} & {row['real']:.2f} & {row['phase']:.2f} & "
-                     f"{row['delta']:+.2f} & [{row['ci'][0]:+.2f}, {row['ci'][1]:+.2f}] \\\\")
-    lines += ["\\bottomrule", "\\end{tabular}"]
-    (OUT / "tab_ablation.tex").write_text("\n".join(lines) + "\n")
 
 
 def write_figures(runs):
@@ -591,13 +599,11 @@ def main():
     tests = family_tests(runs, "test", 1)
     loss_tests = family_tests(runs, "test_loss", -1)
     pooled = {"test": pooled_sensitivity(runs, "test", 1), "test_loss": pooled_sensitivity(runs, "test_loss", -1)}
-    ablation_rows = ablation(runs)
-    write_tables(runs, base, tests, loss_tests, ablation_rows)
+    write_tables(runs, base, tests, loss_tests)
     write_figures(runs)
     numbers = {
         "block_rule": json.loads(next(iter(BLOCK_RULES))),
         "tests": tests, "loss_tests": loss_tests, "sensitivity": sensitivity(runs), "pooled_sensitivity": pooled,
-        "ablation": ablation_rows,
         "bootstrap_draws": BOOTSTRAP_DRAWS,     # a bootstrap_p of 0 means p < 1 / draws
         "post_hoc": post_hoc(runs, tests),
         "base": {f"{d}|{m}": v for (d, m), v in base.items()},

@@ -1,9 +1,0 @@
-Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 11809.04it/s]
-[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
-polar: 1146.9K trainable, 1119 examples, 3072 tokens/batch, 1-83 rows/step, 26 steps over 1 epochs
-  step    0  ep 0.00  eval 2.7963  (before training)
-  step    13  ep 0.50  eval 0.4516  train 2.3898  6s
-  step    26  ep 1.00  eval 0.4293  train 1.9360  14s
-  best eval 0.4293   -> runs/polar_r8_lr0.0003_e1_arc_qwen3-0.6b-base_s1_2f6a5a2b45.json
-  weights -> runs/polar_r8_lr0.0003_e1_arc_qwen3-0.6b-base_s1_2f6a5a2b45.pt
-  peak VRAM 6.58 GB used, 8.36 GB reserved

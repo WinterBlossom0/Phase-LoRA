@@ -1,0 +1,40 @@
+{
+ "tag": "phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s2_ccc6398a92",
+ "args": {
+  "kind": "phase_stiefel",
+  "model": "lfm3-1.7b-base",
+  "rank": 64,
+  "alpha": 64.0,
+  "lr": 0.003,
+  "train": 1000000,
+  "eval": 1000000,
+  "epochs": 5,
+  "eval_every": 13,
+  "max_tokens": 3072,
+  "grad_ckpt": "on",
+  "seed": 2,
+  "dataset": "arc",
+  "clip": 1.0,
+  "patience": 0,
+  "lam": 0.5
+ },
+ "metric": "WikiText-103 test mean NLL (nats/token)",
+ "nll": 2.425421220267666,
+ "perplexity": 11.306991577148438,
+ "base_nll": 2.3592254012517366,
+ "forgetting": 0.0661958190159293,
+ "scored_tokens": 294768,
+ "text_tokens": 295824,
+ "window": 2048,
+ "wikitext": {
+  "repository": "Salesforce/wikitext",
+  "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+  "file": "wikitext-103-raw-v1/test-00000-of-00001.parquet",
+  "sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83"
+ },
+ "code_version": "ecd11620d433",
+ "gpu": "NVIDIA H100 80GB HBM3",
+ "torch": "2.13.0+cu130",
+ "transformers": "5.18.0",
+ "python": "3.13.3"
+}

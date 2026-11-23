@@ -354,29 +354,21 @@ Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9932
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8475.77it/s]
-  chrF++  28.06     74s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_e7bbf16be7
-  loss   2.53      7s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s1_e7bbf16be7
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9456.04it/s]
-  chrF++  29.10     89s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s1_0317ca780a
-  loss   2.47      7s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s1_0317ca780a
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9284.60it/s]
-  loss   0.09      1s  additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s1_19a2bc2d8c
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9489.72it/s]
-  loss   0.08      1s  polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s1_9327f584d9
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8019.50it/s]
-  loss   0.39      4s  additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s1_f8073d83eb
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8516.41it/s]
-  loss   0.40      4s  polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s1_6453a8779a
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7967.71it/s]
@@ -536,29 +528,21 @@ Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8624
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7537.98it/s]
-  chrF++  28.52    125s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_923bef678c
-  loss   2.52      7s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s2_923bef678c
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9183.22it/s]
-  chrF++  29.43    160s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s2_c084af5a6a
-  loss   2.46      7s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s2_c084af5a6a
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8997.79it/s]
-  loss   0.09      1s  additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s2_4ac1bcd7fb
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 10232.91it/s]
-  loss   0.10      1s  polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s2_9e01a25278
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8544.00it/s]
-  loss   0.40      4s  additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s2_7b8ccd7b4d
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9991.66it/s]
-  loss   0.43      4s  polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s2_d3b2dcebc6
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9710.41it/s]
@@ -718,29 +702,21 @@ Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9037
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9374.64it/s]
-  chrF++  29.02    119s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_92461fefac
-  loss   2.52      7s  additive_r8_lr0.003_e5_mafand_tsn_qwen3-0.6b-base_s3_92461fefac
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8257.61it/s]
-  chrF++  29.38    114s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s3_e94aba9804
-  loss   2.46      7s  polar_r8_lr0.01_e5_mafand_tsn_qwen3-0.6b-base_s3_e94aba9804
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9187.77it/s]
-  loss   0.09      1s  additive_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s3_d203e8da08
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9349.36it/s]
-  loss   0.09      1s  polar_r8_lr0.003_e5_svamp_qwen3-0.6b-base_s3_517731f1a6
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9396.05it/s]
-  loss   0.42      4s  additive_r8_lr0.001_e5_arc_qwen3-0.6b-base_s3_0f1d2487db
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9778.92it/s]
-  loss   0.44      4s  polar_r8_lr0.003_e5_arc_qwen3-0.6b-base_s3_3b408696d2
 
 Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
 Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9998.80it/s]

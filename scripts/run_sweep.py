@@ -6,8 +6,7 @@
   python scripts/run_sweep.py --phase all --dry-run   # list runs, start nothing
   python scripts/run_sweep.py --phase list [--datasets ...] [--seeds ...]   # result files of the main runs
 
-The design has two blocks. Main: three adapter families, each with its phase twin, at rank 64 on both
-models, all datasets, 5 seeds. Ablation: the LoRA family at rank 8 on the 0.6B model, 3 seeds.
+The design: three adapter families, each with its phase twin, at rank 64 on every model, all datasets, 5 seeds.
 
 Every run is one train_compare.py process under the shared GPU lock. A run whose
 result file exists is skipped, so after a crash the same command resumes. A failed
@@ -39,13 +38,15 @@ from phase_lora.train_utils import build_data, token_batches
 
 # The protocol. Each value is a decision of the owner.
 # The whole design runs end to end in about 29 GPU-hours on one 16 GB laptop GPU (see scripts/reproduce.sh).
-MODELS = ["qwen3-0.6b-base", "qwen3-1.7b-base"]
+MODELS = ["qwen3-0.6b-base", "qwen3-1.7b-base", "lfm3-1.7b-base"]
+# LFM3-1.7B needs transformers >= 5.18 (its model code), so its runs use .venv-lfm3 (requirements-lfm3.txt);
+# the other models use the interpreter that runs this script
+INTERPRETERS = {"lfm3-1.7b-base": ROOT / ".venv-lfm3" / "bin" / "python"}
 DATASETS = ["mafand_tsn", "mafand_lug", "svamp", "arc"]
 FAMILIES = {"LoRA": ("additive", "polar"), "DoRA": ("dora", "phase_dora"), "PoLAR": ("stiefel", "phase_stiefel")}
 KINDS = [kind for pair in FAMILIES.values() for kind in pair]
 SEEDS = [1, 2, 3, 4, 5]
-BLOCKS = [{"models": MODELS, "kinds": KINDS, "ranks": [64], "seeds": SEEDS},                  # main
-          {"models": ["qwen3-0.6b-base"], "kinds": list(FAMILIES["LoRA"]), "ranks": [8], "seeds": [1, 2, 3]}]   # rank ablation
+BLOCKS = [{"models": MODELS, "kinds": KINDS, "ranks": [64], "seeds": SEEDS}]
 EPOCHS = 5
 # 1e-2 because PoLAR's paper tunes it at 4e-3 with a 4x larger update scale (alpha 32, r 8)
 LR_GRID = [3e-4, 1e-3, 3e-3, 1e-2]
@@ -66,7 +67,7 @@ STOP = threading.Event()
 
 def eval_every(model):
     """Steps between dev evals per dataset, so each epoch gets EVALS_PER_EPOCH evals."""
-    tok = AutoTokenizer.from_pretrained(MODEL_DIR / model)
+    tok = AutoTokenizer.from_pretrained(MODEL_DIR / model, trust_remote_code=True)
     out = {}
     for dataset in DATASETS:
         lengths = [len(x) for x, _ in build_data(tok, "train", FIXED["train"], dataset)]
@@ -148,7 +149,9 @@ def free_ram_kb():
 
 def run_one(argv, log_path):
     """One run under the GPU lock. Returns its exit code, or None if RAM ran low."""
-    command = ["flock", GPU_LOCK, sys.executable, str(ROOT / "scripts" / "train_compare.py"), *argv]
+    model = argv[argv.index("--model") + 1] if "--model" in argv else None
+    interpreter = INTERPRETERS.get(model, sys.executable)
+    command = ["flock", GPU_LOCK, str(interpreter), str(ROOT / "scripts" / "train_compare.py"), *argv]
     with open(log_path, "a") as log:          # a retry keeps the first attempt's traceback
         # own process group, so the watchdog stops flock, the launcher and python together
         child = subprocess.Popen(command, stdout=log, stderr=subprocess.STDOUT, cwd=ROOT, start_new_session=True)

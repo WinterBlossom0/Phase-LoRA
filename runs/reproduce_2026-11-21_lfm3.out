@@ -1,0 +1,823 @@
+=== 2026-11-21 17:01:23 UTC LFM3-1.7B grid (stop at 18:30 UTC)
+evals every {'qwen3-0.6b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'qwen3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'lfm3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}} steps
+grid: 608 runs, 416 already done, 192 to run
+  grid [1/192] ok     83s  additive_r64_lr0.0003_e1_mafand_tsn_lfm3-1.7b-base_s1_2432bfb05b
+  grid [2/192] ok     78s  additive_r64_lr0.001_e1_mafand_tsn_lfm3-1.7b-base_s1_37fcd6e162
+  grid [3/192] ok     81s  additive_r64_lr0.003_e1_mafand_tsn_lfm3-1.7b-base_s1_32d8dbb70b
+  grid [4/192] ok     85s  additive_r64_lr0.01_e1_mafand_tsn_lfm3-1.7b-base_s1_66a728d3af
+  grid [5/192] ok     86s  polar_r64_lr0.0003_e1_mafand_tsn_lfm3-1.7b-base_s1_d57884f2c9
+  grid [6/192] ok     89s  polar_r64_lr0.001_e1_mafand_tsn_lfm3-1.7b-base_s1_000cd5a8c1
+  grid [7/192] ok     90s  polar_r64_lr0.003_e1_mafand_tsn_lfm3-1.7b-base_s1_a6855598ee
+  grid [8/192] ok     88s  polar_r64_lr0.01_e1_mafand_tsn_lfm3-1.7b-base_s1_9fb60c81e1
+  grid [9/192] ok     92s  dora_r64_lr0.0003_e1_mafand_tsn_lfm3-1.7b-base_s1_6b7916e8b1
+  grid [10/192] ok     90s  dora_r64_lr0.001_e1_mafand_tsn_lfm3-1.7b-base_s1_e2ee7b147f
+  grid [11/192] ok     93s  dora_r64_lr0.003_e1_mafand_tsn_lfm3-1.7b-base_s1_f72e4127f3
+  grid [12/192] ok     94s  dora_r64_lr0.01_e1_mafand_tsn_lfm3-1.7b-base_s1_a64b7c4ca4
+  grid [13/192] ok     93s  phase_dora_r64_lr0.0003_e1_mafand_tsn_lfm3-1.7b-base_s1_467af3c1cb
+  grid [14/192] ok     91s  phase_dora_r64_lr0.001_e1_mafand_tsn_lfm3-1.7b-base_s1_9b4d57c02e
+  grid [15/192] ok     94s  phase_dora_r64_lr0.003_e1_mafand_tsn_lfm3-1.7b-base_s1_eef725382c
+  grid [16/192] ok     94s  phase_dora_r64_lr0.01_e1_mafand_tsn_lfm3-1.7b-base_s1_129114e7fd
+  grid [17/192] ok     89s  stiefel_r64_lr0.0003_e1_lam0.001_mafand_tsn_lfm3-1.7b-base_s1_bad23c28c6
+  grid [18/192] ok     92s  stiefel_r64_lr0.0003_e1_lam0.005_mafand_tsn_lfm3-1.7b-base_s1_d775c2bf26
+  grid [19/192] ok     92s  stiefel_r64_lr0.0003_e1_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_3c68ae2392
+  grid [20/192] ok     90s  stiefel_r64_lr0.0003_e1_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_fdd687929c
+  grid [21/192] ok     92s  stiefel_r64_lr0.001_e1_lam0.001_mafand_tsn_lfm3-1.7b-base_s1_41561dfa27
+  grid [22/192] ok     92s  stiefel_r64_lr0.001_e1_lam0.005_mafand_tsn_lfm3-1.7b-base_s1_34d447cada
+  grid [23/192] ok     90s  stiefel_r64_lr0.001_e1_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_e38d9c2f13
+  grid [24/192] ok     92s  stiefel_r64_lr0.001_e1_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_3b1048c07b
+  grid [25/192] ok     92s  stiefel_r64_lr0.003_e1_lam0.001_mafand_tsn_lfm3-1.7b-base_s1_4a829e134e
+  grid [26/192] ok     90s  stiefel_r64_lr0.003_e1_lam0.005_mafand_tsn_lfm3-1.7b-base_s1_262cbdc3cd
+  grid [27/192] ok     93s  stiefel_r64_lr0.003_e1_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_d093e3c1f7
+  grid [28/192] ok     93s  stiefel_r64_lr0.003_e1_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_3af72f7021
+  grid [29/192] ok     90s  stiefel_r64_lr0.01_e1_lam0.001_mafand_tsn_lfm3-1.7b-base_s1_2f45c35cb6
+  grid [30/192] ok     93s  stiefel_r64_lr0.01_e1_lam0.005_mafand_tsn_lfm3-1.7b-base_s1_73a8d41436
+  grid [31/192] ok     93s  stiefel_r64_lr0.01_e1_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_8117b12e76
+  grid [32/192] ok     90s  stiefel_r64_lr0.01_e1_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_4954b0ede3
+  grid [33/192] ok     94s  phase_stiefel_r64_lr0.0003_e1_lam0.001_mafand_tsn_lfm3-1.7b-base_s1_6eb395cacd
+  grid [34/192] ok     93s  phase_stiefel_r64_lr0.0003_e1_lam0.005_mafand_tsn_lfm3-1.7b-base_s1_945d337aa7
+  grid [35/192] ok     91s  phase_stiefel_r64_lr0.0003_e1_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_c754b8e6f1
+  grid [36/192] ok     93s  phase_stiefel_r64_lr0.0003_e1_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_cdad6b3c1b
+  grid [37/192] ok     94s  phase_stiefel_r64_lr0.001_e1_lam0.001_mafand_tsn_lfm3-1.7b-base_s1_25079d776f
+  grid [38/192] ok     91s  phase_stiefel_r64_lr0.001_e1_lam0.005_mafand_tsn_lfm3-1.7b-base_s1_b26999c663
+  grid [39/192] ok     93s  phase_stiefel_r64_lr0.001_e1_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_390f52f7c2
+  grid [40/192] ok     94s  phase_stiefel_r64_lr0.001_e1_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_c11685b771
+  grid [41/192] ok     93s  phase_stiefel_r64_lr0.003_e1_lam0.001_mafand_tsn_lfm3-1.7b-base_s1_2345fab6bc
+  grid [42/192] ok     91s  phase_stiefel_r64_lr0.003_e1_lam0.005_mafand_tsn_lfm3-1.7b-base_s1_b4abc1b447
+  grid [43/192] ok     94s  phase_stiefel_r64_lr0.003_e1_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_51bfe68bad
+  grid [44/192] ok     94s  phase_stiefel_r64_lr0.003_e1_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_4b2050a9c9
+  grid [45/192] ok     92s  phase_stiefel_r64_lr0.01_e1_lam0.001_mafand_tsn_lfm3-1.7b-base_s1_4270e1cd66
+  grid [46/192] ok     94s  phase_stiefel_r64_lr0.01_e1_lam0.005_mafand_tsn_lfm3-1.7b-base_s1_e8d73616c3
+  grid [47/192] ok     94s  phase_stiefel_r64_lr0.01_e1_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_316a6502fe
+  grid [48/192] ok     92s  phase_stiefel_r64_lr0.01_e1_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_0ea7a2d063
+  grid [49/192] ok    131s  additive_r64_lr0.0003_e1_mafand_lug_lfm3-1.7b-base_s1_c2a5b06fc3
+  grid [50/192] ok    131s  additive_r64_lr0.001_e1_mafand_lug_lfm3-1.7b-base_s1_d688b35feb
+  grid [51/192] ok    131s  additive_r64_lr0.003_e1_mafand_lug_lfm3-1.7b-base_s1_431ba837be
+  grid [52/192] ok    130s  additive_r64_lr0.01_e1_mafand_lug_lfm3-1.7b-base_s1_42536afd5e
+  grid [53/192] ok    133s  polar_r64_lr0.0003_e1_mafand_lug_lfm3-1.7b-base_s1_0243c50c92
+  grid [54/192] ok    131s  polar_r64_lr0.001_e1_mafand_lug_lfm3-1.7b-base_s1_a1ca184d13
+  grid [55/192] ok    133s  polar_r64_lr0.003_e1_mafand_lug_lfm3-1.7b-base_s1_3760d25214
+  grid [56/192] ok    134s  polar_r64_lr0.01_e1_mafand_lug_lfm3-1.7b-base_s1_73a115796e
+  grid [57/192] ok    135s  dora_r64_lr0.0003_e1_mafand_lug_lfm3-1.7b-base_s1_0d33141210
+stopped by a signal
+exit 124 at 18:35:56 UTC
+=== 2026-11-22 03:35:58 UTC LFM3-1.7B grid resume
+evals every {'qwen3-0.6b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'qwen3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'lfm3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}} steps
+grid: 608 runs, 473 already done, 135 to run
+  grid [1/135] ok    116s  dora_r64_lr0.001_e1_mafand_lug_lfm3-1.7b-base_s1_1b67715437
+  grid [2/135] ok    118s  dora_r64_lr0.003_e1_mafand_lug_lfm3-1.7b-base_s1_3bba4703ed
+  grid [3/135] ok    117s  dora_r64_lr0.01_e1_mafand_lug_lfm3-1.7b-base_s1_d1e5c45d13
+  grid [4/135] ok    125s  phase_dora_r64_lr0.0003_e1_mafand_lug_lfm3-1.7b-base_s1_3ff59c3d08
+  grid [5/135] ok    124s  phase_dora_r64_lr0.001_e1_mafand_lug_lfm3-1.7b-base_s1_539ee08201
+  grid [6/135] ok    128s  phase_dora_r64_lr0.003_e1_mafand_lug_lfm3-1.7b-base_s1_101ac27e8c
+  grid [7/135] ok    126s  phase_dora_r64_lr0.01_e1_mafand_lug_lfm3-1.7b-base_s1_4329684f2f
+  grid [8/135] ok    308s  stiefel_r64_lr0.0003_e1_lam0.001_mafand_lug_lfm3-1.7b-base_s1_1c2026455a
+  grid [9/135] ok    530s  stiefel_r64_lr0.0003_e1_lam0.005_mafand_lug_lfm3-1.7b-base_s1_e0c87ff2ac
+  grid [10/135] ok    555s  stiefel_r64_lr0.0003_e1_lam0.1_mafand_lug_lfm3-1.7b-base_s1_09b6e4832a
+  grid [11/135] ok    545s  stiefel_r64_lr0.0003_e1_lam0.5_mafand_lug_lfm3-1.7b-base_s1_4e59a1ed34
+  grid [12/135] ok    127s  stiefel_r64_lr0.001_e1_lam0.001_mafand_lug_lfm3-1.7b-base_s1_e84d41379f
+  grid [13/135] ok    125s  stiefel_r64_lr0.001_e1_lam0.005_mafand_lug_lfm3-1.7b-base_s1_95642585cc
+  grid [14/135] ok    127s  stiefel_r64_lr0.001_e1_lam0.1_mafand_lug_lfm3-1.7b-base_s1_01411ee284
+  grid [15/135] ok    123s  stiefel_r64_lr0.001_e1_lam0.5_mafand_lug_lfm3-1.7b-base_s1_18db67c96b
+  grid [16/135] ok    125s  stiefel_r64_lr0.003_e1_lam0.001_mafand_lug_lfm3-1.7b-base_s1_0f90f9ec16
+  grid [17/135] ok    123s  stiefel_r64_lr0.003_e1_lam0.005_mafand_lug_lfm3-1.7b-base_s1_20e317248a
+  grid [18/135] ok    125s  stiefel_r64_lr0.003_e1_lam0.1_mafand_lug_lfm3-1.7b-base_s1_f9a9c09352
+  grid [19/135] ok    123s  stiefel_r64_lr0.003_e1_lam0.5_mafand_lug_lfm3-1.7b-base_s1_131e07dcb2
+  grid [20/135] ok    126s  stiefel_r64_lr0.01_e1_lam0.001_mafand_lug_lfm3-1.7b-base_s1_e34932a8a8
+  grid [21/135] ok    119s  stiefel_r64_lr0.01_e1_lam0.005_mafand_lug_lfm3-1.7b-base_s1_dc619382a2
+  grid [22/135] ok    124s  stiefel_r64_lr0.01_e1_lam0.1_mafand_lug_lfm3-1.7b-base_s1_da013f2ba4
+  grid [23/135] ok    122s  stiefel_r64_lr0.01_e1_lam0.5_mafand_lug_lfm3-1.7b-base_s1_be5ff17efb
+  grid [24/135] ok    127s  phase_stiefel_r64_lr0.0003_e1_lam0.001_mafand_lug_lfm3-1.7b-base_s1_40e03be1dc
+  grid [25/135] ok    124s  phase_stiefel_r64_lr0.0003_e1_lam0.005_mafand_lug_lfm3-1.7b-base_s1_1401d7188e
+  grid [26/135] ok    129s  phase_stiefel_r64_lr0.0003_e1_lam0.1_mafand_lug_lfm3-1.7b-base_s1_cea7309ec0
+  grid [27/135] ok    132s  phase_stiefel_r64_lr0.0003_e1_lam0.5_mafand_lug_lfm3-1.7b-base_s1_7e9da49b6c
+  grid [28/135] ok    126s  phase_stiefel_r64_lr0.001_e1_lam0.001_mafand_lug_lfm3-1.7b-base_s1_36b80a5804
+  grid [29/135] ok    128s  phase_stiefel_r64_lr0.001_e1_lam0.005_mafand_lug_lfm3-1.7b-base_s1_da58eae584
+  grid [30/135] ok    125s  phase_stiefel_r64_lr0.001_e1_lam0.1_mafand_lug_lfm3-1.7b-base_s1_e49c68db88
+  grid [31/135] ok    126s  phase_stiefel_r64_lr0.001_e1_lam0.5_mafand_lug_lfm3-1.7b-base_s1_f6dd3adeec
+  grid [32/135] ok    127s  phase_stiefel_r64_lr0.003_e1_lam0.001_mafand_lug_lfm3-1.7b-base_s1_80b7d323c0
+  grid [33/135] ok    124s  phase_stiefel_r64_lr0.003_e1_lam0.005_mafand_lug_lfm3-1.7b-base_s1_f232d3c8e6
+  grid [34/135] ok    127s  phase_stiefel_r64_lr0.003_e1_lam0.1_mafand_lug_lfm3-1.7b-base_s1_33c06c165b
+  grid [35/135] ok    124s  phase_stiefel_r64_lr0.003_e1_lam0.5_mafand_lug_lfm3-1.7b-base_s1_5fcd098559
+  grid [36/135] ok    127s  phase_stiefel_r64_lr0.01_e1_lam0.001_mafand_lug_lfm3-1.7b-base_s1_337eb46def
+  grid [37/135] ok    124s  phase_stiefel_r64_lr0.01_e1_lam0.005_mafand_lug_lfm3-1.7b-base_s1_ed66cfb9e0
+  grid [38/135] ok    128s  phase_stiefel_r64_lr0.01_e1_lam0.1_mafand_lug_lfm3-1.7b-base_s1_474501854d
+  grid [39/135] ok    124s  phase_stiefel_r64_lr0.01_e1_lam0.5_mafand_lug_lfm3-1.7b-base_s1_1ea54a2724
+  grid [40/135] ok     20s  additive_r64_lr0.0003_e1_svamp_lfm3-1.7b-base_s1_1f18c3197f
+  grid [41/135] ok     16s  additive_r64_lr0.001_e1_svamp_lfm3-1.7b-base_s1_e86499fdad
+  grid [42/135] ok     20s  additive_r64_lr0.003_e1_svamp_lfm3-1.7b-base_s1_36e8f18248
+  grid [43/135] ok     16s  additive_r64_lr0.01_e1_svamp_lfm3-1.7b-base_s1_536f7db23c
+  grid [44/135] ok     19s  polar_r64_lr0.0003_e1_svamp_lfm3-1.7b-base_s1_5983fe2587
+  grid [45/135] ok     16s  polar_r64_lr0.001_e1_svamp_lfm3-1.7b-base_s1_64d961cb37
+  grid [46/135] ok     20s  polar_r64_lr0.003_e1_svamp_lfm3-1.7b-base_s1_8d292b2cc4
+  grid [47/135] ok     16s  polar_r64_lr0.01_e1_svamp_lfm3-1.7b-base_s1_196949564c
+  grid [48/135] ok     19s  dora_r64_lr0.0003_e1_svamp_lfm3-1.7b-base_s1_73ee0f384d
+  grid [49/135] ok     16s  dora_r64_lr0.001_e1_svamp_lfm3-1.7b-base_s1_a16d7dcba9
+  grid [50/135] ok     20s  dora_r64_lr0.003_e1_svamp_lfm3-1.7b-base_s1_70efd85c20
+  grid [51/135] ok     16s  dora_r64_lr0.01_e1_svamp_lfm3-1.7b-base_s1_c7e3ebc8c7
+  grid [52/135] ok     19s  phase_dora_r64_lr0.0003_e1_svamp_lfm3-1.7b-base_s1_4e45cfd370
+  grid [53/135] ok     16s  phase_dora_r64_lr0.001_e1_svamp_lfm3-1.7b-base_s1_9fd9c06adc
+  grid [54/135] ok     20s  phase_dora_r64_lr0.003_e1_svamp_lfm3-1.7b-base_s1_ae93d054e1
+  grid [55/135] ok     16s  phase_dora_r64_lr0.01_e1_svamp_lfm3-1.7b-base_s1_8801770d50
+  grid [56/135] ok     19s  stiefel_r64_lr0.0003_e1_lam0.001_svamp_lfm3-1.7b-base_s1_bef8094cbe
+  grid [57/135] ok     16s  stiefel_r64_lr0.0003_e1_lam0.005_svamp_lfm3-1.7b-base_s1_c167497595
+  grid [58/135] ok     19s  stiefel_r64_lr0.0003_e1_lam0.1_svamp_lfm3-1.7b-base_s1_f60b518b91
+  grid [59/135] ok     16s  stiefel_r64_lr0.0003_e1_lam0.5_svamp_lfm3-1.7b-base_s1_c9e6a629c3
+  grid [60/135] ok     19s  stiefel_r64_lr0.001_e1_lam0.001_svamp_lfm3-1.7b-base_s1_f304053b44
+  grid [61/135] ok     16s  stiefel_r64_lr0.001_e1_lam0.005_svamp_lfm3-1.7b-base_s1_b9d3ad4160
+  grid [62/135] ok     19s  stiefel_r64_lr0.001_e1_lam0.1_svamp_lfm3-1.7b-base_s1_584c2367dc
+  grid [63/135] ok     16s  stiefel_r64_lr0.001_e1_lam0.5_svamp_lfm3-1.7b-base_s1_99b8d20594
+  grid [64/135] ok     19s  stiefel_r64_lr0.003_e1_lam0.001_svamp_lfm3-1.7b-base_s1_f1d9b141bb
+  grid [65/135] ok     16s  stiefel_r64_lr0.003_e1_lam0.005_svamp_lfm3-1.7b-base_s1_379c1f0dc6
+  grid [66/135] ok     19s  stiefel_r64_lr0.003_e1_lam0.1_svamp_lfm3-1.7b-base_s1_185e597555
+  grid [67/135] ok     16s  stiefel_r64_lr0.003_e1_lam0.5_svamp_lfm3-1.7b-base_s1_f7e43c0cdc
+  grid [68/135] ok     19s  stiefel_r64_lr0.01_e1_lam0.001_svamp_lfm3-1.7b-base_s1_874a1e843a
+  grid [69/135] ok     16s  stiefel_r64_lr0.01_e1_lam0.005_svamp_lfm3-1.7b-base_s1_faa47f8d9f
+  grid [70/135] ok     19s  stiefel_r64_lr0.01_e1_lam0.1_svamp_lfm3-1.7b-base_s1_300c64c9a0
+  grid [71/135] ok     16s  stiefel_r64_lr0.01_e1_lam0.5_svamp_lfm3-1.7b-base_s1_5348f3e72a
+  grid [72/135] ok     19s  phase_stiefel_r64_lr0.0003_e1_lam0.001_svamp_lfm3-1.7b-base_s1_3bd28d2ec9
+  grid [73/135] ok     16s  phase_stiefel_r64_lr0.0003_e1_lam0.005_svamp_lfm3-1.7b-base_s1_c3118cecaf
+  grid [74/135] ok     20s  phase_stiefel_r64_lr0.0003_e1_lam0.1_svamp_lfm3-1.7b-base_s1_20b50e512c
+  grid [75/135] ok     16s  phase_stiefel_r64_lr0.0003_e1_lam0.5_svamp_lfm3-1.7b-base_s1_8b0c10f60b
+  grid [76/135] ok     20s  phase_stiefel_r64_lr0.001_e1_lam0.001_svamp_lfm3-1.7b-base_s1_13e009c63e
+  grid [77/135] ok     16s  phase_stiefel_r64_lr0.001_e1_lam0.005_svamp_lfm3-1.7b-base_s1_6ab7c68ed3
+  grid [78/135] ok     20s  phase_stiefel_r64_lr0.001_e1_lam0.1_svamp_lfm3-1.7b-base_s1_990035efdf
+  grid [79/135] ok     16s  phase_stiefel_r64_lr0.001_e1_lam0.5_svamp_lfm3-1.7b-base_s1_8b11762d6d
+  grid [80/135] ok     20s  phase_stiefel_r64_lr0.003_e1_lam0.001_svamp_lfm3-1.7b-base_s1_1c71803d3e
+  grid [81/135] ok     17s  phase_stiefel_r64_lr0.003_e1_lam0.005_svamp_lfm3-1.7b-base_s1_489e1ab12e
+  grid [82/135] ok     19s  phase_stiefel_r64_lr0.003_e1_lam0.1_svamp_lfm3-1.7b-base_s1_e10f342f09
+  grid [83/135] ok     16s  phase_stiefel_r64_lr0.003_e1_lam0.5_svamp_lfm3-1.7b-base_s1_f44a53a53e
+  grid [84/135] ok     20s  phase_stiefel_r64_lr0.01_e1_lam0.001_svamp_lfm3-1.7b-base_s1_cf9aaef062
+  grid [85/135] ok     17s  phase_stiefel_r64_lr0.01_e1_lam0.005_svamp_lfm3-1.7b-base_s1_23b07ee0a7
+  grid [86/135] ok     20s  phase_stiefel_r64_lr0.01_e1_lam0.1_svamp_lfm3-1.7b-base_s1_d303c1c93e
+  grid [87/135] ok     17s  phase_stiefel_r64_lr0.01_e1_lam0.5_svamp_lfm3-1.7b-base_s1_cf88472f99
+  grid [88/135] ok     30s  additive_r64_lr0.0003_e1_arc_lfm3-1.7b-base_s1_9b12384a2e
+  grid [89/135] ok     31s  additive_r64_lr0.001_e1_arc_lfm3-1.7b-base_s1_e26daf627f
+  grid [90/135] ok     31s  additive_r64_lr0.003_e1_arc_lfm3-1.7b-base_s1_d8e76843d4
+  grid [91/135] ok     31s  additive_r64_lr0.01_e1_arc_lfm3-1.7b-base_s1_b09ca0d29f
+  grid [92/135] ok     31s  polar_r64_lr0.0003_e1_arc_lfm3-1.7b-base_s1_82d4bc75a9
+  grid [93/135] ok     31s  polar_r64_lr0.001_e1_arc_lfm3-1.7b-base_s1_00048607bf
+  grid [94/135] ok     28s  polar_r64_lr0.003_e1_arc_lfm3-1.7b-base_s1_e524e7f4ba
+  grid [95/135] ok     32s  polar_r64_lr0.01_e1_arc_lfm3-1.7b-base_s1_61a025cc26
+  grid [96/135] ok     32s  dora_r64_lr0.0003_e1_arc_lfm3-1.7b-base_s1_1b17c2c88e
+  grid [97/135] ok     32s  dora_r64_lr0.001_e1_arc_lfm3-1.7b-base_s1_6a3281445a
+  grid [98/135] ok     31s  dora_r64_lr0.003_e1_arc_lfm3-1.7b-base_s1_05cb3f72f7
+  grid [99/135] ok     31s  dora_r64_lr0.01_e1_arc_lfm3-1.7b-base_s1_35dc76ad7c
+  grid [100/135] ok     32s  phase_dora_r64_lr0.0003_e1_arc_lfm3-1.7b-base_s1_36aca8ecac
+  grid [101/135] ok     32s  phase_dora_r64_lr0.001_e1_arc_lfm3-1.7b-base_s1_12a74c07bf
+  grid [102/135] ok     29s  phase_dora_r64_lr0.003_e1_arc_lfm3-1.7b-base_s1_390fb2de38
+  grid [103/135] ok     32s  phase_dora_r64_lr0.01_e1_arc_lfm3-1.7b-base_s1_9067ffc42f
+  grid [104/135] ok     31s  stiefel_r64_lr0.0003_e1_lam0.001_arc_lfm3-1.7b-base_s1_9018231ad0
+  grid [105/135] ok     31s  stiefel_r64_lr0.0003_e1_lam0.005_arc_lfm3-1.7b-base_s1_ffa7da79f8
+  grid [106/135] ok     31s  stiefel_r64_lr0.0003_e1_lam0.1_arc_lfm3-1.7b-base_s1_aefea3c460
+  grid [107/135] ok     31s  stiefel_r64_lr0.0003_e1_lam0.5_arc_lfm3-1.7b-base_s1_3164a934e7
+  grid [108/135] ok     31s  stiefel_r64_lr0.001_e1_lam0.001_arc_lfm3-1.7b-base_s1_c1561e2fef
+  grid [109/135] ok     31s  stiefel_r64_lr0.001_e1_lam0.005_arc_lfm3-1.7b-base_s1_7da7e02dc3
+  grid [110/135] ok     27s  stiefel_r64_lr0.001_e1_lam0.1_arc_lfm3-1.7b-base_s1_506b356459
+  grid [111/135] ok     31s  stiefel_r64_lr0.001_e1_lam0.5_arc_lfm3-1.7b-base_s1_21800e3dc6
+  grid [112/135] ok     31s  stiefel_r64_lr0.003_e1_lam0.001_arc_lfm3-1.7b-base_s1_38e8ee2031
+  grid [113/135] ok     31s  stiefel_r64_lr0.003_e1_lam0.005_arc_lfm3-1.7b-base_s1_a47cd808c9
+  grid [114/135] ok     31s  stiefel_r64_lr0.003_e1_lam0.1_arc_lfm3-1.7b-base_s1_6fb255173e
+  grid [115/135] ok     33s  stiefel_r64_lr0.003_e1_lam0.5_arc_lfm3-1.7b-base_s1_fcac315743
+  grid [116/135] ok     32s  stiefel_r64_lr0.01_e1_lam0.001_arc_lfm3-1.7b-base_s1_69cd6f27ac
+  grid [117/135] ok     28s  stiefel_r64_lr0.01_e1_lam0.005_arc_lfm3-1.7b-base_s1_4e7588e430
+  grid [118/135] ok     31s  stiefel_r64_lr0.01_e1_lam0.1_arc_lfm3-1.7b-base_s1_9c2dbdb057
+  grid [119/135] ok     32s  stiefel_r64_lr0.01_e1_lam0.5_arc_lfm3-1.7b-base_s1_d619e98971
+  grid [120/135] ok     32s  phase_stiefel_r64_lr0.0003_e1_lam0.001_arc_lfm3-1.7b-base_s1_d349596b9e
+  grid [121/135] ok     32s  phase_stiefel_r64_lr0.0003_e1_lam0.005_arc_lfm3-1.7b-base_s1_5b959ab068
+  grid [122/135] ok     32s  phase_stiefel_r64_lr0.0003_e1_lam0.1_arc_lfm3-1.7b-base_s1_fcc149b207
+  grid [123/135] ok     32s  phase_stiefel_r64_lr0.0003_e1_lam0.5_arc_lfm3-1.7b-base_s1_d4e1d6faa0
+  grid [124/135] ok     31s  phase_stiefel_r64_lr0.001_e1_lam0.001_arc_lfm3-1.7b-base_s1_2b2f67abe4
+  grid [125/135] ok     32s  phase_stiefel_r64_lr0.001_e1_lam0.005_arc_lfm3-1.7b-base_s1_b43ae4022b
+  grid [126/135] ok     28s  phase_stiefel_r64_lr0.001_e1_lam0.1_arc_lfm3-1.7b-base_s1_894e681494
+  grid [127/135] ok     32s  phase_stiefel_r64_lr0.001_e1_lam0.5_arc_lfm3-1.7b-base_s1_8e181f4c33
+  grid [128/135] ok     31s  phase_stiefel_r64_lr0.003_e1_lam0.001_arc_lfm3-1.7b-base_s1_ec23d6295c
+  grid [129/135] ok     32s  phase_stiefel_r64_lr0.003_e1_lam0.005_arc_lfm3-1.7b-base_s1_ed0cee9d8c
+  grid [130/135] ok     32s  phase_stiefel_r64_lr0.003_e1_lam0.1_arc_lfm3-1.7b-base_s1_026a61400d
+  grid [131/135] ok     31s  phase_stiefel_r64_lr0.003_e1_lam0.5_arc_lfm3-1.7b-base_s1_353a1e5927
+  grid [132/135] ok     31s  phase_stiefel_r64_lr0.01_e1_lam0.001_arc_lfm3-1.7b-base_s1_5d7218dde1
+  grid [133/135] ok     28s  phase_stiefel_r64_lr0.01_e1_lam0.005_arc_lfm3-1.7b-base_s1_5f724622cc
+  grid [134/135] ok     31s  phase_stiefel_r64_lr0.01_e1_lam0.1_arc_lfm3-1.7b-base_s1_fed30e6dc8
+  grid [135/135] ok     32s  phase_stiefel_r64_lr0.01_e1_lam0.5_arc_lfm3-1.7b-base_s1_86f5cc8157
+grid: finished, 0 failed
+exit 0 at 06:00:14 UTC
+=== 2026-11-22 06:00:29 UTC selection check against runs/backup/selected_hparams_2026-11-22_before_lfm3.json
+56 backup entries, 0 changed; 24 added
+  lfm3-1.7b-base|arc|additive|64: lr 0.001 lam None dev loss 0.2712
+  lfm3-1.7b-base|arc|dora|64: lr 0.001 lam None dev loss 0.2725
+  lfm3-1.7b-base|arc|phase_dora|64: lr 0.001 lam None dev loss 0.2784
+  lfm3-1.7b-base|arc|phase_stiefel|64: lr 0.003 lam 0.5 dev loss 0.2767
+  lfm3-1.7b-base|arc|polar|64: lr 0.001 lam None dev loss 0.2801
+  lfm3-1.7b-base|arc|stiefel|64: lr 0.001 lam 0.001 dev loss 0.2756
+  lfm3-1.7b-base|mafand_lug|additive|64: lr 0.003 lam None dev loss 3.0252
+  lfm3-1.7b-base|mafand_lug|dora|64: lr 0.003 lam None dev loss 3.0189
+  lfm3-1.7b-base|mafand_lug|phase_dora|64: lr 0.01 lam None dev loss 3.0257
+  lfm3-1.7b-base|mafand_lug|phase_stiefel|64: lr 0.01 lam 0.1 dev loss 3.1758
+  lfm3-1.7b-base|mafand_lug|polar|64: lr 0.01 lam None dev loss 3.0750
+  lfm3-1.7b-base|mafand_lug|stiefel|64: lr 0.01 lam 0.1 dev loss 3.1713
+  lfm3-1.7b-base|mafand_tsn|additive|64: lr 0.003 lam None dev loss 3.2438
+  lfm3-1.7b-base|mafand_tsn|dora|64: lr 0.003 lam None dev loss 3.2479
+  lfm3-1.7b-base|mafand_tsn|phase_dora|64: lr 0.003 lam None dev loss 3.3577
+  lfm3-1.7b-base|mafand_tsn|phase_stiefel|64: lr 0.01 lam 0.1 dev loss 3.3725
+  lfm3-1.7b-base|mafand_tsn|polar|64: lr 0.003 lam None dev loss 3.3606
+  lfm3-1.7b-base|mafand_tsn|stiefel|64: lr 0.01 lam 0.5 dev loss 3.3699
+  lfm3-1.7b-base|svamp|additive|64: lr 0.003 lam None dev loss 0.1569
+  lfm3-1.7b-base|svamp|dora|64: lr 0.003 lam None dev loss 0.1457
+  lfm3-1.7b-base|svamp|phase_dora|64: lr 0.003 lam None dev loss 0.1470
+  lfm3-1.7b-base|svamp|phase_stiefel|64: lr 0.01 lam 0.005 dev loss 0.1543
+  lfm3-1.7b-base|svamp|polar|64: lr 0.003 lam None dev loss 0.1442
+  lfm3-1.7b-base|svamp|stiefel|64: lr 0.003 lam 0.1 dev loss 0.1549
+selection check passed
+=== 2026-11-22 06:00:35 UTC main runs (writes runs/selected_hparams.json, then trains)
+evals every {'qwen3-0.6b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'qwen3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'lfm3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}} steps
+main: 384 runs, 264 already done, 120 to run
+  main [1/120] ok    359s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_8e799a765b
+  main [2/120] ok    374s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_859da2fd36
+  main [3/120] ok    374s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_ed64555e73
+  main [4/120] ok    382s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_a56def4a1a
+  main [5/120] ok    368s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_dc45a63682
+  main [6/120] ok    375s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_e4c8a403ad
+  main [7/120] ok    547s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s1_d0dfe3410f
+  main [8/120] ok    560s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s1_da1d14971e
+  main [9/120] ok    565s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s1_0094ae5a66
+  main [10/120] ok    572s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s1_e3f6cac1f6
+  main [11/120] ok    552s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s1_a20ee60503
+  main [12/120] ok    563s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s1_3b2d2bd085
+  main [13/120] ok     60s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_587df885e2
+  main [14/120] ok     57s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_b236443d13
+  main [15/120] ok     61s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_e4d29afb78
+  main [16/120] ok     62s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_3b27b9f332
+  main [17/120] ok     57s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s1_17eefa6d38
+  main [18/120] ok     61s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s1_1a9391df4f
+  main [19/120] ok    121s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_90f75a9488
+  main [20/120] ok    120s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_df8ca336eb
+  main [21/120] ok    121s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_4daa268736
+  main [22/120] ok    126s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_cf947330c5
+  main [23/120] ok    120s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s1_2ea0e24d96
+  main [24/120] ok    125s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s1_7e6ae214c1
+  main [25/120] ok    370s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_43c4877d15
+  main [26/120] ok    372s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_e326b6969b
+  main [27/120] ok    373s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_3e361607ad
+  main [28/120] ok    381s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_36c2005b0c
+  main [29/120] ok    366s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s2_f45822c9f6
+  main [30/120] ok    373s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s2_01eb4b3388
+  main [31/120] ok    548s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s2_2043ba2505
+  main [32/120] ok    559s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s2_890c28fee6
+  main [33/120] ok    565s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s2_ee42d83226
+  main [34/120] ok    574s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s2_fdfcd01698
+  main [35/120] ok    555s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s2_16c1f9fb9f
+  main [36/120] ok    563s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s2_f8ffc1c307
+  main [37/120] ok     58s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_c80c747197
+  main [38/120] ok     60s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_fb4bc09027
+  main [39/120] ok     61s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_589f1e68e0
+  main [40/120] ok     61s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_6923eadbc5
+  main [41/120] ok     59s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s2_31de989fa7
+  main [42/120] ok     60s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s2_540b1fb301
+  main [43/120] ok    120s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_ba2b7d9ba3
+  main [44/120] ok    122s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_2ebd82a4d6
+  main [45/120] ok    123s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_b001ab8548
+  main [46/120] ok    125s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_8f48964043
+  main [47/120] ok    122s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s2_943f449850
+  main [48/120] ok    123s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s2_ccc6398a92
+  main [49/120] ok    364s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_1b2fb41387
+  main [50/120] ok    371s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_b5484cb947
+  main [51/120] ok    375s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_ca344088f3
+  main [52/120] ok    380s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_5839316e0c
+  main [53/120] ok    369s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s3_f421d6d071
+  main [54/120] ok    374s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s3_7fa4cf23be
+  main [55/120] ok    548s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s3_10cc29cc1f
+  main [56/120] ok    560s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s3_846914dc86
+  main [57/120] ok    562s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s3_02daeeaee8
+  main [58/120] ok    584s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s3_6baf81650b
+  main [59/120] ok    557s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s3_52318141f9
+  main [60/120] ok    564s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s3_96554e29c9
+  main [61/120] ok     59s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_c73b50e7f9
+  main [62/120] ok     60s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_98e132619a
+  main [63/120] ok     60s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_f9b819db6f
+  main [64/120] ok     61s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_dbbac7f855
+  main [65/120] ok     59s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s3_230d71b708
+  main [66/120] ok     61s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s3_6d46f0ba9f
+  main [67/120] ok    120s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_6aaad5eee3
+  main [68/120] ok    122s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_dc308ed01d
+  main [69/120] ok    124s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_a160d530fe
+  main [70/120] ok    125s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_19b57feee7
+  main [71/120] ok    122s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s3_6328d1c4cb
+  main [72/120] ok    123s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s3_4a5be83f42
+  main [73/120] ok    366s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_f6b1f304f3
+  main [74/120] ok    373s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_0f3c1d7ea1
+  main [75/120] ok    378s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_2cfe39ecbd
+  main [76/120] ok    384s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_ef47497ced
+  main [77/120] ok    374s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s4_06e6b0b08b
+  main [78/120] ok    378s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s4_a4527fce66
+  main [79/120] ok    558s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s4_fcf9b2d9fe
+stopped by a signal
+=== 2026-11-22 12:22:12 UTC STOPPED: main phase exited non-zero
+=== 2026-11-23 01:43:34 UTC main runs, resumed
+evals every {'qwen3-0.6b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'qwen3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}, 'lfm3-1.7b-base': {'mafand_tsn': 33, 'mafand_lug': 58, 'svamp': 7, 'arc': 13}} steps
+main: 384 runs, 343 already done, 41 to run
+  main [1/41] ok    520s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s4_3e4901698d
+  main [2/41] ok    529s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s4_8677065226
+  main [3/41] ok    541s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s4_fcab83a198
+  main [4/41] ok    523s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s4_29d5a11ac5
+  main [5/41] ok    543s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s4_285d3c54d0
+  main [6/41] ok     56s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_343f643537
+  main [7/41] ok     59s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_c43670b5f2
+  main [8/41] ok     59s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_bdedeb43a7
+  main [9/41] ok     60s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_e9778134c1
+  main [10/41] ok     56s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s4_740157085c
+  main [11/41] ok     61s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s4_9d7d741a3e
+  main [12/41] ok    114s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_949f74846d
+  main [13/41] ok    120s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_20f60109cb
+  main [14/41] ok    118s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_b9bf3a959d
+  main [15/41] ok    120s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_ab046328d4
+  main [16/41] ok    119s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s4_f9e40e14db
+  main [17/41] ok    119s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s4_805a8e8f5d
+  main [18/41] ok    350s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_7af6b1031c
+  main [19/41] ok    359s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_cdf733b5b5
+  main [20/41] ok    361s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_100b6342eb
+  main [21/41] ok    366s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_0853fc9212
+  main [22/41] ok    356s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s5_519ecc31d4
+  main [23/41] ok    366s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s5_ebf110b1d6
+  main [24/41] ok    528s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s5_8c67ccf1cc
+  main [25/41] ok    538s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s5_8412299834
+  main [26/41] ok    543s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s5_0c4584ab95
+  main [27/41] ok    554s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s5_b73ba19625
+  main [28/41] ok    533s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s5_c44926cdfc
+  main [29/41] ok    553s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s5_83962541bb
+  main [30/41] ok     59s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_05f12f268e
+  main [31/41] ok     60s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_c407a74c44
+  main [32/41] ok     58s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_b53a3c58d2
+  main [33/41] ok     61s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_4a221ac8ca
+  main [34/41] ok     60s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s5_7e69325c8b
+  main [35/41] ok     61s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s5_e171139dbf
+  main [36/41] ok    116s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_6c3d6db637
+  main [37/41] ok    118s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_69ec5cbbd8
+  main [38/41] ok    121s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_ae2bdcd753
+  main [39/41] ok    120s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_a1f56a4864
+  main [40/41] ok    120s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s5_1320ab5250
+  main [41/41] ok    120s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s5_b795307a28
+main: finished, 0 failed
+=== 2026-11-23 04:33:41 UTC lists of the LFM3 main runs to score
+120 LFM3 main runs; 72 greedy scores
+=== 2026-11-23 04:34:02 UTC STOPPED: expected 120 main runs and 52 greedy scores
+=== 2026-11-23 04:34:38 UTC base models: greedy, repetition-blocked translation, test loss (Qwen bases are current and skipped)
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10600.10it/s]
+  chrF++   5.53    182s  base_lfm3-1.7b-base_mafand_tsn
+  chrF++  10.16    199s  base_lfm3-1.7b-base_mafand_tsn
+  loss   4.91     10s  base_lfm3-1.7b-base_mafand_tsn
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8896.72it/s]
+  chrF++   9.01    174s  base_lfm3-1.7b-base_mafand_lug
+  chrF++  14.49    186s  base_lfm3-1.7b-base_mafand_lug
+  loss   5.00     11s  base_lfm3-1.7b-base_mafand_lug
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10614.64it/s]
+  accuracy   6.33      4s  base_lfm3-1.7b-base_svamp
+  loss   1.78      1s  base_lfm3-1.7b-base_svamp
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8520.95it/s]
+  accuracy  69.88      6s  base_lfm3-1.7b-base_arc
+  loss   2.91      6s  base_lfm3-1.7b-base_arc
+=== 2026-11-23 04:47:49 UTC repetition-blocked translation scores and test loss of every LFM3 main run
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 13395.10it/s]
+  chrF++  33.65     70s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_8e799a765b
+  loss   2.32     10s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_8e799a765b
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9480.75it/s]
+  chrF++  32.70     90s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_859da2fd36
+  loss   2.38     11s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_859da2fd36
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11282.96it/s]
+  chrF++  33.83     64s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_ed64555e73
+  loss   2.32     11s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_ed64555e73
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8544.38it/s]
+  chrF++  32.98     74s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_a56def4a1a
+  loss   2.38     14s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_a56def4a1a
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7183.75it/s]
+  chrF++  32.56     92s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_dc45a63682
+  loss   2.34     14s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_dc45a63682
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8730.12it/s]
+  chrF++  31.61     90s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_e4c8a403ad
+  loss   2.39     14s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_e4c8a403ad
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9352.72it/s]
+  chrF++  31.63     38s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s1_d0dfe3410f
+  loss   2.42      9s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s1_d0dfe3410f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8583.38it/s]
+  chrF++  29.80     51s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s1_da1d14971e
+  loss   2.55      9s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s1_da1d14971e
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 12151.12it/s]
+  chrF++  31.58     47s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s1_0094ae5a66
+  loss   2.43     11s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s1_0094ae5a66
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11426.77it/s]
+  chrF++  29.76     41s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s1_e3f6cac1f6
+  loss   2.52      9s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s1_e3f6cac1f6
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 6458.61it/s]
+  chrF++  30.56     36s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s1_a20ee60503
+  loss   2.46     11s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s1_a20ee60503
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8428.45it/s]
+  chrF++  29.94     36s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s1_3b2d2bd085
+  loss   2.49      9s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s1_3b2d2bd085
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10356.57it/s]
+  loss   0.09      1s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_587df885e2
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10351.03it/s]
+  loss   0.08      1s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_b236443d13
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7562.93it/s]
+  loss   0.09      1s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_e4d29afb78
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8876.64it/s]
+  loss   0.08      1s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_3b27b9f332
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9663.21it/s]
+  loss   0.08      4s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s1_17eefa6d38
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9570.76it/s]
+  loss   0.08      1s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s1_1a9391df4f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11754.05it/s]
+  loss   0.31      6s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_90f75a9488
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9658.85it/s]
+  loss   0.27      6s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_df8ca336eb
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8392.13it/s]
+  loss   0.30      6s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_4daa268736
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9607.40it/s]
+  loss   0.27      8s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_cf947330c5
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9051.04it/s]
+  loss   0.28      6s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s1_2ea0e24d96
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9141.26it/s]
+  loss   0.28      6s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s1_7e6ae214c1
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7737.17it/s]
+  chrF++  33.18     77s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_43c4877d15
+  loss   2.33     13s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_43c4877d15
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10566.49it/s]
+  chrF++  33.90     77s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_e326b6969b
+  loss   2.37     11s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_e326b6969b
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9809.15it/s]
+  chrF++  34.15     81s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_3e361607ad
+  loss   2.32     11s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_3e361607ad
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8464.37it/s]
+  chrF++  33.24     72s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_36c2005b0c
+  loss   2.37     13s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s2_36c2005b0c
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8901.14it/s]
+  chrF++  31.85     83s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s2_f45822c9f6
+  loss   2.34     11s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s2_f45822c9f6
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8950.29it/s]
+  chrF++  31.02     87s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s2_01eb4b3388
+  loss   2.40     11s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s2_01eb4b3388
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 6123.54it/s]
+  chrF++  31.49     32s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s2_2043ba2505
+  loss   2.43     11s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s2_2043ba2505
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8732.34it/s]
+  chrF++  30.07     38s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s2_890c28fee6
+  loss   2.52      9s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s2_890c28fee6
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10306.21it/s]
+  chrF++  31.55     51s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s2_ee42d83226
+  loss   2.43     11s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s2_ee42d83226
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8973.38it/s]
+  chrF++  29.64     48s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s2_fdfcd01698
+  loss   2.53     11s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s2_fdfcd01698
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8220.52it/s]
+  chrF++  30.42     34s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s2_16c1f9fb9f
+  loss   2.48      9s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s2_16c1f9fb9f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9291.15it/s]
+  chrF++  30.20     36s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s2_f8ffc1c307
+  loss   2.50      9s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s2_f8ffc1c307
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9991.68it/s]
+  loss   0.10      1s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_c80c747197
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9399.70it/s]
+  loss   0.08      1s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_fb4bc09027
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9779.32it/s]
+  loss   0.09      1s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_589f1e68e0
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9120.34it/s]
+  loss   0.08      1s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_6923eadbc5
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9490.58it/s]
+  loss   0.08      1s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s2_31de989fa7
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10161.29it/s]
+  loss   0.08      1s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s2_540b1fb301
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9146.56it/s]
+  loss   0.31      5s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_ba2b7d9ba3
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10587.00it/s]
+  loss   0.27      6s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_2ebd82a4d6
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8182.11it/s]
+  loss   0.30      9s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_b001ab8548
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8314.07it/s]
+  loss   0.27      6s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_8f48964043
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7134.99it/s]
+  loss   0.27      6s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s2_943f449850
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9752.85it/s]
+  loss   0.29      6s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s2_ccc6398a92
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10413.94it/s]
+  chrF++  33.89     88s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_1b2fb41387
+  loss   2.32     10s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_1b2fb41387
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8749.80it/s]
+  chrF++  33.32     84s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_b5484cb947
+  loss   2.37     11s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_b5484cb947
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9090.41it/s]
+  chrF++  33.91     97s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_ca344088f3
+  loss   2.33     11s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_ca344088f3
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9124.71it/s]
+  chrF++  33.65     59s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_5839316e0c
+  loss   2.38     11s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s3_5839316e0c
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8777.78it/s]
+  chrF++  31.65     99s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s3_f421d6d071
+  loss   2.35     10s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s3_f421d6d071
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9697.26it/s]
+  chrF++  30.96    118s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s3_7fa4cf23be
+  loss   2.40     15s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s3_7fa4cf23be
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7843.87it/s]
+  chrF++  31.81     34s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s3_10cc29cc1f
+  loss   2.44      9s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s3_10cc29cc1f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9600.10it/s]
+  chrF++  29.76     58s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s3_846914dc86
+  loss   2.55      9s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s3_846914dc86
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8323.59it/s]
+  chrF++  31.37     34s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s3_02daeeaee8
+  loss   2.44      9s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s3_02daeeaee8
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8582.28it/s]
+  chrF++  29.68     33s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s3_6baf81650b
+  loss   2.56      9s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s3_6baf81650b
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 14670.96it/s]
+  chrF++  30.54     38s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s3_52318141f9
+  loss   2.46     12s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s3_52318141f9
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9078.58it/s]
+  chrF++  30.62     47s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s3_96554e29c9
+  loss   2.49      9s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s3_96554e29c9
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9090.69it/s]
+  loss   0.09      1s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_c73b50e7f9
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9500.57it/s]
+  loss   0.08      1s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_98e132619a
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9089.52it/s]
+  loss   0.10      1s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_f9b819db6f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8755.80it/s]
+  loss   0.08      1s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_dbbac7f855
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9104.97it/s]
+  loss   0.08      1s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s3_230d71b708
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9354.84it/s]
+  loss   0.09      1s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s3_6d46f0ba9f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7954.87it/s]
+  loss   0.31      6s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_6aaad5eee3
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9340.49it/s]
+  loss   0.27      8s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_dc308ed01d
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8674.75it/s]
+  loss   0.31      6s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_a160d530fe
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8224.75it/s]
+  loss   0.27      6s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_19b57feee7
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8306.93it/s]
+  loss   0.30      6s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s3_6328d1c4cb
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8519.86it/s]
+  loss   0.29      9s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s3_4a5be83f42
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9673.73it/s]
+  chrF++  33.59     79s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_f6b1f304f3
+  loss   2.32     10s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_f6b1f304f3
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9836.74it/s]
+  chrF++  32.40     71s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_0f3c1d7ea1
+  loss   2.37     14s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_0f3c1d7ea1
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9028.15it/s]
+  chrF++  32.92     92s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_2cfe39ecbd
+  loss   2.33     14s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_2cfe39ecbd
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7088.24it/s]
+  chrF++  32.75     79s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_ef47497ced
+  loss   2.37     11s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s4_ef47497ced
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8254.06it/s]
+  chrF++  32.16     97s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s4_06e6b0b08b
+  loss   2.34     11s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s4_06e6b0b08b
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8903.06it/s]
+  chrF++  31.76     94s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s4_a4527fce66
+  loss   2.39     11s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s4_a4527fce66
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9089.59it/s]
+  chrF++  31.43     36s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s4_fcf9b2d9fe
+  loss   2.44      9s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s4_fcf9b2d9fe
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11493.67it/s]
+  chrF++  30.57     37s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s4_3e4901698d
+  loss   2.56      9s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s4_3e4901698d
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9997.17it/s]
+  chrF++  31.27     35s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s4_8677065226
+  loss   2.45     12s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s4_8677065226
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7095.49it/s]
+  chrF++  29.54     41s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s4_fcab83a198
+  loss   2.58      9s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s4_fcab83a198
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10090.86it/s]
+  chrF++  30.64     37s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s4_29d5a11ac5
+  loss   2.47      9s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s4_29d5a11ac5
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7960.47it/s]
+  chrF++  30.37     38s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s4_285d3c54d0
+  loss   2.51      9s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s4_285d3c54d0
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10220.16it/s]
+  loss   0.11      1s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_343f643537
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9672.17it/s]
+  loss   0.09      1s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_c43670b5f2
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 12816.20it/s]
+  loss   0.10      1s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_bdedeb43a7
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10045.23it/s]
+  loss   0.08      1s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_e9778134c1
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9063.63it/s]
+  loss   0.08      1s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s4_740157085c
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9489.83it/s]
+  loss   0.08      5s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s4_9d7d741a3e
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9748.41it/s]
+  loss   0.29      6s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_949f74846d
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11390.96it/s]
+  loss   0.27      6s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_20f60109cb
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9469.75it/s]
+  loss   0.29      6s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_b9bf3a959d
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10642.14it/s]
+  loss   0.27      6s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_ab046328d4
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9092.00it/s]
+  loss   0.28      6s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s4_f9e40e14db
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11427.42it/s]
+  loss   0.27      6s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s4_805a8e8f5d
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9924.80it/s]
+  chrF++  33.60     79s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_7af6b1031c
+  loss   2.32     13s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_7af6b1031c
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9427.55it/s]
+  chrF++  32.43     92s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_cdf733b5b5
+  loss   2.39     14s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_cdf733b5b5
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10251.25it/s]
+  chrF++  33.66    102s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_100b6342eb
+  loss   2.31     11s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_100b6342eb
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8496.81it/s]
+  chrF++  32.82     78s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_0853fc9212
+  loss   2.39     14s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s5_0853fc9212
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10427.61it/s]
+  chrF++  31.83    100s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s5_519ecc31d4
+  loss   2.36     11s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s5_519ecc31d4
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9303.33it/s]
+  chrF++  30.95    152s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s5_ebf110b1d6
+  loss   2.40     14s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s5_ebf110b1d6
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8737.82it/s]
+  chrF++  31.73     33s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s5_8c67ccf1cc
+  loss   2.43      9s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s5_8c67ccf1cc
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9132.91it/s]
+  chrF++  29.39     37s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s5_8412299834
+  loss   2.57      9s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s5_8412299834
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10003.59it/s]
+  chrF++  31.39     36s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s5_0c4584ab95
+  loss   2.42     12s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s5_0c4584ab95
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9131.10it/s]
+  chrF++  29.84     43s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s5_b73ba19625
+  loss   2.55      9s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s5_b73ba19625
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8580.93it/s]
+  chrF++  30.67     38s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s5_c44926cdfc
+  loss   2.47     12s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s5_c44926cdfc
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7505.15it/s]
+  chrF++  30.35     38s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s5_83962541bb
+  loss   2.49      9s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s5_83962541bb
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10034.14it/s]
+  loss   0.09      1s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_05f12f268e
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9354.91it/s]
+  loss   0.08      1s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_c407a74c44
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9580.70it/s]
+  loss   0.09      1s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_b53a3c58d2
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9602.64it/s]
+  loss   0.08      1s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_4a221ac8ca
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7547.60it/s]
+  loss   0.09      1s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s5_7e69325c8b
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9875.53it/s]
+  loss   0.09      1s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s5_e171139dbf
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9854.03it/s]
+  loss   0.29      5s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_6c3d6db637
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8961.38it/s]
+  loss   0.28      6s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_69ec5cbbd8
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9512.10it/s]
+  loss   0.29      6s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_ae2bdcd753
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 6699.98it/s]
+  loss   0.27      9s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_a1f56a4864
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10863.12it/s]
+  loss   0.28      5s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s5_1320ab5250
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11125.78it/s]
+  loss   0.27      5s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s5_b795307a28
+=== 2026-11-23 06:10:06 UTC greedy scores: SVAMP and ARC every seed, translation seed 1
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11874.82it/s]
+  accuracy  78.67      4s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_587df885e2
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7505.15it/s]
+  accuracy  80.33      7s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_b236443d13
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9196.34it/s]
+  accuracy  75.67      3s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_e4d29afb78
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10174.82it/s]
+  accuracy  80.33      3s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s1_3b27b9f332
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7912.11it/s]
+  accuracy  80.00      3s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s1_17eefa6d38
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 12160.36it/s]
+  accuracy  75.67      3s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s1_1a9391df4f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7539.07it/s]
+  accuracy  77.99      6s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_90f75a9488
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11047.60it/s]
+  accuracy  79.52      9s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_df8ca336eb
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11477.83it/s]
+  accuracy  77.99      6s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_4daa268736
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11239.51it/s]
+  accuracy  79.61      6s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s1_cf947330c5
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 12475.13it/s]
+  accuracy  78.50      6s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s1_2ea0e24d96
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11664.33it/s]
+  accuracy  78.50      9s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s1_7e6ae214c1
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9018.38it/s]
+  accuracy  73.33      3s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_c80c747197
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10992.03it/s]
+  accuracy  79.67      3s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_fb4bc09027
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11964.72it/s]
+  accuracy  75.00      3s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_589f1e68e0
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10832.91it/s]
+  accuracy  81.00      3s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s2_6923eadbc5
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11375.95it/s]
+  accuracy  79.33      3s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s2_31de989fa7
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 14006.15it/s]
+  accuracy  78.67      3s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s2_540b1fb301
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8702.38it/s]
+  accuracy  77.99      9s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_ba2b7d9ba3
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 12375.00it/s]
+  accuracy  79.01      6s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_2ebd82a4d6
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10796.15it/s]
+  accuracy  78.33      6s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_b001ab8548
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11156.31it/s]
+  accuracy  79.10      6s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s2_8f48964043
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9121.17it/s]
+  accuracy  78.92      9s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s2_943f449850
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9805.86it/s]
+  accuracy  78.16      6s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s2_ccc6398a92
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 12028.67it/s]
+  accuracy  74.67      3s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_c73b50e7f9
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9866.60it/s]
+  accuracy  80.00      3s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_98e132619a
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11065.85it/s]
+  accuracy  73.33      3s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_f9b819db6f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10128.69it/s]
+  accuracy  78.33      3s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s3_dbbac7f855
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9684.03it/s]
+  accuracy  79.33      7s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s3_230d71b708
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9665.39it/s]
+  accuracy  74.33      3s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s3_6d46f0ba9f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9241.69it/s]
+  accuracy  75.77      6s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_6aaad5eee3
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8687.82it/s]
+  accuracy  79.35      6s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_dc308ed01d
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11182.10it/s]
+  accuracy  75.68      6s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_a160d530fe
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10220.34it/s]
+  accuracy  79.27      9s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s3_19b57feee7
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10925.45it/s]
+  accuracy  77.30      6s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s3_6328d1c4cb
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9604.79it/s]
+  accuracy  78.07      6s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s3_4a5be83f42
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9261.38it/s]
+  accuracy  69.00      3s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_343f643537
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10739.61it/s]
+  accuracy  76.00      3s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_c43670b5f2
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9354.98it/s]
+  accuracy  69.33      7s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_bdedeb43a7
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8650.67it/s]
+  accuracy  81.00      3s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s4_e9778134c1
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9337.80it/s]
+  accuracy  81.67      3s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s4_740157085c
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10079.67it/s]
+  accuracy  77.00      3s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s4_9d7d741a3e
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10638.74it/s]
+  accuracy  77.05      6s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_949f74846d
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 13342.50it/s]
+  accuracy  78.84      6s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_20f60109cb
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9561.99it/s]
+  accuracy  76.79      9s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_b9bf3a959d
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7572.62it/s]
+  accuracy  78.84      6s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s4_ab046328d4
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9586.21it/s]
+  accuracy  78.33      6s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s4_f9e40e14db
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11262.73it/s]
+  accuracy  79.01      6s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s4_805a8e8f5d
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10450.77it/s]
+  accuracy  74.00      3s  additive_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_05f12f268e
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7342.17it/s]
+  accuracy  81.00      3s  polar_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_c407a74c44
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8043.69it/s]
+  accuracy  75.00      3s  dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_b53a3c58d2
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10107.35it/s]
+  accuracy  79.00      3s  phase_dora_r64_lr0.003_e5_svamp_lfm3-1.7b-base_s5_4a221ac8ca
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9778.37it/s]
+  accuracy  77.33      3s  stiefel_r64_lr0.003_e5_lam0.1_svamp_lfm3-1.7b-base_s5_7e69325c8b
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9321.47it/s]
+  accuracy  74.00      3s  phase_stiefel_r64_lr0.01_e5_lam0.005_svamp_lfm3-1.7b-base_s5_e171139dbf
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9594.42it/s]
+  accuracy  78.58      7s  additive_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_6c3d6db637
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8604.44it/s]
+  accuracy  78.24      6s  polar_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_69ec5cbbd8
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 12080.15it/s]
+  accuracy  78.33      6s  dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_ae2bdcd753
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 6439.72it/s]
+  accuracy  78.41      6s  phase_dora_r64_lr0.001_e5_arc_lfm3-1.7b-base_s5_a1f56a4864
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9066.09it/s]
+  accuracy  77.90      6s  stiefel_r64_lr0.001_e5_lam0.001_arc_lfm3-1.7b-base_s5_1320ab5250
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8421.23it/s]
+  accuracy  78.16      6s  phase_stiefel_r64_lr0.003_e5_lam0.5_arc_lfm3-1.7b-base_s5_b795307a28
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9215.77it/s]
+  chrF++  29.64    189s  additive_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_8e799a765b
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 11896.14it/s]
+  chrF++  28.31    198s  polar_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_859da2fd36
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8178.21it/s]
+  chrF++  28.56    197s  dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_ed64555e73
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9222.08it/s]
+  chrF++  27.75    196s  phase_dora_r64_lr0.003_e5_mafand_tsn_lfm3-1.7b-base_s1_a56def4a1a
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7773.02it/s]
+  chrF++  27.07    191s  stiefel_r64_lr0.01_e5_lam0.5_mafand_tsn_lfm3-1.7b-base_s1_dc45a63682
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 9002.07it/s]
+  chrF++  24.27    194s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_tsn_lfm3-1.7b-base_s1_e4c8a403ad
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8777.58it/s]
+  chrF++  29.81    178s  additive_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s1_d0dfe3410f
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8339.62it/s]
+  chrF++  25.65    189s  polar_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s1_da1d14971e
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 7885.84it/s]
+  chrF++  29.19    185s  dora_r64_lr0.003_e5_mafand_lug_lfm3-1.7b-base_s1_0094ae5a66
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8584.31it/s]
+  chrF++  25.52    186s  phase_dora_r64_lr0.01_e5_mafand_lug_lfm3-1.7b-base_s1_e3f6cac1f6
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 8282.61it/s]
+  chrF++  25.14    183s  stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s1_a20ee60503
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights: 100%|██████████| 286/286 [00:00<00:00, 10189.95it/s]
+  chrF++  21.76    183s  phase_stiefel_r64_lr0.01_e5_lam0.1_mafand_lug_lfm3-1.7b-base_s1_3b2d2bd085
+=== 2026-11-23 06:55:04 UTC chain done

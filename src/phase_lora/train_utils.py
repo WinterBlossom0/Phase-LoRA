@@ -163,6 +163,9 @@ def attach(model, kind, r, alpha, lam=None):
             r=r, lora_alpha=alpha, lora_dropout=0.0, bias="none", use_dora=kind == "dora",
             target_modules=list(TARGETS), task_type="CAUSAL_LM"))
     for block in model.model.layers:
+        # LFM3 convolution layers have no attention, so no q_proj or v_proj; every Qwen3 layer has attention
+        if not hasattr(block, "self_attn"):
+            continue
         for name in TARGETS:
             base = getattr(block.self_attn, name)
             if kind == "stiefel":                 # PoLAR, as published
