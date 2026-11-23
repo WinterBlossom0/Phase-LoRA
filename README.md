@@ -26,29 +26,31 @@ At complex rank r/2 this reaches exactly the updates that LoRA reaches at rank r
 
 ## Results
 
-Qwen3-0.6B-Base and Qwen3-1.7B-Base, rank 64, mean of 5 seeds. Translation (En→Tsn = English→Setswana, En→Lug = English→Luganda) is scored in chrF++; SVAMP and ARC-Challenge in accuracy (%). **Bold** marks the better adapter of each pair.
+Rank 64, mean of 5 seeds. Translation (En→Tsn = English→Setswana, En→Lug = English→Luganda) is scored in chrF++; SVAMP and ARC-Challenge in accuracy (%). **Bold** marks the better adapter of each pair.
 
-| Adapter | Params 0.6B / 1.7B | En→Tsn 0.6B | En→Tsn 1.7B | En→Lug 0.6B | En→Lug 1.7B | SVAMP 0.6B | SVAMP 1.7B | ARC 0.6B | ARC 1.7B |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| *Base model* | – | *8.8* | *11.2* | *9.5* | *12.6* | *0.3* | *1.0* | *62.6* | *80.1* |
-| LoRA | 9.18M / 12.85M | 30.1 | 32.6 | 29.9 | 31.5 | 69.5 | **76.5** | 68.0 | 79.3 |
-| **Phase LoRA** | 9.18M / 12.85M | **33.5** | **33.8** | **31.2** | **31.7** | **71.9** | 76.2 | **68.7** | **81.5** |
-| DoRA | 9.26M / 12.93M | 30.6 | 32.6 | 30.5 | 31.1 | 71.2 | **78.1** | 67.9 | 79.1 |
-| **Phase DoRA** | 9.26M / 12.93M | **33.6** | **33.6** | **31.1** | **31.8** | **72.1** | 75.8 | **68.9** | **81.3** |
-| PoLAR | 9.40M / 13.07M | 32.4 | **32.2** | 30.8 | 31.3 | 68.9 | **77.9** | 67.4 | 80.5 |
-| **Phase PoLAR** | 9.40M / 13.07M | **32.5** | 32.1 | **31.2** | **31.3** | **70.1** | 77.0 | **67.7** | **80.8** |
-
-LFM3-1.7B-Base, a hybrid convolution–attention model (adapters on its 11 attention layers, 4.7–4.8M parameters):
-
-| Adapter | En→Tsn | En→Lug | SVAMP | ARC |
-|---|:---:|:---:|:---:|:---:|
-| *Base model* | *10.2* | *14.5* | *6.3* | *69.9* |
-| LoRA | **33.6** | **31.6** | 73.9 | 77.5 |
-| **Phase LoRA** | 33.0 | 29.9 | **79.4** | **79.0** |
-| DoRA | **33.7** | **31.4** | 73.7 | 77.4 |
-| **Phase DoRA** | 33.1 | 29.7 | **79.9** | **79.0** |
-| PoLAR | **32.0** | **30.6** | **79.5** | 78.2 |
-| **Phase PoLAR** | 31.3 | 30.3 | 75.9 | **78.4** |
+| Model | Adapter | Params | En→Tsn | En→Lug | SVAMP | ARC |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Qwen3-0.6B | *Base model* | – | *8.8* | *9.5* | *0.3* | *62.6* |
+| | LoRA | 9.18M | 30.1 | 29.9 | 69.5 | 68.0 |
+| | **Phase LoRA** | 9.18M | **33.5** | **31.2** | **71.9** | **68.7** |
+| | DoRA | 9.26M | 30.6 | 30.5 | 71.2 | 67.9 |
+| | **Phase DoRA** | 9.26M | **33.6** | **31.1** | **72.1** | **68.9** |
+| | PoLAR | 9.40M | 32.4 | 30.8 | 68.9 | 67.4 |
+| | **Phase PoLAR** | 9.40M | **32.5** | **31.2** | **70.1** | **67.7** |
+| Qwen3-1.7B | *Base model* | – | *11.2* | *12.6* | *1.0* | *80.1* |
+| | LoRA | 12.85M | 32.6 | 31.5 | **76.5** | 79.3 |
+| | **Phase LoRA** | 12.85M | **33.8** | **31.7** | 76.2 | **81.5** |
+| | DoRA | 12.93M | 32.6 | 31.1 | **78.1** | 79.1 |
+| | **Phase DoRA** | 12.93M | **33.6** | **31.8** | 75.8 | **81.3** |
+| | PoLAR | 13.07M | **32.2** | 31.3 | **77.9** | 80.5 |
+| | **Phase PoLAR** | 13.07M | 32.1 | **31.3** | 77.0 | **80.8** |
+| LFM3-1.7B | *Base model* | – | *10.2* | *14.5* | *6.3* | *69.9* |
+| | LoRA | 4.69M | **33.6** | **31.6** | 73.9 | 77.5 |
+| | **Phase LoRA** | 4.69M | 33.0 | 29.9 | **79.4** | **79.0** |
+| | DoRA | 4.71M | **33.7** | **31.4** | 73.7 | 77.4 |
+| | **Phase DoRA** | 4.71M | 33.1 | 29.7 | **79.9** | **79.0** |
+| | PoLAR | 4.78M | **32.0** | **30.6** | **79.5** | 78.2 |
+| | **Phase PoLAR** | 4.78M | 31.3 | 30.3 | 75.9 | **78.4** |
 
 | Phase LoRA vs | Effect | 95 % CI | p (Holm) |
 |---|:---:|:---:|:---:|
@@ -178,7 +180,7 @@ The patch adds `PhaseLoraConfig` and `PolarConfig` as regular PEFT methods (with
 
 Data and model revisions are pinned and checked by checksum (`data_manifest.json`, `scripts/prepare_models.py`).
 
-**Scope.** On LFM3 the phase versions trail on translation (by 0.6–1.7 chrF++). The PoLAR pair is close. On the PEFT benchmark's default settings LoRA scores slightly higher (46.2 vs 45.3).
+**Scope.** With LFM3-1.7B the phase versions trail on translation (by 0.6–1.7 chrF++). The PoLAR pair is close. On the PEFT benchmark's default settings LoRA scores slightly higher (46.2 vs 45.3).
 
 ## Repository layout
 
